@@ -62,7 +62,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			"OPTRE_8Rnd_127x40_AP_Mag",
 		};
     };
-	class 73_ODST_Autorifleman: OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman {
+class 73_ODST_Autorifleman: OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -93,7 +93,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			}; 
 		backpack="73_Rucksack";
     };
-	class 73_ODST_Grenadier: OPTRE_UNSC_ODST_Soldier {
+class 73_ODST_Grenadier: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -175,7 +175,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			"OPTRE_3Rnd_Smoke_Grenade_shell"
 		};
     };
-	class 73_ODST_Demo: OPTRE_UNSC_ODST_Soldier_DemolitionsExpert {
+class 73_ODST_Demo: OPTRE_UNSC_ODST_Soldier_DemolitionsExpert {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -206,7 +206,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			}; 
 		backpack="73_Rucksack";
     };
-	class 73_ODST_Medic: OPTRE_UNSC_ODST_Soldier_Paramedic {
+class 73_ODST_Medic: OPTRE_UNSC_ODST_Soldier_Paramedic {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -270,7 +270,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			"OPTRE_8Rnd_127x40_AP_Mag",
 		};
     };
-	class 73_ODST_Sniper: OPTRE_UNSC_ODST_Soldier_Scout_Sniper {
+class 73_ODST_Sniper: OPTRE_UNSC_ODST_Soldier_Scout_Sniper {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -301,7 +301,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			}; 
 		backpack="73_Rucksack";
     };
-	class 73_ODST_Marksmen: OPTRE_UNSC_ODST_Soldier_Marksman {
+class 73_ODST_Marksmen: OPTRE_UNSC_ODST_Soldier_Marksman {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -332,7 +332,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			}; 
 		backpack="73_Rucksack";
     };
-	class 73_ODST_AT: OPTRE_UNSC_ODST_Soldier_Rifleman_AT {
+class 73_ODST_AT: OPTRE_UNSC_ODST_Soldier_Rifleman_AT {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -409,7 +409,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			"OPTRE_M2_Smoke_Green"
 		};
     };
-	class 73_ODST_TeamLead: OPTRE_UNSC_ODST_Soldier_TeamLeader {
+class 73_ODST_TeamLead: OPTRE_UNSC_ODST_Soldier_TeamLeader {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
@@ -473,7 +473,7 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
 			"OPTRE_8Rnd_127x40_AP_Mag",
 		};
     };
-	class 73_ODST_SquadLead: OPTRE_UNSC_ODST_Soldier_TeamLeader {
+class 73_ODST_SquadLead: OPTRE_UNSC_ODST_Soldier_TeamLeader {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;

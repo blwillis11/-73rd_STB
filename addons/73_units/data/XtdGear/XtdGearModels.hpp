@@ -4,8 +4,85 @@ class XtdGearModels
     {
 		class 73_ACE_M52_Armor
 		{
-			
-		}
+			label= "[73] M52 Vest";
+			author="73rd S-4 Team";
+			options[] = 
+			{
+				"Billet",
+				"MOS"
+			};
+			class Billet
+            {
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Billet";
+                values[]= 
+				{
+					"Recruit",
+					"Command"
+				};
+			};
+			class MOS
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "MOS";
+				values[]=
+				{
+					"Basic",
+					"Medic",
+					"Autorifleman",
+					"Marksman",
+					"Demolitions",
+					"Scout",
+					"Sniper",
+				};
+			};
+		};
+		class 73_ACE_M52_Armor_ACo1Plt
+		{
+			label= "[73] M52 Vest [ACo1Plt]";
+			author="73rd S-4 Team";
+			options[] = 
+			{
+				"Billet",
+				"MOS"
+			};
+			class Billet
+            {
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Billet";
+                values[]= 
+				{
+					"Standard",
+					"Corpsman",
+					"Lead",
+					"PltCom",
+					"PltMed",
+				};
+			};
+			class MOS
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "MOS";
+				values[]=
+				{
+					"Basic",
+					"Medic",
+					"Autorifleman",
+					"Marksman",
+					"Demolitions",
+					"Scout",
+					"Sniper",
+				};
+			};
+		};
 		class 73_ACE_M56_Armor
         {
 			label= "[73] M56 Body Armor";

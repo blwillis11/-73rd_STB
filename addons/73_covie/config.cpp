@@ -37,7 +37,7 @@ class cfgFactionClasses
     class 73_Cov
     { 
         displayName = "73rd Covenant"; 
-        priority = 1; // Position in list. 
+        priority = 3; // Position in list. 
         side = 0; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = "73_covie\UI\73odst.paa"; //Custom Icon 
     };  

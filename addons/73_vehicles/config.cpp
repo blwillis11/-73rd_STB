@@ -50,7 +50,7 @@ class CfgVehicles {
     {
         displayName="[73] M494 Oryx";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -73,7 +73,7 @@ class CfgVehicles {
     {
         displayName="[73] IFV-76 Honeybadger";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -93,7 +93,7 @@ class CfgVehicles {
     {
         displayName="[73] APC-76 Honeybadger";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scope=2;
         scopeCurator=2;
         crew = "73_ODST_Rifleman";
@@ -113,7 +113,7 @@ class CfgVehicles {
     {
         displayName="[73] M875 Scorpion [SPH]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -136,7 +136,7 @@ class CfgVehicles {
     {
         displayName="[73] HDV-134 Buffalo [Resupply]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -155,7 +155,7 @@ class CfgVehicles {
     {
         displayName="[73] HDV-134 Buffalo [TT]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -173,7 +173,7 @@ class CfgVehicles {
     {
         displayName="[73] HDV-134 Buffalo [TT-C]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -192,7 +192,7 @@ class CfgVehicles {
     {
         displayName="[73] M19 Hyena [GMG]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -210,7 +210,7 @@ class CfgVehicles {
     {
         displayName="[73] M19 Hyena [HMG]";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
@@ -228,7 +228,7 @@ class CfgVehicles {
     {
         displayName="[73] M808B/M Scorpion";
         author="73rd S-4 Team"
-        editorCategory = "73_STB";
+        faction = "73_STB";
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";

@@ -44,7 +44,7 @@ class CfgPatches
 //************************************************************************************************************************************************************************************************
 class cfgFactionClasses 
 { 
-    class 73_Fac
+    class 73_STB
     { 
         displayName = "73rd STB"; 
         priority = 3; // Position in list. 
@@ -58,6 +58,8 @@ class CfgEditorCategories
 	class 73_STB // Category class, you point to it in editorCategory property
 	{
 		displayName = "73rd STB"; // Name visible in the list
+		scopeCurator=2;
+		scopeeditor=2;
 	};
 };
 
@@ -66,10 +68,14 @@ class CfgEditorSubcategories
 	class sc_odst // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Troopers"; // Name visible in the list
+		scopeCurator=2;
+		scopeeditor=2;
 	};
 	class supply_pods // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Supply Pods"; // Name visible in the list
+		scopeCurator=2;
+		scopeeditor=2;
 	};
 };
 class CfgUnitInsignia
@@ -119,6 +125,8 @@ class CfgWeapons
 
 //ODST Vest
 	#include "data\ODST\ODSTVest.hpp"
+	#include "data\ODST\ODSTM52Vest.hpp"
+	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
 	#include "data\Aviation\AviationVest.hpp"
 
 //Infantry helmets
@@ -156,7 +164,7 @@ class CfgVehicles
 	 class OPTRE_UNSC_ODST_Soldier_Scout_Sniper; //Sniper
 	 class OPTRE_UNSC_ODST_Soldier_Paramedic; //Medic
 
-	 #include "data\Units\units.hpp"
+	 //#include "data\Units\units.hpp"
 };
 
-#include "data\Units\groups.hpp"
+//#include "data\Units\groups.hpp"
