@@ -134,6 +134,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Army_Soldier_DressGray;
 	class ItemInfo;
 	class UniformItem;	
+	class NSM_neutral_XD_1_backpack;
 
 //Dress Uniform
 	#include "data\Dress Gear\DressUniformsVeh.hpp"

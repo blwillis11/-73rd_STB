@@ -232,6 +232,8 @@ class CfgVehicles {
         scopeCurator=2;
         scope=2;
         crew = "73_ODST_Rifleman";
+        armor=575;
+        armorStructural=5;
         hiddenSelectionsTextures[]=
         {
             "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa",

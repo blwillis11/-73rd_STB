@@ -2,6 +2,10 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
+		class 73_ACE_M52_Armor
+		{
+			
+		}
 		class 73_ACE_M56_Armor
         {
 			label= "[73] M56 Body Armor";

@@ -2,9 +2,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Rifleman";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         weapons[] = 
 		{
@@ -65,9 +66,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Autorifleman";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         linkedItems[] = 
 		{
@@ -95,9 +97,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Grenadier";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         hiddenSelections[] = 
 		{
@@ -176,9 +179,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Demo";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         linkedItems[] = 
 		{
@@ -206,9 +210,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Medic";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
 		weapons[] = 
 		{
@@ -269,9 +274,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Sniper";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         linkedItems[] = 
 		{
@@ -299,9 +305,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Marksman";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
         linkedItems[] = 
 		{
@@ -329,9 +336,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST AT";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
 		weapons[] = 
 		{
@@ -405,9 +413,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Team Leader";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
 		weapons[] = 
 		{
@@ -468,9 +477,10 @@ class 73_ODST_Rifleman: OPTRE_UNSC_ODST_Soldier {
         author="73rd S-4 Team"; 
         scope = 2;
 		scopeCurator=2;
-        faction = "73_Fac";
+        editorCategory = "73_STB";
 		displayName= "ODST Squad Leader";
 		uniformclass= "73_uniform";
+		
 		editorSubcategory = "sc_odst";
 		weapons[] = 
 		{
