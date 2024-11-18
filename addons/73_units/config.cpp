@@ -104,8 +104,6 @@ class CfgWeapons
 	class HitpointsProtectionInfo;
 	class OPTRE_UNSC_Army_Soldier_DressGray;
 	class MA_M56S_BDU;
-	// class MA_M56E_Helmet;
-	// class MA_M56_Scout_Helmet;
 	class MA_M56A_Helmet;
 	class MA_M56R_Medic_Vest;
 	class MA_M56R_Recon_Vest;
@@ -120,17 +118,28 @@ class CfgWeapons
 
 //ODST Uniform
 	#include "data\ODST\ODSTUniforms.hpp"
+	#include "data\Aviation\AviationUniforms.hpp"
+	#include "data\Mechanized\MechUniforms.hpp"
 //Dress Gear
 	#include "data\Dress Gear\DressUniforms.hpp"
 
 //ODST Vest
 	#include "data\ODST\ODSTVest.hpp"
 	#include "data\ODST\ODSTM52Vest.hpp"
+	#include "data\ODST\ODSTM52VestACo.hpp"
 	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
-	#include "data\Aviation\AviationVest.hpp"
+	#include "data\ODST\ODSTM52VestACo2Plt.hpp"
+
+//Aviation Vest
+    #include "data\Aviation\AviationVest.hpp"
+
+//Aviation Vest
+    #include "data\Mechanized\MechVest.hpp"
+
 
 //Infantry helmets
 	#include "data\ODST\ODSTHelmets.hpp"
+	#include "data\ODST\ODSTCH252DHelmet.hpp"
 };
 class CfgVehicles
 {
@@ -148,23 +157,11 @@ class CfgVehicles
 	#include "data\Dress Gear\DressUniformsVeh.hpp"
 //ODST Uniform
 	#include "data\ODST\ODSTUniformsVeh.hpp"
+//Aviation Uniform
+    #include "data\Aviation\AviationUniformsVeh.hpp"
+//Mechanized Uniform
+    #include "data\Mechanized\MechUniformsVeh.hpp"
 
 //ODST Backpack
 	#include "data\ODST\ODSTBackpack.hpp"
-
-    //************************************************************************************************************************************************************************************************
-    //*****             Units                *********************************************************************************************************************************************************
-    //************************************************************************************************************************************************************************************************
-	 class OPTRE_UNSC_ODST_Soldier;
-	 class OPTRE_UNSC_ODST_Soldier_Rifleman_AT; //AT
-	 class OPTRE_UNSC_ODST_Soldier_Marksman; //Marksmen
-	 class OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman; //Autorifleman
-	 class OPTRE_UNSC_ODST_Soldier_TeamLeader; //Team Lead
-	 class OPTRE_UNSC_ODST_Soldier_DemolitionsExpert; //Demo
-	 class OPTRE_UNSC_ODST_Soldier_Scout_Sniper; //Sniper
-	 class OPTRE_UNSC_ODST_Soldier_Paramedic; //Medic
-
-	 //#include "data\Units\units.hpp"
 };
-
-//#include "data\Units\groups.hpp"

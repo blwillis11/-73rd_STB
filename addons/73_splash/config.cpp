@@ -83,7 +83,7 @@ class RscDisplayMain: RscStandardDisplay
 			style=2;
 			onbuttonclick="connectToServer ['yonservers.net', 2302, 'Trident']";
 			colorBackground[]={0,0,0,0.69999999};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0,.5};
 			borderSize=0.055;
 			sizeEx = "safeZoneH / 20";
 			colorBorder[]={0,0,0,0};
