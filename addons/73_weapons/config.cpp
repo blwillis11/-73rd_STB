@@ -193,6 +193,7 @@ class cfgMagazines
 
 	class 73_200rnd_M247_Mag: OPTRE_100Rnd_762x51_box{
 			displayName = "200Rnd 145x114 Box";
+			displaynameshort="200Rnd 145x114 Box";
     		ammo = "73_B_145x114_APFSDS";  // Bullet type from OPTRE (or custom if needed)
     		count = 200;
     		initSpeed = 850;  // Adjust if needed to match desired ballistic properties
@@ -202,6 +203,7 @@ class cfgMagazines
 	}
 	class 73_100rnd_M247_Mag: OPTRE_100Rnd_762x51_box{
 			displayName = "100Rnd 145x114 Box";
+			displaynameshort="100Rnd 145x114 Box";
     		ammo = "73_B_145x114_APFSDS";  // Bullet type from OPTRE (or custom if needed)
     		count = 100;
     		initSpeed = 850;  // Adjust if needed to match desired ballistic properties
