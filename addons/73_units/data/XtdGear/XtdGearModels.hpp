@@ -8,24 +8,7 @@ class XtdGearModels
 			author="73rd S-4 Team";
 			options[] = 
 			{
-				"Variant",
 				"Roles"
-			};
-			class Variant
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Variant";
-                values[]= 
-				{
-					"Standard",
-					"Smith",
-					"Price",
-					"Winters",
-					"Metal",
-					"Vargas"
-				};
 			};
 			class Roles
 			{
@@ -40,6 +23,54 @@ class XtdGearModels
 					"SORC",
 					"Leadership",
 					"Officer"
+				};
+			};
+		};
+		class 73_ACE_CH252C_Helmet
+		{
+			label= "[73] CH252C Helmet";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Roles"
+			};
+			class Roles
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Roles";
+                values[]=
+				{
+					"Base",
+					"SORC",
+					"Lead",
+					"Ops Chief",
+					"Detach Lead"
+				};
+			};
+		};
+		class 73_ACE_cus_CH252D_Helmet
+		{
+			label= "[73] CH252D Helmet [Custom]";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Variant"
+			};
+			class Variant
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Variant";
+                values[]=
+				{
+				    "Price",
+					"Salmon",
+					"Winters",
+					"Metal",
+					"Solaman"
 				};
 			};
 		};
@@ -325,97 +356,6 @@ class XtdGearModels
 				{
 					"A",
 					"B"
-				};
-			};
-		};
-		class 73_ACE_M56_Armor
-        {
-			label= "[73] M56 Body Armor";
-			author="73rd S-4 Team";
-            options[] = 
-			{ 
-				"Variant",
-				"Roles"
-			};
-            class Variant
-            {
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Variant";
-                values[]= 
-				{
-					"Recruit",
-					"Standard",
-					"Medic",
-					"1Plt Base",
-					"1Plt Medic",
-					"1Plt Lead",
-					"1Plt Cmd",
-					"1Plt CmdMed",
-					"2Plt Base",
-					"2Plt Medic",
-					"2Plt Lead",
-					"2Plt Cmd",
-					"2Plt CmdMed",
-				};
-            };
-			class Roles
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Roles";
-				values[]=
-				{
-					"Aviation",
-					"Medic",
-					"Basic",
-					"Autorifleman",
-					"Marksman",
-					"Demolitions",
-					"Scout",
-					"Sniper",
-				};
-			};
-        };
-		class 73_ACE_ODST_Helmet
-		{
-			label= "[73] ODST Helmet";
-			author="73rd S-4 Team";
-			options[] = 
-			{
-				"Variant",
-				"Roles"
-			};
-			class Variant
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Variant";
-                values[]= 
-				{
-					"Standard",
-					"Smith",
-					"Price",
-					"Winters",
-					"Metal",
-					"Vargas"
-				};
-			};
-			class Roles
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Roles";
-                values[]= 
-				{
-					"Recruit",
-					"Standard",
-					"Leadership",
-					"Officer"
 				};
 			};
 		};
