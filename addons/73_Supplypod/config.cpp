@@ -859,6 +859,12 @@ class CfgVehicles
 				weapon="OPTRE_M7";
 				count=2;
 			};
+
+			class _xx_OPTRE_CQS48_Bulldog_Automatic
+			{
+				weapon="OPTRE_CQS48_Bulldog_Automatic";
+				count=2;
+			};
 		};
 		class TransportItems
 		{
@@ -978,14 +984,14 @@ class CfgVehicles
 				weapon="OPTRE_M295_BMR";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99D
+			class _xx_73_SRS99AM
 			{
-				weapon="OPTRE_SRS99D";
+				weapon="73_SRS99AM";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99C
+			class _xx_73_SRS99AM_Stealth
 			{
-				weapon="OPTRE_SRS99C";
+				weapon="73_SRS99AM_Stealth";
 				count=2;
 			};
 		};
@@ -1014,6 +1020,16 @@ class CfgVehicles
 			class _xx_optre_m7_silencer
 			{
 				name="optre_m7_silencer";
+				count=2;
+			};
+			class _xx_NSWep_SRS99AM_Suppressor_Cloth
+			{
+				name="NSWep_SRS99AM_Suppressor_Cloth";
+				count=2;
+			};
+			class _xx_NSWep_SRS99C_MuzzleBrake
+			{
+				name="NSWep_SRS99C_MuzzleBrake";
 				count=2;
 			};
 		};
@@ -1047,15 +1063,15 @@ class CfgVehicles
 				magazine="TCF_4Rnd_145x114_Mag_NARQ";
 				count=10;
 			};
-			class _xx_TCF_4Rnd_145x114_Mag_HVAPT
+			class _xx_NSWep_M233_145x114x8_APFSDS
 			{
-				magazine="TCF_4Rnd_145x114_Mag_HVAPT";
-				count=10;
+				magazine="NSWep_M233_145x114x8_APFSDS";
+				count=20;
 			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
+			class _xx_NSWep_M233_145x114x8_APFSDS_TC
 			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=10;
+				magazine="NSWep_M233_145x114x8_APFSDS_TC";
+				count=20;
 			};
 			class _xx_TCF_20Rnd_86x70_Mag_JHPT
 			{
@@ -1070,14 +1086,14 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_SRS99D
+			class _xx_73_SRS99AM
 			{
-				weapon="OPTRE_SRS99D";
+				weapon="73_SRS99AM";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99C
+			class _xx_73_SRS99AM_Stealth
 			{
-				weapon="OPTRE_SRS99C";
+				weapon="73_SRS99AM_Stealth";
 				count=2;
 			};
 		};
@@ -1146,9 +1162,9 @@ class CfgVehicles
 				magazine="OPTRE_200Rnd_95x40_Box_Tracer";
 				count=10;
 			};
-			class _xx_TCF_200Rnd_762x51_Box_APT
+			class _xx_73_200rnd_M247_Mag
 			{
-				magazine="TCF_200Rnd_762x51_Box_APT";
+				magazine="73_200rnd_M247_Mag";
 				count=10;
 			};
 			class _xx_OPTRE_400Rnd_762x51_Box_Tracer
@@ -1159,9 +1175,9 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTREM247
+			class _xx_73_M247
 			{
-				weapon="OPTRE_M247";
+				weapon="73_M247";
 				count=2;
 			};
 			class _xx_OPTRE_M73
