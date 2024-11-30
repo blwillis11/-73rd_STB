@@ -42,7 +42,7 @@ class RscDisplayMain: RscStandardDisplay
 	idc=1;
 	access=1;
 	enableDisplay=1;
-	text="73_Splash\Textures\73_Splash.paa";
+	text="73_Splash\Textures\73_Splash1.paa";
 	class RscActiveText;
 	class RscActivePicture: RscActiveText
 	{
@@ -81,9 +81,10 @@ class RscDisplayMain: RscStandardDisplay
 			idc=-1;
 			text="Join 73rd Main";
 			style=2;
-			onbuttonclick="connectToServer ['yonservers.net', 2302, 'Trident']";
+			onbuttonclick="connectToServer ['136.35.175.213', 2302, 'Trident']";
 			colorBackground[]={0,0,0,0.69999999};
-			colorBackgroundActive[]={1,0,0,0,.5};
+			colorBackgroundActive[]={.5,0,0,0,.5};
+			colorFocused[]={.5,0,0,0,.5};
 			borderSize=0.055;
 			sizeEx = "safeZoneH / 20";
 			colorBorder[]={0,0,0,0};
@@ -92,21 +93,6 @@ class RscDisplayMain: RscStandardDisplay
 			w="safezoneW / 3";
 			h="safezoneH / 3";
 		};
-		// class ConnectSide: RscButton
-		// {
-		// 	idc=-1;
-		// 	text="Join 105th Side";
-		// 	style=2;
-		// 	onbuttonclick="connectToServer ['199.33.118.30', 2302, 'shocktrooper']";
-		// 	colorBackground[]={0,0,0,0.69999999};
-		// 	colorBackgroundActive[]={1,0,0,0,2};
-		// 	borderSize=0.055;
-		// 	colorBorder[]={0,0,0,0};
-		// 	x="0.79 * safezoneW + safezoneX";
-		// 	y="0.165 * safezoneH + safezoneY";
-		// 	w="0.12375 * safezoneW";
-		// 	h="0.066 * safezoneH";
-		// };
 	};
 	class ControlsBackground
 	{
@@ -120,7 +106,7 @@ class RscDisplayMain: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="73_Splash\Textures\73_Splash1.paa";
+			text="73_Splash\Textures\73_Splash6.paa";
 		};
 	};
 };
@@ -140,7 +126,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="73_Splash\Textures\73_Splash1.paa";
+					text="73_Splash\Textures\73_Splash5.paa";
 				};
 			};
 		};
@@ -174,6 +160,21 @@ class RscDisplayLoading
 				};
 			};
 		};
+		class Loading_West3: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic: RscPicture
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="73_Splash\Textures\73_Splash7.paa";
+				};
+			};
+		};
 		class Loading_East1: LoadingOne
 		{
 			class controls
@@ -201,6 +202,21 @@ class RscDisplayLoading
 					h="SafeZoneH";
 					w="SafeZoneW";
 					text="73_Splash\Textures\73_Splash3.paa";
+				};
+			};
+		};
+		class Loading_East3: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic: RscPicture
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="73_Splash\Textures\73_Splash5.paa";
 				};
 			};
 		};
@@ -232,7 +248,7 @@ class RscDisplayStart: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="73_Splash\Textures\73_Splash2.paa";
+			text="73_Splash\Textures\73_Splash6.paa";
 		};
 	};
 };
@@ -259,7 +275,7 @@ class RscDisplayClient: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="73_Splash\Textures\73_Splash1.paa";
+			text="73_Splash\Textures\73_Splash7.paa";
 		};
 	};
 };

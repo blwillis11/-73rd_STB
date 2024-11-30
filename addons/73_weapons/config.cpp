@@ -37,6 +37,40 @@ class CfgFunctions {
 
     
 };
+class ace_missileguidance_type_Sidewinder;
+class 73_ace_missileguidance_type_M41_AA: ace_missileguidance_type_Sidewinder
+{
+	enabled=1;
+	canVanillaLock=0;
+	pitchRate=30;
+	yawRate=30;
+	defaultSeekerType="IR";
+	seekerTypes[]=
+	{
+		"IR"
+	};
+	defaultSeekerLockMode="LOAL";
+	seekerLockModes[]=
+	{
+		"LOAL"
+	};
+	defaultNavigationType="AugmentedProportionalNavigation";
+	navigationTypes[]=
+	{
+		"AugmentedProportionalNavigation"
+	};
+	defaultAttackProfile="DIR";
+	attackProfiles[]=
+	{
+		"DIR"
+	};
+	flareDistanceFilter=100;
+	flareAngleFilter=1.6;
+	seekLastTargetPos=1;
+	seekerAngle=90;
+	seekerMinRange=10;
+	seekerMaxRange=5000;
+};
 
 class cfgAmmo {
 	class nswep_m232_145x114_APFSDS;
@@ -59,14 +93,43 @@ class cfgAmmo {
 	class SensorTemplateLaser;
 	class SensorTemplateNV;
 	class SensorTemplateDataLink;
+	class OPTRE_ace_missileguidance_type_M41_Thermal;
 	class OPTRE_M41_Rocket_HEAP;
-	class OPTRE_B_145x114_APFSDS;
+	class OPTRE_B_95x40_Tracer;
+	class MA_5x23_Caseless;
+	class OPTRE_M41_Rocket_HEAT_Guided;
+	class OPTRE_B_762x51_Ball;
 
-	class 73_B_145x114_APFSDS:OPTRE_B_145x114_APFSDS{
+	class 73_B_95x40_Ball: OPTRE_B_762x51_Ball
+	{
+	    caliber = 3.0;
+        hit = 18;
+        typicalSpeed = 800;
+
+        cartridge = "FxCartridge_93x64_Ball";
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	}
+	class 73_B_762x51_Ball_Tracer: 73_B_95x40_Ball
+	{
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	}
+	class 73_B_762x51_Ball_Tracer_Yellow: 73_B_95x40_Ball
+	{
         model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
-        tracerStartTime = 0;
-        tracerEndTime = 10;
-        caliber = 3.000014
+	}
+
+	class 73_5x23_Caseless:MA_5x23_Caseless{
+	    hit=14;
+        cartridge="";
+        caliber=1.5;
+        typicalSpeed=600;
+        model="\A3\Weapons_f\Data\bullettracer\tracer_green";
+        supersoniccracknear[]={};
+        supersoniccrackfar[]={};
+        soundSetSonicCrack[]={};
+	}
+
+	class 73_B_95x40_Tracer:OPTRE_B_95x40_Tracer{
 	}
 
 	class 73_HEAT:ACE_Javelin_FGM148{
@@ -80,6 +143,8 @@ class cfgAmmo {
 		proximityExplosionDistance = 0;
 		missileLockMaxDistance = 20000;
 		missileLockMinDistance = 50;
+		missileKeepLockedCone = 75;
+        missileLockCone = 10;
 		fuseDistance = 30;
 		timeToLive = 40;
 		typicalSpeed = 200;
@@ -92,14 +157,14 @@ class cfgAmmo {
 				class Components {
 					class IRSensorComponent: SensorTemplateIR {
 						class AirTarget {
-							minRange=100;
+							minRange=50;
 							maxRange=10000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=1;
 						};
 
 						class GroundTarget {
-							minRange=100;
+							minRange=50;
 							maxRange=10000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
@@ -127,7 +192,85 @@ class cfgAmmo {
 		indirectHitRange = 6;
 		explosive = 1;
 	};
+	class 73_HEAA:OPTRE_M41_Rocket_HEAT_Guided
+	{
+		warheadName="TandemHEAT";
+        submunitionAmmo = "ammo_Penetrator_Vorona";
+        effectsMissile = "missile3";
+        hit = 350;
+        indirectHit = 25;
+        proximityExplosionDistance = 0;
+        indirectHitRange = 4;
+        explosive=0.80000001;
+        irLock = 1;
+        airLock = 1;
+        laserLock = 0;
+        nvLock = 0;
+        cmImmunity = 0.65;
+        simulationStep = 0.0020000001;
+        airFriction = 0.064999998;
+        sideAirFriction = 0.20000001;
+        manualControl = 1;
+        maneuvrability = 28;
+        maxControlRange = 30000;
+        missileKeepLockedCone = 180;
+        missileLockCone = 20;
+        missileLockMaxDistance = 10000;
+        missileLockMinDistance = 50;
+        missileLockMaxSpeed = 1000;
+        trackOversteer = 0.9;
+        trackLead = 0.8;
+        weaponLockSystem = 2;
+        initTime = 0;
+        thrustTime = 12;
+        thrust = 120;
+        maxSpeed = 400;
 
+        class Components {
+            class SensorsManagerComponent {
+                class Components {
+                    class IRSensorComponent: SensorTemplateIR {
+                        class AirTarget {
+                            minRange=50;
+                            maxRange=10000;
+                            objectDistanceLimitCoef=-1;
+                            viewDistanceLimitCoef=1;
+                        };
+
+                        class GroundTarget {
+                            minRange=50;
+                            maxRange=10000;
+                            objectDistanceLimitCoef=1;
+                            viewDistanceLimitCoef=1;
+                        };
+
+                        maxTrackableSpeed=1000;
+                        angleRangeHorizontal=7;
+                        angleRangeVertical=4.5;
+                        maxTrackableATL=2000;
+                    };
+                };
+            };
+        };
+
+        class ace_missileguidance {
+            enabled = 0; // Enable missile guidance (0-disabled, 1-enabled)
+            minDeflection = 0.00025;  // Minimum flap deflection for guidance
+            maxDeflection = 0.001;  // Maximum flap deflection for guidance
+            incDeflection = 0.0005;  // The increment in which deflection adjusts
+            canVanillaLock = 1;  // Enable vanilla lock, only applicable to non-cadet modes, 'recruit' always uses vanilla locking (0-disabled, 1-enabled)
+            defaultSeekerType = "SACLOS";  // Default seeker type
+            seekerTypes[] = {"SALH", "SACLOS"};  // Seeker types available
+            defaultSeekerLockMode = "LOAL";  // Default seeker lock mode
+            seekerLockModes[] = {"LOAL", "LOBL"};  // Seeker lock modes available
+            seekerAngle = 90;  // Angle in front of the missile which can be searched
+            seekerAccuracy = 1;  // Seeker accuracy multiplier
+            seekerMinRange = 1;  // Minimum range from the missile which the seeker can visually search
+            seekerMaxRange = 2500;  // Maximum from the missile which the seeker can visually search
+            defaultAttackProfile = "LIN";  // Default attack profile
+            attackProfiles[] = {"LIN", "DIR"};  // Attack profiles available
+        };
+	};
 	class 73_M232_145x114_APFSDS:nswep_m232_145x114_APFSDS
 	{
 		ACE_ballisticCoefficients= "[0.757]"
@@ -190,27 +333,73 @@ class cfgMagazines
 	class NSWep_M232_145x114x4_APFSDS_TIR;
 	class Titan_AT;
 	class OPTRE_100Rnd_762x51_box;
+	class MA_48Rnd_5x23Caseless_FMJ_Mag;
+	class MA_48Rnd_5x23Caseless_FMJ_Mag_Tracer;
+	class MA_60Rnd_5x23Caseless_FMJ_Mag;
+	class MA_60Rnd_5x23Caseless_FMJ_Mag_Tracer;
+	class OPTRE_15Rnd_762x51_Mag;
 
+	class 73_15Rnd_95x40_Mag:OPTRE_15Rnd_762x51_Mag
+	{
+	    ammo = "73_B_95x40_Ball";
+	}
+	class 73_15Rnd_95x40_Mag_Tracer:OPTRE_15Rnd_762x51_Mag
+	{
+        displayname							= "15Rnd 9.5x40mm Magazine (Tracers)";
+        displaynameshort					= "9.5x40mm Tracer";
+	    ammo = "73_B_95x40_Ball_Tracer";
+        descriptionshort					= "15 Round Magazine<br/>9.5x40mm<br/>Tracer";
+        tracersEvery 						= 1;
+        lastRoundsTracer 					= 15;
+	}
+	class 73_15Rnd_95x40_Mag_Tracer_Yellow:73_15Rnd_95x40_Mag_Tracer
+	{
+        displayname							= "15Rnd 9.5x40mm Magazine (Tracers Yellow)";
+	    ammo = "73_B_95x40_Ball_Tracer_Yellow";
+	}
+
+    class 73_48Rnd_5x23Caseless_FMJ_Mag: MA_48Rnd_5x23Caseless_FMJ_Mag{
+        displayName="[73] 48Rnd M7S FMJ Magazine";
+        author= "73rd S-4 Team";
+        ammo="73_5x23_Caseless";
+    };
+    class 73_48Rnd_5x23Caseless_FMJ_Mag_Tracer: MA_48Rnd_5x23Caseless_FMJ_Mag_Tracer{
+        displayName="[73] 48Rnd M7S FMJ Magazine (Tracer)";
+        author= "73rd S-4 Team";
+        ammo="73_5x23_Caseless";
+    };
+    class 73_60Rnd_5x23Caseless_FMJ_Mag: MA_48Rnd_5x23Caseless_FMJ_Mag{
+        displayName="[73] 60Rnd M7S FMJ Magazine";
+        author= "73rd S-4 Team";
+        ammo="73_5x23_Caseless";
+        mass=3.5;
+    };
+    class 73_60Rnd_5x23Caseless_FMJ_Mag_Tracer: MA_48Rnd_5x23Caseless_FMJ_Mag_Tracer{
+        displayName="[73] 60Rnd M7S FMJ Magazine (Tracer)";
+        author= "73rd S-4 Team";
+        ammo="73_5x23_Caseless";
+        mass=3.5;
+    };
 	class 73_200rnd_M247_Mag: OPTRE_100Rnd_762x51_box{
-			displayName = "200Rnd 145x114 Box";
-			displaynameshort="200Rnd 145x114 Box";
-    		ammo = "73_B_145x114_APFSDS";  // Bullet type from OPTRE (or custom if needed)
+			displayName = "200Rnd 9.5x40 Box";
+			displaynameshort="200Rnd 9.5x40 Box";
+    		ammo = "73_B_95x40_Tracer";  // Bullet type from OPTRE (or custom if needed)
     		count = 200;
     		initSpeed = 850;  // Adjust if needed to match desired ballistic properties
     		tracersEvery = 1;
-    		mass = 65; // Light weight setting similar to M247
+    		mass = 70.5; // Light weight setting similar to M247
     		descriptionShort = "200-round 12.7x99mm M247 Belt";
-	}
+	};
 	class 73_100rnd_M247_Mag: OPTRE_100Rnd_762x51_box{
-			displayName = "100Rnd 145x114 Box";
-			displaynameshort="100Rnd 145x114 Box";
-    		ammo = "73_B_145x114_APFSDS";  // Bullet type from OPTRE (or custom if needed)
+			displayName = "100Rnd 95x40 Box";
+			displaynameshort="100Rnd 95x40 Box";
+    		ammo = "73_B_95x40_Tracer";  // Bullet type from OPTRE (or custom if needed)
     		count = 100;
     		initSpeed = 850;  // Adjust if needed to match desired ballistic properties
     		tracersEvery = 1;
-    		mass = 130; // Light weight setting similar to M247
+    		mass = 35; // Light weight setting similar to M247
     		descriptionShort = "100-round 12.7x99mm M247 Belt";
-	}
+	};
 
 	class 73_HEAT:Titan_AT{
 		count=2;
@@ -228,7 +417,7 @@ class cfgMagazines
 			"\optre_weapons\rockets\data\logos_ca.paa"
 		};
 		initSpeed = 100;
-	}
+	};
 	class 73_HEAP:73_HEAT{
 		count=2;
 		displayname	= "[73] M19 HEAP Twin Rockets";
@@ -240,32 +429,44 @@ class cfgMagazines
 			"optre_weapons\rockets\data\logos_ca.paa"
 		};
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\heap.paa";
-	}
+	};
+	class 73_HEAA:73_HEAT{
+		count=2;
+		displayname	= "[73] M19 HEAA Twin Rockets";
+		displaynameshort = "HEAA";
+		descriptionshort = "High Explosive Anti Air (Guided)<br/>Guided";
+		ammo = "73_HEAA";
+		hiddenSelectionsTextures[] = {
+			"\OPTRE_Weapons\Rockets\data\mag_types\he.paa",
+			"optre_weapons\rockets\data\logos_ca.paa"
+		};
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\heat.paa";
+	};
 	class 73_M232_145x114x4_APFSDS:NSWep_M232_145x114x4_APFSDS
 	{
 		mass=25;
 		ammo="73_M232_145x114_APFSDS";
-	}
+	};
 	class 73_M232_145x114x4_APFSDS_TG:NSWep_M232_145x114x4_APFSDS_TG
 	{
 		mass=25;
 		ammo="73_M232_145x114_APFSDS_TG";
-	}
+	};
 	class 73_M232_145x114x4_APFSDS_TR:NSWep_M232_145x114x4_APFSDS_TR
 	{
 		mass=25;
 		ammo="73_M232_145x114_APFSDS_TR";
-	}
+	};
 	class 73_M232_145x114x4_APFSDS_TC:NSWep_M232_145x114x4_APFSDS_TC
 	{
 		mass=25;
 		ammo="73_M232_145x114_APFSDS_TC";
-	}
+	};
 	class 73_M232_145x114x4_APFSDS_TIR:NSWep_M232_145x114x4_APFSDS_TIR
 	{
 		mass=25;
 		ammo="73_M232_145x114_APFSDS_TIR";
-	}
+	};
 
 	class NSWep_M232_145x114x8_APFSDS;
 	class NSWep_M232_145x114x8_APFSDS_TG;
@@ -277,27 +478,27 @@ class cfgMagazines
 	{
 		mass=50;
 		ammo="73_M232_145x114_APFSDS";
-	}
+	};
 	class 73_M232_145x114x8_APFSDS_TG:NSWep_M232_145x114x8_APFSDS_TG
 	{
 		mass=50;
 		ammo="73_M232_145x114_APFSDS_TG";
-	}
+	};
 	class 73_M232_145x114x8_APFSDS_TR:NSWep_M232_145x114x8_APFSDS_TR
 	{
 		mass=50;
 		ammo="73_M232_145x114_APFSDS_TR";
-	}
+	};
 	class 73_M232_145x114x8_APFSDS_TC:NSWep_M232_145x114x8_APFSDS_TC
 	{
 		mass=50;
 		ammo="73_M232_145x114_APFSDS_TC";
-	}
+	};
 	class 73_M232_145x114x8_APFSDS_TIR:NSWep_M232_145x114x8_APFSDS_TIR
 	{
 		mass=50;
 		ammo="73_M232_145x114_APFSDS_TIR";
-	}
+	};
 	
 	class NSWep_M233_145x114x4_APFSDS;
 	class NSWep_M233_145x114x4_APFSDS_TG;
@@ -309,27 +510,27 @@ class cfgMagazines
 	{
 		mass=25;
 		ammo="73_M233_145x114_APFSDS";
-	}
+	};
 	class 73_M233_145x114x4_APFSDS_TG:NSWep_M233_145x114x4_APFSDS_TG
 	{
 		mass=25;
 		ammo="73_M233_145x114_APFSDS_TG";
-	}
+	};
 	class 73_M233_145x114x4_APFSDS_TR:NSWep_M233_145x114x4_APFSDS_TR
 	{
 		mass=25;
 		ammo="73_M233_145x114_APFSDS_TR";
-	}
+	};
 	class 73_M233_145x114x4_APFSDS_TC:NSWep_M233_145x114x4_APFSDS_TC
 	{
 		mass=25;
 		ammo="73_M233_145x114_APFSDS_TC";
-	}
+	};
 	class 73_M233_145x114x4_APFSDS_TIR:NSWep_M233_145x114x4_APFSDS_TIR
 	{
 		mass=25;
 		ammo="73_M233_145x114_APFSDS_TIR";
-	}
+	};
 
 	class NSWep_M233_145x114x8_APFSDS;
 	class NSWep_M233_145x114x8_APFSDS_Tg;
@@ -341,7 +542,7 @@ class cfgMagazines
 	{
 		mass=50;
 		ammo="73_M233_145x114_APFSDS";
-	}
+	};
 	class 73_M233_145x114x8_APFSDS_TG:NSWep_M233_145x114x8_APFSDS_TG
 	{
 		mass=50;
@@ -368,18 +569,37 @@ class cfgMagazineWells{
 	class 73_rockets{
 		73_Magazines[] = {
 			"73_HEAT",
-			"73_HEAP"
+			"73_HEAP",
+			"73_HEAA"
 		};
-	};class 73_LMG{
+	};
+	class 73_LMG{
 		73_Magazines[] = {
 			"73_200rnd_M247_Mag",
 			"73_100rnd_M247_Mag"
 		};
 	};
+	class 73_DMR{
+		73_Magazines[] = {
+			"73_15Rnd_95x40_Mag",
+			"73_15Rnd_95x40_Mag_Tracer",
+			"73_15Rnd_95x40_Mag_Tracer_Yellow"
+		};
+	};
+	class 73_M7_SMG{
+		73_Magazines[] = {
+			"73_48Rnd_5x23Caseless_FMJ_Mag",
+			"73_48Rnd_5x23Caseless_FMJ_Mag_Tracer",
+			"73_60Rnd_5x23Caseless_FMJ_Mag",
+			"73_60Rnd_5x23Caseless_FMJ_Mag_Tracer"
+		};
+	};
 };
+
 class Mode_SemiAuto;	// External class reference
 class Mode_Burst;	// External class reference
 class Mode_FullAuto;	// External class reference
+
 class CfgWeapons {
     class WeaponSlotsInfo;
     class CowsSlot;
@@ -390,7 +610,6 @@ class CfgWeapons {
     class OPTRE_M392_DMR;
     class OPTRE_M393_DMR;
     class OPTRE_M393S_DMR;
-    class TCF_MRS10;
     class TCF_CR77;
     class NSWep_BR55HBM1;
 	class NSWep_SRS99AM;
@@ -400,14 +619,43 @@ class CfgWeapons {
 	class BaseSoundModeType;
 	class Single;
 	class FullAuto;
+	class MA_M7_SMG;
 
-	class 73_M247: OPTRE_M247{
+	class 73_M7_SMG_salmon: MA_M7_SMG {
+	    author= "73rd S-4 Team";
+	    displayName = "[73] M7S SMG [Salmon]"
+	    baseWeapon="73_M7_SMG_salmon"
+	    magazineWell[]={
+	    "73_M7_SMG"
+	    };
+	    hiddenSelections[]={
+	    "M7_Addons",
+	    "M7_Body",
+	    "M7_Scope_Glass"
+	    };
+        hiddenSelectionsTextures[]=
+        {
+            "73_weapons\data\M7\m7_smg_addons_cus_salmon_CO.paa",
+            "73_weapons\data\M7\m7_smg_body_cus_salmon_CO.paa",
+            "73_weapons\data\M7\m7_smg_optic_cus_salmon.paa"
+        };
+	}
+	class 73_M7_SMG: MA_M7_SMG {
+	    author= "73rd S-4 Team";
+	    displayName = "[73] M7S SMG"
+	    baseWeapon="73_M7_SMG"
+	    magazineWell[]={
+	    "73_M7_SMG"
+	    };
+	}
+
+	class 73_M247: OPTRE_M247 {
         displayName="[73] M247";
         baseWeapon="73_M247";
         descriptionShort="UNSC LMG";
         magazineWell[]=
         {
-            "CBA_127x99",
+//            "CBA_127x99",
             "73_LMG"
         };
         magazines[]=
@@ -1141,403 +1389,13 @@ class CfgWeapons {
             };
         };
     }
-    class 73_CR77_DMR:TCF_CR77
-    {
-        displayName = "[73] CR77 DMR";
-        baseWeapon = "73_CR77_DMR"
-        author= "73rd S-4 Team";
-        class WeaponSlotsInfo:WeaponSlotsInfo
-        {
-            mass=140;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_l",
-					"muzzle_snds_acp",
-					"muzzle_snds_570",
-					"muzzle_snds_M",
-					"muzzle_snds_M_khk_f",
-					"muzzle_snds_M_snd_f",
-					"muzzle_snds_58_blk_f",
-					"muzzle_snds_58_ghex_f",
-					"muzzle_snds_58_hex_f",
-					"muzzle_snds_h",
-					"muzzle_snds_h_khk_f",
-					"muzzle_snds_h_snd_f",
-					"muzzle_snds_65_ti_blk_f",
-					"muzzle_snds_65_ti_hex_f",
-					"muzzle_snds_65_ti_ghex_f",
-					"muzzle_snds_h_mg",
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_h_mg_khk_f",
-					"muzzle_snds_b",
-					"muzzle_snds_b_arid_f",
-					"muzzle_snds_b_khk_f",
-					"muzzle_snds_b_lush_f",
-					"muzzle_snds_b_snd_f",
-					"muzzle_snds_338_black",
-					"muzzle_snds_338_green",
-					"muzzle_snds_338_sand",
-					"muzzle_snds_93mmg",
-					"muzzle_snds_93mmg_tan",
-					"muzzle_snds_93mmg",
-					"optre_m6_silencer",
-					"OPTRE_M6C_compensator",
-					"OPTRE_M12_Suppressor",
-					"optre_m7_silencer",
-					"optre_ma5suppressor",
-					"OPTRE_M393_Suppressor",
-					"OPTRE_MA37KSuppressor",
-					"OPTRE_SRS99D_Suppressor",
-					"ace_muzzle_mzls_smg_02",
-					"ace_muzzle_mzls_smg_01",
-					"ace_muzzle_mzls_h",
-					"ace_muzzle_mzls_l",
-					"ace_muzzle_mzls_b",
-					"ace_muzzle_mzls_338",
-					"ace_muzzle_mzls_93mmg"
-				};
-			};
-			class CowsSlot: CowsSlot
-            {
-                compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-                    "NSWep_BR55M1A2LR_Optic",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"optic_yorris",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optic_tws",
-					"optic_nvs",
-					"ace_optic_arco_2d",
-					"ace_optic_arco_pip",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BR45_Scope",
-					"optre_m6c_scope",
-					"OPTRE_M6G_Scope",
-					"OPTRE_BMR_Scope",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_SmartLink",
-					"OPTRE_MA5C_SmartLink",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_SRM_Sight",
-					"Optre_Recon_Sight",
-					"Optre_Recon_Sight_Red",
-					"Optre_Recon_Sight_Green",
-					"Optre_Recon_Sight_Desert",
-					"Optre_Recon_Sight_UNSC",
-					"Optre_Recon_Sight_Snow",
-					"TCF_SENT_CG",
-					"TCF_REC_holo",
-					"TCF_SENT_CGRed",
-					"TCF_SENT_CGGre",
-					"TCF_REC_holo_Red",
-					"TCF_REC_holo_Gre",
-					"TCF_SENT_white_CG",
-					"TCF_MA1B_AmmoCounter",
-					"TCF_ma1B_ammocounter_nois",
-					"TCF_M6D_Smartlink",
-					"TCF_MA5_SmartLink_v2",
-					"TCF_MA5C_SmartLink_v2",
-					"TCF_MA5_SmartLink_legacy",
-					"TCF_MA5C_SmartLink_legacy",
-					"TCF_M393_EOTECH_v2"
-				};
-            };
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"TCF_M6_Flashlight_IR",
-					"TCF_Rifle_Flashlight_IR",
-					"TCF_M7_Flashlight_IR",
-					"TCF_MA1B_Flashlight",
-					"OPTRE_BMR_Laser",
-					"OPTRE_BMR_Flashlight",
-					"OPTRE_BMR_Vis_Red_Laser",
-					"OPTRE_BMR_MEQ_Flashlight",
-					"OPTRE_BMR_Flashlight_Laser",
-					"OPTRE_BMR_Flashlight_Vis_Red_Laser",
-					"OPTRE_M7_Laser",
-					"OPTRE_M7_Flashlight",
-					"OPTRE_M7_Vis_Red_Laser",
-					"OPTRE_M12_Laser",
-					"OPTRE_M12_Vis_Red_Laser",
-					"OPTRE_M12_Flashlight",
-					"OPTRE_M6G_Laser",
-					"OPTRE_M6G_Vis_Red_Laser",
-					"OPTRE_M6G_Flashlight",
-					"OPTRE_M6C_Laser",
-					"OPTRE_M6C_Vis_Red_Laser",
-					"OPTRE_M6C_Flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_M45_Flashlight_green",
-					"OPTRE_M45_Flashlight_blue",
-					"OPTRE_DMR_Light",
-					"ACE_acc_pointer_red",
-					"ace_acc_pointer_green",
-					"ACE_acc_pointer_green_IR",
-					"acc_pointer_ir",
-					"acc_flashlight",
-					"acc_flashlight_pistol"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]=
-				{
-					"bipod_01_F_snd",
-					"bipod_01_F_blk",
-					"bipod_01_F_mtp",
-					"bipod_01_F_khk",
-					"bipod_02_F_blk",
-					"bipod_02_F_tan",
-					"bipod_02_F_hex",
-					"bipod_02_F_lush",
-					"bipod_02_F_arid",
-					"bipod_03_F_blk",
-					"bipod_03_F_oli"
-				};
-			};
-        };
-    }
-    class 73_MRS10_DMR:TCF_MRS10
-    {
-        displayName = "[73] MRS-10 DMR";
-        baseWeapon = "73_MRS10_DMR"
-        author= "73rd S-4 Team";
-        class WeaponSlotsInfo:WeaponSlotsInfo
-        {
-            mass=130;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_l",
-					"muzzle_snds_acp",
-					"muzzle_snds_570",
-					"muzzle_snds_M",
-					"muzzle_snds_M_khk_f",
-					"muzzle_snds_M_snd_f",
-					"muzzle_snds_58_blk_f",
-					"muzzle_snds_58_ghex_f",
-					"muzzle_snds_58_hex_f",
-					"muzzle_snds_h",
-					"muzzle_snds_h_khk_f",
-					"muzzle_snds_h_snd_f",
-					"muzzle_snds_65_ti_blk_f",
-					"muzzle_snds_65_ti_hex_f",
-					"muzzle_snds_65_ti_ghex_f",
-					"muzzle_snds_h_mg",
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_h_mg_khk_f",
-					"muzzle_snds_b",
-					"muzzle_snds_b_arid_f",
-					"muzzle_snds_b_khk_f",
-					"muzzle_snds_b_lush_f",
-					"muzzle_snds_b_snd_f",
-					"muzzle_snds_338_black",
-					"muzzle_snds_338_green",
-					"muzzle_snds_338_sand",
-					"muzzle_snds_93mmg",
-					"muzzle_snds_93mmg_tan",
-					"muzzle_snds_93mmg",
-					"optre_m6_silencer",
-					"OPTRE_M6C_compensator",
-					"OPTRE_M12_Suppressor",
-					"optre_m7_silencer",
-					"optre_ma5suppressor",
-					"OPTRE_M393_Suppressor",
-					"OPTRE_MA37KSuppressor",
-					"OPTRE_SRS99D_Suppressor",
-					"ace_muzzle_mzls_smg_02",
-					"ace_muzzle_mzls_smg_01",
-					"ace_muzzle_mzls_h",
-					"ace_muzzle_mzls_l",
-					"ace_muzzle_mzls_b",
-					"ace_muzzle_mzls_338",
-					"ace_muzzle_mzls_93mmg"
-				};
-			};
-			class CowsSlot: CowsSlot
-            {
-                compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-                    "NSWep_BR55M1A2LR_Optic",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"optic_yorris",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optic_tws",
-					"optic_nvs",
-					"ace_optic_arco_2d",
-					"ace_optic_arco_pip",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BR45_Scope",
-					"optre_m6c_scope",
-					"OPTRE_M6G_Scope",
-					"OPTRE_BMR_Scope",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_SmartLink",
-					"OPTRE_MA5C_SmartLink",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_SRM_Sight",
-					"Optre_Recon_Sight",
-					"Optre_Recon_Sight_Red",
-					"Optre_Recon_Sight_Green",
-					"Optre_Recon_Sight_Desert",
-					"Optre_Recon_Sight_UNSC",
-					"Optre_Recon_Sight_Snow",
-					"TCF_SENT_CG",
-					"TCF_REC_holo",
-					"TCF_SENT_CGRed",
-					"TCF_SENT_CGGre",
-					"TCF_REC_holo_Red",
-					"TCF_REC_holo_Gre",
-					"TCF_SENT_white_CG",
-					"TCF_MA1B_AmmoCounter",
-					"TCF_ma1B_ammocounter_nois",
-					"TCF_M6D_Smartlink",
-					"TCF_MA5_SmartLink_v2",
-					"TCF_MA5C_SmartLink_v2",
-					"TCF_MA5_SmartLink_legacy",
-					"TCF_MA5C_SmartLink_legacy",
-					"TCF_M393_EOTECH_v2"
-				};
-            };
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"TCF_M6_Flashlight_IR",
-					"TCF_Rifle_Flashlight_IR",
-					"TCF_M7_Flashlight_IR",
-					"TCF_MA1B_Flashlight",
-					"OPTRE_BMR_Laser",
-					"OPTRE_BMR_Flashlight",
-					"OPTRE_BMR_Vis_Red_Laser",
-					"OPTRE_BMR_MEQ_Flashlight",
-					"OPTRE_BMR_Flashlight_Laser",
-					"OPTRE_BMR_Flashlight_Vis_Red_Laser",
-					"OPTRE_M7_Laser",
-					"OPTRE_M7_Flashlight",
-					"OPTRE_M7_Vis_Red_Laser",
-					"OPTRE_M12_Laser",
-					"OPTRE_M12_Vis_Red_Laser",
-					"OPTRE_M12_Flashlight",
-					"OPTRE_M6G_Laser",
-					"OPTRE_M6G_Vis_Red_Laser",
-					"OPTRE_M6G_Flashlight",
-					"OPTRE_M6C_Laser",
-					"OPTRE_M6C_Vis_Red_Laser",
-					"OPTRE_M6C_Flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_M45_Flashlight_green",
-					"OPTRE_M45_Flashlight_blue",
-					"OPTRE_DMR_Light",
-					"ACE_acc_pointer_red",
-					"ace_acc_pointer_green",
-					"ACE_acc_pointer_green_IR",
-					"acc_pointer_ir",
-					"acc_flashlight",
-					"acc_flashlight_pistol"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]=
-				{
-					"bipod_01_F_snd",
-					"bipod_01_F_blk",
-					"bipod_01_F_mtp",
-					"bipod_01_F_khk",
-					"bipod_02_F_blk",
-					"bipod_02_F_tan",
-					"bipod_02_F_hex",
-					"bipod_02_F_lush",
-					"bipod_02_F_arid",
-					"bipod_03_F_blk",
-					"bipod_03_F_oli"
-				};
-			};
-        };
-    }
     class 73_M395S_DMR:OPTRE_M393S_DMR
     {
         displayName = "[73] M395S DMR";
         baseWeapon = "73_M395S_DMR"
         author= "73rd S-4 Team";
+        magazineWell[] = {"73_DMR"};
+        magazines[]={"73_15Rnd_95x40_Mag"};
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1627,6 +1485,8 @@ class CfgWeapons {
         displayName = "[73] M395 DMR";
         baseWeapon = "73_M395_DMR"
         author= "73rd S-4 Team";
+        magazineWell[] = {"73_DMR"};
+        magazines[]={"73_15Rnd_95x40_Mag"};
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1716,6 +1576,8 @@ class CfgWeapons {
         displayName = "[73] M392 DMR";
         baseWeapon = "73_M392_DMR"
         author= "73rd S-4 Team";
+        magazineWell[] = {"73_DMR"};
+        magazines[]={"73_15Rnd_95x40_Mag"};
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1805,6 +1667,8 @@ class CfgWeapons {
         displayName = "[73] M295 DMR";
         baseWeapon = "73_m932"
         author= "73rd S-4 Team";
+        magazineWell[] = {"73_DMR"};
+        magazines[]={"73_15Rnd_95x40_Mag"};
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
