@@ -50,6 +50,27 @@ class XtdGearModels
 				};
 			};
 		};
+		class 73_ACE_cus_CH252C_Helmet
+		{
+			label= "[73] CH252C Custom Helmet";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Variant"
+			};
+			class Variant
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Variant";
+                values[]=
+				{
+					"Morgan",
+					"Mitchell"
+				};
+			};
+		};
 		class 73_ACE_cus_CH252D_Helmet
 		{
 			label= "[73] CH252D Helmet [Custom]";
@@ -70,7 +91,9 @@ class XtdGearModels
 					"Salmon",
 					"Winters",
 					"Metal",
-					"Solaman"
+					"Solaman",
+					"Vargas",
+					"Mendez"
 				};
 			};
 		};
