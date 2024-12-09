@@ -7,8 +7,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Data_F_Enoch_Loadorder",
-			"19th_Fleet_Armor",
-			"1st_MEU_patch_main_loadingScreens"
+			"19th_Fleet_Armor"
 		};
 		requiredVersion=0.1;
 		units[]={};

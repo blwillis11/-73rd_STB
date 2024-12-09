@@ -43,62 +43,10 @@ class CfgFunctions {
 };
 
 class CfgVehicles {
-//	class OPTRE_M12_FAV;
-//	class 73_M12_FAV: OPTRE_M12_FAV
-//	{
-//		scope=2;
-//		scopeCurator=2;
-//		forceInGarage=1;
-//		displayName="[73] M12 FAV Warthog";
-//        faction = "73_STB";
-//        crew = "73_ODST_Rifleman";
-//		ace_cargo_space=4;
-//		ace_cargo_hasCargo=1;
-//		hiddenSelectionsTextures[]=
-//		{
-//			"73_vehicles\data\warthog\M12HogMaav_extupper_co.paa",
-//			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
-//			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
-//			"73_vehicles\data\warthog\M12HogMaav_interior_co.paa",
-//			"73_vehicles\data\warthog\apc_lopo_co.paa"
-//		};
-//	};
-
-    class OPTRE_M125_APC_Base;
-
-    class 73_M125_APC: OPTRE_M125_APC_Base
-    {
-        scope=2;
-        scopeCurator=2;
-        side=1;
-        displayName="[73] M125 Wildebeest APC";
-        faction = "73_STB";
-        crew = "73_ODST_Rifleman";
-        tf_hasLRradio=1;
-        tf_isolatedAmount=0.64999998;
-        tf_range=120000;
-        ejectDamageLimit=0.99000001;
-    };
-    class 73_M125_APC_LAAG: 73_M125_APC
-    {
-        displayName="[73] M125 Wildebeest APC (LAAG)";
-    };
-    class 73_M125_APC_AT: 73_M125_APC
-    {
-        displayName="[73] M125 Wildebeest APC (AT)";
-    };
-    class 73_M125_APC_Gauss: 73_M125_APC
-    {
-        displayName="[73] M125 Wildebeest APC (Gauss)";
-    };
-    class 73_M125_APC_AA: 73_M125_APC
-    {
-        displayName="[73] M125 Wildebeest APC (AA)";
-    };
 
     class VES_M494_ORYX;
 
-    class 73_Oryx: VES_M494_ORYX
+    class 73_Oryx: VES_M494_ORYX 
     {
         displayName="[73] M494 Oryx";
         author="73rd S-4 Team"
@@ -118,7 +66,7 @@ class CfgVehicles {
 			"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
         };
     };
-
+    
     class VES_IFV76_A;
 
     class 73_IFV76:VES_IFV76_A
@@ -298,61 +246,4 @@ class CfgVehicles {
             "V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_MG_CO.paa"
         };
     };
-};
-class Extended_InitPost_EventHandlers
-{
-	class 73_M125_APC_LAAG
-	{
-		init="[_this select 0, [['OPTRE_Static_M41', [0,0.5,0.25],[0,0,0]]]] spawn aux_1stMEU_fnc_attachto_AttachObjectToVic;";
-	};
-	class 73_M125_APC_AT
-	{
-		init="[_this select 0, [['OPTRE_Static_ATGM', [0,0.5,0.25],[0,0,0]]]] spawn aux_1stMEU_fnc_attachto_AttachObjectToVic;";
-	};
-	class 73_M125_APC_Gauss
-	{
-		init="[_this select 0, [['OPTRE_Static_Gauss', [0,0.5,0.25],[0,0,0]]]] spawn aux_1stMEU_fnc_attachto_AttachObjectToVic;";
-	};
-	class MEU_M125_APC_AA
-	{
-		init="[_this select 0, [['OPTRE_Static_AA', [0,0.5,0.25],[0,0,0]]]] spawn aux_1stMEU_fnc_attachto_AttachObjectToVic;";
-	};
-};
-class Extended_Killed_EventHandlers
-{
-	class 73_M125_APC_LAAG
-	{
-		init="[_this select 0, false] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_AT
-	{
-		init="[_this select 0, false] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_Gauss
-	{
-		init="[_this select 0, false] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_AA
-	{
-		init="[_this select 0, false] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-};
-class Extended_Deleted_EventHandlers
-{
-	class 73_M125_APC_LAAG
-	{
-		init="[_this select 0, true] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_AT
-	{
-		init="[_this select 0, true] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_Gauss
-	{
-		init="[_this select 0, true] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
-	class 73_M125_APC_AA
-	{
-		init="[_this select 0, true] spawn aux_1stMEU_fnc_attachto_RemoveAttachedObject;";
-	};
 };
