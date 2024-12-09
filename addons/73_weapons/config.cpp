@@ -1298,95 +1298,11 @@ class CfgWeapons {
 			"73_M233_145x114x8_APFSDS_TIR"
 		};
 	};
-	//
     class 73_BR55HBM1_DMR:NSWep_BR55HBM1
     {
         displayName = "[73] BR55HB Mod 1";
         baseWeapon = "73_BR55HBM1_DMR"
         author= "73rd S-4 Team";
-        class WeaponSlotsInfo:WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-                    "NSWep_BR55M1A2LR_Optic",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"optic_yorris",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optic_tws",
-					"optic_nvs",
-					"ace_optic_arco_2d",
-					"ace_optic_arco_pip",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BR45_Scope",
-					"optre_m6c_scope",
-					"OPTRE_M6G_Scope",
-					"OPTRE_BMR_Scope",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_M12_Optic",
-					"OPTRE_MA5_SmartLink",
-					"OPTRE_MA5C_SmartLink",
-					"OPTRE_MA5_BUIS",
-					"OPTRE_SRM_Sight",
-					"Optre_Recon_Sight",
-					"Optre_Recon_Sight_Red",
-					"Optre_Recon_Sight_Green",
-					"Optre_Recon_Sight_Desert",
-					"Optre_Recon_Sight_UNSC",
-					"Optre_Recon_Sight_Snow",
-					"TCF_SENT_CG",
-					"TCF_REC_holo",
-					"TCF_SENT_CGRed",
-					"TCF_SENT_CGGre",
-					"TCF_REC_holo_Red",
-					"TCF_REC_holo_Gre",
-					"TCF_SENT_white_CG",
-					"TCF_MA1B_AmmoCounter",
-					"TCF_ma1B_ammocounter_nois",
-					"TCF_M6D_Smartlink",
-					"TCF_MA5_SmartLink_v2",
-					"TCF_MA5C_SmartLink_v2",
-					"TCF_MA5_SmartLink_legacy",
-					"TCF_MA5C_SmartLink_legacy",
-					"TCF_M393_EOTECH_v2"
-				};
-            };
-        };
     }
     class 73_M395S_DMR:OPTRE_M393S_DMR
     {

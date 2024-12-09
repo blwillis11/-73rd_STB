@@ -93,7 +93,9 @@ class XtdGearModels
 					"Metal",
 					"Solaman",
 					"Vargas",
-					"Mendez"
+					"Mendez",
+					"Bear",
+					"Dawn"
 				};
 			};
 		};
