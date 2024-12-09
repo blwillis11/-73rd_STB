@@ -23,6 +23,7 @@ class CfgPatches
 			"19_UNSC_Weapons",
             "OPTRE_FunctionsLibrary",
             "73_units",
+			"TCF_WEAPONRY",
 			"OPTRE_Weapons",
 			"ACE_Javelin",
 			"ace_missileguidance"
