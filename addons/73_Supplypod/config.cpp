@@ -54,6 +54,7 @@ class CfgVehicles
 		maximumLoad=1000000;
 		editorCategory = "73_STB";
 		editorSubcategory = "supply_pods";
+ side=3;
 		hiddenselections[]=
 		{
 			"camo"
