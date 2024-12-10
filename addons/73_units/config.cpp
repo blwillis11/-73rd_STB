@@ -6,16 +6,21 @@ class CfgPatches
 		name = "73rd STB Aux";
 		units[] = 
         {
-			"73_ODST_Rifleman",
-			"73_ODST_Autorifleman",
-			"73_ODST_Grenadier",
-			"73_ODST_Demo",
-			"73_ODST_Medic",
-			"73_ODST_Sniper",
-			"73_ODST_Marksmen",
-			"73_ODST_AT",
-			"73_ODST_TeamLead",
-			"73_ODST_SquadLead",
+			"73_ACo_ODST_Rifleman",
+			"73_ACo_ODST_Autorifleman",
+			"73_ACo_ODST_Grenadier",
+			"73_ACo_ODST_Demo",
+			"73_ACo_ODST_Medic",
+			"73_ACo_ODST_Sniper",
+			"73_ACo_ODST_Marksman",
+			"73_ACo_ODST_Officer",
+			"73_ACo_ODST_AT",
+			"73_ACo_ODST_TeamLead",
+			"73_ACo_ODST_SquadLead",
+			"73_Crewman",
+			"73_Crewman_Officer",
+			"73_Aviator",
+			"73_Aviator_Officer",
         }; 
         weapons[] = 
         {
@@ -45,18 +50,31 @@ class cfgFactionClasses
 { 
     class 73_STB
     { 
-        displayName = "73rd STB"; 
+        displayName = "[73] Shock Trooper Battalion";
         priority = 3; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = "73_units\UI\73odst.paa"; //Custom Icon 
-    };  
+    };
+    class 73_ACo
+    {
+        displayName = "[73] Alpha Company";
+        priority = 3; // Position in list.
+        side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = "73_units\UI\73odst.paa"; //Custom Icon
+    };
 };
 
 class CfgEditorCategories
 {
 	class 73_STB // Category class, you point to it in editorCategory property
 	{
-		displayName = "73rd STB"; // Name visible in the list
+		displayName = "[73] Shock Trooper Battalion"; // Name visible in the list
+		scopeCurator=2;
+		scopeeditor=2;
+	};
+	class 73_ACo // Category class, you point to it in editorCategory property
+	{
+		displayName = "[73] Alpha Company"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
@@ -64,17 +82,45 @@ class CfgEditorCategories
 
 class CfgEditorSubcategories
 {
-	class sc_odst // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Troopers"; // Name visible in the list
-		scopeCurator=2;
-		scopeeditor=2;
-	};
+    class 73_APCs_EdSubCat
+    {
+        displayName = "APCs";
+    };
+    class 73_Cars_EdSubCat
+    {
+        displayName = "Cars";
+    };
+    class 73_Helicopters_EdSubCat
+    {
+        displayName = "Helicopters";
+    };
+    class 73_Aviation_EdSubCat
+    {
+        displayName = "Aviation";
+    };
+    class 73_Planes_EdSubCat
+    {
+        displayName = "Planes";
+    };
+    class 73_Mechanized_EdSubCat
+    {
+        displayName = "Mechanized";
+    };
+    class 73_ODST_EdSubCat
+    {
+        displayName = "ODST";
+    };
+    class 73_Tanks_EdSubCat
+    {
+        displayName = "Tanks";
+    };
+    class 73_Artillery_EdSubCat
+    {
+        displayName = "Artillery";
+    };
 	class supply_pods // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Supply Pods"; // Name visible in the list
-		scopeCurator=2;
-		scopeeditor=2;
 	};
 };
 class CfgUnitInsignia
@@ -152,4 +198,13 @@ class CfgVehicles
 
 //ODST Backpack
 	#include "data\ODST\ODSTBackpack.hpp"
+
+    #include "STB\units\units.hpp"
+    #include "ACo\units\units.hpp"
 };
+
+class CfgGroups
+{
+//    #include "ACo\groups\groups.hpp"
+};
+
