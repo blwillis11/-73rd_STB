@@ -3,13 +3,16 @@ class CfgPatches
 	class 73_SupplyPods
 	{
 		author="73rd S-4 Team";
-		addonRootClass="73_SupplyPod";
+		addonRootClass="73_supplypod";
+		editorCategory = "73 STB";
+		editorSubcategory = "Supply pods";
 		requiredAddons[]=
 		{
 			"73_units",
 			"OPTRE_Misc",
 			"1st_MEU_patch_vehicles_supplypods"
 		};
+
 		requiredVersion=0.1;
 		units[]=
 		{
@@ -23,17 +26,16 @@ class CfgPatches
 			"73_SupplyPod_VehicleAmmo",
 			"73_SupplyPod_VehicleRepair",
 			"73_SupplyPod_VehicleRefuel",
-			"73_SupplyPod_ARBRGL",
-			"73_SupplyPod_Breacher",
-			"73_SupplyPod_Marksman",
-			"73_SupplyPod_Sniper",
-			"73_SupplyPod_Autorifles",
-			"73_SupplyPod_ATLauncher",
-			"73_SupplyPod_ExplosivesPack",
-			"73_SupplyPod_TACReSupplyPod",
-			"73_SupplyPod_Emptypod",
-			"Module_OPTRE_PelicanSupplyDrop",
-			"73_SupplyPod_Light"
+			"73_supply_ARBRGL",
+			"73_supply_Breacher",
+			"73_supply_Marksman",
+			"73_supply_Sniper",
+			"73_supply_Autorifles",
+			"73_supply_ATLauncher",
+			"73_supply_ExplosivesPack",
+			"73_supply_TACResupply",
+			"73_supply_Emptypod",
+			"73_supply_Light"
 		};
 		weapons[]={};
 		vehicles[]={};
@@ -47,7 +49,10 @@ class CfgVehicles
 	class Module_F;
 	class 73_SupplyPod: OPTRE_Ammo_SupplyPod_Empty
 	{
-		scope = 1; // Visible in Zeus and Eden
+		scope = 1;
+		editorCategory = "73 STB";
+		editorSubcategory = "Supply pods";
+		faction = "73_STB";
 		maximumLoad=1000000;
 		hiddenselections[]=
 		{
@@ -60,7 +65,8 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_NEWACE_Medical: 73_SupplyPod
 	{
-		scope = 2; // Visible in Zeus and Eden
+   	scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [New ACE Medical]";
 		hiddenselections[]=
 		{
@@ -230,13 +236,17 @@ class CfgVehicles
 				name="kat_Bubble_Wrap_Item";
 				count=5;
 			};
+			class _xx_Emergency_medical_kit
+			{
+				name="MEU_Emergency_MedKit";
+				count=10;
+			};
 		};
 	};
 	class 73_SupplyPod_Mortar_Ammo: 73_SupplyPod
 	{
-		
-    	
-		scope = 2; // Visible in Zeus and Eden
+    scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Mortar Ammo]";
 		hiddenselections[]=
 		{
@@ -267,9 +277,8 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_Mortar: 73_SupplyPod
 	{
-		
- 	 	
-		scope = 2; // Visible in Zeus and Eden
+ 	 	scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Mortar Tube]";
 		hiddenselections[]=
 		{
@@ -302,10 +311,9 @@ class CfgVehicles
 		};
 	};
 	class 73_SupplyPod_StaticHMG: 73_SupplyPod
-	{
-			
-   		
-		scope = 2; // Visible in Zeus and Eden
+  {
+   		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Static HMG]";
 		hiddenselections[]=
 		{
@@ -363,9 +371,10 @@ class CfgVehicles
 		};
 	};
 	class 73_SupplyPod_StaticHMGAmmo: 73_SupplyPod
-	{
-		
+  {
 		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static HMG Ammo]";
 		hiddenselections[]=
 		{
@@ -396,8 +405,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_StaticGMG: 73_SupplyPod
 	{
-		
 		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static GMG]";
 		hiddenselections[]=
 		{
@@ -436,8 +446,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_StaticGMGAmmo: 73_SupplyPod
 	{
-		scope=2;
-		scopeCurator = 2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static GMG Ammo]";
 		hiddenselections[]=
 		{
@@ -458,8 +469,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_VehicleAmmo: 73_SupplyPod
 	{
-		scope=2;
-		scopeCurator = 2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Vehicle Ammo]";
 		hiddenselections[]=
 		{
@@ -473,7 +485,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_VehicleRepair: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Vehicle Repair]";
 		hiddenselections[]=
 		{
@@ -507,6 +521,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeCurator = 2;
+
 		displayName="73rd Supply Pod [Vehicle Refuel]";
 		hiddenselections[]=
 		{
@@ -552,11 +567,7 @@ class CfgVehicles
 				magazine="NSWep_762x51_NATO_T_R";
 				count=30;
 			};
-			class _xx_OPTRE_60Rnd_762x51_Mag_APT
-			{
-				magazine="TCF_60Rnd_762x51_Mag_APT";
-				count=30;
-			};
+		
 			class _xx_NSWep_95x40x60_KURTZ_T_C
 			{
 				magazine="NSWep_95x40x60_KURTZ_T_C";
@@ -598,42 +609,6 @@ class CfgVehicles
 				magazine="OPTRE_36Rnd_95x40_Mag";
 				count=30;
 			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHP
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHP";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_AP
-			{
-				magazine="TCF_20Rnd_86x70_Mag_AP";
-				count=30;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag
-			{
-				magazine="TCF_10Rnd_86x70_Mag";
-				count=30;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_Tracer
-			{
-				magazine="TCF_10Rnd_86x70_Mag_Tracer";
-				count=30;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_AP
-			{
-				magazine="TCF_10Rnd_86x70_Mag_AP";
-				count=30;
-			};
-
 			class _xx_OPTRE_42Rnd_95x40_Mag
 			{
 				magazine="OPTRE_42Rnd_95x40_Mag";
@@ -745,7 +720,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_Breacher: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Breaching Kit]";
 		hiddenselections[]=
 		{
@@ -772,16 +749,6 @@ class CfgVehicles
 				magazine="OPTRE_12Rnd_8Gauge_HEDP";
 				count=10;
 			};
-			class _xx_TCF_12Rnd_8Gauge_Beanbag
-			{
-				magazine="TCF_12Rnd_8Gauge_Beanbag";
-				count=10;
-			};
-			class _xx_TCF_12Rnd_8Gauge_Incendiary
-			{
-				magazine="TCF_12Rnd_8Gauge_Incendiary";
-				count=10;
-			};
 			class _xx_OPTRE_6Rnd_8Gauge_Pellets
 			{
 				magazine="OPTRE_6Rnd_8Gauge_Pellets";
@@ -795,28 +762,6 @@ class CfgVehicles
 			class _xx_OPTRE_6Rnd_8Gauge_HEDP
 			{
 				magazine="OPTRE_6Rnd_8Gauge_HEDP";
-				count=10;
-			};
-			class _xx_TCF_6Rnd_8Gauge_Beanbag
-			{
-				magazine="TCF_6Rnd_8Gauge_Beanbag";
-				count=10;
-			};
-			class _xx_TCF_6Rnd_8Gauge_Incendiary
-			{
-				magazine="TCF_6Rnd_8Gauge_Incendiary";
-				count=10;
-			};
-
-			class _xx_TCF_60rnd_5x23mm_Mag_JHPT
-			{
-				magazine="TCF_60rnd_5x23mm_Mag_JHPT";
-				count=100;
-			};
-
-			class _xx_TCF_48Rnd_5x23mm_JHP_Mag
-			{
-				magazine="TCF_48Rnd_5x23mm_JHP_Mag";
 				count=10;
 			};
 			class _xx_OPTRE_8Rnd_127x40_Mag
@@ -880,7 +825,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_Marksman: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Marksman Rifles]";
 		hiddenselections[]=
 		{
@@ -892,26 +839,7 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_15Rnd_DMR_762x51_Mag_APT
-			{
-				magazine="TCF_15Rnd_DMR_762x51_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_15Rnd_DMR_762x51_Mag_JHPT
-			{
-				magazine="TCF_15Rnd_DMR_762x51_Mag_JHPT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=30;
-			};
+			
 			class _xx_OPTRE_10RND_338_AP
 			{
 				magazine="OPTRE_10RND_338_AP";
@@ -927,11 +855,6 @@ class CfgVehicles
 				magazine="OPTRE_10RND_338_VLD";
 				count=30;
 			};
-			class _xx_TCF_32Rnd_762x51_Mag_APT
-			{
-				magazine="TCF_32Rnd_762x51_Mag_APT";
-				count=30;
-			};
 			class _xx_NSWep_M233_145x114x8_APFSDS
 			{
 				magazine="NSWep_M233_145x114x8_APFSDS";
@@ -941,27 +864,6 @@ class CfgVehicles
 			{
 				magazine="NSWep_M233_145x114x8_APFSDS_TC";
 				count=20;
-			};
-
-			class _xx_TCF_4Rnd_145x114_Mag_APFSDST
-			{
-				magazine="TCF_4Rnd_145x114_Mag_APFSDST";
-				count=20;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_HEDPT
-			{
-				magazine="TCF_4Rnd_145x114_Mag_HEDPT";
-				count=10;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_NARQ
-			{
-				magazine="TCF_4Rnd_145x114_Mag_NARQ";
-				count=10;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_HVAPT
-			{
-				magazine="TCF_4Rnd_145x114_Mag_HVAPT";
-				count=10;
 			};
 			
 		};
@@ -1029,7 +931,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_Sniper: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [SR99DX Sniper]";
 		hiddenselections[]=
 		{
@@ -1041,35 +945,16 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_4Rnd_145x114_Mag_APFSDST
+			
+			class _xx_73_M233_145x114x8_APFSDS
 			{
-				magazine="TCF_4Rnd_145x114_Mag_APFSDST";
+				magazine="73_M233_145x114x8_APFSDS";
 				count=20;
 			};
-			class _xx_TCF_4Rnd_145x114_Mag_HEDPT
+			class _xx_73_M233_145x114x8_APFSDS_TC
 			{
-				magazine="TCF_4Rnd_145x114_Mag_HEDPT";
-				count=10;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_NARQ
-			{
-				magazine="TCF_4Rnd_145x114_Mag_NARQ";
-				count=10;
-			};
-			class _xx_NSWep_M233_145x114x8_APFSDS
-			{
-				magazine="NSWep_M233_145x114x8_APFSDS";
+				magazine="73_M233_145x114x8_APFSDS_TC";
 				count=20;
-			};
-			class _xx_NSWep_M233_145x114x8_APFSDS_TC
-			{
-				magazine="NSWep_M233_145x114x8_APFSDS_TC";
-				count=20;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=10;
 			};
 			class _xx_10Rnd_50BW_Mag_F
 			{
@@ -1111,7 +996,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_Autorifles: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayname="73rd Supply Pod [Machine Guns]";
 		hiddenselections[]=
 		{
@@ -1129,26 +1016,10 @@ class CfgVehicles
 				magazine="OPTRE_100Rnd_95x60_Box_HPSAPT";
 				count=10;
 			};
-			class _xx_TCF_Gamma_762_mag_Tracer
-			{
-				magazine="TCF_Gamma_762_mag_Tracer";
-				count=15;
-			};
 			class _xx_MA_200Rnd_762x51_FMJAP_Mag_Tracer
 			{
 				magazine="MA_200Rnd_762x51_FMJAP_Mag_Tracer";
 				count=15;
-			};
-
-			class _xx_TCF_200Rnd_95x40_Box_JHPT
-			{
-				magazine="TCF_200Rnd_95x40_Box_JHPT";
-				count=10;
-			};
-			class _xx_OPTRE_100Rnd_95x40_Box_JHPT
-			{
-				magazine="TCF_100Rnd_95x40_Box_JHPT";
-				count=10;
 			};
 			class _xx_OPTRE_200Rnd_95x40_Box_Tracer
 			{
@@ -1210,7 +1081,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_ATLauncher: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [AT Launchers]";
 		hiddenselections[]=
 		{
@@ -1222,57 +1095,38 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_1Rnd_50x137_HE
-			{
-				magazine="TCF_2Rnd_50x137_HE";
-				count=4;
-			};
-			class _xx_OPTRE_1Rnd_50x137_HEAT
-			{
-				magazine="TCF_2Rnd_50x137_HEAT";
-				count=4;
-			};
-			class _xx_OPTRE_1Rnd_50x137_PEN
-			{
-				magazine="TCF_2Rnd_50x137_PEN";
-				count=4;
-			};
+			
+			
 			class _xx_OPTRE_M41_Twin_HEAT_SACLOS
 			{
 				magazine="OPTRE_M41_Twin_HEAT_SACLOS";
 				count=8;
 			};
-			class _xx_OPTRE_M41_Twin_HEAT_SALH
+			class _xx_73_HEAA
 			{
-				magazine="OPTRE_M41_Twin_HEAT_SALH";
-				count=8;
+				magazine="73_HEAA";
+				count=15;
 			};
-			class _xx_OPTRE_M41_Twin_HEAT_Thermal
+			class _xx_73_HEAT
 			{
-				magazine="OPTRE_M41_Twin_HEAT_Thermal";
-				count=8;
+				magazine="73_HEAT";
+				count=20;
 			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_M41_SSR
+			class _xx_73_MPRL
 			{
-				weapon="OPTRE_M41_SSR";
+				weapon="73_MPRL";
 				count=3;
 			};
-			class _xx_TCF_M57_Pilum_b
-			{
-				weapon="TCF_M57_Pilum_b";
-				count=3;
-			};
-		};
-		class TransportItems
-		{
 		};
 	};
 	class 73_SupplyPod_ExplosivesPack: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Explosives]";
 		hiddenselections[]=
 		{
@@ -1297,12 +1151,12 @@ class CfgVehicles
 			class _xx_C7_Remote_Mag
 			{
 				magazine="C7_Remote_Mag";
-				count=5;
+				count=25;
 			};
 			class _xx_C12_Remote_Mag
 			{
 				magazine="C12_Remote_Mag";
-				count=4;
+				count=8;
 			};
 			class _xx_M168_Remote_Mag
 			{
@@ -1312,7 +1166,7 @@ class CfgVehicles
 			class _xx_APERSMineDispenser_Mag
 			{
 				magazine="APERSMineDispenser_Mag";
-				count=5;
+				count=15;
 			};
 		};
 		class TransportWeapons
@@ -1324,7 +1178,9 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_TACReSupplyPod: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName=" 73rd Supply Pod [Utility/Sidearm]";
 		hiddenselections[]=
 		{
@@ -1372,33 +1228,7 @@ class CfgVehicles
 			{
 				magazine="16rnd_10mm_AP";
 				count=30;
-			};
-			
-			class _xx_TCF_60rnd_5x23mm_Mag_JHPT
-			{
-				magazine="TCF_60rnd_5x23mm_Mag_JHPT";
-				count=30;
-			};
-			class _xx_TCF_8Rnd_127x40_Mag_NARQ
-			{
-				magazine="TCF_8Rnd_127x40_Mag_NARQ";
-				count=15;
-			};
-			class _xx_TCF_8Rnd_127x40_Mag_APT
-			{
-				magazine="TCF_8Rnd_127x40_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_12Rnd_127x40_Mag_NARQ
-			{
-				magazine="TCF_12Rnd_127x40_Mag_NARQ";
-				count=15;
-			};
-			class _xx_TCF_12Rnd_127x40_Mag_APT
-			{
-				magazine="TCF_12Rnd_127x40_Mag_APT";
-				count=30;
-			};
+			}; 
 			class _xx_OPTRE_M9_Frag
 			{
 				magazine="OPTRE_M9_Frag";
@@ -1454,17 +1284,15 @@ class CfgVehicles
 				magazine="Laserbatteries";
 				count=25;
 			};
-			class _xx_TCF_12Rnd_8Gauge_Beanbag
-			{
-				magazine="TCF_12Rnd_8Gauge_Beanbag";
-				count=15;
-			};
+			
 		};
 	};
 	class 73_SupplyPod_Emptypod: 73_SupplyPod
 	{
-		scope=2;
-		displayName="73rd Supply Pod [73rd Empty Supply pod]";
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
+		displayName="73rd Empty pod";
 		hiddenselectionstextures[]=
 		{
 			"73_Supplypod\73_Pod_co.paa"
@@ -1474,13 +1302,45 @@ class CfgVehicles
 
 		};
 	};
+		class 73_supply_Light: 73_supplypod
+	{
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
+		displayname="73rd Supply Pod Light";
+		class TransportMagazines
+		{
+			class _xx_OPTRE_60Rnd_762x51_Mag_JHPT
+			{
+				magazine="OPTRE_60Rnd_762x51_Mag_JHPT";
+				count=10;
+			};
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportItems
+		{
+
+			class _xx_ACE_plasmaIV_500
+			{
+				name="ACE_plasmaIV_500";
+				count=3;
+			};
+			class _xx_B_UavTerminal
+			{
+				name="B_UavTerminal";
+				count=2;
+			};
+		};
+	};
 	class Module_OPTRE_PelicanSupplyDrop: Module_F
 	{
 		class Arguments
 		{
 			class box1
 			{
-				defaultValue="73_SupplyPod_NEWACE_Medical";
+				defaultValue="none";
 				class values
 				{
 					class n1
@@ -1609,17 +1469,4 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
-
-			class _xx_ACE_plasmaIV_500
-			{
-				name="ACE_plasmaIV_500";
-				count=3;
-			};
-			class _xx_B_UavTerminal
-			{
-				name="B_UavTerminal";
-				count=2;
-			};
-		};
-	};
 };
