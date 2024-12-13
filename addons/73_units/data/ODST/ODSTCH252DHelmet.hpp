@@ -300,7 +300,7 @@ class 73_CH252D_Helmet_Cus_Price: CH252D_Helmet
         Variant="Price";
     };
 };
-class 73_CH252D_Helmet_Price_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Price_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -364,7 +364,7 @@ class 73_CH252D_Helmet_Cus_Winters: CH252D_Helmet
         Variant="Winters";
     };
 };
-class 73_CH252D_Helmet_Winters_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Winters_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -428,7 +428,7 @@ class 73_CH252D_Helmet_Cus_Salmon: CH252D_Helmet
         Variant="Salmon";
     };
 };
-class 73_CH252D_Helmet_Salmon_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Salmon_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -492,7 +492,7 @@ class 73_CH252D_Helmet_Cus_Metal: CH252D_Helmet
         Variant="Metal";
     };
 };
-class 73_CH252D_Helmet_Metal_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Metal_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -556,7 +556,7 @@ class 73_CH252D_Helmet_Cus_Solaman: CH252D_Helmet
         Variant="Solaman";
     };
 };
-class 73_CH252D_Helmet_Solaman_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Solaman_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -620,7 +620,7 @@ class 73_CH252D_Helmet_Cus_Vargas: CH252D_Helmet
         Variant="Vargas";
     };
 };
-class 73_CH252D_Helmet_Vargas_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Vargas_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -684,7 +684,7 @@ class 73_CH252D_Helmet_Cus_Mendez: CH252D_Helmet
         Variant="Mendez";
     };
 };
-class 73_CH252D_Helmet_Mendez_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Mendez_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -748,7 +748,7 @@ class 73_CH252D_Helmet_Cus_Bear: CH252D_Helmet
         Variant="Bear";
     };
 };
-class 73_CH252D_Helmet_Bear_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Bear_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
@@ -812,7 +812,7 @@ class 73_CH252D_Helmet_Cus_Dawn: CH252D_Helmet
         Variant="Dawn";
     };
 };
-class 73_CH252D_Helmet_Dawn_dp: CH252D_Helmet_dp
+class 73_CH252D_Helmet_Cus_Dawn_dp: CH252D_Helmet_dp
 {
     scope=1;
     scopeArsenal=1;
