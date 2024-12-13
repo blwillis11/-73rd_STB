@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/units.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/vehicles.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiP texture/M12HogMaav_extupper_co.psd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_splash/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_splash/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/apc_lopo_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/apc_lopo_co.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +54,13 @@
     }
   ]
 }</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="Test" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/blwillis11/-73rd_STB.git&quot;,
@@ -124,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733710761725</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixes">
+      <option name="closed" value="true" />
+      <created>1733856132814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733856132814</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

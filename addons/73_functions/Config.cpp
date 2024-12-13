@@ -6,6 +6,7 @@ class CfgPatches
 		name = "73rd STB Aux"
 		units[] =
         {
+            ""
         };
         weapons[] =
         {
@@ -19,24 +20,23 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
             "73_units",
-            "first_meu_aux"
+            "first_meu_aux",
+            "73_vehicles"
         };
     };
 };
 class CfgFunctions
 {
-    class v73_func
+    class STB73
     {
         class PelicanMagLiftSystem
-
         {
+            file="73_functions\Functions\PelicanMagLiftSystem";
             class PelicanLoadValidate
             {
-                file="73_functions\Functions\PelicanMagLiftSystem\fn_PelicanLoadValidate.sqf";
             };
             class PelicanUnLoadValidate
             {
-                file="73_functions\Functions\PelicanMagLiftSystem\fn_PelicanUnLoadValidate.sqf";
             };
         };
     };

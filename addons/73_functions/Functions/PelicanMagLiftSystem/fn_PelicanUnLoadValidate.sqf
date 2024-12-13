@@ -1,11 +1,29 @@
-_vehicles = ((_this select 0) getVariable ["OPTRE_Pelican_AttachedToVehiclesEffect",[]]);
+_vehicles = ((_this select 0) getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
 
 if (
 		(
 			{
 				(_x isKindOf "OPTRE_M808B_base") OR
-				(_x isKindOf "OPTRE_falcon_base") OR
-				(_x isKindOf "optre_hornet_base")
+                (_x isKindOf "OPTRE_M808B2") OR
+                (_x isKindOf "OPTRE_M808S") OR
+                (_x isKindOf "OPTRE_M12A1_LRV") OR
+                (_x isKindOf "OPTRE_M12_LRV") OR
+                (_x isKindOf "OPTRE_M12G1_LRV") OR
+                (_x isKindOf "OPTRE_M12R_AA") OR
+                (_x isKindOf "OPTRE_M12_FAV_APC") OR
+                (_x isKindOf "OPTRE_M12_FAV") OR
+                (_x isKindOf "OPTRE_M12_TD_ins") OR
+                (_x isKindOf "OPTRE_M813_TT") OR
+                (_x isKindOf "OPTRE_M413_base") OR
+                (_x isKindOf "73_M494_Oryx") OR
+                (_x isKindOf "OPTRE_M914_RV") OR
+                (_x isKindOf "73_M808BM_MBT") OR
+                (_x isKindOf "73_M875") OR
+                (_x isKindOf "73_IFV76_A") OR
+                (_x isKindOf "73_IFV76") OR
+                (_x isKindOf "73_M412_IFV") OR
+                (_x isKindOf "73_M413_MGS")
+
 			} count _vehicles > 0
 		)
 ) then {
@@ -34,7 +52,7 @@ if (
 
 		{_x allowDamage true;} forEach _vehicles;
 		(_this select 0) allowDamage true;
-		(_this select 0) setVariable ["OPTRE_Pelican_AttachedToVehiclesEffect", [], true];
+		(_this select 0) setVariable ["STB73_Pelican_AttachedToVehiclesEffect", [], true];
 
 		};
 

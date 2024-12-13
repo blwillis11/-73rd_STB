@@ -53,14 +53,14 @@ class cfgFactionClasses
         displayName = "[73] Shock Trooper Battalion";
         priority = 3; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
-        icon = "73_units\UI\73odst.paa"; //Custom Icon 
+        icon = "73_units\UI\73odstSTB.paa"; //Custom Icon
     };
     class 73_ACo
     {
         displayName = "[73] Alpha Company";
         priority = 3; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
-        icon = "73_units\UI\73odst.paa"; //Custom Icon
+        icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
     };
 };
 

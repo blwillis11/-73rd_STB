@@ -41,21 +41,14 @@ class CfgPatches
 };
 
 class CfgVehicles
-{ 
-	
-    scopeCurator = 2; // Allow spawning in Zeus
-	scope = 2; // Visible in Zeus and Eden
+{
 	class OPTRE_Ammo_SupplyPod_Empty;
 	class OPTRE_Ammo_SupplyPod_Launcher;
 	class Module_F;
 	class 73_SupplyPod: OPTRE_Ammo_SupplyPod_Empty
 	{
-		scope = 2; // Visible in Zeus and Eden
-    	scopeCurator = 2; // Allow spawning in Zeus
-    	side=3;
+		scope = 1; // Visible in Zeus and Eden
 		maximumLoad=1000000;
-		editorCategory = "73_STB";
-		editorSubcategory = "SupplyPod_pods";
 		hiddenselections[]=
 		{
 			"camo"
@@ -67,8 +60,6 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_NEWACE_Medical: 73_SupplyPod
 	{
-		
-   		scopeCurator = 2; // Allow spawning in Zeus
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [New ACE Medical]";
 		hiddenselections[]=
@@ -244,7 +235,7 @@ class CfgVehicles
 	class 73_SupplyPod_Mortar_Ammo: 73_SupplyPod
 	{
 		
-    	scopeCurator = 2; // Allow spawning in Zeus
+    	
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [Mortar Ammo]";
 		hiddenselections[]=
@@ -277,7 +268,7 @@ class CfgVehicles
 	class 73_SupplyPod_Mortar: 73_SupplyPod
 	{
 		
- 	 	scopeCurator = 2; // Allow spawning in Zeus
+ 	 	
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [Mortar Tube]";
 		hiddenselections[]=
@@ -313,7 +304,7 @@ class CfgVehicles
 	class 73_SupplyPod_StaticHMG: 73_SupplyPod
 	{
 			
-   		scopeCurator = 2; // Allow spawning in Zeus
+   		
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [Static HMG]";
 		hiddenselections[]=
@@ -373,7 +364,7 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_StaticHMGAmmo: 73_SupplyPod
 	{
-		scopeCurator = 2; // Allow spawning in Zeus
+		
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [Static HMG Ammo]";
 		hiddenselections[]=
@@ -405,7 +396,7 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_StaticGMG: 73_SupplyPod
 	{
-		scopeCurator = 2; // Allow spawning in Zeus
+		
 		scope = 2; // Visible in Zeus and Eden
 		displayName="73rd Supply Pod [Static GMG]";
 		hiddenselections[]=
