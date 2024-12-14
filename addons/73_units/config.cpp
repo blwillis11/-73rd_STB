@@ -62,6 +62,13 @@ class cfgFactionClasses
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
         icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
     };
+    class 73_10MEB
+    {
+        displayName = "[73] 10th Marine Expeditionary Forces";
+        priority = 3; // Position in list.
+        side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
+    };
 };
 
 class CfgEditorCategories
@@ -75,6 +82,12 @@ class CfgEditorCategories
 	class 73_ACo // Category class, you point to it in editorCategory property
 	{
 		displayName = "[73] Alpha Company"; // Name visible in the list
+		scopeCurator=2;
+		scopeeditor=2;
+	};
+	class 73_10MEB // Category class, you point to it in editorCategory property
+	{
+		displayName = "[73] 10th Marine Expeditionary Forces"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
@@ -109,6 +122,10 @@ class CfgEditorSubcategories
     class 73_ODST_EdSubCat
     {
         displayName = "ODST";
+    };
+    class 73_Infantry_EdSubCat
+    {
+        displayName = "Infantry";
     };
     class 73_Tanks_EdSubCat
     {
