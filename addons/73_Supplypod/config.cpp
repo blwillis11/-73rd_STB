@@ -26,16 +26,17 @@ class CfgPatches
 			"73_SupplyPod_VehicleAmmo",
 			"73_SupplyPod_VehicleRepair",
 			"73_SupplyPod_VehicleRefuel",
-			"73_supply_ARBRGL",
-			"73_supply_Breacher",
-			"73_supply_Marksman",
-			"73_supply_Sniper",
-			"73_supply_Autorifles",
-			"73_supply_ATLauncher",
-			"73_supply_ExplosivesPack",
-			"73_supply_TACResupply",
-			"73_supply_Emptypod",
-			"73_supply_Light"
+			"73_SupplyPod_ARBRGL",
+			"73_SupplyPod_Breacher",
+			"73_SupplyPod_Marksman",
+			"73_SupplyPod_Sniper",
+			"73_SupplyPod_Autorifles",
+			"73_SupplyPod_ATLauncher",
+			"73_SupplyPod_ExplosivesPack",
+			"73_SupplyPod_TACResupply",
+			"73_SupplyPod_Emptypod",
+			"73_SupplyPod_Light",
+			"Module_OPTRE_PelicanSupplyDrop"
 		};
 		weapons[]={};
 		vehicles[]={};
@@ -1302,7 +1303,7 @@ class CfgVehicles
 
 		};
 	};
-		class 73_supply_Light: 73_supplypod
+		class 73_SupplyPod_Light: 73_supplypod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1469,4 +1470,16 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+            class _xx_ACE_plasmaIV_500
+            {
+                name="ACE_plasmaIV_500";
+                count=3;
+            };
+            class _xx_B_UavTerminal
+            {
+                name="B_UavTerminal";
+                count=2;
+            };
+        };
+    };
 };

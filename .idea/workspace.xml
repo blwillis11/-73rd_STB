@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Fixes">
-      <change afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WiP texture/M12HogMaav_extupper_co.psd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/apc_lopo_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/apc_lopo_co.paa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -43,17 +39,24 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDONO_u6c6DnZ6T&quot;,
-        &quot;number&quot;: 2
+      "id": {
+        "id": "PR_kwDONO_u6c6DnZ6T",
+        "number": 2
       },
-      &quot;lastSeen&quot;: 1732941246319
+      "lastSeen": 1732941246319
+    },
+    {
+      "id": {
+        "id": "PR_kwDONO_u6c6FKzZv",
+        "number": 3
+      },
+      "lastSeen": 1734116132560
     }
   ]
-}</component>
+}]]></component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -75,16 +78,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/blwil/IdeaProjects/-73rd_STB&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "1c72fada",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/blwil/IdeaProjects/-73rd_STB",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -150,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733856132814</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people">
+      <option name="closed" value="true" />
+      <created>1734115691943</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734115691943</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +192,7 @@
     <MESSAGE value="Lots of changes. &#10;&#10;- Removed old ODST gear&#10;- Added custom helmets for ODST&#10;- Added Mech helmets" />
     <MESSAGE value="Lots of changes. &#10;&#10;- Added Custom Helmets for Mech and some ODST&#10;- Added Wildebeest" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people" />
   </component>
 </project>
