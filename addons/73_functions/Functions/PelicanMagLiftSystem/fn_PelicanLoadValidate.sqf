@@ -20,12 +20,13 @@ switch true do {
 		_loaded = true;
 	};
 	case (_veh isKindOf "OPTRE_M12_FAV" or _veh isKindOf "OPTRE_M914_RV") : {
-		_veh attachTo [_pelican,[0,-6.5,-0.25]];
+		_veh attachTo [_pelican,[0,-6.5,-0.35]];
 		_loaded = true;
 	};
 	case (_veh isKindOf "OPTRE_M494" or _veh isKindOf "73_M494_Oryx") : {
-		_veh attachTo [_pelican,[0,-7.2, -2.67105]];
+		_veh attachTo [_pelican,[0,-7.2, -1.67105]];
 		_loaded = true;
+		_veh setDir 180;
 	};
     case (_veh isKindOf "73_IFV76_A") : {
         _veh attachTo [_pelican,[0,-8,-0.40]];
