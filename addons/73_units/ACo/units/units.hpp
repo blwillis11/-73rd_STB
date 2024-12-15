@@ -96,14 +96,14 @@ class 73_ACo_ODST_Autorifleman: 73_ACoBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"OPTRE_M73","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M73","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_M247","OPTRE_M6G", "Throw", "Put"};
+    respawnWeapons[] = {"73_M247","OPTRE_M6G", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Autorifleman","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Autorifleman","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
-    magazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-    respawnMagazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+    magazines[] = {"73_200rnd_M247_Mag","73_200rnd_M247_Mag","73_200rnd_M247_Mag","73_200rnd_M247_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+    respawnMagazines[] = {"73_200rnd_M247_Mag","73_200rnd_M247_Mag","73_200rnd_M247_Mag","73_200rnd_M247_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 
     items[] = {"ACE_EarPlugs","OPTRE_Biofoam"};
     respawnItems[] = {"ACE_EarPlugs","OPTRE_Biofoam"};
@@ -126,8 +126,8 @@ class 73_ACo_ODST_Sniper: 73_ACoBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_SRS99AM_Stealth_NSWep_SRS99AM_Suppressor_Cloth_NSWep_ORACLE_K_ARD_Optic_S","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_SRS99AM_Stealth_NSWep_SRS99AM_Suppressor_Cloth_NSWep_ORACLE_K_ARD_Optic_S","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_SRS99AM","OPTRE_M6G", "Throw", "Put"};
+    respawnWeapons[] = {"73_SRS99AM","OPTRE_M6G", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Sniper","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Sniper","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -153,14 +153,14 @@ class 73_ACo_ODST_Marksman: 73_ACoBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_MRS10_DMR_muzzle_snds_L_optic_AMS","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_MRS10_DMR_muzzle_snds_L_optic_AMS","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
+    respawnWeapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Marksman","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_ACo_Standard_Marksman","73_CH252D_Helmet_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
-    magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
-    respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
+    magazines[] = {"73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
+    respawnMagazines[] = {"73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
 
     items[] = {"ACE_EarPlugs","OPTRE_Biofoam"};
     respawnItems[] = {"ACE_EarPlugs","OPTRE_Biofoam"};
@@ -225,7 +225,7 @@ class 73_ACo_ODST_Medic: 73_ACoBase
     scope = 2;
     scopeCurator = 2;
     displayName = "[73] ODST Medic";
-    facewear = "G_Combat";
+    facewear = "";
 
     attendant = 1;
     engineer = 0;

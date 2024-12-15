@@ -30,7 +30,7 @@ class 73_M875:VES_M875_SPH
             spawner= "73rd Mechanized";
             vehicle = "Scorpion";
             Type = "SPH";
-            cost = 1;
+            cost = 5;
 
             priority = 1;
             liveries[]=
@@ -72,7 +72,7 @@ class 73_M808BM_MBT:VES_M808BM_MBT
             spawner= "73rd Mechanized";
             vehicle = "Scorpion";
             Type = "MBT";
-            cost = 1;
+            cost = 5;
 
             priority = 1;
             liveries[]=
@@ -112,7 +112,7 @@ class 73_M808B2_MBT:VES_M808B2_MBT
             spawner= "73rd Mechanized";
             vehicle = "Sun Devil";
             Type = "AA";
-            cost = 1;
+            cost = 5;
 
             priority = 1;
             liveries[]=
