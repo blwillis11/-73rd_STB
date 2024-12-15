@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,55 +31,49 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDONO_u6c6DnZ6T",
-        "number": 2
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONO_u6c6DnZ6T&quot;,
+        &quot;number&quot;: 2
       },
-      "lastSeen": 1732941246319
+      &quot;lastSeen&quot;: 1732941246319
     },
     {
-      "id": {
-        "id": "PR_kwDONO_u6c6FKzZv",
-        "number": 3
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONO_u6c6FKzZv&quot;,
+        &quot;number&quot;: 3
       },
-      "lastSeen": 1734116132560
+      &quot;lastSeen&quot;: 1734116132560
     }
   ]
-}]]></component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="Test" />
-      </list>
-    </option>
-  </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/blwillis11/-73rd_STB.git&quot;,
-    &quot;accountId&quot;: &quot;41a8b948-fcfb-4852-93a3-0ec8ee19a33d&quot;
-  }
 }</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/blwillis11/-73rd_STB.git",
+    "accountId": "d725eac9-9f38-4997-8620-5a79e2e7d05a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2oqwWGlGu72yAiuUxzuiw59pKOZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "1c72fada",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/blwil/IdeaProjects/-73rd_STB",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/blwil/IdeaProjects/-73rd_STB&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
