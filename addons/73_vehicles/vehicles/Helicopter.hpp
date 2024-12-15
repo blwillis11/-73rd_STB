@@ -23,7 +23,7 @@ class 73_AV14_Hornet_CAS: OPTRE_UNSC_hornet_CAS
             spawner= "73rd Aviation";
             vehicle = "Hornet";
             Type = "CAS";
-            cost = 1;
+            cost = 2;
 
             priority = 2;
             liveries[]=
@@ -60,7 +60,7 @@ class 73_AV14_Hornet_CAP: OPTRE_UNSC_hornet_CAP
             spawner= "73rd Aviation";
             vehicle = "Hornet";
             Type = "CAP";
-            cost = 1;
+            cost = 2;
 
             priority = 2;
             liveries[]=
@@ -83,9 +83,9 @@ class 73_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
     crew = "73_Aviator";
     hiddenSelectionsTextures[] =
     {
-        "splits\splits_vehicles\pelican\data\hw2\body_co.paa",
-        "splits\splits_vehicles\pelican\data\hw2\wings_and_gear_co.paa",
-        "splits\splits_vehicles\pelican\data\hw2\weaponry_co.paa"
+        "73_vehicles\data\Pelican\body_co.paa",
+        "73_vehicles\data\Pelican\wings_and_gear_co.paa",
+        "73_vehicles\data\Pelican\weaponry_co.paa"
     };
     class textureSources
     {};
@@ -96,12 +96,12 @@ class 73_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
             spawner= "73rd Aviation";
             vehicle = "Pelican";
             Type = "Standard";
-            cost = 1;
+            cost = 3;
 
             priority = 1;
             liveries[]=
             {
-             "[""Standard"",[""splits\splits_vehicles\pelican\data\hw2\body_co.paa"",""splits\splits_vehicles\pelican\data\hw2\wings_and_gear_co.paa"",""splits\splits_vehicles\pelican\data\hw2\weaponry_co.paa""]]",
+             "[""Standard"",[""73_vehicles\data\Pelican\body_co.paa"",""73_vehicles\data\Pelican\wings_and_gear_co.paa"",""73_vehicles\data\Pelican\weaponry_co.paa""]]",
             };
         };
     };
@@ -246,6 +246,7 @@ class 73_UNSC_falcon:OPTRE_UNSC_falcon
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa"
     };
+
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -253,7 +254,7 @@ class 73_UNSC_falcon:OPTRE_UNSC_falcon
             spawner= "73rd Aviation";
             vehicle = "Falcon";
             Type = "Unarmed";
-            cost = 1;
+            cost = 0;
 
             priority = 2;
             liveries[]=
@@ -297,7 +298,7 @@ class 73_UNSC_falcon_S:OPTRE_UNSC_falcon_S
             priority = 2;
             liveries[]=
             {
-             "[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
+             "[""Standard"",[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
             };
         };
     };
@@ -335,7 +336,7 @@ class 73_UNSC_MH_144_Falcon:OPTRE_UNSC_MH_144_Falcon
             priority = 2;
             liveries[]=
             {
-             "[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
+             "[""Standard"",[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
             };
         };
     };
@@ -398,7 +399,7 @@ class 73_AV22_Sparrowhawk:OPTRE_AV22_Sparrowhawk
             spawner= "73rd Aviation";
             vehicle = "Sparrowhawk";
             Type = "AV-22M";
-            cost = 1;
+            cost = 2;
             hiddenSelectionsTextures[]=
             {
                 "OPTRE_Vehicles_Air\sparrowhawk\data\body_01_co.paa",
@@ -446,7 +447,7 @@ class 73_AV22A_Sparrowhawk:OPTRE_AV22A_Sparrowhawk
             spawner= "73rd Aviation";
             vehicle = "Sparrowhawk";
             Type = "AV-22L";
-            cost = 1;
+            cost = 2;
 
             priority = 2;
             liveries[]=
@@ -485,7 +486,7 @@ class 73_AV22B_Sparrowhawk:OPTRE_AV22B_Sparrowhawk
             spawner= "73rd Aviation";
             vehicle = "Sparrowhawk";
             Type = "AV-22ML";
-            cost = 1;
+            cost = 2;
 
             priority = 2;
             liveries[]=
@@ -524,7 +525,7 @@ class 73_AV22C_Sparrowhawk:OPTRE_AV22C_Sparrowhawk
             spawner= "73rd Aviation";
             vehicle = "Sparrowhawk";
             Type = "AV-22";
-            cost = 1;
+            cost = 2;
 
             priority = 2;
             liveries[]=

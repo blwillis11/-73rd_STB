@@ -15,12 +15,20 @@ class CfgPatches
 			"73_ACo_ODST_Marksman",
 			"73_ACo_ODST_Officer",
 			"73_ACo_ODST_AT",
-			"73_ACo_ODST_TeamLead",
-			"73_ACo_ODST_SquadLead",
+			"73_ACo_ODST_Team_Lead",
+			"73_ACo_ODST_Squad_Lead",
 			"73_Crewman",
 			"73_Crewman_Officer",
 			"73_Aviator",
 			"73_Aviator_Officer",
+			"73_Marine_Rifleman_AT",
+			"73_Marine_Rifleman",
+			"73_Marine_Marksman",
+			"73_Marine_RTO_Operator",
+			"73_Marine_Medic",
+			"73_Marine_Grenadier",
+			"73_Marine_Autorifleman",
+			"73_Marine_Sniper"
         }; 
         weapons[] = 
         {
@@ -34,8 +42,9 @@ class CfgPatches
         {		
 			"OPTRE_UNSC_Units",
 			"V_FZ_Armor",
-			"OPTRE_UNSC_Units",
-			"MA_Armor"
+			"MA_Armor",
+            "Rogue_CEMarine",
+            "73_weapons",
         };
     }; 
 }; 
@@ -51,23 +60,23 @@ class cfgFactionClasses
     class 73_STB
     { 
         displayName = "[73] Shock Trooper Battalion";
-        priority = 3; // Position in list. 
+        priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = "73_units\UI\73odstSTB.paa"; //Custom Icon
     };
     class 73_ACo
     {
         displayName = "[73] Alpha Company";
-        priority = 3; // Position in list.
+        priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
         icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
     };
     class 73_10MEB
     {
         displayName = "[73] 10th Marine Expeditionary Forces";
-        priority = 3; // Position in list.
+        priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
-        icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
+        icon = "73_units\UI\10thMEBLogo.paa"; //Custom Icon
     };
 };
 
@@ -217,11 +226,12 @@ class CfgVehicles
 	#include "data\ODST\ODSTBackpack.hpp"
 
     #include "STB\units\units.hpp"
+    #include "STB\units\10thMEB.hpp"
     #include "ACo\units\units.hpp"
 };
 
 class CfgGroups
 {
-//    #include "ACo\groups\groups.hpp"
+    #include "ACo\groups\groups.hpp"
 };
 

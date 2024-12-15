@@ -36,7 +36,13 @@ class CfgPatches
             "73_M412_IFV",
             "73_F35B_Standard",
             "73_F22_Standard",
-            "73_EA18G_Standard"
+            "73_EA18G_Standard",
+            "73_M511_Springbok_APC",
+            "73_M511_Springbok_IFV",
+            "73_M511_Springbok_MGS",
+            "73_M511_Springbok_AA",
+            "73_AV14_Hornet_CAS",
+            "73_AV14_Hornet_CAP"
         }; 
         weapons[] = 
         {
@@ -49,7 +55,8 @@ class CfgPatches
         { 
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
-            "73_units"
+            "73_units",
+            "DMNS_Armour"
         };
     };
 };

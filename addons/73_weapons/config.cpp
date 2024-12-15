@@ -22,10 +22,10 @@ class CfgPatches
         { 
 			"19_UNSC_Weapons",
             "OPTRE_FunctionsLibrary",
-            "73_units",
 			"OPTRE_Weapons",
 			"ACE_Javelin",
-			"ace_missileguidance"
+			"ace_missileguidance",
+            "NSWep_Weapons",
 			
         };
     };
@@ -1244,6 +1244,14 @@ class CfgWeapons {
         baseWeapon = "73_SRS99AM";
         author= "73rd S-4 Team";
 		initSpeed = 1400;
+		class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="NSWep_ORACLE_N_ARD_Optic_S"
+            };
+        };
 		magazines[]=
 		{
 			"73_M232_145x114x4_APFSDS",
@@ -1274,6 +1282,14 @@ class CfgWeapons {
         baseWeapon = "73_SRS99AM_Stealth"
         author= "73rd S-4 Team";
 		initSpeed = 1400;
+		class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="NSWep_ORACLE_N_ARD_Optic_S"
+            };
+        };
 		magazines[]=
 		{
 			"73_M232_145x114x4_APFSDS",
@@ -1311,6 +1327,14 @@ class CfgWeapons {
         author= "73rd S-4 Team";
         magazineWell[] = {"73_DMR"};
         magazines[]={"73_15Rnd_95x40_Mag"};
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="OPTRE_M392_Scope"
+            };
+        };
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1402,6 +1426,14 @@ class CfgWeapons {
         author= "73rd S-4 Team";
         magazineWell[] = {"73_DMR"};
         magazines[]={"73_15Rnd_95x40_Mag"};
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="OPTRE_M392_Scope"
+            };
+        };
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1493,6 +1525,14 @@ class CfgWeapons {
         author= "73rd S-4 Team";
         magazineWell[] = {"73_DMR"};
         magazines[]={"73_15Rnd_95x40_Mag"};
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="OPTRE_M392_Scope"
+            };
+        };
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -1584,6 +1624,14 @@ class CfgWeapons {
         author= "73rd S-4 Team";
         magazineWell[] = {"73_DMR"};
         magazines[]={"73_15Rnd_95x40_Mag"};
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot="CowsSlot";
+                item="OPTRE_M392_Scope"
+            };
+        };
         class WeaponSlotsInfo:WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
