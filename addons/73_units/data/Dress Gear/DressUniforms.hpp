@@ -62,22 +62,6 @@ class 73_Dress_Uniform_smith: 73_Dress_Base
         Variant="B. Smith";
     };
 };
-class 73_Dress_Uniform_knight: 73_Dress_Base
-{
-    displayName="[73] Dress Uniform [Knight]";
-    
-    scope = 2;
-    scopeArsenal = 2;
-    class ItemInfo:ItemInfo
-    {
-        uniformclass="73_Dress_Uniform_knight_v";
-    };
-    class XtdGearInfo
-    {
-        model="73_ACE_Dress_Uniform";
-        Variant="J. Knight";
-    };
-};
 class 73_Dress_Uniform_Freeman: 73_Dress_Base
 {
     displayName="[73] Dress Uniform [Freeman]";
@@ -307,21 +291,6 @@ class 73_Dress_Uniform_Tidakszel: 73_Dress_Base
         Variant="V. Tidakszel";
     };
 };
-class 73_Dress_Uniform_Cyrus: 73_Dress_Base
-{
-    displayName="[73] Dress Uniform [Cyrus]";
-    scope = 2;
-    scopeArsenal = 2;
-    class ItemInfo:ItemInfo
-    {
-        uniformclass="73_Dress_Uniform_Cyrus_v";
-    };
-    class XtdGearInfo
-    {
-        model="73_ACE_Dress_Uniform";
-        Variant="S. Cyrus";
-    };
-};
 class 73_Dress_Uniform_Metal: 73_Dress_Base
 {
     displayName="[73] Dress Uniform [Metal]";
@@ -350,6 +319,66 @@ class 73_Dress_Uniform_Solaman: 73_Dress_Base
     {
         model="73_ACE_Dress_Uniform";
         Variant="R. Solaman";
+    };
+};
+class 73_Dress_Uniform_Dawn: 73_Dress_Base
+{
+    displayName="[73] Dress Uniform [Dawn]";
+    scope = 2;
+    scopeArsenal = 2;
+    class ItemInfo:ItemInfo
+    {
+        uniformclass="73_Dress_Uniform_Dawn_v";
+    };
+    class XtdGearInfo
+    {
+        model="73_ACE_Dress_Uniform";
+        Variant="D. Dawn";
+    };
+};
+class 73_Dress_Uniform_Cowboy: 73_Dress_Base
+{
+    displayName="[73] Dress Uniform [Cowboy]";
+    scope = 2;
+    scopeArsenal = 2;
+    class ItemInfo:ItemInfo
+    {
+        uniformclass="73_Dress_Uniform_Cowboy_v";
+    };
+    class XtdGearInfo
+    {
+        model="73_ACE_Dress_Uniform";
+        Variant="T. Cowboy";
+    };
+};
+class 73_Dress_Uniform_Vargas: 73_Dress_Base
+{
+    displayName="[73] Dress Uniform [Vargas]";
+    scope = 2;
+    scopeArsenal = 2;
+    class ItemInfo:ItemInfo
+    {
+        uniformclass="73_Dress_Uniform_Vargas_v";
+    };
+    class XtdGearInfo
+    {
+        model="73_ACE_Dress_Uniform";
+        Variant="J. Vargas";
+    };
+};
+class 73_Dress_Uniform_Mitchel: 73_Dress_Base
+{
+    displayName="[73] Dress Uniform [Mitchel]";
+    scope = 2;
+    scopeArsenal = 2;
+    class ItemInfo:ItemInfo
+    {
+        uniformclass="73_Dress_Uniform_Mitchel_v";
+    };
+    class XtdGearInfo
+    {
+        model="73_ACE_Dress_Uniform";
+        Variant="J. Mitchel";
     };
 };
 ////////////////////////////////////////////Infantry Dress Uniforms\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

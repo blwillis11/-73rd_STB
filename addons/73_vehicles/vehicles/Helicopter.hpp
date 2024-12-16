@@ -259,7 +259,7 @@ class 73_UNSC_falcon:OPTRE_UNSC_falcon
             priority = 2;
             liveries[]=
             {
-             "[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
+             "[""Standard"",[""\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa"",""\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"",""\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa""]]",
             };
         };
     };
@@ -353,6 +353,8 @@ class 73_UNSC_MH_144S_Falcon:OPTRE_UNSC_MH_144S_Falcon
     scope=2;
     side=1;
     crew = "73_Aviator";
+    radarIcon="MA_HUD\textures\radar\vehicles\pelican.paa";
+    radarIconScale=3;
     hiddenSelectionsTextures[]=
     {
         "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",

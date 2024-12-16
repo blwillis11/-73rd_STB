@@ -108,11 +108,11 @@ class cfgAmmo {
         cartridge = "FxCartridge_93x64_Ball";
         model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	}
-	class 73_B_762x51_Ball_Tracer: 73_B_95x40_Ball
+	class 73_B_95x40_Ball_Tracer: 73_B_95x40_Ball
 	{
         model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	}
-	class 73_B_762x51_Ball_Tracer_Yellow: 73_B_95x40_Ball
+	class 73_B_95x40_Ball_Tracer_Yellow: 73_B_95x40_Ball
 	{
         model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
 	}
@@ -353,7 +353,7 @@ class cfgMagazines
 	}
 	class 73_15Rnd_95x40_Mag_Tracer_Yellow:73_15Rnd_95x40_Mag_Tracer
 	{
-        displayname							= "15Rnd 9.5x40mm Magazine (Tracers Yellow)";
+        displayname	= "15Rnd 9.5x40mm Magazine (Tracers Yellow)";
 	    ammo = "73_B_95x40_Ball_Tracer_Yellow";
 	}
 
@@ -1715,5 +1715,23 @@ class CfgWeapons {
 				};
             };
         };
+    };
+    class OPTRE_102R_Turret;
+    	class 73_COGV_Support_Rocket: OPTRE_102R_Turret
+    	{
+    		displayName="COG-V Rocket";
+    		descriptionShort="Support Launcher";
+    		magazineReloadTime=1;
+    		magazines[]=
+    		{
+    			"OPTRE_M41_Twin_Smoke_B",
+    			"OPTRE_M41_Twin_Smoke_G",
+    			"OPTRE_M41_Twin_Smoke_O",
+    			"OPTRE_M41_Twin_Smoke_P",
+    			"OPTRE_M41_Twin_Smoke_R",
+    			"OPTRE_M41_Twin_Smoke_W",
+    			"OPTRE_M41_Twin_Smoke_Y"
+    		};
+    	};
     };
 };

@@ -42,7 +42,16 @@ class CfgPatches
             "73_M511_Springbok_MGS",
             "73_M511_Springbok_AA",
             "73_AV14_Hornet_CAS",
-            "73_AV14_Hornet_CAP"
+            "73_AV14_Hornet_CAP",
+            "73_M808BMk2",
+            "73_M914_TD",
+            "73_Hammerhead_Repair",
+            "73_POGV_RCWS",
+            "73_COGV_RCWS",
+            "73_Iguana_APC",
+            "73_Iguana_Medical_APC",
+            "73_Komodo",
+            "73_Merkava"
         }; 
         weapons[] = 
         {
@@ -62,10 +71,38 @@ class CfgPatches
 };
 
 class CfgVehicles {
+    class ViewCargo;
+    class ViewOptics;
+    class VehicleSystemsTemplateLeftCommander;
+    class VehicleSystemsTemplateRightCommander;
+    class VehicleSystemsTemplateLeftPilot;
+    class VehicleSystemsTemplateRightPilot;
+    class Turrets;
+    class MainTurret;
+    class CommanderOptics;
+    class Components;
+    class SensorTemplateIR;
+    class SensorTemplateVisual;
+    class SensorTemplateActiveRadar;
+    class SensorTemplatePassiveRadar;
+    class SensorTemplateLaser;
+    class SensorTemplateNV;
+    class CargoTurret_01;
+    class animationSources;
+    class HitPoints;
+    class HitLFWheel;
+    class HitLBWheel;
+    class HitLMWheel;
+    class HitLF2Wheel;
+    class HitRFWheel;
+    class HitRBWheel;
+    class HitRMWheel;
+    class HitRF2Wheel;
 
     #include "vehicles\APC.hpp"
     #include "vehicles\Tanks.hpp"
     #include "vehicles\Cars.hpp"
     #include "vehicles\Helicopter.hpp"
     #include "vehicles\Planes.hpp"
+    #include "vehicles\Drone.hpp"
 };

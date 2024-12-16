@@ -404,7 +404,6 @@ class XtdGearModels
 					"Aviation",
 					"Officer",
 					"B. Smith",
-					"J. Knight",
 					"D. Freeman",
 					"L. Price",
 					"B. Salmon",
@@ -419,9 +418,12 @@ class XtdGearModels
 					"J. Mustang",
 					"J. Mendez",
 					"V. Tidakszel",
-					"S. Cyrus",
 					"P. Metal",
-					"R. Solaman"
+					"R. Solaman",
+					"D. Dawn",
+					"T. Cowboy",
+					"J. Vargas",
+					"J. Mitchel"
 				};
 			};
 		};

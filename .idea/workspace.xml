@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Lots...&#10;&#10;Vehicles">
-      <change afterPath="$PROJECT_DIR$/addons/73_units/STB/groups/10thMEB.hpp" afterDir="false" />
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="pelican">
+      <change afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Drone.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/10thMEB.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/10thMEB.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
     </list>
@@ -172,7 +173,159 @@
       <option name="project" value="LOCAL" />
       <updated>1734197852709</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="-Pelican skin added&#10;-Vehicle fixes">
+      <option name="closed" value="true" />
+      <created>1734233855815</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233855815</updated>
+    </task>
+    <task id="LOCAL-00011" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233877014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233877014</updated>
+    </task>
+    <task id="LOCAL-00012" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233883333</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233883333</updated>
+    </task>
+    <task id="LOCAL-00013" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233884643</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233884643</updated>
+    </task>
+    <task id="LOCAL-00014" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233885590</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233885590</updated>
+    </task>
+    <task id="LOCAL-00015" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233911150</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233911150</updated>
+    </task>
+    <task id="LOCAL-00016" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233912694</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233912694</updated>
+    </task>
+    <task id="LOCAL-00017" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233914822</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233914822</updated>
+    </task>
+    <task id="LOCAL-00018" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233919121</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233919121</updated>
+    </task>
+    <task id="LOCAL-00019" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233925540</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233925540</updated>
+    </task>
+    <task id="LOCAL-00020" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233946998</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233946998</updated>
+    </task>
+    <task id="LOCAL-00021" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233968977</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233968977</updated>
+    </task>
+    <task id="LOCAL-00022" summary="10thmeb logo">
+      <option name="closed" value="true" />
+      <created>1734233971290</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233971290</updated>
+    </task>
+    <task id="LOCAL-00023" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734233987657</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1734233987657</updated>
+    </task>
+    <task id="LOCAL-00024" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734234020987</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1734234020987</updated>
+    </task>
+    <task id="LOCAL-00025" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734234155428</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1734234155428</updated>
+    </task>
+    <task id="LOCAL-00026" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734234166426</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1734234166426</updated>
+    </task>
+    <task id="LOCAL-00027" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734234193639</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1734234193639</updated>
+    </task>
+    <task id="LOCAL-00028" summary="pelican">
+      <option name="closed" value="true" />
+      <created>1734234215434</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1734234215434</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +358,9 @@
     <MESSAGE value="Fixes" />
     <MESSAGE value="Lots...&#10;&#10;Vehicles&#10;maglocks&#10;helmets&#10;people" />
     <MESSAGE value="Lots...&#10;&#10;Vehicles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots...&#10;&#10;Vehicles" />
+    <MESSAGE value="-Pelican skin added&#10;-Vehicle fixes" />
+    <MESSAGE value="10thmeb logo" />
+    <MESSAGE value="pelican" />
+    <option name="LAST_COMMIT_MESSAGE" value="pelican" />
   </component>
 </project>

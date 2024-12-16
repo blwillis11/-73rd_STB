@@ -387,3 +387,50 @@ class 73_M813_TT : VES_M813_TT
         };
     };
 };
+class OPTRE_M12_TD_ins;
+
+class 73_M914_TD : OPTRE_M12_TD_ins
+{
+    displayName="[73] M914 Tank Destroyer Warthog";
+    author="73rd S-4 Team"
+    faction = "73_STB";
+    editorCategory = "73_STB";
+    editorSubcategory = "73_Cars_EdSubCat";
+    scopeCurator=2;
+    scope=2;
+    side=1;
+    crew = "73_Crewman";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3",
+        "Camo4",
+        "Camo5",
+        "Camo6"
+    };
+    hiddenSelectionsTextures[] = {
+        "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
+        "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
+        "\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
+        "V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_APC_CO.paa",
+        "\OPTRE_Weapons_Turrets\fg75\data\cannon_co.paa",
+        "\OPTRE_Weapons_Turrets\fg75\data\carriage_co.paa"
+    };
+    class VehicleSpawnerInfo {
+        class 73_GroundSpawner
+        {
+            scope = 1;
+            spawner= "73rd Mechanized";
+            vehicle = "M12";
+            Type = "TD";
+            cost = 0;
+
+            priority = 1;
+            liveries[]=
+            {
+             "[""Standard"",[""\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa"",""\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa"",""\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa"",""V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_APC_CO.paa"",""\OPTRE_Weapons_Turrets\fg75\data\cannon_co.paa"",""\OPTRE_Weapons_Turrets\fg75\data\carriage_co.paa""]]",
+            };
+        };
+    };
+};

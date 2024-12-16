@@ -20,7 +20,7 @@ class CfgPatches
         requiredVersion = 0.1; 
         requiredAddons[] = 
         { 
-			"",
+			"1st_MEU_patch_ace",
 			
         };
     };
