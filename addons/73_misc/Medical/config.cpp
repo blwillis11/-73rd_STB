@@ -13,7 +13,7 @@ class CfgPatches
 		units[]=
 		{
 			"73_Adrenalineitem",
-			"73_IbuprofenItem",
+			"73_MorphineItem",
 			"73_BiofoamItem",
 			"73_MediGelItem",
 			"73_BiofoamItem_Light",
@@ -21,17 +21,15 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"73_Ibuprofen",
-			"Atropine",
+			"73_Morphine",
 			"73_PlasmaIV",
-			"73_Emergency_MedKit",
+			"73_MedKit",
 			"73_Biofoam",
 			"73_Medigel",
 			"73_Biofoam_Light",
 			"73_Medigel_Light",
 			"73_tourniquet",
 			"73_Adrenaline",
-			"73_Suit_Sealant"
 		};
 	};
 };
@@ -39,11 +37,11 @@ class CfgWeapons
 {
 	class ACE_Morphine;
 	class CBA_MiscItem_ItemInfo;
-	class 73_Ibuprofen: ACE_Morphine
+	class 73_Morphine: ACE_Morphine
 	{
 		scope=2;
 		author="73rd S-4 Team";
-		displayName="[73] Ibuprofen Bottle";
+		displayName="[73] Morphine";
 		picture="\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
 		model="\z\ace\addons\medical_treatment\data\morphine.p3d";
 		descriptionShort="Drink some water and take this.";
@@ -52,15 +50,6 @@ class CfgWeapons
 		{
 			mass=0.1;
 		};
-	};
-	class Atropine: 73_Ibuprofen
-	{
-		scope=2;
-		scopeArsenal=2;
-		author="73rd S-4 Team";
-		displayName="[73] Antidote";
-		descriptionShort="Emergency Use Only";
-		descriptionUse="";
 	};
 	class ACE_plasmaIV;
 	class 73_PlasmaIV: ACE_plasmaIV
@@ -95,7 +84,7 @@ class CfgWeapons
 		model="\OPTRE_Weapons\items\Biofoam.p3d";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
-			mass=35;
+			mass=3;
 		};
 	};
 	class OPTRE_Medigel;
@@ -107,20 +96,9 @@ class CfgWeapons
 		model="\OPTRE_Weapons\items\Medigel.p3d";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
-			mass=35;
+			mass=3;
 		};
 	};
-	class 73_Suit_Sealant: OPTRE_Medigel
-    {
-        scope=2;
-        displayName="[73] Suit Sealant";
-        picture="\1st_meu_ace\_textures\misc\icons\flex_seal_icon.paa";
-        model="\OPTRE_Weapons\items\Medigel.p3d";
-        class ItemInfo: CBA_MiscItem_ItemInfo
-        {
-            mass=2;
-        };
-    };
 	class 73_Biofoam_Light: OPTRE_Biofoam
 	{
 		scope=2;
@@ -147,7 +125,7 @@ class CfgWeapons
 	class 73_tourniquet: ACE_tourniquet
 	{
 		scope=1;
-		displayName="[73]  [73] Armor Patch";
+		displayName="[73] Suit Constriction System";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass=0.5;
@@ -172,19 +150,19 @@ class CfgVehicles
 	class OPTRE_MediGelItem;
 	class ACE_tourniquetItem;
 	class ACE_epinephrineItem;
-	class 73_IbuprofenItem: ACE_morphineItem
+	class 73_MorphineItem: ACE_morphineItem
 	{
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[73] Ibuprofen";
+		displayName="[73] Morphine";
 		author="73rd S-4 Team";
 		vehicleClass="Items";
 		class TransportItems
 		{
-			class _xx_73_Ibuprofen
+			class _xx_73_Morphine
 			{
-				name="73_Ibuprofen";
+				name="73_Morphine";
 				count=1;
 			};
 		};
@@ -264,7 +242,7 @@ class CfgVehicles
 	};
 	class 73_tourniquetItem: ACE_tourniquetItem
 	{
-		scope=1;
+		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		displayName="[73] Suit Constriction System";
@@ -315,11 +293,11 @@ class ACE_Medical_Treatment
 		maxDose=4;
 		onOverDose="";
 		viscosityChange=0;
-		class 73_Ibuprofen: Morphine
+		class 73_Morphine: Morphine
 		{
 		};
 
-		class 73_MedKit: 73_Ibuprofen
+		class 73_MedKit: 73_Morphine
 		{
 			painReduce=0;
 			hrIncreaseLow[]={0};
@@ -1332,13 +1310,13 @@ class ACE_Medical_Treatment_Actions
 	class ApplyTourniquet;
 	class RemoveTourniquet;
 	class BasicBandage;
-	class 73_Ibuprofen: Morphine
+	class 73_Morphine: Morphine
 	{
-		displayName="[73] Take Ibuprofen";
-		displayNameProgress="Swallowing ibuprofen...";
+		displayName="[73] Take Morphine";
+		displayNameProgress="Injecting Morphine...";
 		items[]=
 		{
-			"73_Ibuprofen"
+			"73_Morphine"
 		};
 		treatmentTime=1;
 	};
@@ -1361,7 +1339,7 @@ class ACE_Medical_Treatment_Actions
 			"73_Medigel"
 		};
 		callbackSuccess="MEU_fnc_biomed";
-		consumeItem=0;
+		consumeItem=1;
 		category="bandage";
 		medicRequired=1;
 	};
@@ -1374,7 +1352,7 @@ class ACE_Medical_Treatment_Actions
 			"73_Biofoam"
 		};
 		callbackSuccess="MEU_fnc_biomed";
-		consumeItem=0;
+		consumeItem=1;
 		category="bandage";
 		medicRequired=1;
 	};
@@ -1459,7 +1437,7 @@ class ACE_Medical_Treatment_Actions
 	};
 	class 73_MedKit: OPTRE_Medigel
 	{
-		displayName="[73] Emergency MedKit";
+		displayName="[73] MedKit";
 		displayNameProgress="Applying Medkit....";
 		icon="";
 		consumeItem=1;
@@ -1469,30 +1447,10 @@ class ACE_Medical_Treatment_Actions
 		category="advanced";
 		items[]=
 		{
-			"73_Emergency_MedKit"
+			"73_MedKit"
 		};
 		callbackStart="";
 		callbackSuccess="MEU_fnc_medkit";
-	};
-	class 73_Suit_Sealant: Morphine
-	{
-		displayName="[73] Suit Sealant";
-		displayNameProgress="Sealing suit...";
-		icon="";
-		condition="";
-		consumeItem=0;
-		treatmentTime=3;
-		allowSelfTreatment=1;
-		allowedSelections[]=
-		{
-			"Head"
-		};
-		items[]=
-		{
-			"73_Suit_Sealant"
-		};
-		category="medication";
-		callbackSuccess="73_fnc_flexseal";
 	};
 	class FirstAidKit: 73_Biofoam
 	{

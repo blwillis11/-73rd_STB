@@ -34,34 +34,48 @@ class CfgWeapons
         author="73rd S-4 Team";
         displayName="[73] STB Spray Can";
     };
-    class 73_ACO1PLT_TagSprayCan: ACE_SpraypaintBlack
+    class 73_ACo_TagSprayCan: ACE_SpraypaintBlack
     {
         author="73rd S-4 Team";
-        displayName="[73] ACo1Plt Spray Can";
+        displayName="[73] ACo Spray Can";
     };
-    class 73_ACO2PLT_TagSprayCan: ACE_SpraypaintBlack
+    class 73_BCo_TagSprayCan: ACE_SpraypaintBlack
     {
         author="73rd S-4 Team";
-        displayName="[73] ACo2Plt Spray Can";
+        displayName="[73] BCo Spray Can";
     };
-    class 73_ACO3PLT_TagSprayCan: ACE_SpraypaintBlack
+};
+
+class ACE_Tags
+{
+    class STB_Icon_Logo
     {
-        author="73rd S-4 Team";
-        displayName="[73] ACo3Plt Spray Can";
+        displayName="STB Logo";
+        requiredItem="73_STB_TagSprayCan";
+        textures[]=
+        {
+            "73_misc\tagging\STB\73odstSTB.paa"
+        };
+        icon="73_misc\tagging\STB\73odstSTB.paa";
     };
-    class 73_BCO1PLT_TagSprayCan: ACE_SpraypaintBlack
+    class ACo_Icon_Logo
     {
-        author="73rd S-4 Team";
-        displayName="[73] BCo1Plt Spray Can";
+        displayName="ACo Logo";
+        requiredItem="73_ACo_TagSprayCan";
+        textures[]=
+        {
+            "73_misc\tagging\ACo\73odst512ACo.paa"
+        };
+        icon="73_misc\tagging\ACo\73odst512ACo.paa";
     };
-    class 73_BCO2PLT_TagSprayCan: ACE_SpraypaintBlack
+    class BCo_Icon_Logo
     {
-        author="73rd S-4 Team";
-        displayName="[73] BCo2Plt Spray Can";
-    };
-    class 73_BCO3PLT_TagSprayCan: ACE_SpraypaintBlack
-    {
-        author="73rd S-4 Team";
-        displayName="[73] BCo3Plt Spray Can";
+        displayName="BCo Logo";
+        requiredItem="73_BCo_TagSprayCan";
+        textures[]=
+        {
+            "73_misc\tagging\BCo\73odst512BCo.paa"
+        };
+        icon="73_misc\tagging\BCo\73odst512BCo.paa";
     };
 };

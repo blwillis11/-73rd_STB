@@ -70,7 +70,7 @@ class RscDisplayMain: RscStandardDisplay
 		class Logo: RscPicture
 		{
 			idc=-1;
-			text="73_Splash\Textures\73odst.paa";
+			text="73_Splash\Textures\73odstSTB.paa";
 			x="0.45617185 * safezoneW + safezoneX";
 			y="0.00500001 * safezoneH + safezoneY";
 			w="0.0876563 * safezoneW";
