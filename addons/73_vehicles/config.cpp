@@ -6,24 +6,24 @@ class CfgPatches
 		name = "73rd STB Aux"
 		units[] = 
         {
-            "73_M494_Oryx",
-            "73_IFV76",
-            "73_IFV76_A",
-            "73_M875",
-            "73_HDV134_Resupply",
-            "73_HDV134_TT",
-            "73_HDV134_TT_C",
-            "73_M19_GMG",
-            "73_M19_HMG",
-            "73_M808BM_MBT",
+            "73_M494_Oryx",//Load/unload
+            "73_IFV76",//Load/unload
+            "73_IFV76_A",//Load/unload
+            "73_M875",//Load/unload
+            "73_HDV134_Resupply",//Load/unload
+            "73_HDV134_TT",//Load/unload
+            "73_HDV134_TT_C",//Load/unload
+            "73_M19_GMG",//Load/unload
+            "73_M19_HMG",//Load/unload
+            "73_M808BM_MBT",//Load/unload
             "73_D77_TC_Pelican",
-            "73_M12",
-            "73_M12_LRV",
-            "73_M12G1_LRV",
-            "73_M12A1_LRV",
-            "73_M12R_AA",
-            "73_M12_APC",
-            "73_M813_TT",
+            "73_M12",//Load/unload
+            "73_M12_LRV",//Load/unload
+            "73_M12G1_LRV",//Load/unload
+            "73_M12A1_LRV",//Load/unload
+            "73_M12R_AA",//Load/unload
+            "73_M12_APC",//Load/unload
+            "73_M813_TT",//Load/unload
             "73_UNSC_falcon_S",
             "73_UNSC_falcon",
             "73_UNSC_MH_144_Falcon",
@@ -32,26 +32,26 @@ class CfgPatches
             "73_AV22A_Sparrowhawk",
             "73_AV22B_Sparrowhawk",
             "73_AV22C_Sparrowhawk",
-            "73_M413_MGS",
-            "73_M412_IFV",
+            "73_M413_MGS",//Load/unload
+            "73_M412_IFV",//Load/unload
             "73_F35B_Standard",
             "73_F22_Standard",
             "73_EA18G_Standard",
-            "73_M511_Springbok_APC",
-            "73_M511_Springbok_IFV",
-            "73_M511_Springbok_MGS",
-            "73_M511_Springbok_AA",
+            "73_M511_Springbok_APC",//Load/unload
+            "73_M511_Springbok_IFV",//Load/unload
+            "73_M511_Springbok_MGS",//Load/unload
+            "73_M511_Springbok_AA",//Load/unload
             "73_AV14_Hornet_CAS",
             "73_AV14_Hornet_CAP",
-            "73_M808BMk2",
-            "73_M914_TD",
-            "73_Hammerhead_Repair",
+            "73_M808BMk2",//Load/unload
+            "73_M914_TD",//Load/unload
+            "73_Hammerhead_Repair",//Load/unload
             "73_POGV_RCWS",
             "73_COGV_RCWS",
-            "73_Iguana_APC",
-            "73_Iguana_Medical_APC",
-            "73_Komodo",
-            "73_Merkava"
+            "73_Iguana_APC",//Load/unload
+            "73_Iguana_Medical_APC",//Load/unload
+            "73_Komodo",//Load/unload
+            "73_Merkava"//Load/unload
         }; 
         weapons[] = 
         {

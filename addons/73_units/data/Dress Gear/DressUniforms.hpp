@@ -110,6 +110,22 @@ class 73_Dress_Uniform_Salmon: 73_Dress_Base
         Variant="B. Salmon";
     };
 };
+class 73_Dress_Uniform_Morgan: 73_Dress_Base
+{
+    displayName="[73] Dress Uniform [Morgan]";
+
+    scope = 2;
+    scopeArsenal = 2;
+    class ItemInfo:ItemInfo
+    {
+        uniformclass="73_Dress_Uniform_Morgan_v";
+    };
+    class XtdGearInfo
+    {
+        model="73_ACE_Dress_Uniform";
+        Variant="T. Morgan";
+    };
+};
 class 73_Dress_Uniform_Ramirez: 73_Dress_Base
 {
     displayName="[73] Dress Uniform [Ramirez]";

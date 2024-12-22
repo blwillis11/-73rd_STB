@@ -8,7 +8,25 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M808S" or _veh isKindOf "OPTRE_M808L" or _veh isKindOf "73_M808BM_MBT") :
+    case (_veh isKindOf "B_AFV_Wheeled_01_cannon_F" or _veh isKindOf "B_AFV_Wheeled_01_up_cannon_F" or _veh isKindOf "B_T_AFV_Wheeled_01_cannon_F" or _veh isKindOf "B_T_AFV_Wheeled_01_up_cannon_F"):
+    {
+        _veh attachTo [_pelican,[0,-8.5,-0.75]];
+        _veh setDir 180;
+        _loaded = true;
+    };
+    case (_veh isKindOf "B_MBT_01_TUSK_F"):
+    {
+        _veh attachTo [_pelican,[0,-7.5,-0.45]];
+        _veh setDir 180;
+        _loaded = true;
+    };
+    case (_veh isKindOf "B_APC_Tracked_01_CRV_F" or _veh isKindOf "B_T_APC_Tracked_01_CRV_F"):
+    {
+        _veh attachTo [_pelican,[0,-9,-0.6]];
+        _loaded = true;
+        _veh setDir 180;
+    };
+	case (_veh isKindOf "OPTRE_M808S" or _veh isKindOf "OPTRE_M808L" or _veh isKindOf "73_M808BM_MBT" or _veh isKindOf "73_M808BMk2") :
 	{
 		_veh attachTo [_pelican,[0,-9.5, -1.75]];
 		_veh setDir 180;
@@ -18,10 +36,17 @@ switch true do {
 		_veh attachTo [_pelican,[0,-6.5,-1.0]];
 		//0 = [vehicle player, 15, 0] call BIS_fnc_setPitchBank;
 		_loaded = true;
+		_veh setDir 180;
 	};
-	case (_veh isKindOf "OPTRE_M12_FAV" or _veh isKindOf "OPTRE_M914_RV") : {
+	case (_veh isKindOf "OPTRE_M12_FAV" or _veh isKindOf "OPTRE_M914_RV" or _veh isKindOf "73_M914_TD") : {
 		_veh attachTo [_pelican,[0,-6.5,-0.35]];
 		_loaded = true;
+		_veh setDir 180;
+	};
+	case (_veh isKindOf "73_COGV_RCWS" or _veh isKindOf "73_POGV_RCWS") : {
+		_veh attachTo [_pelican,[0,-6.5,-0.25]];
+		_loaded = true;
+		_veh setDir 180;
 	};
 	case (_veh isKindOf "OPTRE_M494" or _veh isKindOf "73_M494_Oryx") : {
 		_veh attachTo [_pelican,[0,-7.2, -1.67105]];
@@ -30,6 +55,20 @@ switch true do {
 	};
     case (_veh isKindOf "73_IFV76_A") : {
         _veh attachTo [_pelican,[0,-8,-0.40]];
+        _veh setDir 180;
+        _loaded = true;
+    };
+    case (
+    _veh isKindOf "73_M511_Springbok_IFV"
+    or _veh isKindOf "73_M511_Springbok_MGS"
+    or _veh isKindOf "73_M511_Springbok_AA"
+    ) : {
+        _veh attachTo [_pelican,[0,-9, -0.85]];
+        _loaded = true;
+        _veh setDir 180;
+    };
+    case (_veh isKindOf "73_M511_Springbok_APC") : {
+        _veh attachTo [_pelican,[0,-9,-0.72]];
         _veh setDir 180;
         _loaded = true;
     };
@@ -51,7 +90,14 @@ switch true do {
 	case (_veh isKindOf "optre_catfish_unarmed_f" or _veh isKindOf "optre_catfish_mg_f") : {
 		_veh attachTo [_pelican,[0,-4.8,-0.1]];
 		_loaded = true;
+		_veh setDir 180;
 	};
+	case ( _veh isKindOf "73_Iguana_APC" or _veh isKindOf "73_Iguana_Medical_APC"):
+    {
+        _veh attachTo [_pelican,[0,-9,-0.7]];
+        _loaded = true;
+        _veh setDir 180;
+    };
 };
 
 if (_loaded) then {

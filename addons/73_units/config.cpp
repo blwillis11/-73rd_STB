@@ -17,6 +17,17 @@ class CfgPatches
 			"73_ACo_ODST_AT",
 			"73_ACo_ODST_Team_Lead",
 			"73_ACo_ODST_Squad_Lead",
+			"73_STB_ODST_Rifleman",
+			"73_STB_ODST_Autorifleman",
+			"73_STB_ODST_Grenadier",
+			"73_STB_ODST_Demo",
+			"73_STB_ODST_Medic",
+			"73_STB_ODST_Sniper",
+			"73_STB_ODST_Marksman",
+			"73_STB_ODST_Officer",
+			"73_STB_ODST_AT",
+			"73_STB_ODST_Team_Lead",
+			"73_STB_ODST_Squad_Lead",
 			"73_Crewman",
 			"73_Crewman_Officer",
 			"73_Aviator",
@@ -164,17 +175,19 @@ class UniformSlotInfo
     slotType = 0; 
     linkProxy = "-"; 
 }; 
-	
+class ItemInfo;
+class UniformItem;
+class VestItem;
+class HeadgearItem;
+class HitpointsProtectionInfo;
+
 class CfgWeapons 
-{ 
-	class ItemInfo;
-	class UniformItem;
-	class VestItem;
-	class HeadgearItem;
+{
 	class Uniform_Base;
-	class HitpointsProtectionInfo;
 	class OPTRE_UNSC_Army_Soldier_DressGray;
 	class H_Beret_02;
+	class CH252D_Helmet;
+    class CH252D_Helmet_dp;
 
 //ODST Uniform
 	#include "data\ODST\ODSTUniforms.hpp"
@@ -197,7 +210,9 @@ class CfgWeapons
 
 
 //Infantry helmets
-	#include "data\ODST\ODSTCH252DHelmet.hpp"
+	#include "data\ODST\ODSTCH252DSTBHelmet.hpp"
+	#include "data\ODST\ODSTCH252DACoHelmet.hpp"
+	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"
 };

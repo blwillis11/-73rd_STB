@@ -22,7 +22,26 @@ if (
                 (_x isKindOf "73_IFV76_A") OR
                 (_x isKindOf "73_IFV76") OR
                 (_x isKindOf "73_M412_IFV") OR
-                (_x isKindOf "73_M413_MGS")
+                (_x isKindOf "73_M413_MGS") OR
+                (_x isKindOf "73_M511_Springbok_APC") OR
+                (_x isKindOf "73_M511_Springbok_IFV") OR
+                (_x isKindOf "73_M511_Springbok_MGS") OR
+                (_x isKindOf "73_M511_Springbok_AA") OR
+                (_x isKindOf "73_M914_TD") OR
+                (_x isKindOf "73_Iguana_Medical_APC") OR
+                (_x isKindOf "73_Iguana_APC") OR
+                (_x isKindOf "B_AFV_Wheeled_01_cannon_F") OR
+                (_x isKindOf "B_AFV_Wheeled_01_up_cannon_F") OR
+                (_x isKindOf "B_T_AFV_Wheeled_01_cannon_F") OR
+                (_x isKindOf "B_T_AFV_Wheeled_01_up_cannon_F") OR
+                (_x isKindOf "B_MBT_01_TUSK_F") OR
+                (_x isKindOf "B_APC_Tracked_01_CRV_F") OR
+                (_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
+                (_x isKindOf "73_M808BMk2") OR
+                (_x isKindOf "73_Merkava") OR
+                (_x isKindOf "73_Komodo") OR
+                (_x isKindOf "73_POGV_RCWS") OR
+                (_x isKindOf "73_COGV_RCWS")
 
 			} count _vehicles > 0
 		)
