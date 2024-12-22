@@ -2,9 +2,9 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-		class 73_ACE_CH252D_Helmet
+		class 73_ACE_CH252D_Helmet_STB
 		{
-			label= "[73] CH252D Helmet";
+			label= "[73] CH252D Helmet [STB]";
 			author="73rd S-4 Team";
 			options[] = 
 			{
@@ -17,6 +17,30 @@ class XtdGearModels
 				changedelay=0;
                 label= "Roles";
                 values[]= 
+				{
+					"Recruit",
+					"Standard",
+					"SORC",
+					"Leadership",
+					"Officer"
+				};
+			};
+		};
+		class 73_ACE_CH252D_Helmet_ACo
+		{
+			label= "[73] CH252D Helmet [ACo]";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Roles"
+			};
+			class Roles
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Roles";
+                values[]=
 				{
 					"Recruit",
 					"Standard",
@@ -87,6 +111,7 @@ class XtdGearModels
                 label= "Variant";
                 values[]=
 				{
+				    "Smith",
 				    "Price",
 					"Salmon",
 					"Winters",
@@ -95,11 +120,12 @@ class XtdGearModels
 					"Vargas",
 					"Mendez",
 					"Bear",
-					"Dawn"
+					"Dawn",
+					"Grayson"
 				};
 			};
 		};
-		class 73_ACE_M52_Armor
+		class 73_ACE_M52_Armor_STB
 		{
 			label= "[73] M52 Vest";
 			author="73rd S-4 Team";
@@ -407,6 +433,7 @@ class XtdGearModels
 					"D. Freeman",
 					"L. Price",
 					"B. Salmon",
+					"T. Morgan",
 					"J. Ramirez",
 					"C. Barrier",
 					"J. Fletcher",
@@ -424,6 +451,7 @@ class XtdGearModels
 					"T. Cowboy",
 					"J. Vargas",
 					"J. Mitchel"
+
 				};
 			};
 		};

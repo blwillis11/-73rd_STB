@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="-vehicles&#10;-medical&#10;-dress gear">
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="&#10;-medical">
+      <change afterPath="$PROJECT_DIR$/addons/73_weapons/XtdGear/XtdGearModels.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_splash/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_splash/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_CmdSORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,16 +92,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/blwil/IdeaProjects/-73rd_STB&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/blwil/IdeaProjects/-73rd_STB/addons/73_weapons",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\blwil\IdeaProjects\-73rd_STB\addons\73_weapons" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="-73rd_STB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="-73rd_STB" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -324,7 +365,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734317470983</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="&#10;-medical">
+      <option name="closed" value="true" />
+      <created>1734321002863</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1734321002863</updated>
+    </task>
+    <task id="LOCAL-00031" summary="&#10;-medical">
+      <option name="closed" value="true" />
+      <created>1734321010421</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1734321010421</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,6 +418,7 @@
     <MESSAGE value="10thmeb logo" />
     <MESSAGE value="pelican" />
     <MESSAGE value="-vehicles&#10;-medical&#10;-dress gear" />
-    <option name="LAST_COMMIT_MESSAGE" value="-vehicles&#10;-medical&#10;-dress gear" />
+    <MESSAGE value="&#10;-medical" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;-medical" />
   </component>
 </project>
