@@ -9,6 +9,30 @@ class CfgPatches
         }; 
         weapons[] = 
         {
+        "73_BR55HBM1_DMR",
+        "73_CQS48_Bulldog",
+        "73_CQS48S_Chihuahua",
+        "73_M247",
+        "73_M392_DMR",
+        "73_M395_DMR",
+        "73_M395S_DMR",
+        "73_M45",
+        "73_M45A",
+        "73_M45ATAC",
+        "73_M45TAC",
+        "73_M45E",
+        "73_M6DS_Carbine_Foregrip",
+        "73_M7_SMG",
+        "73_M7_SMG_salmon",
+        "73_M90A",
+        "73_MA37BGL",
+        "73_MA37B",
+        "73_MA37K",
+        "73_MA5B",
+        "73_MA5BGL",
+        "73_MA5K",
+        "73_SRS99AM",
+        "73_SRS99AM_Stealth"
         }; 
 		vehicles[] =
 		{
@@ -72,20 +96,17 @@ class 73_ace_missileguidance_type_M41_AA: ace_missileguidance_type_Sidewinder
 	seekerMinRange=10;
 	seekerMaxRange=5000;
 };
-
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class OPTRE_ace_missileguidance_type_M41_Thermal;
 class cfgAmmo {
-	class SensorTemplatePassiveRadar;
-	class SensorTemplateAntiRadiation;
-	class SensorTemplateActiveRadar;
-	class SensorTemplateIR;
-	class SensorTemplateVisual;
-	class SensorTemplateMan;
-	class SensorTemplateLaser;
-	class SensorTemplateNV;
-	class SensorTemplateDataLink;
-	class OPTRE_ace_missileguidance_type_M41_Thermal;
-
-
 
     #include "SMG\smgammo.hpp"
     #include "DMR\dmrammo.hpp"

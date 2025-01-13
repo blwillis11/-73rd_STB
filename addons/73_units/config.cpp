@@ -26,20 +26,13 @@ class CfgPatches
 			"73_STB_ODST_Marksman",
 			"73_STB_ODST_Officer",
 			"73_STB_ODST_AT",
+			"73_STB_ODST_Scout",
 			"73_STB_ODST_Team_Lead",
 			"73_STB_ODST_Squad_Lead",
 			"73_Crewman",
 			"73_Crewman_Officer",
 			"73_Aviator",
 			"73_Aviator_Officer",
-			"73_Marine_Rifleman_AT",
-			"73_Marine_Rifleman",
-			"73_Marine_Marksman",
-			"73_Marine_RTO_Operator",
-			"73_Marine_Medic",
-			"73_Marine_Grenadier",
-			"73_Marine_Autorifleman",
-			"73_Marine_Sniper"
         }; 
         weapons[] = 
         {
@@ -225,8 +218,7 @@ class CfgVehicles
 	class weapons_f;
 	class OPTRE_UNSC_Army_Soldier_DressGray;
 	class ItemInfo;
-	class UniformItem;	
-	class NSM_neutral_XD_1_backpack;
+	class UniformItem;
 
 //Dress Uniform
 	#include "data\Dress Gear\DressUniformsVeh.hpp"
@@ -241,7 +233,6 @@ class CfgVehicles
 	#include "data\ODST\ODSTBackpack.hpp"
 
     #include "STB\units\units.hpp"
-    #include "STB\units\10thMEB.hpp"
     #include "ACo\units\units.hpp"
 };
 

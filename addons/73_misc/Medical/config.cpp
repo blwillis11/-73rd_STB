@@ -33,6 +33,26 @@ class CfgPatches
 		};
 	};
 };
+class CfgFunctions
+{
+    class STB73
+    {
+        class Medical
+        {
+            file="73_misc\functions";
+            class endPressure
+            {
+            };
+            class canPressure
+            {
+            };
+            class doPressure
+            {
+            };
+        };
+
+    };
+};
 class CfgWeapons
 {
 	class ACE_Morphine;
@@ -1310,6 +1330,32 @@ class ACE_Medical_Treatment_Actions
 	class ApplyTourniquet;
 	class RemoveTourniquet;
 	class BasicBandage;
+	class Adrenaline;
+	class CPR;
+	class 73_holdpressure: CPR
+    {
+        displayName="Hold Pressure";
+        displayNameProgress="Holding Pressure...";
+        icon="";
+        category="advanced";
+        treatmentLocations=0;
+        allowedSelections[]=
+        {
+            "head",
+            "body"
+        };
+        allowSelfTreatment=0;
+        medicRequired=0;
+        treatmentTime=30;
+        condition="[_medic, _patient, _bodyPart] call STB73_fnc_canpressure";
+        callbackFailure="STB73_fnc_endpressure";
+        callbackSuccess="STB73_fnc_endpressure";
+        callbackProgress="[_medic, _patient, _bodyPart] call STB73_fnc_canpressure";
+        callbackStart="STB73_fnc_doPressure";
+        animationMedicProne="AinvPknlMstpSnonWnonDr_medic0";
+        consumeItem=0;
+        allowedUnderwater=1;
+    };
 	class 73_Morphine: Morphine
 	{
 		displayName="[73] Take Morphine";
@@ -1317,6 +1363,16 @@ class ACE_Medical_Treatment_Actions
 		items[]=
 		{
 			"73_Morphine"
+		};
+		treatmentTime=1;
+	};
+	class 7373_Adrenaline: Adrenaline
+	{
+		displayName="[73] Take Adrenaline";
+		displayNameProgress="Injecting Adrenaline...";
+		items[]=
+		{
+			"73_Adrenaline"
 		};
 		treatmentTime=1;
 	};

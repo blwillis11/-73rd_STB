@@ -66,8 +66,8 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_NEWACE_Medical: 73_SupplyPod
 	{
-   	scope = 2; // Visible in Zeus and Eden
-    scopeCurator = 2; // Allow spawning in Zeus
+        scope = 2; // Visible in Zeus and Eden
+        scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [New ACE Medical]";
 		hiddenselections[]=
 		{

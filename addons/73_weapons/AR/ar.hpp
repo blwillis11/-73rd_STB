@@ -191,7 +191,7 @@ class 73_MA5K: OPTRE_MA5K
         {
             compatibleitems[] =
             {
-                "OPTRE_MA5Supressor"
+                "OPTRE_MA5Suppressor"
             };
         };
         class CowsSlot: CowsSlot

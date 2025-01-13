@@ -32,7 +32,7 @@ class 73_M232_145x114x4_APFSDS_TIR:NSWep_M232_145x114x4_APFSDS_TIR
 class 73_M232_145x114x4_APFSDS_Stun:NSWep_M232_145x114x4_APFSDS_TC
 {
     displayname	= "M232 Stun Extended Magazine (4rnd)";
-    mass=12.5;
+    mass=50;
     ammo="73_M232_145x114_APFSDS_Stun";
 };
 
@@ -70,13 +70,5 @@ class 73_M232_145x114x8_APFSDS_TIR:NSWep_M232_145x114x8_APFSDS_TIR
 {
     mass=50;
     ammo="73_M232_145x114_APFSDS_TIR";
-    descriptionShort="Contains 8 rounds of 14.5x114 AP ammo <br />Used in: SRS99 rifles";
-};
-
-class 73_M232_145x114x8_APFSDS_Stun:NSWep_M232_145x114x8_APFSDS_TC
-{
-    displayname	= "M232 Stun Extended Magazine (8rnd)";
-    mass=25;
-    ammo="73_M232_145x114_APFSDS_Stun";
     descriptionShort="Contains 8 rounds of 14.5x114 AP ammo <br />Used in: SRS99 rifles";
 };

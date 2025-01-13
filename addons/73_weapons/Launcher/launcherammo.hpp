@@ -124,20 +124,21 @@ class 73_HEAA:OPTRE_M41_Rocket_HEAT_Guided
     };
 
     class ace_missileguidance {
-        enabled = 0; // Enable missile guidance (0-disabled, 1-enabled)
+        enabled = 1; // Enable missile guidance (0-disabled, 1-enabled)
         minDeflection = 0.00025;  // Minimum flap deflection for guidance
         maxDeflection = 0.001;  // Maximum flap deflection for guidance
         incDeflection = 0.0005;  // The increment in which deflection adjusts
         canVanillaLock = 1;  // Enable vanilla lock, only applicable to non-cadet modes, 'recruit' always uses vanilla locking (0-disabled, 1-enabled)
-        defaultSeekerType = "SACLOS";  // Default seeker type
-        seekerTypes[] = {"SALH", "SACLOS"};  // Seeker types available
-        defaultSeekerLockMode = "LOAL";  // Default seeker lock mode
+        defaultSeekerType = "SARH";  // Default seeker type
+        seekerTypes[] = {"SARH"};  // Seeker types available
+        defaultSeekerLockMode = "LOBL";  // Default seeker lock mode
         seekerLockModes[] = {"LOAL", "LOBL"};  // Seeker lock modes available
-        seekerAngle = 90;  // Angle in front of the missile which can be searched
-        seekerAccuracy = 1;  // Seeker accuracy multiplier
+        seekerAngle = 180;  // Angle in front of the missile which can be searched
+        seekerAccuracy = 1.5;  // Seeker accuracy multiplier
+        seekLastTargetPos = 1;
         seekerMinRange = 1;  // Minimum range from the missile which the seeker can visually search
-        seekerMaxRange = 2500;  // Maximum from the missile which the seeker can visually search
-        defaultAttackProfile = "LIN";  // Default attack profile
-        attackProfiles[] = {"LIN", "DIR"};  // Attack profiles available
+        seekerMaxRange = 5000;  // Maximum from the missile which the seeker can visually search
+        defaultAttackProfile = "MID";  // Default attack profile
+        attackProfiles[] = {"LIN", "MID"};  // Attack profiles available
     };
 };

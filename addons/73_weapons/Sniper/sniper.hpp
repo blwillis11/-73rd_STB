@@ -37,7 +37,7 @@ class 73_SRS99AM:NSWep_SRS99AM
         "73_M233_145x114x8_APFSDS_TR",
         "73_M233_145x114x8_APFSDS_TC",
         "73_M233_145x114x8_APFSDS_TIR",
-        "73_M232_145x114x8_APFSDS_Stun"
+        "73_M232_145x114x4_APFSDS_Stun"
     };
 };
 class 73_SRS99AM_Stealth:NSWep_SRS99AM_Stealth

@@ -299,6 +299,33 @@ class 73_STB_ODST_Marksman: 73_UnitBase
     respawnItems[] = {"ACE_EarPlugs","OPTRE_Biofoam"};
 };
 
+class 73_STB_ODST_Scout: 73_UnitBase
+{
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "[73] Battalion ODST Scout";
+    facewear = "";
+
+    attendant = 0;
+    engineer = 0;
+    canDeactivateMines = 0;
+
+    uniformClass = "73_BDU_ODST_Urban_NC";
+    backpack = "73_Rucksack";
+
+    weapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
+    respawnWeapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
+
+    linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Scout","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Scout","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+
+    magazines[] = {"73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
+    respawnMagazines[] = {"73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","73_15Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag","TCF_20Rnd_86x70_Mag_APT"};
+
+    items[] = {"ACE_EarPlugs","73_BiofoamItem_Light","73_BiofoamItem_Light","73_BiofoamItem_Light","73_BiofoamItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light"};
+    respawnItems[] = {"ACE_EarPlugs","73_BiofoamItem_Light","73_BiofoamItem_Light","73_BiofoamItem_Light","73_BiofoamItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light","73_MediGelItem_Light"};
+};
+
 class 73_STB_ODST_Officer: 73_UnitBase
 {
     scope = 2;

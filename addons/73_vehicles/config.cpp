@@ -65,7 +65,8 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
             "73_units",
-            "DMNS_Armour"
+            "DMNS_Armour",
+
         };
     };
 };

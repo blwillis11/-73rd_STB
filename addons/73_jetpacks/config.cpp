@@ -18,6 +18,7 @@ class CfgPatches
         { 
 			"OPTRE_Weapons",
 			"OPTRE_Weapons_Backpacks",
+			"JJP_JumpPack"
 			
         };
     };
@@ -31,60 +32,32 @@ class CfgVehicles
 
     class JJP_JumpPack: OPTRE_S12_SOLA_Jetpack
     {
-        displayName="[73] JetPack";
+        displayName="[73] JumpPack";
         maximumLoad=350;
     };
 
     class JJP_JumpPack_on: OPTRE_S12_SOLA_Jetpack_ON
     {
-        displayName="[73] JetPack";
+        displayName="[73] JumpPack";
         maximumLoad=350;
     };
     class JJP_JumpPack_LR: OPTRE_S12_SOLA_Jetpack
     {
-        displayName="[73] JetPack";
+        displayName="[73] JumpPack";
         maximumLoad=350;
     };
 
     class JJP_JumpPack_on_LR: OPTRE_S12_SOLA_Jetpack_ON
     {
-        displayName="[73] JetPack";
+        displayName="[73] JumpPack";
         maximumLoad=350;
     };
 };
 
 class CfgFunctions
 {
-	class JJP_JumpPack
-	{
-		class Functions
-		{
-			file = "73_jetpacks\functions";
-			class PreInit
-			{
-			    preInit = 1;
-			};
-			class Init
-			{
-			    postInit = 1;
-			};
-			class JumpPack
-			{
-			};
-			class EventHandlers
-			{
-			};
-			class JumpPackRefuel
-			{
-			};
-			class RoofStuckCheck
-			{
-			};
-		};
-	};
 };
 
 class RscTitles
 {
-	#include "ui\jumpPackUI.hpp"
 };

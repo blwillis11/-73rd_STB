@@ -8,25 +8,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="&#10;-medical">
-      <change afterPath="$PROJECT_DIR$/addons/73_weapons/XtdGear/XtdGearModels.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/backpacks.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/categories.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/config.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/groups.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/uniformBases.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/uniforms.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_STB/weapons.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_eventHandlers.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_init.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_jumpPack.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_jumpPackRefuel.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_preInit.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_roofStuckCheck.sqf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/ui/jumpPackUI.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/groups/10thMEB.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/10thMEB.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniforms.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Dress Gear/DressUniformsVeh.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_Base.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_CmdSORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/73rd_ODST_Armor_Vest_SORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DHelmet.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/AR/ar.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/AR/ar.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcherammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcherammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/snipermagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/snipermagazine.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,20 +107,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/blwil/IdeaProjects/-73rd_STB/addons/73_weapons",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/blwil/IdeaProjects/-73rd_STB/addons/73_weapons&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\blwil\IdeaProjects\-73rd_STB\addons\73_weapons" />
