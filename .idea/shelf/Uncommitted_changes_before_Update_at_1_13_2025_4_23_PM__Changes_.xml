@@ -1,0 +1,22 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_13_2025_4_23_PM_[Changes]" date="1736803433339" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_2025_4_23_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/13/2025 4:23 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_preInit.sqf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_jumpPack.sqf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_init.sqf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_jumpPackRefuel.sqf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_eventHandlers.sqf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_jetpacks/functions/fn_roofStuckCheck.sqf" />
+  </binary>
+</changelist>
