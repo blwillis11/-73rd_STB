@@ -5,9 +5,10 @@ class 73_M247 : OPTRE_M247 {
         baseWeapon="73_M247";
         descriptionShort="UNSC LMG";
 
-		ace_overheating_barrelMass = 12;
+		ace_overheating_barrelMass = 15;
 		ace_overheating_dispersion = 0.9;
-		ace_overheating_mrbs = 2000;
+		ace_overheating_mrbs = 3000;
+		WBK_UseHeavyWeaponFramework = true;
 
         magazineWell[]=
         {
