@@ -1453,33 +1453,4 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_Light: 73_SupplyPod
-	{
-		scope=2;
-		displayname="73rd Supply Pod Light";
-		class TransportMagazines
-		{
-			class _xx_OPTRE_60Rnd_762x51_Mag_JHPT
-			{
-				magazine="OPTRE_60Rnd_762x51_Mag_JHPT";
-				count=10;
-			};
-		};
-		class TransportWeapons
-		{
-		};
-		class TransportItems
-		{
-            class _xx_ACE_plasmaIV_500
-            {
-                name="ACE_plasmaIV_500";
-                count=3;
-            };
-            class _xx_B_UavTerminal
-            {
-                name="B_UavTerminal";
-                count=2;
-            };
-        };
-    };
 };

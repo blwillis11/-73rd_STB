@@ -2,7 +2,7 @@ class OPTRE_B_95x40_Ball;
 
 class 73_B_95x40_Ball: OPTRE_B_95x40_Ball {
     caliber = 4.3;
-    hit = 14;
+    hit = 18;
     typicalSpeed = 650;
 
     cartridge = "FxCartridge_93x64_Ball";

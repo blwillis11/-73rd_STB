@@ -297,7 +297,7 @@ class 73_CH252D_Helmet_Cus_Grayson: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Grayson_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Navy.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {

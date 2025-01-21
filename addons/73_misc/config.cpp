@@ -29,6 +29,7 @@ class CfgPatches
         requiredAddons[] = 
         { 
 			"1st_MEU_patch_ace",
+			"Rogue_CEMarine",
 			"73_Units"
 			
         };

@@ -7,42 +7,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="&#10;-medical">
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="lots">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_2025_4_23_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_2025_4_23_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/backpacks.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/categories.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/config.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/groups.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/uniformBases.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/uniforms.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_STB/weapons.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_covie/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_covie/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_eventHandlers.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_init.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_jumpPack.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_jumpPackRefuel.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_preInit.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/functions/fn_roofStuckCheck.sqf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/ui/jumpPackUI.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/groups/10thMEB.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/10thMEB.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Helicopter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Black.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Black.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Gold.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Gold.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Red.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Red.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTBackpack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTBackpack.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTUniforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTUniforms.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/AR/ar.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/AR/ar.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/AR/arammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/AR/arammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/LMG/lmgammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/LMG/lmgammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcher.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcherammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcherammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/snipermagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/snipermagazine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Launcher/launchermagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Launcher/launchermagazine.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgmagazine.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +391,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734321010421</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="lots">
+      <option name="closed" value="true" />
+      <created>1736803466623</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1736803466623</updated>
+    </task>
+    <task id="LOCAL-00033" summary="lots">
+      <option name="closed" value="true" />
+      <created>1736803481795</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1736803481795</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +445,7 @@
     <MESSAGE value="pelican" />
     <MESSAGE value="-vehicles&#10;-medical&#10;-dress gear" />
     <MESSAGE value="&#10;-medical" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;-medical" />
+    <MESSAGE value="lots" />
+    <option name="LAST_COMMIT_MESSAGE" value="lots" />
   </component>
 </project>

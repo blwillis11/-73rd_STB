@@ -45,10 +45,7 @@ class CfgPatches
         requiredAddons[] = 
         {		
 			"OPTRE_UNSC_Units",
-			"V_FZ_Armor",
-			"MA_Armor",
-            "Rogue_CEMarine",
-            "73_weapons",
+			"MA_Armor"
         };
     }; 
 }; 
@@ -194,6 +191,7 @@ class CfgWeapons
 	#include "data\ODST\ODSTM52VestACo.hpp"
 	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
 	#include "data\ODST\ODSTM52VestACo2Plt.hpp"
+    #include "data\ODST\ODSTM52VestBCo.hpp"
 
 //Aviation Vest
     #include "data\Aviation\AviationVest.hpp"
@@ -205,6 +203,7 @@ class CfgWeapons
 //Infantry helmets
 	#include "data\ODST\ODSTCH252DSTBHelmet.hpp"
 	#include "data\ODST\ODSTCH252DACoHelmet.hpp"
+	#include "data\ODST\ODSTCH252DBCoHelmet.hpp"
 	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"

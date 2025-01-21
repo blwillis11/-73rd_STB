@@ -1,3 +1,34 @@
+class R_MRAAWS_HEAT_F;
+class 73_50x137_HEAT: R_MRAAWS_HEAT_F
+{
+    model="\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
+    caliber=10;
+    hit=950;
+    indirectHit=200;
+    indirectHitRange=0.050000001;
+    timeToLive=30;
+    allowAgainstInfantry=0;
+};
+class R_MRAAWS_HE_F;
+class 73_50X137_HE: R_MRAAWS_HE_F
+{
+    caliber=0;
+    hit=400;
+    indirectHit=200;
+    indirectHitRange=5;
+    allowAgainstInfantry=1;
+};
+class 73_50x137_PEN: 73_50X137_HE
+{
+    caliber=20;
+    hit=1500;
+    indirectHit=0;
+    indirectHitRange=0;
+    explosive=0;
+    fuseDistance=0;
+    allowAgainstInfantry=0;
+};
+
 class ACE_Javelin_FGM148;
 class OPTRE_M41_Rocket_HEAP;
 class OPTRE_M41_Rocket_HEAT_Guided;

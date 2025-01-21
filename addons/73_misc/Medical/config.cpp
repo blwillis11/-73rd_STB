@@ -687,8 +687,8 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=2;
 				reopeningChance=1;
-				reopeningMinDelay=0;
-				reopeningMaxDelay=0;
+				reopeningMinDelay=120;
+				reopeningMaxDelay=180;
 			};
 			class CrushMinor: Crush
 			{
@@ -850,8 +850,8 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=0;
 				reopeningChance=1;
-				reopeningMinDelay=0;
-				reopeningMaxDelay=0;
+				reopeningMinDelay=300;
+				reopeningMaxDelay=600;
 			};
 			class ContusionMinor: Contusion
 			{
@@ -1027,8 +1027,8 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=2.5;
 				reopeningChance=1;
-				reopeningMinDelay=0;
-				reopeningMaxDelay=0;
+				reopeningMinDelay=120;
+				reopeningMaxDelay=180;
 			};
 			class ContusionMinor: Contusion
 			{
@@ -1044,8 +1044,8 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=2;
 				reopeningChance=1;
-				reopeningMinDelay=0;
-				reopeningMaxDelay=0;
+				reopeningMinDelay=120;
+				reopeningMaxDelay=180;
 			};
 			class CrushMinor: Crush
 			{

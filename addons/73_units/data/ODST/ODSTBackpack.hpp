@@ -14,6 +14,7 @@ class 73_Rucksack: MA_M56S_Rucksack
 		model = "73_ACE_Rucksack";
 		Role = "Standard";
 	};
+	maximumLoad = 250;
 };
 class 73_Rucksack_med: MA_M56S_Rucksack_Medic
 {
@@ -31,6 +32,7 @@ class 73_Rucksack_med: MA_M56S_Rucksack_Medic
 		model = "73_ACE_Rucksack";
 		Role = "Medic";
 	};
+	maximumLoad = 300;
 };
 class 73_Rucksack_hev: MA_M56S_Rucksack
 {
@@ -38,7 +40,7 @@ class 73_Rucksack_hev: MA_M56S_Rucksack
 	displayName = "[73] ODST Rucksack [Heavy]";
 	scope= 2;
 	scopeArsenal=2;
-	maximumLoad = 400;
+	maximumLoad = 300;
 	hiddenSelectionsTextures[]=
 	{
 		"73_units\data\ODST\Backpack\ODST_Ruck_co.paa",
@@ -57,6 +59,7 @@ class 73_Rucksack_rto: MA_M56S_Rucksack_ODST_Radio
 	author="73rd S-4 Team";
 	scope=2;
 	scopeArsenal=2;
+	maximumLoad = 250;
 	hiddenSelectionsTextures[]=
 	{
 		"73_units\data\ODST\Backpack\ODST_Ruck_co.paa",
@@ -81,6 +84,7 @@ class 73_Rucksack_invis: MA_M56S_Rucksack
 	model = "\A3\weapons_f\empty";
 	scope= 2;
 	scopeArsenal=2;
+	maximumLoad = 250;
 	hiddenSelectionsTextures[]=
 	{
 		"",
@@ -99,6 +103,7 @@ class 73_Rucksack_invis_rto: 73_Rucksack_invis
 	tf_dialog="rt1523g_radio_dialog";
 	tf_subtype="digital_lr";
 	tf_range=45000;
+	maximumLoad = 250;
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 	tf_hasLRradio=1;
 	class XtdGearInfo

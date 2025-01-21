@@ -85,7 +85,7 @@ class 73_MA5B: OPTRE_MA5B
         {
             compatibleitems[] =
                 {
-                    "OPTRE_MA5Supressor"
+                    "OPTRE_MA5Suppressor"
                 };
         };
         class CowsSlot: OPTRE_CowsSlot_Rail
@@ -137,7 +137,7 @@ class 73_MA5BGL: OPTRE_MA5BGL
         {
             compatibleitems[] =
                 {
-                    "OPTRE_MA5Supressor"
+                    "OPTRE_MA5Suppressor"
                 };
         };
         class CowsSlot: OPTRE_CowsSlot_Rail

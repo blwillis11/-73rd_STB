@@ -5,6 +5,7 @@ class 73_M52_ODST_Vest_Base: M52_ODST_Vest_Base
 	scopeArsenal=2;
 	author="73rd S-4 Team";
 	displayName="[73] M52 Vest [Recruit]";
+	maximumLoad = 150;
 	class XtdGearInfo
 	{
 		Model="73_ACE_M52_Armor_STB";
@@ -104,7 +105,7 @@ class 73_M52_ODST_Vest_Base: M52_ODST_Vest_Base
         "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //LegPouchL
         "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
     };
-class ItemInfo: VestItem
+    class ItemInfo: VestItem
     {
         vestType="Rebreather";
         hiddenSelections[]=

@@ -4,6 +4,7 @@ class 73_BDU_ODST_Urban: MA_Marine_BDU_ODST_HJ
 {
 	author="73rd S-4 Team";
     displayName="[73] M52D BDU [Urban]";
+    maximumLoad = 125;
     class ItemInfo: UniformItem
     {
        	scope=2;

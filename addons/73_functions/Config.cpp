@@ -42,6 +42,14 @@ class CfgFunctions
             {
             };
         };
+        class Init
+        {
+            file="73_functions\Functions\Init";
+            class init
+            {
+                postInit=1;
+            };
+        };
         class HEV
             {
                 file="73_functions\Functions\HEV73";

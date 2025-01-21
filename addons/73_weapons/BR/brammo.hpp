@@ -2,7 +2,7 @@ class B_93x64_Ball;
 class 73_95x40_AP: B_93x64_Ball
 {
     caliber=2;
-    hit=22;
+    hit=20;
     cartridge="FxCartridge_9mm";
 };
 class 73_95x40_AP_TG: 73_95x40_AP
