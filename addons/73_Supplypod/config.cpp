@@ -4,13 +4,17 @@ class CfgPatches
 	{
 		author="73rd S-4 Team";
 		addonRootClass="73_supplypod";
-		editorCategory = "73 STB";
-		editorSubcategory = "Supply pods";
+		    
 		requiredAddons[]=
 		{
 			"73_units",
 			"OPTRE_Misc",
-			"1st_MEU_patch_vehicles_supplypods"
+			"1st_MEU_patch_vehicles_supplypods",
+			"NSWep_Core",
+			"DMNS_Core",
+			"73_weapons"
+		
+
 		};
 
 		requiredVersion=0.1;
@@ -26,17 +30,16 @@ class CfgPatches
 			"73_SupplyPod_VehicleAmmo",
 			"73_SupplyPod_VehicleRepair",
 			"73_SupplyPod_VehicleRefuel",
-			"73_SupplyPod_ARBRGL",
-			"73_SupplyPod_Breacher",
-			"73_SupplyPod_Marksman",
-			"73_SupplyPod_Sniper",
-			"73_SupplyPod_Autorifles",
-			"73_SupplyPod_ATLauncher",
-			"73_SupplyPod_ExplosivesPack",
-			"73_SupplyPod_TACResupply",
-			"73_SupplyPod_Emptypod",
-			"73_SupplyPod_Light",
-			"Module_OPTRE_PelicanSupplyDrop"
+			"73_supply_ARBRGL",
+			"73_supply_Breacher",
+			"73_supply_Marksman",
+			"73_supply_Sniper",
+			"73_supply_Autorifles",
+			"73_supply_ATLauncher",
+			"73_supply_ExplosivesPack",
+			"73_supply_TACResupply",
+			"73_supply_Emptypod",
+			"73_supply_Light"
 		};
 		weapons[]={};
 		vehicles[]={};
@@ -51,8 +54,8 @@ class CfgVehicles
 	class 73_SupplyPod: OPTRE_Ammo_SupplyPod_Empty
 	{
 		scope = 1;
-		editorCategory = "73 STB";
-		editorSubcategory = "Supply pods";
+		editorCategory ="73rd_Objects"; // This places it under "Empty" in the Eden Editor
+        editorSubcategory = "73rd_Crates";
 		faction = "73_STB";
 		maximumLoad=1000000;
 		hiddenselections[]=
@@ -66,8 +69,8 @@ class CfgVehicles
 	};
 	class 73_SupplyPod_NEWACE_Medical: 73_SupplyPod
 	{
-        scope = 2; // Visible in Zeus and Eden
-        scopeCurator = 2; // Allow spawning in Zeus
+   	scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [New ACE Medical]";
 		hiddenselections[]=
 		{
@@ -533,7 +536,7 @@ class CfgVehicles
 			"73_Supplypod\73_Pod_co.paa"
 		};
 	};
-	class 73_SupplyPod_ARBRGL: 73_SupplyPod
+	class 73_supply_ARBRGL: 73_SupplyPod
 	{
 		scope=2;
 		scopeCurator = 2;
@@ -719,7 +722,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_Breacher: 73_SupplyPod
+	class 73_supply_Breacher: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -824,7 +827,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_Marksman: 73_SupplyPod
+	class 73_supply_Marksman: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -930,7 +933,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_Sniper: 73_SupplyPod
+	class 73_supply_Sniper: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -995,7 +998,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_Autorifles: 73_SupplyPod
+	class 73_supply_Autorifles: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1080,7 +1083,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_ATLauncher: 73_SupplyPod
+	class 73_supply_ATLauncher: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1123,7 +1126,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_SupplyPod_ExplosivesPack: 73_SupplyPod
+	class 73_supply_ExplosivesPack: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1177,7 +1180,7 @@ class CfgVehicles
 		{
 		};
 	};
-	class 73_SupplyPod_TACReSupplyPod: 73_SupplyPod
+	class 73_supply_TACResupply: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1288,7 +1291,7 @@ class CfgVehicles
 			
 		};
 	};
-	class 73_SupplyPod_Emptypod: 73_SupplyPod
+	class 73_supply_Emptypod: 73_SupplyPod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1303,7 +1306,7 @@ class CfgVehicles
 
 		};
 	};
-		class 73_SupplyPod_Light: 73_supplypod
+		class 73_supply_Light: 73_supplypod
 	{
 		scope = 2; // Visible in Zeus and Eden
     	scopeCurator = 2; // Allow spawning in Zeus
@@ -1356,37 +1359,37 @@ class CfgVehicles
 					class n3
 					{
 						name="73rd Autorifle Supply Pod";
-						value="73_SupplyPod_Autorifles";
+						value="73_supply_Autorifles";
 					};
 					class n4
 					{
 						name="73rd AT Launcher Supply Pod";
-						value="73_SupplyPod_ATLauncher";
+						value="73_supply_ATLauncher";
 					};
 					class n5
 					{
 						name="73rd Explosives Supply Pod";
-						value="73_SupplyPod_ExplosivesPack";
+						value="73_supply_ExplosivesPack";
 					};
 					class n6
 					{
 						name="73rd Squad Supply Pod";
-						value="73_SupplyPod_ARBRGL";
+						value="73_supply_ARBRGL";
 					};
 					class n7
 					{
 						name="73rd CQB Supply Pod";
-						value="73_SupplyPod_Breacher";
+						value="73_supply_Breacher";
 					};
 					class n8
 					{
 						name="73rd Marksman Supply Pod";
-						value="73_SupplyPod_Marksman";
+						value="73_supply_Marksman";
 					};
 					class n9
 					{
 						name="73rd Sniper Supply Pod";
-						value="73_SupplyPod_Sniper";
+						value="73_supply_Sniper";
 					};
 					class n10
 					{
@@ -1442,15 +1445,45 @@ class CfgVehicles
 					class n20
 					{
 						name="73rd Tactical/Misc Supply Pod";
-						value="73_SupplyPod_TACReSupplyPod";
+						value="73_supply_TACResupply";
 					};
 					class n21
 					{
 						name="73rd Empty Supply pod";
-						value="73_SupplyPod_Emptypod";
+						value="73_supply_Emptypod";
 					};
 				};
 			};
 		};
 	};
+	class 73_SupplyPod_Light: 73_SupplyPod
+	{
+		scope=2;
+		displayname="73rd Supply Pod Light";
+		class TransportMagazines
+		{
+			class _xx_OPTRE_60Rnd_762x51_Mag_JHPT
+			{
+				magazine="OPTRE_60Rnd_762x51_Mag_JHPT";
+				count=10;
+			};
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportItems
+		{
+            class _xx_ACE_plasmaIV_500
+            {
+                name="ACE_plasmaIV_500";
+                count=3;
+            };
+            class _xx_B_UavTerminal
+            {
+                name="B_UavTerminal";
+                count=2;
+            };
+        };
+    };
 };
+	
