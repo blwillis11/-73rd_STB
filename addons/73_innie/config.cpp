@@ -6,8 +6,18 @@ class CfgPatches
 		name = "73rd STB Aux"
 		units[] = 
         {
-            "73_URF_Soldier_Rifleman",
-            "73_URF_Soldier_Medic"
+            "73_OCLF_Soldier_Rifleman",
+            "73_OCLF_Soldier_Medic",
+            "73_OCLF_Soldier_Rifleman_AT",
+            "73_OCLF_Soldier_Rifleman_AA",
+            "73_OCLF_Soldier_AutoRifleman",
+            "73_OCLF_Soldier_Breacher",
+            "73_OCLF_Soldier_Grenadier",
+            "73_OCLF_Soldier_SquadLead",
+            "73_OCLF_Soldier_Grenadier",
+            "73_OCLF_Soldier_Radioman",
+            "73_OCLF_Soldier_Sniper",
+            "73_OCLF_Soldier_Scout"
         }; 
         weapons[] = 
         {
@@ -28,9 +38,9 @@ class CfgPatches
 };
 class cfgFactionClasses
 {
-    class 73_URF
+    class 73_OCLF
     {
-        displayName = "[73] United Rebel Front";
+        displayName = "[73] Outer Colony Liberation Front";
         priority = 0; // Position in list.
         side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
         icon = ""; //Custom Icon
@@ -39,9 +49,9 @@ class cfgFactionClasses
 
 class CfgEditorCategories
 {
-	class 73_URF // Category class, you point to it in editorCategory property
+	class 73_OCLF // Category class, you point to it in editorCategory property
 	{
-		displayName = "[73] United Rebel Front"; // Name visible in the list
+		displayName = "[73] Outer Colony Liberation Front"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
@@ -71,16 +81,16 @@ class CfgWeapons
 {
 //marine
 
-    #include "\73_innie\URF\URFVest.hpp"
-    #include "\73_innie\URF\URFHelmet.hpp"
-    #include "\73_innie\URF\URFUniform.hpp"
+    #include "\73_innie\OCLF\OCLFVest.hpp"
+    #include "\73_innie\OCLF\OCLFHelmet.hpp"
+    #include "\73_innie\OCLF\OCLFUniform.hpp"
 };
 
 class CfgVehicles
 {
-    #include "\73_innie\URF\URFUnits.hpp"
+    #include "\73_innie\OCLF\OCLFUnits.hpp"
 };
 class CfgGroups
 {
-    #include "\73_innie\URF\URFGroups.hpp"
+    #include "\73_innie\OCLF\OCLFGroups.hpp"
 };

@@ -188,6 +188,26 @@ class XtdGearModels
 				};
 			};
 		};
+		class 73_ACE_M52_Armor_Cus
+		{
+			label= "[73] M52 Vest Customs";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Variant"
+			};
+			class Variant
+            {
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Variant";
+                values[]=
+				{
+					"Smith"
+				};
+			};
+		};
 		class 73_ACE_M52_Armor_ACo
 		{
 			label= "[73] M52 Vest [ACo]";

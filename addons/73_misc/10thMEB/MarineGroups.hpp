@@ -100,7 +100,7 @@ class WEST
                     position[] = {20,-20,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit8
                 {
@@ -114,42 +114,42 @@ class WEST
                     position[] = {25,-25,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit10
                 {
                     position[] = {-25,-25,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit11
                 {
                     position[] = {30,-30,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit12
                 {
                     position[] = {-30,-30,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit13
                 {
                     position[] = {35,-35,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit14
                 {
                     position[] = {-35,-35,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
             };
 
@@ -166,7 +166,7 @@ class WEST
                     position[] = {0,0,0};
                     rank = "SERGEANT";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit1
                 {
@@ -197,7 +197,7 @@ class WEST
                     position[] = {5,-5,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
                 class Unit2
                 {
@@ -218,7 +218,7 @@ class WEST
                     position[] = {-10,-10,0};
                     rank = "PRIVATE";
                     side = 1;
-                    vehicle = "73_Marine_Rifleman_AT1";
+                    vehicle = "73_Marine_Rifleman";
                 };
             };
         };

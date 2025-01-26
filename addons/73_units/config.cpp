@@ -80,7 +80,6 @@ class cfgFactionClasses
         icon = "73_units\UI\10thMEBLogo.paa"; //Custom Icon
     };
 };
-
 class CfgEditorCategories
 {
 	class 73_STB // Category class, you point to it in editorCategory property
@@ -101,6 +100,10 @@ class CfgEditorCategories
 		scopeCurator=2;
 		scopeeditor=2;
 	};
+    class 73_Objects
+    {
+        displayName = "[73] Objects";
+    };
 };
 
 class CfgEditorSubcategories
@@ -108,6 +111,11 @@ class CfgEditorSubcategories
     class 73_APCs_EdSubCat
     {
         displayName = "APCs";
+    };
+    class 73_Crates
+    {
+        displayName = "Crates";
+        vehicleClass = "73_Objects";
     };
     class 73_Cars_EdSubCat
     {
@@ -178,6 +186,7 @@ class CfgWeapons
 	class H_Beret_02;
 	class CH252D_Helmet;
     class CH252D_Helmet_dp;
+    class VES_CH252_WDL_Crew;
 
 //ODST Uniform
 	#include "data\ODST\ODSTUniforms.hpp"
@@ -188,6 +197,7 @@ class CfgWeapons
 
 //ODST Vest
 	#include "data\ODST\ODSTM52Vest.hpp"
+	#include "data\ODST\ODSTM52VestCus.hpp"
 	#include "data\ODST\ODSTM52VestACo.hpp"
 	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
 	#include "data\ODST\ODSTM52VestACo2Plt.hpp"

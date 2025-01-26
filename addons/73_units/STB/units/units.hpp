@@ -37,8 +37,8 @@ class 73_Crewman: 73_UnitBase
     weapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"MA_Marine_Pouches_Engineer_Medium_B","VES_CH252_WDL_Crew","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-    respawnLinkedItems[] = {"MA_Marine_Pouches_Engineer_Medium_B","VES_CH252_WDL_Crew","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    linkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Base","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Base","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
     magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
     respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
@@ -67,8 +67,8 @@ class 73_Crewman_Officer: 73_UnitBase
     weapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"MA_Marine_Pouches_Engineer_Medium_B","73_beret","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-    respawnLinkedItems[] = {"MA_Marine_Pouches_Engineer_Medium_B","73_beret","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    linkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
     magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
     respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};

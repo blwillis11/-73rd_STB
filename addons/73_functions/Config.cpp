@@ -21,7 +21,6 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
             "73_units",
-            "first_meu_aux",
             "OPTRE_modules",
             "73_vehicles",
             "Splits_Vehicles"
@@ -114,6 +113,9 @@ class CfgFunctions
         {
             file="73_functions\Functions\Misc73";
             class CleanUp
+            {
+            };
+            class setRadio73STB
             {
             };
         };

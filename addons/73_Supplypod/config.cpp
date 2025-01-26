@@ -54,8 +54,8 @@ class CfgVehicles
 	class 73_SupplyPod: OPTRE_Ammo_SupplyPod_Empty
 	{
 		scope = 1;
-		editorCategory ="73rd_Objects"; // This places it under "Empty" in the Eden Editor
-        editorSubcategory = "73rd_Crates";
+		editorCategory ="73_Objects"; // This places it under "Empty" in the Eden Editor
+        editorSubcategory = "73_Crates";
 		faction = "73_STB";
 		maximumLoad=1000000;
 		hiddenselections[]=
