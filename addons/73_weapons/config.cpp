@@ -10,8 +10,6 @@ class CfgPatches
         weapons[] = 
         {
         "73_BR55HBM1_DMR",
-        "73_CQS48_Bulldog",
-        "73_CQS48S_Chihuahua",
         "73_M247",
         "73_M392_DMR",
         "73_M395_DMR",

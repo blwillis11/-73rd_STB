@@ -28,19 +28,20 @@ class CfgPatches
 		};
         requiredVersion = 0.1; 
         requiredAddons[] = 
-        { 
-			"1st_MEU_patch_ace",
+        {
 			"Rogue_CEMarine",
 			"73_Units"
         };
     };
 };
-
 class CfgWeapons
 {
+    class UniformItem;
+    class ItemInfo;
 //marine
     #include "\73_misc\10thMEB\MarineVest.hpp"
     #include "\73_misc\10thMEB\MarineHelmet.hpp"
+    #include "\73_misc\10thMEB\MarineUniforms.hpp"
     class ACE_SpraypaintBlack;
     class 73_STB_TagSprayCan: ACE_SpraypaintBlack
     {
@@ -126,6 +127,7 @@ class ACE_Tags
 class CfgVehicles
 {
     #include "\73_misc\10thMEB\MarineUnits.hpp"
+    #include "\73_misc\10thMEB\MarineUniformsVeh.hpp"
     #include "\73_misc\RadioCrate\RadioCrate.hpp"
 };
 class CfgGroups

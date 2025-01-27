@@ -129,7 +129,8 @@ class 73_MA5BGL: OPTRE_MA5BGL
     author = "Article 2 Studios";
     displayName         = "[73] MA5B ICWS Assault Rifle [M301]";
     baseWeapon 			= "73_MA5BGL";
-
+    magazines[]             = {"73_60Rnd_762x51_Mag_Tracer_Yellow"};
+    magazineWell[] 			= {"73_ar60rnd"};
     class WeaponSlotsInfo: WeaponSlotsInfo
     {
         mass = 60;
@@ -181,7 +182,7 @@ class 73_MA5K: OPTRE_MA5K
     displayname = "[73] MA5K ICWS Carbine";
     baseWeapon 	= "73_MA5K";
     magazines[] = {"73_32Rnd_762x51_Mag_UW"};
-    magazineWell[] = {"73_ar32rnd_uw"};
+    magazineWell[] = {"73_ar32rnd_uw","73_ar"};
     hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[]  = {"OPTRE_Weapons\ar\data\ma5k_co.paa"};
     class WeaponSlotsInfo: WeaponSlotsInfo

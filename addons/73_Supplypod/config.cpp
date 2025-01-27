@@ -9,7 +9,6 @@ class CfgPatches
 		{
 			"73_units",
 			"OPTRE_Misc",
-			"1st_MEU_patch_vehicles_supplypods",
 			"NSWep_Core",
 			"DMNS_Core",
 			"73_weapons"

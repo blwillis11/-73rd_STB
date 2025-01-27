@@ -7,7 +7,7 @@ class CfgPatches
 		units[] =
         {
             "OPTRE_BattlejumperDrop",
-            "73_URFSquadPod"
+            "OPTRE_OCLSSquadDrop"
         };
         weapons[] =
         {
@@ -137,9 +137,9 @@ class CfgFunctions
             {
                 file = "73_functions\SupportSystem\Fn_CS_PelicanAirAssault.sqf";
             };
-            class CS_URFSquadPod
+            class CS_OCLSSquadPod
             {
-                file = "73_functions\SupportSystem\Fn_CS_URFSquadPod.sqf";
+                file = "73_functions\SupportSystem\Fn_CS_OCLSSquadPod.sqf";
             };
         };
         class HEV
@@ -264,6 +264,10 @@ class CfgFunctions
             class ModuleBJHEV
             {
                 file = "73_functions\Modules\Fn_ModuleBJHEV.sqf";
+            };
+            class ModuleOCLSSquadPod
+            {
+                file = "73_functions\Modules\Fn_ModuleOCLSSquadPod.sqf";
             };
             class ModuleHEVCleanUp
             {
@@ -1297,6 +1301,70 @@ class cfgVehicles
         scopeCurator=2;
         curatorInfoType="OPTRE_ZeusDisplay_BJDrop";
         function="OPTRE_fnc_ModuleBJHEV";
+        portrait="OPTRE_Vehicles\HEV\Data\icon2.paa";
+        author="Article 2 Studios";
+    };
+    class Module_OPTRE_OCLSSquadDrop: Module_F
+    {
+        scope=2;
+        displayName="Drop AI OCLS Squad Module";
+        icon="\OPTRE_Modules\data\picture\Icon_OPTRE.paa";
+        category="OPTRE_EditorSupport";
+        function="OPTRE_fnc_ModuleOCLSSquadPod";
+        functionPriority=99;
+        isGlobal=0;
+        isTriggerActivated=1;
+        author="Article 2 Studios";
+        is3DEN=0;
+        class Arguments
+        {
+            class waypoints
+            {
+                displayName="WayPoints";
+                description="An array or map marker variable names that the groups spawned will follow once on the ground as waypoints. No quotations are needed for example: M1,Marker2,MapMarker1";
+                defaultValue="";
+                typeName="STRING";
+            };
+            class finalWaypoint
+            {
+                displayName="Final Waypoint Task";
+                description="What should the group do on their final waypoint. If you have given no waypoints then this option is ignored. If CBA Garrison is selected units will find houses within 75m of last waypoint. If CBA patrol is selected group will patrol within a 300m area of last waypoint.";
+                defaultValue=" ";
+                typeName="STRING";
+                class values
+                {
+                    class n1
+                    {
+                        name="BIS Cycle Back To First Waypoint";
+                        value="cycle";
+                    };
+                    class n2
+                    {
+                        name="CBA Garrison Near Final Waypoint";
+                        value="garrison";
+                    };
+                    class n3
+                    {
+                        name="CBA Patrol Around Final Waypoint";
+                        value="patrol";
+                    };
+                    class n4
+                    {
+                        name="Stop, Do Nothing";
+                        value="";
+                        default=1;
+                    };
+                };
+            };
+        };
+    };
+    class OPTRE_OCLSSquadDrop: OPTRE_PelicanSupplyDrop
+    {
+        displayName="OCLS Squad Drop Module";
+        category="OPTRE_ZeusReSup";
+        scopeCurator=2;
+        curatorInfoType="";
+        function="OPTRE_fnc_ModuleOCLSSquadPod";
         portrait="OPTRE_Vehicles\HEV\Data\icon2.paa";
         author="Article 2 Studios";
     };

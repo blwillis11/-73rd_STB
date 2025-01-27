@@ -6,8 +6,7 @@ class CfgPatches
 		addonRootClass="73_misc";
 		requiredAddons[]=
 		{
-			"73_misc",
-			"1st_MEU_patch_ace_medical"
+			"73_misc"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -47,6 +46,15 @@ class CfgFunctions
             {
             };
             class doPressure
+            {
+            };
+            class biomed
+            {
+            };
+            class tourniquetRemove
+            {
+            };
+            class medkit
             {
             };
         };
@@ -1394,7 +1402,7 @@ class ACE_Medical_Treatment_Actions
 		{
 			"73_Medigel"
 		};
-		callbackSuccess="MEU_fnc_biomed";
+		callbackSuccess="STB73_fnc_biomed";
 		consumeItem=1;
 		category="bandage";
 		medicRequired=1;
@@ -1407,7 +1415,7 @@ class ACE_Medical_Treatment_Actions
 		{
 			"73_Biofoam"
 		};
-		callbackSuccess="MEU_fnc_biomed";
+		callbackSuccess="STB73_fnc_biomed";
 		consumeItem=1;
 		category="bandage";
 		medicRequired=1;
@@ -1421,7 +1429,7 @@ class ACE_Medical_Treatment_Actions
 			"73_Medigel_Light"
 		};
 		category="bandage";
-		callbackSuccess="MEU_fnc_biomed";
+		callbackSuccess="STB73_fnc_biomed";
 	};
 	class 73_Biofoam_Light: OPTRE_Biofoam
 	{
@@ -1432,7 +1440,7 @@ class ACE_Medical_Treatment_Actions
 			"73_Biofoam_Light"
 		};
 		category="bandage";
-		callbackSuccess="MEU_fnc_biomed";
+		callbackSuccess="STB73_fnc_biomed";
 	};
 	class 73_ApplyTourniquet: ApplyTourniquet
 	{
@@ -1453,41 +1461,16 @@ class ACE_Medical_Treatment_Actions
 		consumeItem=0;
 		category="bandage";
 	};
-	class 73_RemoveTourniquet: 73_ApplyTourniquet
+	class STB73_RemoveTourniquet: 73_ApplyTourniquet
 	{
 		displayName="[73] Deconstrict Suit";
 		displayNameProgress="Loosening suit constriction...";
-		allowedSelections[]=
-		{
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg",
-			"Head"
-		};
 		items[]=
 		{
-			"73_tourniquet"
+			""
 		};
-		treatmentTime=3;
-		callbackSuccess="MEU_fnc_tourniquetRemove";
-		consumeItem=0;
-		category="bandage";
-	};
-	class 73_NeckTourniquet: 73_ApplyTourniquet
-	{
-		displayName="[73] Constrict Suit";
-		displayNameProgress="Activating suit constriction...";
-		allowedSelections[]=
-		{
-			"Head"
-		};
-		items[]=
-		{
-			"73_tourniquet"
-		};
-		treatmentTime=3;
-		callbackSuccess="MEU_fnc_necktourniquet";
+		condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedTo));
+		callbackSuccess="STB73_fnc_tourniquetRemove";
 		consumeItem=0;
 		category="bandage";
 	};
@@ -1506,7 +1489,7 @@ class ACE_Medical_Treatment_Actions
 			"73_MedKit"
 		};
 		callbackStart="";
-		callbackSuccess="MEU_fnc_medkit";
+		callbackSuccess="STB73_fnc_medkit";
 	};
 	class FirstAidKit: 73_Biofoam
 	{

@@ -46,7 +46,7 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
                             };
                             class Alpha_1_HQ_Member {
                                 displayName = "Alpha Actual Member";
-                                statement = "0 = [0,5,100,2,100]spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,5,100,2,100] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Alpha_1_HQ_Medic {
@@ -171,8 +171,103 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
                             };
                         };
                     };
+                    class Alpha_3 {
+                        displayName = "Third Platoon";
+                        condition = "true";
+
+                        class Alpha_3_m {
+                            displayName = "Alpha 3 Actual";
+                            condition = "true";
+
+                            class Alpha_3_HQ {
+                                displayName = "Alpha 3 Actual Lead";
+                                statement = "0 = [0,5,300,1,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_HQ_JT {
+                                displayName = "Alpha 3 Actual RTO";
+                                statement = "0 = [0,6,400,1,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_HQ_Member {
+                                displayName = "Alpha 3 Actual Member";
+                                statement = "0 = [0,5,100,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_HQ_Medic {
+                                displayName = "Alpha 3 Actual Medic";
+                                statement = "0 = [0,4,200,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+
+                        class Alpha_3_1 {
+                            displayName = "Alpha 2-1";
+                            condition = "true";
+
+                            class Alpha_3_1_HQ {
+                                displayName = "Alpha 3-1 Lead";
+                                statement = "0 = [1,5,300,1,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_1_Member {
+                                displayName = "Alpha 3-1 Member";
+                                statement = "0 = [1,5,100,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_1_Medic {
+                                displayName = "Alpha 3-1 Medic";
+                                statement = "0 = [1,4,200,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+
+                        class Alpha_3_2 {
+                            displayName = "Alpha 2-2";
+                            condition = "true";
+
+                            class Alpha_3_2_TL {
+                                displayName = "Alpha 3-2 Lead";
+                                statement = "0 = [2,5,300,1,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_2_Member {
+                                displayName = "Alpha 3-2 Member";
+                                statement = "0 = [2,5,100,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Alpha_3_2_Medic {
+                                displayName = "Alpha 3-2 Medic";
+                                statement = "0 = [2,4,200,2,300] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+                    };
+
+                    class Alpha_LR {
+                        displayName = "Long Range (NOT WORKING)";
+                        condition = "true";
+
+                        class Alpha_LR_M {
+                            displayName = "Alpha Company Long Range";
+                            condition = "true";
+
+                            class Alpha_1_LR {
+                                displayName = "Alpha 1 Long Range";
+                                condition = "true";
+                            };
+                            class Alpha_2_LR {
+                                displayName = "Alpha 2 Long Range";
+                                condition = "true";
+                            };
+                            class Alpha_3_LR {
+                                displayName = "Alpha 3 Long Range";
+                                condition = "true";
+                            };
+                        };
+                    };
                 };
-                // Bravo Company
+
                 class Bravo {
                     displayName = "Bravo Company";
                     condition = "true";
@@ -187,22 +282,22 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_1_HQ {
                                 displayName = "Bravo Actual Lead";
-                                statement = "0 = [0,5,300,1,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,5,300,1,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
-                            class ABravo_1_HQ_JT {
+                            class Bravo_1_HQ_JT {
                                 displayName = "Bravo Actual RTO";
-                                statement = "0 = [0,6,400,1,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,6,400,1,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_HQ_Member {
                                 displayName = "Bravo Actual Member";
-                                statement = "0 = [0,5,100,2,100]spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,5,100,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_HQ_Medic {
                                 displayName = "Bravo Actual Medic";
-                                statement = "0 = [0,4,200,2,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,4,200,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                         };
@@ -213,17 +308,17 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_1_1_HQ {
                                 displayName = "Bravo 1-1 Lead";
-                                statement = "0 = [1,5,300,1,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,5,300,1,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_1_Member {
                                 displayName = "Bravo 1-1 Member";
-                                statement = "0 = [1,5,100,2,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,5,100,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_1_Medic {
                                 displayName = "Bravo 1-1 Medic";
-                                statement = "0 = [1,4,200,2,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,4,200,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                         };
@@ -234,17 +329,17 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_1_2_TL {
                                 displayName = "Bravo 1-2 Lead";
-                                statement = "0 = [2,5,300,1,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,5,300,1,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_2_Member {
                                 displayName = "Bravo 1-2 Member";
-                                statement = "0 = [2,5,100,2,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,5,100,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_1_2_Medic {
                                 displayName = "Bravo 1-2 Medic";
-                                statement = "0 = [2,4,200,2,100] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,4,200,2,600] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                         };
@@ -260,22 +355,22 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_2_HQ {
                                 displayName = "Bravo 2 Actual Lead";
-                                statement = "0 = [0,5,300,1,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,5,300,1,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_HQ_JT {
                                 displayName = "Bravo 2 Actual RTO";
-                                statement = "0 = [0,6,400,1,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,6,400,1,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_HQ_Member {
                                 displayName = "Bravo 2 Actual Member";
-                                statement = "0 = [0,5,100,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,5,100,2,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_HQ_Medic {
                                 displayName = "Bravo 2 Actual Medic";
-                                statement = "0 = [0,4,200,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [0,4,200,2,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                         };
@@ -286,17 +381,17 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_2_1_HQ {
                                 displayName = "Bravo 2-1 Lead";
-                                statement = "0 = [1,5,300,1,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,5,300,1,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_1_Member {
                                 displayName = "Bravo 2-1 Member";
-                                statement = "0 = [1,5,100,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,5,100,2,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_1_Medic {
                                 displayName = "Bravo 2-1 Medic";
-                                statement = "0 = [1,4,200,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [1,4,200,2,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                         };
@@ -307,17 +402,112 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
 
                             class Bravo_2_2_TL {
                                 displayName = "Bravo 2-2 Lead";
-                                statement = "0 = [2,5,300,1,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,5,300,1,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_2_Member {
                                 displayName = "Bravo 2-2 Member";
-                                statement = "0 = [2,5,100,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,5,100,2,700] spawn STB73_fnc_setRadio73STB;";
                                 condition = "true";
                             };
                             class Bravo_2_2_Medic {
                                 displayName = "Bravo 2-2 Medic";
-                                statement = "0 = [2,4,200,2,200] spawn STB73_fnc_setRadio73STB;";
+                                statement = "0 = [2,4,200,2,700] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+                    };
+                    class Bravo_3 {
+                        displayName = "Third Platoon";
+                        condition = "true";
+
+                        class Bravo_3_m {
+                            displayName = "Bravo 3 Actual";
+                            condition = "true";
+
+                            class Bravo_3_HQ {
+                                displayName = "Bravo 3 Actual Lead";
+                                statement = "0 = [0,5,300,1,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_HQ_JT {
+                                displayName = "Bravo 3 Actual RTO";
+                                statement = "0 = [0,6,400,1,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_HQ_Member {
+                                displayName = "Bravo 3 Actual Member";
+                                statement = "0 = [0,5,100,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_HQ_Medic {
+                                displayName = "Bravo 3 Actual Medic";
+                                statement = "0 = [0,4,200,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+
+                        class Bravo_3_1 {
+                            displayName = "Bravo 2-1";
+                            condition = "true";
+
+                            class Bravo_3_1_HQ {
+                                displayName = "Bravo 3-1 Lead";
+                                statement = "0 = [1,5,300,1,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_1_Member {
+                                displayName = "Bravo 3-1 Member";
+                                statement = "0 = [1,5,100,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_1_Medic {
+                                displayName = "Bravo 3-1 Medic";
+                                statement = "0 = [1,4,200,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+
+                        class Bravo_3_2 {
+                            displayName = "Bravo 2-2";
+                            condition = "true";
+
+                            class Bravo_3_2_TL {
+                                displayName = "Bravo 3-2 Lead";
+                                statement = "0 = [2,5,300,1,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_2_Member {
+                                displayName = "Bravo 3-2 Member";
+                                statement = "0 = [2,5,100,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                            class Bravo_3_2_Medic {
+                                displayName = "Bravo 3-2 Medic";
+                                statement = "0 = [2,4,200,2,800] spawn STB73_fnc_setRadio73STB;";
+                                condition = "true";
+                            };
+                        };
+                    };
+
+                    class Bravo_LR {
+                        displayName = "Long Range (NOT WORKING)";
+                        condition = "true";
+
+                        class Bravo_LR_M {
+                            displayName = "Bravo Company Long Range";
+                            condition = "true";
+
+                            class Bravo_1_LR {
+                                displayName = "Bravo 1 Long Range";
+                                condition = "true";
+                            };
+                            class Bravo_2_LR {
+                                displayName = "Bravo 2 Long Range";
+                                condition = "true";
+                            };
+                            class Bravo_3_LR {
+                                displayName = "Bravo 3 Long Range";
                                 condition = "true";
                             };
                         };

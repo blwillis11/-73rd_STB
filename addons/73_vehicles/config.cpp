@@ -70,7 +70,26 @@ class CfgPatches
         };
     };
 };
-
+class CfgFunctions
+{
+    class STB73
+    {
+        class Thrusters
+        {
+            file="73_vehicles\functions\Thrusters";
+            class ChangeSpeed{};
+            class DecreaseThrusterLevel{};
+            class EngageAfterburners{};
+            class EngageAirbrakes{};
+            class EngageForwardThruster{};
+            class GetFlightTime{};
+            class IncreaseThrusterLevel{};
+            class RegisterThrusters{};
+            class ThrusterAnimate{};
+            class ThrusterDeAnimate{};
+        };
+    };
+};
 class CfgVehicles {
     class ViewCargo;
     class ViewOptics;

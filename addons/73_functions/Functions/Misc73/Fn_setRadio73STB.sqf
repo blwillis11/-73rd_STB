@@ -18,47 +18,44 @@ _DescTeam = [];
 // Ground LR  = 70
 // First Platoon
 if (_Platoon == 100) then {
-	_FreqTeam = ["111.1", "111.2", "111.3", "111.4", "220.1", "111", "35", "70"];
-	_DescTeam = ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Overflow Chl", "Plt Med Net", "Plt 1 Net", "Air Net", "Cmpy Net"];
+	_FreqTeam = ["111.1", "111.2", "111.3", "111.4", "111.5", "111", "70", "61"];
+	_DescTeam = ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Overflow Chl", "Plt Med Net", "Plt 1 Net", "Cmpy Net", "Air Net"];
 };
 // Second Platoon
 if (_Platoon == 200) then {
-	_FreqTeam = ["112.1", "112.2", "112.3", "112.4", "221.1", "112", "35", "70"];
-	_DescTeam = ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Overflow Chl", "Plt Med Net", "Plt 2 Net", "Air Net", "Cmpy Net"];
+	_FreqTeam = ["112.1", "112.2", "112.3", "112.4", "112.5", "112", "70", "61"];
+	_DescTeam = ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Overflow Chl", "Plt Med Net", "Plt 2 Net", "Cmpy Net", "Air Net"];
 };
 // Third Platoon
 if (_Platoon == 300) then {
-	_FreqTeam = ["122.1", "122.2", "122.3", "122.4", "222.1", "122", "35", "70"];
-	_DescTeam = ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Overflow Chl", "Plt Med Net", "Plt 3 Net", "Air Net", "Cmpy Net"];
+	_FreqTeam = ["113.1", "113.2", "113.3", "113.4", "113.5", "113", "70", "61"];
+	_DescTeam = ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Overflow Chl", "Plt Med Net", "Plt 3 Net", "Cmpy Net", "Air Net"];
 };
 // Air Platoon
 if (_Platoon == 400) then {
-	_FreqTeam = ["260", "230", "120", "121", "122", "250", "251", "252"];
+	_FreqTeam = ["260", "230", "111", "112", "113", "120", "121", "122"];
 	_DescTeam = ["Air Net 1", "Air Net 2", "Alpha 1", "Alpha 2", "Alpha 3", "Bravo 1", "Bravo 2", "Bravo 3"];
 };
 // Armoured Platoon
 if (_Platoon == 500) then {
-	_FreqTeam = ["360", "330", "120", "121", "122", "250", "251", "252"];
+	_FreqTeam = ["360", "330", "111", "112", "113", "120", "121", "122"];
 };
-// Recon Platoon
+//First Platoon
 if (_Platoon == 600) then {
-	_FreqTeam = ["360", "330", "120", "121", "122", "250", "251", "252"];
+	_FreqTeam = ["120.1", "120.2", "120.3", "120.4", "120.5", "120", "70", "61"];
+	_DescTeam = ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Overflow Chl", "Plt Med Net", "Plt 1 Net", "Cmpy Net", "Air Net"];
 };
-// Bco First Platoon
+// Second Platoon
 if (_Platoon == 700) then {
-	_FreqTeam = ["121.1", "121.2", "121.3", "121.4", "220.1", "111", "35", "70"];
-	_DescTeam = ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Overflow Chl", "Plt Med Net", "Plt 1 Net", "Air Net", "Cmpy Net"];
+	_FreqTeam = ["121.1", "121.2", "121.3", "121.4", "121.5", "121", "70", "61"];
+	_DescTeam = ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Overflow Chl", "Plt Med Net", "Plt 2 Net", "Cmpy Net", "Air Net"];
 };
-// Bco Second Platoon
+// Third Platoon
 if (_Platoon == 800) then {
-	_FreqTeam = ["122.1", "122.2", "122.3", "122.4", "221.1", "112", "35", "70"];
-	_DescTeam = ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Overflow Chl", "Plt Med Net", "Plt 2 Net", "Air Net", "Cmpy Net"];
+	_FreqTeam = ["122.1", "122.2", "122.3", "122.4", "122.5", "122", "70", "61"];
+	_DescTeam = ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Overflow Chl", "Plt Med Net", "Plt 3 Net", "Cmpy Net", "Air Net"];
 };
-// Bco Third Platoon
-if (_Platoon == 900) then {
-	_FreqTeam = ["123.1", "123.2", "123.3", "123.4", "222.1", "122", "35", "70"];
-	_DescTeam = ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Overflow Chl", "Plt Med Net", "Plt 3 Net", "Air Net", "Cmpy Net"];
-};
+
 // _FreqTeam = ["120.1", "120.2", "120.3", "120.4", "220.1", "120", "35"];
 // command radio 152
 _commandRadioType = 1;
@@ -99,8 +96,6 @@ if (playerSide in [west]) then {
 	[(call TFAR_fnc_activeSwradio), 2, (_FreqTeam select 1)] call TFAR_fnc_setChannelFrequency;
 	[(call TFAR_fnc_activeSwradio), 3, (_FreqTeam select 2)] call TFAR_fnc_setChannelFrequency;
 	[(call TFAR_fnc_activeSwradio), 4, (_FreqTeam select 3)] call TFAR_fnc_setChannelFrequency;
-	[(call TFAR_fnc_activeSwradio), 5, "399.5"] call TFAR_fnc_setChannelFrequency;
-	[(call TFAR_fnc_activeSwradio), 6, "379.5"] call TFAR_fnc_setChannelFrequency;
 	[(call TFAR_fnc_activeSwRadio), -1] call TFAR_fnc_setAdditionalSwChannel;
 
 	[call TFAR_fnc_activeSwRadio, _team] call TFAR_fnc_setSwChannel;
@@ -109,7 +104,6 @@ if (playerSide in [west]) then {
 	if (_setAdditonal == 200) then {
 		[(call TFAR_fnc_activeSwradio), 5, (_FreqTeam select 4)] call TFAR_fnc_setChannelFrequency;
 		[(call TFAR_fnc_activeSwRadio), _additional] call TFAR_fnc_setAdditionalSwChannel;
-		[(call TFAR_fnc_activeSwradio), 6, "389.5"] call TFAR_fnc_setChannelFrequency;
 		       // format ["%1 radio setup is complete! Team %2 Medic primary freq %3 additional freq %4", name player, (_FTName select _team), (_FreqTeam select _team), 
 		       // (_FreqTeam select _additional)] remoteExec ["hint"];
 	};
@@ -118,7 +112,6 @@ if (playerSide in [west]) then {
 		[(call TFAR_fnc_activeSwradio), 5, (_FreqTeam select 4)] call TFAR_fnc_setChannelFrequency;
 		[(call TFAR_fnc_activeSwradio), 6, (_FreqTeam select 5)] call TFAR_fnc_setChannelFrequency;
 		[(call TFAR_fnc_activeSwradio), 7, (_FreqTeam select 6)] call TFAR_fnc_setChannelFrequency;
-		[(call TFAR_fnc_activeSwradio), 8, (_FreqTeam select 7)] call TFAR_fnc_setChannelFrequency;
 		[(call TFAR_fnc_activeSwRadio), _additional] call TFAR_fnc_setAdditionalSwChannel;
 		       // format ["%1 radio setup is complete! Team %2 Leader primary freq %3 additional freq %4", name player, (_FTName select _team), (_FreqTeam select _team), 
 		       // (_FreqTeam select _additional)] remoteExec ["hint"];
@@ -139,8 +132,11 @@ if (playerSide in [west]) then {
 	};
 
 	if (_Platoon == 100) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Alpha 1 OF", "Plt Med Net", "Plt 1 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		if (_setAdditonal == 300) then {
+			[true, ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Alpha 1 OF", "Plt Med Net", "Plt 1 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Alpha 1 OF", "Plt Med Net", "Plt 1 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
 			[true, ["Alpha 1 Act", "Alpha 1-1", "Alpha 1-2", "Alpha 1 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
@@ -150,8 +146,11 @@ if (playerSide in [west]) then {
 		};
 	};
 	if (_Platoon == 200) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Alpha 2 OF", "Plt Med Net", "Plt 2 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		if (_setAdditonal == 300 ) then {
+			[true, ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Alpha 2 OF", "Plt Med Net", "Plt 2 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Alpha 2 OF", "Plt Med Net", "Plt 2 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
 			[true, ["Alpha 2 Act", "Alpha 2-1", "Alpha 2-2", "Alpha 2 OF", "Plt Med Net", "Plt 2 Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
@@ -161,14 +160,17 @@ if (playerSide in [west]) then {
 		};
 	};
 	if (_Platoon == 300) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 2 OF", "Plt Med Net", "Plt 3 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		if (_setAdditonal == 300) then {
+			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 3 OF", "Plt Med Net", "Plt 3 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 3 OF", "Plt Med Net", "Plt 3 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
-			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 2 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 3 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 100) then {
-			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 2 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
+			[true, ["Alpha 3 Act", "Alpha 3-1", "Alpha 3-2", "Alpha 3 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 	};
 
@@ -178,12 +180,13 @@ if (playerSide in [west]) then {
 	if (_Platoon == 500) then {
 		[true, ["Mech Net 1", "Mech Net 2", "Alpha 1", "Alpha 2", "Alpha 3", "Bravo 1", "Bravo 2", "Bravo 3"]] call Rev_TFAR_fnc_setDefaultScribbles;
 	};
+
 	if (_Platoon == 600) then {
-		[true, ["Recon Net 1", "Recon Net 2", "Alpha 1", "Alpha 2", "Alpha 3", "Bravo 1", "Bravo 2", "Bravo 3"]] call Rev_TFAR_fnc_setDefaultScribbles;
-	};
-	if (_Platoon == 700) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Bravo 1 OF", "Plt Med Net", "Plt 1 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		if (_setAdditonal == 300) then {
+			[true, ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Bravo 1 OF", "Plt Med Net", "Plt 1 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Bravo 1 OF", "Plt Med Net", "Plt 1 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
 			[true, ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Bravo 1 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
@@ -192,9 +195,12 @@ if (playerSide in [west]) then {
 			[true, ["Bravo 1 Act", "Bravo 1-1", "Bravo 1-2", "Bravo 1 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 	};
-	if (_Platoon == 800) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Bravo 2 OF", "Plt Med Net", "Plt 2 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+	if (_Platoon == 700) then {
+		if (_setAdditonal == 300 ) then {
+			[true, ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Bravo 2 OF", "Plt Med Net", "Plt 2 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Bravo 2 OF", "Plt Med Net", "Plt 2 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
 			[true, ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Bravo 2 OF", "Plt Med Net", "Plt 2 Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
@@ -203,15 +209,18 @@ if (playerSide in [west]) then {
 			[true, ["Bravo 2 Act", "Bravo 2-1", "Bravo 2-2", "Bravo 2 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 	};
-	if (_Platoon == 900) then {
-		if (_setAdditonal == 300 || _setAdditonal == 400) then {
-			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 2 OF", "Plt Med Net", "Plt 3 Net", "Air Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+	if (_Platoon == 800) then {
+		if (_setAdditonal == 300) then {
+			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 3 OF", "Plt Med Net", "Plt 3 Net", "Cmpy Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+		};
+		if (_setAdditonal == 400) then {
+			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 3 OF", "Plt Med Net", "Plt 3 Net", "Cmpy Net", "Air Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 200) then {
-			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 2 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
+			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 3 OF", "Plt Med Net"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 		if (_setAdditonal == 100) then {
-			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 2 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
+			[true, ["Bravo 3 Act", "Bravo 3-1", "Bravo 3-2", "Bravo 3 OF"]] call Rev_TFAR_fnc_setDefaultScribbles;
 		};
 	};
 };

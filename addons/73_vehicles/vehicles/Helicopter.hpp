@@ -16,6 +16,10 @@ class 73_AV14_Hornet_CAS: OPTRE_UNSC_hornet_CAS
         "",
         ""
     };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -53,6 +57,10 @@ class 73_AV14_Hornet_CAP: OPTRE_UNSC_hornet_CAP
     };
     class textureSources
     {};
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -107,121 +115,7 @@ class 73_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
     };
     class UserActions
     {
-        class PelLift_LoadVehicle
-        {
-            userActionID = 6;
-            displayName = "Load Vehicle";
-            displayNameDefault = "Load Vehicle";
-            textToolTip = "Load Vehicle";
-            position = "cargo_door_handle";
-            showWindow = 0;
-            radius = 15;
-            priority = 2;
-            onlyForPlayer = 0;
-            condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""STB73_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
-            statement = "0 = [this,vehicle player] spawn STB73_fnc_PelicanLoadValidate;";
-        };
-        class PelLift_UnLoadVehicle
-        {
-            userActionID = 7;
-            displayName = "Unload Vehicle / Supply Pods";
-            displayNameDefault = "Unload Vehicle / Supply Pods";
-            textToolTip = "Unload Vehicle / Supply Pods";
-            position = "cargo_door_handle";
-            showWindow = 0;
-            radius = 5;
-            priority = 3;
-            onlyForPlayer = 0;
-            condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""STB73_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-            statement = "0 = [this] spawn STB73_fnc_PelicanUnLoadValidate;";
-        };
-        class PelLift_LoadPodMenu
-        {
-            userActionID = 9;
-            displayName = "Load Supply Pods";
-            displayNameDefault = "Load Supply Pods";
-            textToolTip = "Load Supply Pods";
-            position = "cargo_door_handle";
-            showWindow = 0;
-            radius = 15;
-            priority = 2;
-            onlyForPlayer = 0;
-            condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
-            //condition = "( vehicle player != this AND vehicle player != this AND player == driver vehicle player AND (vehicle player) isKindOf ""OPTRE_cart_base"" ) ";
-            statement = "Splits_pelicanloadSupplyPods_Menu_PelicanObject = this; createDialog ""Splits_pelicanloadSupplyPods_Menu""; Splits_pelicanloadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL Splits_pelicanloadSupplyPods_Menu_PelicanObject;  Splits_pelicanloadSupplyPods_Menu_cam CamSetTarget Splits_pelicanloadSupplyPods_Menu_PelicanObject; Splits_pelicanloadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; Splits_pelicanloadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; Splits_pelicanloadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
-        };
-        class PelLift_OpenDetachPodMenu
-        {
-            userActionID = 8;
-            displayName = "Detach Individual Supply Pod Menu";
-            displayNameDefault = "Detach Individual Supply Pod Menu";
-            textToolTip = "Detach Individual Supply Pod Menu";
-            position = "cargo_door_handle";
-            showWindow = 0;
-            radius = 5;
-            priority = 3;
-            onlyForPlayer = 0;
-            condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-            statement = "0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
-        };
-        class RampOpen
-        {
-            userActionID = 50;
-            displayName = "Close Ramp";
-            displayNameDefault = "Close Ramp";
-            textToolTip = "Close Ramp";
-            position = "cargo_door_handle";
-            showWindow = 0;
-            radius = 100000;
-            priority = 4;
-            onlyForPlayer = 0;
-            condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
-            statement = "this animate [""cargoDoor_1"",1]";
-            animPeriod = 5;
-        };
-        class RampClose : RampOpen
-        {
-            userActionID = 51;
-            displayName = "Open Ramp";
-            displayNameDefault = "Open Ramp";
-            textToolTip = "Open Ramp";
-            priority = 4;
-            condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
-            statement = "this animate [""cargoDoor_1"",0]";
-            animPeriod = 5;
-        };
-        class ThrusterEngage
-        {
-            userActionID = 122;
-            displayName = "ENGAGE FORWARD THRUSTERS";
-            displayNameDefault = "ENGAGE FORWARD THRUSTERS";
-            textToolTip = "ENGAGE FORWARD THRUSTERS";
-            position = "cargo_door_handle";
-            priority = 10;
-            radius = 3;
-            onlyForPlayer = 0;
-            condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-            statement = "0 = this spawn OPTRE_fnc_ThrusterEngage";
-            animPeriod = 4;
-        };
-        class ThrusterDisengage : ThrusterEngage
-        {
-            userActionID = 123;
-            displayName = "DISENGAGE FORWARD THRUSTERS";
-            displayNameDefault = "DISENGAGE FORWARD THRUSTERS";
-            textToolTip = "DISENGAGE FORWARD THRUSTERS";
-            condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-            statement = "0 = this spawn OPTRE_fnc_ThrusterDisengage";
-        };
-        class AirbrakeEngage: ThrusterEngage
-        {
-            userActionID = 124;
-            displayName = "ENGAGE AIRBRAKES";
-            displayNameDefault = "ENGAGE AIRBRAKES";
-            textToolTip = "ENGAGE AIRBRAKES";
-            condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
-            statement = "0 = this spawn OPTRE_fnc_AirbrakeEngage";
-        };
+        #include "cfg\PelicanActions.hpp"
     };
 };
 
@@ -246,7 +140,11 @@ class 73_UNSC_falcon:OPTRE_UNSC_falcon
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "73_vehicles\data\Falcon\73rd_falcon_decal_ca.paa"
     };
-
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -286,6 +184,11 @@ class 73_UNSC_falcon_S:OPTRE_UNSC_falcon_S
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "73_vehicles\data\Falcon\73rd_falcon_decal_ca.paa"
     };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -323,6 +226,11 @@ class 73_UNSC_MH_144_Falcon:OPTRE_UNSC_MH_144_Falcon
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "73_vehicles\data\Falcon\73rd_falcon_decal_ca.paa"
+    };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
     };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
@@ -364,6 +272,11 @@ class 73_UNSC_MH_144S_Falcon:OPTRE_UNSC_MH_144S_Falcon
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "73_vehicles\data\Falcon\73rd_falcon_decal_ca.paa"
     };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -394,6 +307,11 @@ class 73_AV22_Sparrowhawk:OPTRE_AV22_Sparrowhawk
     scope=2;
     side=1;
     crew = "73_Aviator";
+	class UserActions
+	{
+	    #include "cfg\UtilityActions.hpp"
+		#include "cfg\ThrusterActions.hpp"
+	};
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -442,6 +360,11 @@ class 73_AV22A_Sparrowhawk:OPTRE_AV22A_Sparrowhawk
         "OPTRE_Vehicles_Air\sparrowhawk\data\autocannon_co.paa",
         "OPTRE_Vehicles_Air\sparrowhawk\data\feed_autocannon_co.paa"
     };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -481,6 +404,11 @@ class 73_AV22B_Sparrowhawk:OPTRE_AV22B_Sparrowhawk
         "OPTRE_Vehicles_Air\sparrowhawk\data\autocannon_co.paa",
         "OPTRE_Vehicles_Air\sparrowhawk\data\feed_autocannon_co.paa"
     };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
         {
@@ -519,6 +447,11 @@ class 73_AV22C_Sparrowhawk:OPTRE_AV22C_Sparrowhawk
         "OPTRE_Vehicles_Air\sparrowhawk\data\body_05_co.paa",
         "OPTRE_Vehicles_Air\sparrowhawk\data\autocannon_co.paa",
         "OPTRE_Vehicles_Air\sparrowhawk\data\feed_autocannon_co.paa"
+    };
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
     };
     class VehicleSpawnerInfo {
         class 73_AirSpawner
