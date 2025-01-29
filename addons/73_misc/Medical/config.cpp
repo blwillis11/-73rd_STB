@@ -6,34 +6,48 @@ class CfgPatches
 		addonRootClass="73_misc";
 		requiredAddons[]=
 		{
-			"73_misc"
+			"73_misc",
+			"ace_medical_treatment"
 		};
 		requiredVersion=0.1;
 		units[]=
 		{
-			"73_Adrenalineitem",
+			"73_epinephrineitem",
 			"73_MorphineItem",
 			"73_BiofoamItem",
 			"73_MediGelItem",
 			"73_BiofoamItem_Light",
-			"73_MediGelItem_Light"
+			"73_MediGelItem_Light",
+			"73_AdenosineItem"
 		};
 		weapons[]=
 		{
 			"73_Morphine",
-			"73_PlasmaIV",
+			"73_PolyHemoglobinIV_2000",
+			"73_PolyHemoglobinIV_1000",
+			"73_PolyHemoglobinIV_500",
+			"73_PolyHemoglobinIV_250",
 			"73_MedKit",
 			"73_Biofoam",
 			"73_Medigel",
 			"73_Biofoam_Light",
 			"73_Medigel_Light",
-			"73_tourniquet",
-			"73_Adrenaline",
+			"ACE_tourniquet",
+			"73_epinephrine",
+			"73_adenosine",
+			"ACE_splint"
 		};
 	};
 };
 class CfgFunctions
 {
+    class overwrite_medicalTreatment {
+        tag = "ace_medical_treatment_73_OW";
+        file = "73_misc\functions";
+        class tourniquetRemove
+        {
+        };
+    };
     class STB73
     {
         class Medical
@@ -51,9 +65,6 @@ class CfgFunctions
             class biomed
             {
             };
-            class tourniquetRemove
-            {
-            };
             class medkit
             {
             };
@@ -65,30 +76,82 @@ class CfgWeapons
 {
 	class ACE_Morphine;
 	class CBA_MiscItem_ItemInfo;
+	class ACE_ItemCore;
+
+	class ACE_splint: ACE_ItemCore
+    {
+        displayName="Bone-Knitting Polymer";
+    };
 	class 73_Morphine: ACE_Morphine
 	{
 		scope=2;
 		author="73rd S-4 Team";
-		displayName="[73] Morphine";
+		displayName="[73] Polypseudomorphine";
 		picture="\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
 		model="\z\ace\addons\medical_treatment\data\morphine.p3d";
-		descriptionShort="Drink some water and take this.";
-		descriptionUse="Use this instead of morphine.";
+		descriptionShort="A sedative that numbs pain in very small doses.";
+		descriptionUse="Injection eases the pain of the patient.";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass=0.1;
 		};
 	};
-	class ACE_plasmaIV;
-	class 73_PlasmaIV: ACE_plasmaIV
+	class ACE_adenosine;
+	class 73_adenosine: ACE_adenosine
 	{
 		scope=2;
-		displayName="[73] Plasma 2L";
-		descriptionShort="2L of Plasma";
-		descriptionUse="Gives Plasma (2L)";
+		author="73rd S-4 Team";
+		displayName="[73] Narcolytic Metabolase";
+		descriptionShort="Consumes analgesic agents in the patient.";
+		descriptionUse="Injection will help wake someone up.";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.1;
+		};
+	};
+	class ACE_ACE_bloodIV;
+	class 73_PolyHemoglobinIV_2000: ACE_ACE_bloodIV
+	{
+		scope=2;
+		displayName="[73] 2000cc Polymerized Hemoglobin";
+		descriptionShort="2000cc of Plasma";
+		descriptionUse="Gives Plasma (2000cc)";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass=12;
+		};
+	};
+	class 73_PolyHemoglobinIV_1000: ACE_ACE_bloodIV
+	{
+		scope=2;
+		displayName="[73] 1000cc Polymerized Hemoglobin";
+		descriptionShort="1000cc of Poly-Hemo";
+		descriptionUse="Gives Poly-Hemo (1000cc)";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=6;
+		};
+	};
+	class 73_PolyHemoglobinIV_500: ACE_ACE_bloodIV
+	{
+		scope=2;
+		displayName="[73] 500cc Polymerized Hemoglobin";
+		descriptionShort="500cc of Poly-Hemo";
+		descriptionUse="Gives Poly-Hemo (500cc)";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=3;
+		};
+	};
+	class 73_PolyHemoglobinIV_250: ACE_ACE_bloodIV
+	{
+		scope=2;
+		displayName="[73] 250cc Polymerized Hemoglobin";
+		descriptionShort="250cc of Poly-Hemo";
+		descriptionUse="Gives Poly-Hemo (250cc)";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=3;
 		};
 	};
 	class OPTRE_Biofoam;
@@ -149,8 +212,7 @@ class CfgWeapons
 			mass=1;
 		};
 	};
-	class ACE_tourniquet;
-	class 73_tourniquet: ACE_tourniquet
+	class ACE_tourniquet: ACE_ItemCore
 	{
 		scope=1;
 		displayName="[73] Suit Constriction System";
@@ -160,11 +222,11 @@ class CfgWeapons
 		};
 	};
 	class ACE_epinephrine;
-    class 73_Adrenaline: ACE_epinephrine
+    class 73_epinephrine: ACE_epinephrine
     {
         author="73rd S-4 Team";
-        displayName="[73] Adrenaline";
-        descriptionShort="Something like epinephrine";
+        displayName="[73] Stim-Pak";
+        descriptionShort="A Strong stimulant.";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass=0.5;
@@ -176,14 +238,14 @@ class CfgVehicles
 	class ACE_morphineItem;
 	class OPTRE_BiofoamItem;
 	class OPTRE_MediGelItem;
-	class ACE_tourniquetItem;
 	class ACE_epinephrineItem;
+	class ACE_AdenosineItem;
 	class 73_MorphineItem: ACE_morphineItem
 	{
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[73] Morphine";
+		displayName="[73] Polypseudomorphine";
 		author="73rd S-4 Team";
 		vehicleClass="Items";
 		class TransportItems
@@ -191,6 +253,24 @@ class CfgVehicles
 			class _xx_73_Morphine
 			{
 				name="73_Morphine";
+				count=1;
+			};
+		};
+		mass=20;
+	};
+	class 73_AdenosineItem: ACE_AdenosineItem
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="[73] Nacrolytic Metabolase";
+		author="73rd S-4 Team";
+		vehicleClass="Items";
+		class TransportItems
+		{
+			class _xx_73_Adenosine
+			{
+				name="73_Adenosine";
 				count=1;
 			};
 		};
@@ -268,7 +348,8 @@ class CfgVehicles
 		};
 		mass=2;
 	};
-	class 73_tourniquetItem: ACE_tourniquetItem
+	class Item_Base_F;
+	class ACE_tourniquetItem: Item_Base_F
 	{
 		scope=2;
 		scopeCurator=2;
@@ -277,27 +358,27 @@ class CfgVehicles
 		vehicleClass="Items";
 		class TransportItems
 		{
-			class _xx_73_tourniquet
+			class _xx_ACE_tourniquet
 			{
-				name="73_tourniquet";
+				name="ACE_tourniquet";
 				count=1;
 			};
 		};
 		mass=20;
 	};
-	class 73_Adrenalineitem: ACE_epinephrineItem
+	class 73_epinephrineitem: ACE_epinephrineItem
 	{
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[73] Adrenaline";
+		displayName="[73] Stim-Pak";
 		author="73rd S-4 Team";
 		vehicleClass="Items";
 		class TransportItems
 		{
-			class _xx_73_Adrenaline
+			class _xx_73_epinephrine
 			{
-				name="73_Adrenaline";
+				name="73_epinephrine";
 				count=1;
 			};
 		};
@@ -307,9 +388,10 @@ class CfgVehicles
 class ACE_Medical_Treatment
 {
 	class Morphine;
-	class PlasmaIV;
+	class ACE_bloodIV;
 	class OPTRE_Biofoam;
 	class OPTRE_Medigel;
+	class Adenosine;
 	class Medication
 	{
 		painReduce=0;
@@ -324,7 +406,8 @@ class ACE_Medical_Treatment
 		class 73_Morphine: Morphine
 		{
 		};
-
+		class 73_Adenosine: Adenosine
+		{};
 		class 73_MedKit: 73_Morphine
 		{
 			painReduce=0;
@@ -340,11 +423,23 @@ class ACE_Medical_Treatment
 	};
 	class IV
 	{
-		class 73_PlasmaIV: PlasmaIV
+		class 73_PolyHemoglobinIV_2000: ACE_bloodIV
 		{
 			volume=2000;
 		};
-		class 73_MedKit: PlasmaIV
+		class 73_PolyHemoglobinIV_1000: ACE_bloodIV
+		{
+			volume=1000;
+		};
+		class 73_PolyHemoglobinIV_500: ACE_bloodIV
+		{
+			volume=500;
+		};
+		class 73_PolyHemoglobinIV_250: ACE_bloodIV
+		{
+			volume=250;
+		};
+		class 73_MedKit: ACE_bloodIV
 		{
 			volume=2000;
 		};
@@ -1332,11 +1427,12 @@ class ACE_Medical_Treatment
 class ACE_Medical_Treatment_Actions
 {
 	class Morphine;
-	class PlasmaIV;
+	class Adenosine;
+	class ACE_bloodIV;
 	class OPTRE_Medigel;
 	class OPTRE_Biofoam;
-	class ApplyTourniquet;
-	class RemoveTourniquet;
+//	class ApplyTourniquet;
+//	class RemoveTourniquet;
 	class BasicBandage;
 	class Adrenaline;
 	class CPR;
@@ -1366,32 +1462,68 @@ class ACE_Medical_Treatment_Actions
     };
 	class 73_Morphine: Morphine
 	{
-		displayName="[73] Take Morphine";
-		displayNameProgress="Injecting Morphine...";
+		displayName="[73] Take Polypseudomorphine";
+		displayNameProgress="Injecting Polypseudomorphine...";
 		items[]=
 		{
 			"73_Morphine"
 		};
 		treatmentTime=1;
 	};
-	class 7373_Adrenaline: Adrenaline
+	class 73_Adenosine: Adenosine
 	{
-		displayName="[73] Take Adrenaline";
-		displayNameProgress="Injecting Adrenaline...";
+		displayName="[73] Take Narcolytic Metabolase";
+		displayNameProgress="Injecting Narcolytic Metabolase...";
 		items[]=
 		{
-			"73_Adrenaline"
+			"73_Adenosine"
 		};
 		treatmentTime=1;
 	};
-	class 73_PlasmaIV: PlasmaIV
+	class 73_epinephrine: Adrenaline
 	{
-		displayName="[73] Plasma 2L";
-		displayNameProgress="Pushing 2 litres...";
-		treatmentTime=10;
+		displayName="[73] Take Stim-Pak";
+		displayNameProgress="Injecting Stim-Pak...";
 		items[]=
 		{
-			"73_PlasmaIV"
+			"73_epinephrine"
+		};
+		treatmentTime=1;
+	};
+	class 73_PolyHemoglobinIV_2000: ACE_bloodIV
+	{
+		displayName="[73] 2000cc Polymerized Hemoglobin";
+		displayNameProgress="Pushing 2000cc...";
+		items[]=
+		{
+			"73_PolyHemoglobinIV_2000"
+		};
+	};
+	class 73_PolyHemoglobinIV_1000: ACE_bloodIV
+	{
+		displayName="[73] 1000cc Polymerized Hemoglobin";
+		displayNameProgress="Pushing 1000cc...";
+		items[]=
+		{
+			"73_PolyHemoglobinIV_1000"
+		};
+	};
+	class 73_PolyHemoglobinIV_500: ACE_bloodIV
+	{
+		displayName="[73] 500cc Polymerized Hemoglobin";
+		displayNameProgress="Pushing 500cc...";
+		items[]=
+		{
+			"73_PolyHemoglobinIV_500"
+		};
+	};
+	class 73_PolyHemoglobinIV_250: ACE_bloodIV
+	{
+		displayName="[73] 250cc Polymerized Hemoglobin";
+		displayNameProgress="Pushing 250cc...";
+		items[]=
+		{
+			"73_PolyHemoglobinIV_250"
 		};
 	};
 	class 73_Medigel: OPTRE_Medigel
@@ -1442,10 +1574,11 @@ class ACE_Medical_Treatment_Actions
 		category="bandage";
 		callbackSuccess="STB73_fnc_biomed";
 	};
-	class 73_ApplyTourniquet: ApplyTourniquet
+	class ApplyTourniquet: BasicBandage
 	{
 		displayName="[73] Constrict Suit";
 		displayNameProgress="Activating suit constriction...";
+		icon = "\z\addons\medical_gui\ui\tourniquet.paa";
 		allowedSelections[]=
 		{
 			"LeftArm",
@@ -1455,24 +1588,22 @@ class ACE_Medical_Treatment_Actions
 		};
 		items[]=
 		{
-			"73_tourniquet"
+			"ACE_tourniquet"
 		};
+		condition= QUOTE(!([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedTo)));
+		callbackSuccess="ace_medical_treatment_fnc_tourniquet";
 		treatmentTime=3;
 		consumeItem=0;
-		category="bandage";
+		litter[] = {};
+		allowedUnderwater = 1;
 	};
-	class STB73_RemoveTourniquet: 73_ApplyTourniquet
+	class RemoveTourniquet: ApplyTourniquet
 	{
 		displayName="[73] Deconstrict Suit";
 		displayNameProgress="Loosening suit constriction...";
-		items[]=
-		{
-			""
-		};
+		items[]={};
 		condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedTo));
-		callbackSuccess="STB73_fnc_tourniquetRemove";
-		consumeItem=0;
-		category="bandage";
+		callbackSuccess="ace_medical_treatment_fnc_tourniquetRemove";
 	};
 	class 73_MedKit: OPTRE_Medigel
 	{

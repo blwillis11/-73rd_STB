@@ -1,3 +1,12 @@
+class DMNS_M96_LAW;
+
+class 73_M96_LAW:DMNS_M96_LAW
+{
+    author="73rd S-4 Team";
+    displayname="[73] M96 LAW - MK VI";
+    baseWeapon="73_M96_LAW";
+};
+
 class launch_MRAWS_green_F;
 class launch_MRAWS_green_rail_F;
 
