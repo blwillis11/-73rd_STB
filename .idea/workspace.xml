@@ -8,10 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Various weapon balances&#10;&#10;M7 lowered damage, speed&#10;&#10;NARQ made into a function rather than ACE Stun type&#10;&#10;uniform changes&#10;&#10;Helmet changes">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestRecon.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/Medical/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Launcher/launcher.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/Misc73/Fn_setRadio73STB.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/Misc73/Fn_setRadio73STB.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/HEV/Fn_HEVHandleLanding.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/HEV/Fn_HEVHandleLanding.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/RadioCrate/RadioCrate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/RadioCrate/RadioCrate.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,7 +412,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738017294690</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Various weapon balances&#10;&#10;M7 lowered damage, speed&#10;&#10;NARQ made into a function rather than ACE Stun type&#10;&#10;uniform changes&#10;&#10;Helmet changes">
+      <option name="closed" value="true" />
+      <created>1738119668345</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1738119668345</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Various weapon balances&#10;&#10;M7 lowered damage, speed&#10;&#10;NARQ made into a function rather than ACE Stun type&#10;&#10;uniform changes&#10;&#10;Helmet changes">
+      <option name="closed" value="true" />
+      <created>1738119672015</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1738119672015</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

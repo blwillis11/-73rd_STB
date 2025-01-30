@@ -297,7 +297,7 @@ class 73_CH252D_Helmet_Cus_Grayson: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Grayson_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Teal.paa"
     };
     class XtdGearInfo
     {
@@ -314,6 +314,93 @@ class 73_CH252D_Helmet_Cus_Grayson_dp: 73_CH252D_Helmet_STB_Standard_dp
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Grayson_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Pug: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Pug]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Pug_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Pug";
+    };
+};
+class 73_CH252D_Helmet_Cus_Pug_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Pug]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Pug_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Pinky: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Pinky]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Pinky_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Pinky";
+    };
+};
+class 73_CH252D_Helmet_Cus_Pinky_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Pinky]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Pinky_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Brooks: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Brooks]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Brooks_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Brooks";
+    };
+};
+class 73_CH252D_Helmet_Cus_Brooks_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Brooks]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Brooks_Helmet.paa",
         "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
     };
 };

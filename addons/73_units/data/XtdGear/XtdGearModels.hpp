@@ -26,6 +26,29 @@ class XtdGearModels
 				};
 			};
 		};
+		class 73_ACE_CH252D_Helmet_Recon
+		{
+			label= "[73] CH252D Helmet [Recon]";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Roles"
+			};
+			class Roles
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Roles";
+                values[]=
+				{
+					"Standard",
+					"SORC",
+					"Leadership",
+					"Officer"
+				};
+			};
+		};
 		class 73_ACE_CH252D_Helmet_ACo
 		{
 			label= "[73] CH252D Helmet [ACo]";
@@ -145,7 +168,10 @@ class XtdGearModels
 					"Mendez",
 					"Bear",
 					"Dawn",
-					"Grayson"
+					"Grayson",
+					"Pug",
+					"Pinky",
+					"Brooks"
 				};
 			};
 		};
@@ -354,6 +380,46 @@ class XtdGearModels
                     "SORC",
                     "CmdSORC",
                     "BCoCmd",
+                };
+            };
+            class MOS
+            {
+                alwaysSelectable=1;
+                changeingame=0;
+                changedelay=0;
+                label= "MOS";
+                values[]=
+                {
+                    "Basic",
+                    "SORC",
+                    "Autorifleman",
+                    "Marksman",
+                    "Demolitions",
+                    "Scout",
+                    "Sniper",
+                };
+            };
+        };
+        class 73_ACE_M52_Armor_Recon
+        {
+            label= "[73] M52 Vest [Recon]";
+            author="73rd S-4 Team";
+            options[] =
+            {
+                "Billet",
+                "MOS"
+            };
+            class Billet
+            {
+                alwaysSelectable=1;
+                changeingame=0;
+                changedelay=0;
+                label= "Billet";
+                values[]=
+                {
+                    "Standard",
+                    "PltCmd",
+                    "ReconCmd"
                 };
             };
             class MOS

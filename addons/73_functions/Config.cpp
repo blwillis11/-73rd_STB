@@ -118,6 +118,24 @@ class CfgFunctions
             class setRadio73STB
             {
             };
+            class setRadioLR73STB
+            {
+            };
+            class setCallMortarFireSupport73STB
+            {
+            };
+            class setCallArtyFireSupport73STB
+            {
+            };
+            class addFireSupportMenu73STB
+            {
+            };
+            class addMapDot73STB
+            {
+            };
+            class addMapDotMenu73STB
+            {
+            };
         };
 
     };

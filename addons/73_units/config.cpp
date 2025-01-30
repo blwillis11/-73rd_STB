@@ -202,6 +202,7 @@ class CfgWeapons
 	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
 	#include "data\ODST\ODSTM52VestACo2Plt.hpp"
     #include "data\ODST\ODSTM52VestBCo.hpp"
+    #include "data\ODST\ODSTM52VestRecon.hpp"
 
 //Aviation Vest
     #include "data\Aviation\AviationVest.hpp"
@@ -215,6 +216,7 @@ class CfgWeapons
 	#include "data\ODST\ODSTCH252DACoHelmet.hpp"
 	#include "data\ODST\ODSTCH252DBCoHelmet.hpp"
 	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
+	#include "data\ODST\ODSTCH252DReconHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"
 };
