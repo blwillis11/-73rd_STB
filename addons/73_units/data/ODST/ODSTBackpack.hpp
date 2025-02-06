@@ -1,4 +1,4 @@
-class 73_Rucksack: MA_M56S_Rucksack
+class 73_Rucksack: MA_M52D_Rucksack_Strapless
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack";
@@ -6,8 +6,8 @@ class 73_Rucksack: MA_M56S_Rucksack
 	scopeArsenal=2;
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\Backpack\ODST_Ruck_co.paa",
-		"73_units\data\ODST\Backpack\Attachments\Backpack_Radio_Green_co.paa"
+		"73_units\data\ODST\Backpack\Backpack_CO.paa",
+		"73_units\data\ODST\Backpack\Attachments\Straps_co.paa"
 	};
 	class XtdGearInfo
 	{
@@ -16,7 +16,7 @@ class 73_Rucksack: MA_M56S_Rucksack
 	};
 	maximumLoad = 250;
 };
-class 73_Rucksack_med: MA_M56S_Rucksack_Medic
+class 73_Rucksack_med: MA_M52D_Rucksack_Strapless
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack [Medic]";
@@ -24,8 +24,8 @@ class 73_Rucksack_med: MA_M56S_Rucksack_Medic
 	scopeArsenal=2;
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\Backpack\Medical_ODST_Ruck_co.paa",
-		"73_units\data\ODST\Backpack\Attachments\Backpack_Radio_Green_co.paa"
+		"73_units\data\ODST\Backpack\Backpack_CO.paa",
+		"73_units\data\ODST\Backpack\Attachments\Straps_co.paa"
 	};
 	class XtdGearInfo
 	{
@@ -34,7 +34,7 @@ class 73_Rucksack_med: MA_M56S_Rucksack_Medic
 	};
 	maximumLoad = 300;
 };
-class 73_Rucksack_hev: MA_M56S_Rucksack
+class 73_Rucksack_hev: MA_M52D_Rucksack_Strapless
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack [Heavy]";
@@ -43,8 +43,8 @@ class 73_Rucksack_hev: MA_M56S_Rucksack
 	maximumLoad = 300;
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\Backpack\ODST_Ruck_co.paa",
-		"73_units\data\ODST\Backpack\Attachments\Backpack_Radio_Green_co.paa"
+		"73_units\data\ODST\Backpack\Backpack_CO.paa",
+		"73_units\data\ODST\Backpack\Attachments\Straps_co.paa"
 	};
 	class XtdGearInfo
 	{
@@ -53,7 +53,28 @@ class 73_Rucksack_hev: MA_M56S_Rucksack
 	};
 };
 
-class 73_Rucksack_rto: MA_M56S_Rucksack_ODST_Radio
+class 19thANPRC419;
+class 73_ANPRC_rto: 19thANPRC419
+{
+	displayName = "[73] AN/PRC-419 [RTO]";
+	author="73rd S-4 Team";
+	scope=2;
+	scopeArsenal=2;
+	maximumLoad = 250;
+	tf_encryptionCode="tf_west_radio_code";
+	tf_dialog="rt1523g_radio_dialog";
+	tf_subtype="digital_lr";
+	tf_range=60000;
+	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+	tf_hasLRradio=1;
+	class XtdGearInfo
+	{
+		model = "73_ACE_Rucksack";
+		Role = "AN/PRC RTO";
+	};
+};
+
+class 73_Rucksack_rto: MA_M52D_Rucksack_Strapless
 {
 	displayName = "[73] ODST Rucksack [RTO]";
 	author="73rd S-4 Team";
@@ -62,13 +83,13 @@ class 73_Rucksack_rto: MA_M56S_Rucksack_ODST_Radio
 	maximumLoad = 250;
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\Backpack\ODST_Ruck_co.paa",
-		"73_units\data\ODST\Backpack\Attachments\Backpack_Radio_Green_co.paa"
+		"73_units\data\ODST\Backpack\Backpack_CO.paa",
+		"73_units\data\ODST\Backpack\Attachments\Straps_co.paa"
 	};
 	tf_encryptionCode="tf_west_radio_code";
 	tf_dialog="rt1523g_radio_dialog";
 	tf_subtype="digital_lr";
-	tf_range=45000;
+	tf_range=60000;
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 	tf_hasLRradio=1;
 	class XtdGearInfo
@@ -77,8 +98,32 @@ class 73_Rucksack_rto: MA_M56S_Rucksack_ODST_Radio
 		Role = "RTO";
 	};
 };
+class 73_Rucksack_heavy_rto: MA_M52D_Rucksack_Strapless
+{
+	displayName = "[73] ODST Rucksack [Heavy RTO]";
+	author="73rd S-4 Team";
+	scope=2;
+	scopeArsenal=2;
+	maximumLoad = 300;
+	hiddenSelectionsTextures[]=
+	{
+        "MA_Armor\data\Backpacks\M52_Rucksack\Backpack_CO.paa",
+        "MA_Armor\data\Backpacks\M52_Rucksack\Straps_CO.paa"
+	};
+	tf_encryptionCode="tf_west_radio_code";
+	tf_dialog="rt1523g_radio_dialog";
+	tf_subtype="digital_lr";
+	tf_range=60000;
+	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+	tf_hasLRradio=1;
+	class XtdGearInfo
+	{
+		model = "73_ACE_Rucksack";
+		Role = "Heavy RTO";
+	};
+};
 //*****************************************************************************************************************************\\	
-class 73_Rucksack_invis: MA_M56S_Rucksack
+class 73_Rucksack_invis: MA_M52D_Rucksack_Strapless
 {
 	displayName = "[73] No Backpack";
 	model = "\A3\weapons_f\empty";
@@ -102,7 +147,7 @@ class 73_Rucksack_invis_rto: 73_Rucksack_invis
 	tf_encryptionCode="tf_west_radio_code";
 	tf_dialog="rt1523g_radio_dialog";
 	tf_subtype="digital_lr";
-	tf_range=45000;
+	tf_range=60000;
 	maximumLoad = 250;
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 	tf_hasLRradio=1;

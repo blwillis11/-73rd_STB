@@ -205,7 +205,7 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
                             };
 
                             class Alpha_3_1 {
-                                displayName = "Alpha 2-1";
+                                displayName = "Alpha 3-1";
                                 condition = "true";
 
                                 class Alpha_3_1_HQ {
@@ -226,7 +226,7 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
                             };
 
                             class Alpha_3_2 {
-                                displayName = "Alpha 2-2";
+                                displayName = "Alpha 3-2";
                                 condition = "true";
 
                                 class Alpha_3_2_TL {

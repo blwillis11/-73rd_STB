@@ -2,7 +2,9 @@ class OPTRE_FC_CH255_Helmet_Visor;
 
 class 73_CH255_Helmet_Visor: OPTRE_FC_CH255_Helmet_Visor
 {
-    scope=1;
+    displayName="[OCLF] CH255 Army Helmet";
+    author="73rd S-4 Team";
+    scope=2;
     hiddenSelections[]=
     {
         "camo"
@@ -36,3 +38,39 @@ class 73_CH255_Helmet_Visor: OPTRE_FC_CH255_Helmet_Visor
         };
     };
 };
+class OPTRE_CH255_Security_Advanced_Type_2_Helmet_Black;
+class 73_CH255_Helmet_Lancer: OPTRE_CH255_Security_Advanced_Type_2_Helmet_Black
+{
+    scope=2;
+    displayName="[OCLF] CH255 Lancer Helmet";
+    author="73rd S-4 Team";
+    hiddenSelectionsTextures[]=
+    {
+        "OPTRE_UNSC_Units\Army\data\security\camos\Black\CH252_Helmet_co.paa",
+        "OPTRE_UNSC_Units\Army\data\security\camos\Black\CH252_Attachments_co.paa",
+        "OPTRE_UNSC_Units\Army\data\security\CH252_Visor_co.paa"
+    };
+    class ItemInfo: HeadgearItem
+    {
+        uniformModel="\OPTRE_UNSC_Units\Army\CH255_Security_Basic.p3d";
+        mass=30;
+        modelSides[]={6};
+        passThrough=0.15000001;
+        hiddenSelectionsTextures[]=
+        {
+			"OPTRE_UNSC_Units\Army\data\security\camos\Black\CH252_Helmet_co.paa",
+			"OPTRE_UNSC_Units\Army\data\security\camos\Black\CH252_Attachments_co.paa",
+			"OPTRE_UNSC_Units\Army\data\security\CH252_Visor_co.paa"
+        };
+        class HitpointsProtectionInfo
+        {
+            class Head
+            {
+                hitpointName="HitHead";
+                armor=10;
+                passThrough=0.1;
+            };
+        };
+    };
+};
+

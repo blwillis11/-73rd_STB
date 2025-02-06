@@ -30,7 +30,10 @@ class CfgPatches
         "73_MA5BGL",
         "73_MA5K",
         "73_SRS99AM",
-        "73_SRS99AM_Stealth"
+        "73_SRS99AM_Stealth",
+        "73_M96_LAW",
+        "73_Fang",
+        "73_Fang2"
         }; 
 		vehicles[] =
 		{
@@ -175,6 +178,14 @@ class cfgMagazineWells{
 			"73_15Rnd_10x40_Mag_Tracer_Yellow"
 		};
 	};
+	class 73_BR55{
+		73_Magazines[] = {
+            "73_95x40_36Rnd",
+            "73_95x40_36Rnd_T_G",
+            "73_95x40_36Rnd_T_R",
+            "73_95x40_36Rnd_T_IR"
+		};
+	};
 	class 73_M6D{
 		73_Magazines[] = {
 			"73_40Rnd_127x40_Drum_Black_Tracer",
@@ -225,6 +236,9 @@ class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
+class CBA_DisposableLaunchers {
+    73_M96_LAW_Loaded[] = {"73_M96_LAW","73_M96_LAW_Used"};
+};
 
 class CfgWeapons {
 	class BaseSoundModeType;

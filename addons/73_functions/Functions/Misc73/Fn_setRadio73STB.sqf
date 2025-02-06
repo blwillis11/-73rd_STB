@@ -71,6 +71,7 @@ if (playerSide in [west]) then {
 	[(call TFAR_fnc_activeSwradio), 3, (_FreqTeam select 2)] call TFAR_fnc_setChannelFrequency;
 	[(call TFAR_fnc_activeSwradio), 4, (_FreqTeam select 3)] call TFAR_fnc_setChannelFrequency;
 	[(call TFAR_fnc_activeSwRadio), -1] call TFAR_fnc_setAdditionalSwChannel;
+	[(call TFAR_fnc_activeSwRadio), _team] call TFAR_fnc_setSwChannel;
 	   // set additonals if required
 	   // Medic
 	if (_setAdditonal == _MedicRole) then {

@@ -201,8 +201,8 @@ class 73_STB_ODST_AT: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_73_ODST_AT_backpack";
 
-    weapons[] = {"OPTRE_MA37B","73_MPRL","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","73_MPRL","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};

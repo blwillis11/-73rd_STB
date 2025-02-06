@@ -90,6 +90,7 @@ class CfgFunctions
         };
     };
 };
+class EventHandlers;
 class CfgVehicles {
     class ViewCargo;
     class ViewOptics;

@@ -8,6 +8,13 @@ class 73_AV14_Hornet_CAS: OPTRE_UNSC_hornet_CAS
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[] =
     {
@@ -47,6 +54,13 @@ class 73_AV14_Hornet_CAP: OPTRE_UNSC_hornet_CAP
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[] =
     {
@@ -95,6 +109,17 @@ class 73_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
         "73_vehicles\data\Pelican\wings_and_gear_co.paa",
         "73_vehicles\data\Pelican\weaponry_co.paa"
     };
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,true,false] call STB73_fnc_RegisterThrusters;";
+        };
+        class FIR_AWS_Common_EH
+        {
+            init = "[_this select 0,'yes'] execVM ""FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+        };
+    };
     class textureSources
     {};
     class VehicleSpawnerInfo {
@@ -140,6 +165,13 @@ class 73_UNSC_falcon:OPTRE_UNSC_falcon
         "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
         "73_vehicles\data\Falcon\73rd_falcon_decal_ca.paa"
     };
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     class UserActions
     {
         #include "cfg\UtilityActions.hpp"
@@ -175,6 +207,13 @@ class 73_UNSC_falcon_S:OPTRE_UNSC_falcon_S
     scope=2;
     side=1;
     crew = "73_Aviator";
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     hiddenSelectionsTextures[]=
     {
         "73_vehicles\data\Falcon\73rd_Falcon_Main_co.paa",
@@ -217,6 +256,13 @@ class 73_UNSC_MH_144_Falcon:OPTRE_UNSC_MH_144_Falcon
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[]=
     {
@@ -260,6 +306,13 @@ class 73_UNSC_MH_144S_Falcon:OPTRE_UNSC_MH_144S_Falcon
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     radarIcon="MA_HUD\textures\radar\vehicles\pelican.paa";
     radarIconScale=3;
@@ -306,6 +359,13 @@ class 73_AV22_Sparrowhawk:OPTRE_AV22_Sparrowhawk
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
 	class UserActions
 	{
@@ -349,6 +409,13 @@ class 73_AV22A_Sparrowhawk:OPTRE_AV22A_Sparrowhawk
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[]=
     {
@@ -393,6 +460,13 @@ class 73_AV22B_Sparrowhawk:OPTRE_AV22B_Sparrowhawk
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[]=
     {
@@ -437,6 +511,13 @@ class 73_AV22C_Sparrowhawk:OPTRE_AV22C_Sparrowhawk
     scopeCurator=2;
     scope=2;
     side=1;
+    class EventHandlers: EventHandlers
+    {
+        class 73_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STB73_fnc_RegisterThrusters;";
+        };
+    };
     crew = "73_Aviator";
     hiddenSelectionsTextures[]=
     {

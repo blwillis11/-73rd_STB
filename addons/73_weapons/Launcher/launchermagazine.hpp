@@ -1,3 +1,17 @@
+class CA_LauncherMagazine;
+class 73_M96_LAW: CA_LauncherMagazine {
+    scope = 1;
+    allowedSlots[] = {};
+};
+class DMNS_M96_HEAT;
+class 73_M96_HEAT: DMNS_M96_HEAT
+{
+    displayname						= "[73] M-96 HEAT Disposable Rockets";
+    ammo							= "DMNS_M96_Rocket_HEAT";
+    count							= 1;
+    mass 							= 45;
+    initSpeed 						= 650;
+};
 class MRAWS_HEAT_F;
 class 73_1Rnd_50x137_HEAT: MRAWS_HEAT_F
 {
@@ -35,25 +49,19 @@ class 73_1Rnd_50x137_PEN: 73_1Rnd_50x137_HE
     allowedSlots[]={901,701};
 };
 
-class Titan_AT;
+class OPTRE_M41_Twin_HEAT_G;
 
-class 73_HEAT:Titan_AT{
-    count=2;
+class 73_HEAT:OPTRE_M41_Twin_HEAT_G{
     displayname	= "[73] M19 HEAT Twin Rockets";
     author="73rd S-4 Team";
     displaynameshort = "HEAT";
     descriptionshort = "High Explosive Anti Tank";
     ammo = "73_HEAT";
-    picture 			= "\OPTRE_Weapons\Rockets\icons\magazine\heat.paa";
-    model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
-    modelSpecial = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
-    modelSpecialIsProxy = 1;
     hiddenSelections[] = {"camo_tubes","camo_details"};
     hiddenSelectionsTextures[] = {
         "\OPTRE_Weapons\Rockets\data\mag_types\heat.paa",
         "\optre_weapons\rockets\data\logos_ca.paa"
     };
-    initSpeed = 100;
 };
 class 73_HEAP:73_HEAT{
     count=2;

@@ -13,6 +13,8 @@
 
 params ["_vehicle"];
 
+// if (_vehicle getVariable ["STB73_Afterburners_Usable",false]) exitWith{};
+
 if (_vehicle getVariable ["STB73_Afterburners_Engaged", false]) exitWith {};
 
 if (_vehicle getVariable ["STB73_Thrusters_Engaged", false]) exitWith {

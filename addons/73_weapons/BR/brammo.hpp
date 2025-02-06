@@ -1,5 +1,5 @@
-class B_93x64_Ball;
-class 73_95x40_AP: B_93x64_Ball
+class NSWep_95x40_AP;
+class 73_95x40_AP: NSWep_95x40_AP
 {
     caliber=2;
     hit=20;

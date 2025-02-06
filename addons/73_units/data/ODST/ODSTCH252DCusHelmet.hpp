@@ -230,6 +230,35 @@ class 73_CH252D_Helmet_Cus_Mendez_dp: 73_CH252D_Helmet_STB_Standard_dp
         "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
     };
 };
+class 73_CH252D_Helmet_Cus_Mac: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Mac]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Mac_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Mac";
+    };
+};
+class 73_CH252D_Helmet_Cus_Mac_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Mac]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Mac_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
 class 73_CH252D_Helmet_Cus_Bear: 73_CH252D_Helmet_STB_Standard
 {
     scope=2;
@@ -297,7 +326,7 @@ class 73_CH252D_Helmet_Cus_Grayson: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Grayson_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Teal.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
     };
     class XtdGearInfo
     {

@@ -1,26 +1,32 @@
 class NSWep_95x40_KURTZ;
 
-class 73_95x40_30Rnd:NSWep_95x40_KURTZ
+class 73_95x40_36Rnd:NSWep_95x40_KURTZ
 {
-    displayName="[73] M634 9.5x40 FMJ-AP (36rnd)";
+    displayName="36Rnd 9.5x40mm Magazine";
     author= "73rd S-4 Team";
     ammo="73_95x40_AP";
 };
-class 73_95x40_30Rnd_T_G:73_95x40_30Rnd
+class 73_95x40_36Rnd_T_G:73_95x40_36Rnd
 {
-    displayName="[73] M634 9.5x40 FMJ-AP (36rnd)";
+    displayName="36Rnd 9.5x40mm Magazine [Green Tracer]";
     author= "73rd S-4 Team";
     ammo="73_95x40_AP_TG";
+    tracersEvery = 1;
+    lastRoundsTracer = 15;
 };
-class 73_95x40_30Rnd_T_R:73_95x40_30Rnd
+class 73_95x40_36Rnd_T_R:73_95x40_36Rnd
 {
-    displayName="[73] M634 9.5x40 FMJ-AP (36rnd)";
+    displayName="36Rnd 9.5x40mm Magazine [Red Tracer]";
     author= "73rd S-4 Team";
     ammo="73_95x40_AP_TR";
+    tracersEvery = 1;
+    lastRoundsTracer = 15;
 };
-class 73_95x40_30Rnd_T_IR:73_95x40_30Rnd
+class 73_95x40_36Rnd_T_IR:73_95x40_36Rnd
 {
-    displayName="[73] M634 9.5x40 FMJ-AP (36rnd)";
+    displayName="36Rnd 9.5x40mm Magazine [IR Tracer]";
     author= "73rd S-4 Team";
     ammo="73_95x40_AP_TIR";
+    tracersEvery = 1;
+    lastRoundsTracer = 15;
 };

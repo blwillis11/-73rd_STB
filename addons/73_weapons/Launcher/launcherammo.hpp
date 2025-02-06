@@ -1,3 +1,11 @@
+class DMNS_M96_Rocket_HEAT;
+class 73_M96_Rocket_HEAT:DMNS_M96_Rocket_HEAT
+{
+    hit = 100;
+    indirectHit = 250;
+    indirectHitRange = 9;
+};
+
 class R_MRAAWS_HEAT_F;
 class 73_50x137_HEAT: R_MRAAWS_HEAT_F
 {
@@ -21,7 +29,7 @@ class 73_50X137_HE: R_MRAAWS_HE_F
 class 73_50x137_PEN: 73_50X137_HE
 {
     caliber=20;
-    hit=1500;
+    hit=1200;
     indirectHit=0;
     indirectHitRange=0;
     explosive=0;
@@ -29,19 +37,13 @@ class 73_50x137_PEN: 73_50X137_HE
     allowAgainstInfantry=0;
 };
 
-class ACE_Javelin_FGM148;
+class OPTRE_M41_Rocket_HEAT_G;
 class OPTRE_M41_Rocket_HEAP;
-class OPTRE_M41_Rocket_HEAT_Guided;
+class OPTRE_M41_Rocket_HEAT_G_AA;
 
-class 73_HEAT:ACE_Javelin_FGM148{
-    warheadName="TandemHEAT";
-    submunitionAmmo = "ammo_Penetrator_Vorona";
+class 73_HEAT:OPTRE_M41_Rocket_HEAT_G{
     maxSpeed=250;
-    irLock = 1;
-    airLock = 1;
-    laserLock = 0;
-    nvLock = 0;
-    proximityExplosionDistance = 0;
+    hit = 1600;
     missileLockMaxDistance = 20000;
     missileLockMinDistance = 50;
     missileKeepLockedCone = 75;
@@ -50,35 +52,9 @@ class 73_HEAT:ACE_Javelin_FGM148{
     timeToLive = 40;
     typicalSpeed = 200;
     trackOversteer = 0.9;
-    sideAirFriction = 0.40000001;
+    sideAirFriction = 0.30000001;
     cmImmunity = 0.75;
-    initTime = .5;
-    class Components {
-        class SensorsManagerComponent {
-            class Components {
-                class IRSensorComponent: SensorTemplateIR {
-                    class AirTarget {
-                        minRange=50;
-                        maxRange=10000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=1;
-                    };
-
-                    class GroundTarget {
-                        minRange=50;
-                        maxRange=10000;
-                        objectDistanceLimitCoef=1;
-                        viewDistanceLimitCoef=1;
-                    };
-
-                    maxTrackableSpeed=500;
-                    angleRangeHorizontal=7;
-                    angleRangeVertical=4.5;
-                    maxTrackableATL=1000;
-                };
-            };
-        };
-    };
+    initTime = .2;
 };
 class 73_HEAP:OPTRE_M41_Rocket_HEAP{
     irLock = 0;
@@ -93,83 +69,54 @@ class 73_HEAP:OPTRE_M41_Rocket_HEAP{
     indirectHitRange = 6;
     explosive = 1;
 };
-class 73_HEAA:OPTRE_M41_Rocket_HEAT_Guided
+class 73_HEAA:OPTRE_M41_Rocket_HEAT_G_AA
 {
     warheadName="TandemHEAT";
     submunitionAmmo = "ammo_Penetrator_Vorona";
     effectsMissile = "missile3";
     hit = 550;
     indirectHit = 150;
-    proximityExplosionDistance = 1;
     indirectHitRange = 4;
     explosive=0.80000001;
-    irLock = 1;
-    airLock = 1;
-    laserLock = 0;
-    nvLock = 0;
     cmImmunity = 0.85;
-    simulationStep = 0.0020000001;
-    airFriction = 0.064999998;
-    sideAirFriction = 0.20000001;
-    manualControl = 1;
     maneuvrability = 28;
     maxControlRange = 30000;
     missileKeepLockedCone = 180;
     missileLockCone = 30;
-    missileLockMaxDistance = 10000;
+    missileLockMaxDistance = 20000;
     missileLockMinDistance = 50;
-    missileLockMaxSpeed = 1000;
+    missileLockMaxSpeed = 1200;
     trackOversteer = 0.9;
     trackLead = 0.8;
     weaponLockSystem = 2;
     initTime = 0;
-    thrustTime = 12;
+    thrustTime = 0.8;
     thrust = 120;
-    maxSpeed = 400;
-
+    maxSpeed = 600;
     class Components {
         class SensorsManagerComponent {
             class Components {
                 class IRSensorComponent: SensorTemplateIR {
                     class AirTarget {
                         minRange=50;
-                        maxRange=10000;
+                        maxRange=20000;
                         objectDistanceLimitCoef=-1;
                         viewDistanceLimitCoef=1;
                     };
 
                     class GroundTarget {
                         minRange=50;
-                        maxRange=10000;
+                        maxRange=20000;
                         objectDistanceLimitCoef=1;
                         viewDistanceLimitCoef=1;
                     };
 
-                    maxTrackableSpeed=1000;
+                    maxTrackableSpeed=1200;
                     angleRangeHorizontal=7;
                     angleRangeVertical=4.5;
                     maxTrackableATL=2000;
                 };
             };
         };
-    };
-
-    class ace_missileguidance {
-        enabled = 1; // Enable missile guidance (0-disabled, 1-enabled)
-        minDeflection = 0.00025;  // Minimum flap deflection for guidance
-        maxDeflection = 0.001;  // Maximum flap deflection for guidance
-        incDeflection = 0.0005;  // The increment in which deflection adjusts
-        canVanillaLock = 1;  // Enable vanilla lock, only applicable to non-cadet modes, 'recruit' always uses vanilla locking (0-disabled, 1-enabled)
-        defaultSeekerType = "SARH";  // Default seeker type
-        seekerTypes[] = {"SARH"};  // Seeker types available
-        defaultSeekerLockMode = "LOBL";  // Default seeker lock mode
-        seekerLockModes[] = {"LOAL", "LOBL"};  // Seeker lock modes available
-        seekerAngle = 180;  // Angle in front of the missile which can be searched
-        seekerAccuracy = 1.5;  // Seeker accuracy multiplier
-        seekLastTargetPos = 1;
-        seekerMinRange = 1;  // Minimum range from the missile which the seeker can visually search
-        seekerMaxRange = 5000;  // Maximum from the missile which the seeker can visually search
-        defaultAttackProfile = "MID";  // Default attack profile
-        attackProfiles[] = {"LIN", "MID"};  // Attack profiles available
     };
 };

@@ -9,7 +9,6 @@ class 73_H4_SAW:MA_H4_SAW
     ace_overheating_barrelMass = 15;
     ace_overheating_dispersion = 0.9;
     ace_overheating_mrbs = 3000;
-//    WBK_UseHeavyWeaponFramework = true;
 };
 
 class OPTRE_M247;
@@ -22,7 +21,6 @@ class 73_M247 : OPTRE_M247 {
 		ace_overheating_barrelMass = 15;
 		ace_overheating_dispersion = 0.9;
 		ace_overheating_mrbs = 3000;
-		WBK_UseHeavyWeaponFramework = true;
 
         magazineWell[]=
         {

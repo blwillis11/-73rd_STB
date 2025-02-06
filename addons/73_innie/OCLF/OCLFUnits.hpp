@@ -108,43 +108,39 @@ class 73_OCLF_Soldier_Rifleman: 73_OCLFBase
     displayName="Rifleman";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA5B",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA5B",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Medic: 73_OCLFBase
@@ -155,51 +151,43 @@ class 73_OCLF_Soldier_Medic: 73_OCLFBase
     attendant = 1;
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA2B_AR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA2B_AR",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke"
     };
     Items[]=
     {
-     "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light", "73_Morphine", "73_Adrenaline", "73_PlasmaIV"
+     "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light", "73_Morphine", "73_Adrenaline", "73_PolyHemoglobinIV_1000"
     };
     RespawnItems[]=
     {
-     "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light", "73_Morphine", "73_Adrenaline", "73_PlasmaIV"
+     "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light", "73_Morphine", "73_Adrenaline", "73_PolyHemoglobinIV_1000"
     };
 };
 class 73_OCLF_Soldier_Rifleman_AA: 73_OCLFBase
@@ -210,49 +198,45 @@ class 73_OCLF_Soldier_Rifleman_AA: 73_OCLFBase
     backpack = "OPTRE_UNSC_Backpack";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
-        "73_MPRL",
+        "MA_MA5B",
+        "73_M41_SSR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
-        "73_MPRL",
+        "MA_MA5B",
+        "73_M41_SSR",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "73_HEAA",
         "73_HEAA",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "73_HEAA",
         "73_HEAA",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Rifleman_AT: 73_OCLFBase
@@ -263,49 +247,45 @@ class 73_OCLF_Soldier_Rifleman_AT: 73_OCLFBase
     backpack = "OPTRE_UNSC_Backpack";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
-        "73_MPRL",
+        "MA_MA5B",
+        "73_M41_SSR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
-        "73_MPRL",
+        "MA_MA5B",
+        "73_M41_SSR",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "73_HEAT",
         "73_HEAT",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
+        "MA_60Rnd_762x51_Shredder_Mag",
         "73_HEAT",
         "73_HEAT",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_AutoRifleman: 73_OCLFBase
@@ -315,35 +295,39 @@ class 73_OCLF_Soldier_AutoRifleman: 73_OCLFBase
     displayName="AutoRifleman";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_H4_SAW",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_H4_SAW",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
-        "OPTRE_100Rnd_30x06_Mag_Tracer",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
+        "MA_100Rnd_762x51_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Breacher: 73_OCLFBase
@@ -353,35 +337,39 @@ class 73_OCLF_Soldier_Breacher: 73_OCLFBase
     displayName="Breacher";
     weapons[]=
     {
-        "OPTRE_M45A",
+        "MA_M90_SG",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_M45A",
+        "MA_M90_SG",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_HEDP",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
-        "OPTRE_12Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_Slugs",
+        "MA_6Rnd_8Gauge_HEDP",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Grenadier: 73_OCLFBase
@@ -391,41 +379,43 @@ class 73_OCLF_Soldier_Grenadier: 73_OCLFBase
     displayName="Grenadier";
     weapons[]=
     {
-        "OPTRE_HMG38",
+        "OPTRE_BR45GL_black",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38",
+        "OPTRE_BR45GL_black",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "3Rnd_HE_Grenade_shell",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
         "3Rnd_HE_Grenade_shell",
         "3Rnd_HE_Grenade_shell",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "3Rnd_HE_Grenade_shell",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
+        "OPTRE_36Rnd_95x40_Mag",
         "3Rnd_HE_Grenade_shell",
         "3Rnd_HE_Grenade_shell",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Radioman: 73_OCLFBase
@@ -433,46 +423,42 @@ class 73_OCLF_Soldier_Radioman: 73_OCLFBase
     scope=2;
     scopeCurator=2;
     displayName="Radioman";
-    backpack = "TFAR_anprc152";
+    backpack = "";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_BR55_HB",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_BR55_HB",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Sniper: 73_OCLFBase
@@ -482,35 +468,39 @@ class 73_OCLF_Soldier_Sniper: 73_OCLFBase
     displayName="Sniper";
     weapons[]=
     {
-        "OPTRE_SRM77_S1_Green",
+        "73_SRS99AM",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_SRM77_S1_Green",
+        "73_SRS99AM",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
-        "OPTRE_16Rnd_127x40_Mag_Tracer",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_SquadLead: 73_OCLFBase
@@ -520,88 +510,230 @@ class 73_OCLF_Soldier_SquadLead: 73_OCLFBase
     displayName="Squad Leader";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA2B_AR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_MA2B_AR",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
+        "MA_35Rnd_390_Shredder_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };
 class 73_OCLF_Soldier_Scout: 73_OCLFBase
 {
     scope=2;
     scopeCurator=2;
-    displayName="Squad Leader";
+    displayName="Scout";
     weapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_BR55_HB",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "OPTRE_HMG38_Rifle",
+        "MA_BR55_HB",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
     respawnMagazines[]=
     {
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
-        "OPTRE_40Rnd_30x06_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
+        "MA_36Rnd_95x40_HPSAP_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
-        "OPTRE_M2_Smoke"
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
+    };
+};
+
+///////Heavy Forces///////////////
+class 73_OCLFSpecOpsBase: 73_OCLFBase
+{
+    faction = "73_OCLF";
+    author="73rd S-4 Team";
+    editorSubcategory = "73_SpecOps_EdSubCat";
+    uniformClass="73_OCLF_Uniform_Blk";
+    model="\OPTRE_FC_Units\Marines\h3_uniform.p3d";
+    hiddenSelections[]=
+    {
+        "camo1"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "73_innie\OCLF\data\OCLF_uniform_blk_CO.paa"
+    };
+    weapons[]=
+    {
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[]=
+    {
+        "Throw",
+        "Put"
+    };
+    Items[]=
+    {
+        "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light"
+    };
+    RespawnItems[]=
+    {
+        "73_Biofoam_Light","73_Biofoam_Light","73_Biofoam_Light"
+    };
+    magazines[]={
+    };
+    respawnMagazines[]={
+    };
+    linkedItems[]=
+    {
+        "73_M52B_Armor_Lancer",
+        "73_CH255_Helmet_Lancer",
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "ItemRadio",
+        "OPTRE_NVG"
+    };
+    respawnLinkedItems[]=
+    {
+        "73_M52B_Armor_Lancer",
+        "73_CH255_Helmet_Lancer",
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "ItemRadio",
+        "OPTRE_NVG"
+    };
+    class HitPoints: HitPoints
+    {
+        class HitFace: HitFace
+        {
+        };
+        class HitNeck: HitNeck
+        {
+            armor=3;
+        };
+        class HitHead: HitHead
+        {
+        };
+        class HitPelvis: HitPelvis
+        {
+            armor=3;
+        };
+        class HitAbdomen: HitAbdomen
+        {
+            armor=3;
+        };
+        class HitDiaphragm: HitDiaphragm
+        {
+            armor=3;
+        };
+        class HitChest: HitChest
+        {
+            armor=3;
+        };
+        class HitBody: HitBody
+        {
+        };
+        class HitArms: HitArms
+        {
+            armor=3;
+        };
+        class HitHands: HitHands
+        {
+            armor=3;
+        };
+        class HitLegs: HitLegs
+        {
+            armor=3;
+        };
+    };
+};
+class 73_OCLF_SpecOps_Rifleman: 73_OCLFSpecOpsBase
+{
+    scope=2;
+    scopeCurator=2;
+    displayName="Lancer Rifleman";
+    weapons[]=
+    {
+        "MA_M7_SMG",
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[]=
+    {
+        "MA_M7_SMG",
+        "Throw",
+        "Put"
+    };
+    magazines[]=
+    {
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "OPTRE_M2_Smoke",
+        "OPTRE_M2_Smoke",
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
+    };
+    respawnMagazines[]=
+    {
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "OPTRE_M2_Smoke",
+        "OPTRE_M2_Smoke",
+        "OPTRE_M2_Smoke",
+        "MA_M9_Frag_Mag",
+        "MA_M9_Frag_Mag"
     };
 };

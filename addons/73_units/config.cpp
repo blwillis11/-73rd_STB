@@ -224,6 +224,7 @@ class CfgVehicles
 {
 	class MA_M56S_BDU_Base;
 	class MA_M56S_Rucksack;
+	class MA_M52D_Rucksack_Strapless;
 	class MA_M56S_Rucksack_Medic;
 	class MA_M56S_Rucksack_ODST_Radio;
 	class weapons_f;

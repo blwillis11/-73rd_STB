@@ -166,6 +166,7 @@ class XtdGearModels
 					"Solaman",
 					"Vargas",
 					"Mendez",
+					"Mac",
 					"Bear",
 					"Dawn",
 					"Grayson",
@@ -230,7 +231,8 @@ class XtdGearModels
                 label= "Variant";
                 values[]=
 				{
-					"Smith"
+					"Smith",
+					"Salmon"
 				};
 			};
 		};
@@ -628,7 +630,9 @@ class XtdGearModels
 					"Standard",
 					"Medic",
 					"Heavy",
+					"AN/PRC RTO",
 					"RTO",
+					"Heavy RTO",
 					"Invis",
 					"Invis RTO"
 				};

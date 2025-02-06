@@ -11,7 +11,6 @@ class 73_F35B_Standard : FIR_F35B_Blank2
     scope=2;
     side=1;
     crew = "73_Aviator";
-
     hiddenselectionstextures[] =
     {
         "FIR_F35B_Armaverse\skin\Blank2\body_co.paa",

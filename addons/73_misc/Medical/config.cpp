@@ -7,18 +7,20 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"73_misc",
-			"ace_medical_treatment"
+			"ace_medical_treatment",
+			"kat_pharma"
 		};
 		requiredVersion=0.1;
 		units[]=
 		{
-			"73_epinephrineitem",
+			"73_epinephrineItem",
 			"73_MorphineItem",
 			"73_BiofoamItem",
 			"73_MediGelItem",
 			"73_BiofoamItem_Light",
 			"73_MediGelItem_Light",
-			"73_AdenosineItem"
+			"73_adenosineItem",
+			"ACE_tourniquetItem"
 		};
 		weapons[]=
 		{
@@ -42,10 +44,12 @@ class CfgPatches
 class CfgFunctions
 {
     class overwrite_medicalTreatment {
-        tag = "ace_medical_treatment_73_OW";
-        file = "73_misc\functions";
-        class tourniquetRemove
-        {
+        tag = "ace_medical_treatment";
+        class ace_medical_treatment{
+            class tourniquetRemove
+            {
+                file="73_misc\functions\fn_tourniquetRemove.sqf";
+            };
         };
     };
     class STB73
@@ -80,7 +84,7 @@ class CfgWeapons
 
 	class ACE_splint: ACE_ItemCore
     {
-        displayName="Bone-Knitting Polymer";
+        displayName="[73] Bone-Knitting Polymer";
     };
 	class 73_Morphine: ACE_Morphine
 	{
@@ -109,19 +113,19 @@ class CfgWeapons
 			mass=0.1;
 		};
 	};
-	class ACE_ACE_bloodIV;
-	class 73_PolyHemoglobinIV_2000: ACE_ACE_bloodIV
-	{
-		scope=2;
-		displayName="[73] 2000cc Polymerized Hemoglobin";
-		descriptionShort="2000cc of Plasma";
-		descriptionUse="Gives Plasma (2000cc)";
-		class ItemInfo: CBA_MiscItem_ItemInfo
-		{
-			mass=12;
-		};
-	};
-	class 73_PolyHemoglobinIV_1000: ACE_ACE_bloodIV
+	class ACE_bloodIV;
+	class 73_PolyHemoglobinIV_2000: ACE_bloodIV
+    {
+        scope=2;
+        displayName="[73] 2000cc Polymerized Hemoglobin";
+        descriptionShort="2000cc of Poly-Hemo";
+        descriptionUse="Gives Poly-Hemo (2000cc)";
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass=12;
+        };
+    };
+	class 73_PolyHemoglobinIV_1000: ACE_bloodIV
 	{
 		scope=2;
 		displayName="[73] 1000cc Polymerized Hemoglobin";
@@ -132,7 +136,8 @@ class CfgWeapons
 			mass=6;
 		};
 	};
-	class 73_PolyHemoglobinIV_500: ACE_ACE_bloodIV
+	class ACE_bloodIV_500;
+	class 73_PolyHemoglobinIV_500: ACE_bloodIV_500
 	{
 		scope=2;
 		displayName="[73] 500cc Polymerized Hemoglobin";
@@ -143,7 +148,8 @@ class CfgWeapons
 			mass=3;
 		};
 	};
-	class 73_PolyHemoglobinIV_250: ACE_ACE_bloodIV
+	class ACE_bloodIV_250;
+	class 73_PolyHemoglobinIV_250: ACE_bloodIV_250
 	{
 		scope=2;
 		displayName="[73] 250cc Polymerized Hemoglobin";
@@ -151,7 +157,7 @@ class CfgWeapons
 		descriptionUse="Gives Poly-Hemo (250cc)";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
-			mass=3;
+			mass=1.5;
 		};
 	};
 	class OPTRE_Biofoam;
@@ -214,11 +220,11 @@ class CfgWeapons
 	};
 	class ACE_tourniquet: ACE_ItemCore
 	{
-		scope=1;
+		scope=2;
 		displayName="[73] Suit Constriction System";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
-			mass=0.5;
+			mass=0;
 		};
 	};
 	class ACE_epinephrine;
@@ -229,7 +235,7 @@ class CfgWeapons
         descriptionShort="A Strong stimulant.";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
-            mass=0.5;
+            mass=0.1;
         };
     };
 };
@@ -239,7 +245,8 @@ class CfgVehicles
 	class OPTRE_BiofoamItem;
 	class OPTRE_MediGelItem;
 	class ACE_epinephrineItem;
-	class ACE_AdenosineItem;
+	class ACE_adenosineItem;
+
 	class 73_MorphineItem: ACE_morphineItem
 	{
 		scope=2;
@@ -256,25 +263,25 @@ class CfgVehicles
 				count=1;
 			};
 		};
-		mass=20;
+		mass=1;
 	};
-	class 73_AdenosineItem: ACE_AdenosineItem
+	class 73_adenosineItem: ACE_adenosineItem
 	{
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[73] Nacrolytic Metabolase";
+		displayName="[73] Narcolytic Metabolase";
 		author="73rd S-4 Team";
 		vehicleClass="Items";
 		class TransportItems
 		{
-			class _xx_73_Adenosine
+			class _xx_73_adenosine
 			{
-				name="73_Adenosine";
+				name="73_adenosine";
 				count=1;
 			};
 		};
-		mass=20;
+		mass=1;
 	};
 	class 73_BiofoamItem: OPTRE_BiofoamItem
 	{
@@ -364,9 +371,9 @@ class CfgVehicles
 				count=1;
 			};
 		};
-		mass=20;
+		mass=0;
 	};
-	class 73_epinephrineitem: ACE_epinephrineItem
+	class 73_epinephrineItem: ACE_epinephrineItem
 	{
 		scope=2;
 		scopeCurator=2;
@@ -388,7 +395,8 @@ class CfgVehicles
 class ACE_Medical_Treatment
 {
 	class Morphine;
-	class ACE_bloodIV;
+
+	class Epinephrine;
 	class OPTRE_Biofoam;
 	class OPTRE_Medigel;
 	class Adenosine;
@@ -405,9 +413,41 @@ class ACE_Medical_Treatment
 		viscosityChange=0;
 		class 73_Morphine: Morphine
 		{
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            dose = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
 		};
-		class 73_Adenosine: Adenosine
-		{};
+		class 73_adenosine: Adenosine
+		{
+            painReduce = 0;
+            hrIncreaseLow[] = {-7, -10};
+            hrIncreaseNormal[] = {-15, -30};
+            hrIncreaseHigh[] = {-15, -35};
+            timeInSystem = 120;
+            timeTillMaxEffect = 15;
+            maxDose = 5;
+            dose = 1;
+            incompatibleMedication[] = {};
+		};
+		class 73_epinephrine: Epinephrine
+		{
+            painReduce = 0;
+            hrIncreaseLow[] = {10, 20};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {10, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 9;
+            dose = 1;
+            incompatibleMedication[] = {};
+		};
 		class 73_MedKit: 73_Morphine
 		{
 			painReduce=0;
@@ -423,23 +463,24 @@ class ACE_Medical_Treatment
 	};
 	class IV
 	{
-		class 73_PolyHemoglobinIV_2000: ACE_bloodIV
+	    class BloodIV;
+		class 73_PolyHemoglobinIV_2000: BloodIV
 		{
 			volume=2000;
 		};
-		class 73_PolyHemoglobinIV_1000: ACE_bloodIV
+		class 73_PolyHemoglobinIV_1000: BloodIV
 		{
 			volume=1000;
 		};
-		class 73_PolyHemoglobinIV_500: ACE_bloodIV
+		class 73_PolyHemoglobinIV_500: BloodIV
 		{
 			volume=500;
 		};
-		class 73_PolyHemoglobinIV_250: ACE_bloodIV
+		class 73_PolyHemoglobinIV_250: BloodIV
 		{
 			volume=250;
 		};
-		class 73_MedKit: ACE_bloodIV
+		class 73_MedKit: BloodIV
 		{
 			volume=2000;
 		};
@@ -570,22 +611,22 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=0.5;
 			};
-			class Avulsions: Abrasion
+			class Avulsion: Abrasion
 			{
 				effectiveness=4;
 				reopeningChance=1;
 				reopeningMinDelay=300;
 				reopeningMaxDelay=420;
 			};
-			class AvulsionsMinor: Avulsions
+			class AvulsionMinor: Avulsion
 			{
 				effectiveness=3;
 			};
-			class AvulsionsMedium: Avulsions
+			class AvulsionMedium: Avulsion
 			{
 				effectiveness=2;
 			};
-			class AvulsionsLarge: Avulsions
+			class AvulsionLarge: Avulsion
 			{
 				effectiveness=1;
 			};
@@ -749,22 +790,22 @@ class ACE_Medical_Treatment
 				effectiveness=2;
 				reopeningChance=1;
 			};
-			class Avulsions: Abrasion
+			class Avulsion: Abrasion
 			{
 				effectiveness=3;
 				reopeningChance=1;
 				reopeningMinDelay=300;
 				reopeningMaxDelay=600;
 			};
-			class AvulsionsMinor: Avulsions
+			class AvulsionMinor: Avulsion
 			{
 				effectiveness=2;
 			};
-			class AvulsionsMedium: Avulsions
+			class AvulsionMedium: Avulsion
 			{
 				effectiveness=1.5;
 			};
-			class AvulsionsLarge: Avulsions
+			class AvulsionLarge: Avulsion
 			{
 				effectiveness=1;
 				reopeningChance=1;
@@ -930,22 +971,22 @@ class ACE_Medical_Treatment
 			{
 				effectiveness=0.5;
 			};
-			class Avulsions: Abrasion
+			class Avulsion: Abrasion
 			{
 				effectiveness=4;
 				reopeningChance=1;
 				reopeningMinDelay=300;
 				reopeningMaxDelay=420;
 			};
-			class AvulsionsMinor: Avulsions
+			class AvulsionMinor: Avulsion
 			{
 				effectiveness=3;
 			};
-			class AvulsionsMedium: Avulsions
+			class AvulsionMedium: Avulsion
 			{
 				effectiveness=2;
 			};
-			class AvulsionsLarge: Avulsions
+			class AvulsionLarge: Avulsion
 			{
 				effectiveness=1;
 			};
@@ -1106,22 +1147,22 @@ class ACE_Medical_Treatment
 				effectiveness=2;
 				reopeningChance=1;
 			};
-			class Avulsions: Abrasion
+			class Avulsion: Abrasion
 			{
 				effectiveness=3;
 				reopeningChance=1;
 				reopeningMinDelay=300;
 				reopeningMaxDelay=600;
 			};
-			class AvulsionsMinor: Avulsions
+			class AvulsionMinor: Avulsion
 			{
 				effectiveness=2;
 			};
-			class AvulsionsMedium: Avulsions
+			class AvulsionMedium: Avulsion
 			{
 				effectiveness=1.5;
 			};
-			class AvulsionsLarge: Avulsions
+			class AvulsionLarge: Avulsion
 			{
 				effectiveness=1;
 				reopeningChance=1;
@@ -1289,22 +1330,22 @@ class ACE_Medical_Treatment
 				effectiveness=20;
 				reopeningChance=1;
 			};
-			class Avulsions: Abrasion
+			class Avulsion: Abrasion
 			{
 				effectiveness=20;
 				reopeningChance=1;
 				reopeningMinDelay=300;
 				reopeningMaxDelay=600;
 			};
-			class AvulsionsMinor: Avulsions
+			class AvulsionMinor: Avulsion
 			{
 				effectiveness=20;
 			};
-			class AvulsionsMedium: Avulsions
+			class AvulsionMedium: Avulsion
 			{
 				effectiveness=20;
 			};
-			class AvulsionsLarge: Avulsions
+			class AvulsionLarge: Avulsion
 			{
 				effectiveness=20;
 				reopeningChance=1;
@@ -1428,7 +1469,7 @@ class ACE_Medical_Treatment_Actions
 {
 	class Morphine;
 	class Adenosine;
-	class ACE_bloodIV;
+	class BloodIV;
 	class OPTRE_Medigel;
 	class OPTRE_Biofoam;
 //	class ApplyTourniquet;
@@ -1470,17 +1511,17 @@ class ACE_Medical_Treatment_Actions
 		};
 		treatmentTime=1;
 	};
-	class 73_Adenosine: Adenosine
+	class 73_adenosine: 73_Morphine
 	{
 		displayName="[73] Take Narcolytic Metabolase";
 		displayNameProgress="Injecting Narcolytic Metabolase...";
 		items[]=
 		{
-			"73_Adenosine"
+			"73_adenosine"
 		};
 		treatmentTime=1;
 	};
-	class 73_epinephrine: Adrenaline
+	class 73_epinephrine: 73_Morphine
 	{
 		displayName="[73] Take Stim-Pak";
 		displayNameProgress="Injecting Stim-Pak...";
@@ -1490,7 +1531,7 @@ class ACE_Medical_Treatment_Actions
 		};
 		treatmentTime=1;
 	};
-	class 73_PolyHemoglobinIV_2000: ACE_bloodIV
+	class 73_PolyHemoglobinIV_2000: BloodIV
 	{
 		displayName="[73] 2000cc Polymerized Hemoglobin";
 		displayNameProgress="Pushing 2000cc...";
@@ -1499,7 +1540,7 @@ class ACE_Medical_Treatment_Actions
 			"73_PolyHemoglobinIV_2000"
 		};
 	};
-	class 73_PolyHemoglobinIV_1000: ACE_bloodIV
+	class 73_PolyHemoglobinIV_1000: BloodIV
 	{
 		displayName="[73] 1000cc Polymerized Hemoglobin";
 		displayNameProgress="Pushing 1000cc...";
@@ -1508,7 +1549,7 @@ class ACE_Medical_Treatment_Actions
 			"73_PolyHemoglobinIV_1000"
 		};
 	};
-	class 73_PolyHemoglobinIV_500: ACE_bloodIV
+	class 73_PolyHemoglobinIV_500: BloodIV
 	{
 		displayName="[73] 500cc Polymerized Hemoglobin";
 		displayNameProgress="Pushing 500cc...";
@@ -1517,7 +1558,7 @@ class ACE_Medical_Treatment_Actions
 			"73_PolyHemoglobinIV_500"
 		};
 	};
-	class 73_PolyHemoglobinIV_250: ACE_bloodIV
+	class 73_PolyHemoglobinIV_250: BloodIV
 	{
 		displayName="[73] 250cc Polymerized Hemoglobin";
 		displayNameProgress="Pushing 250cc...";
@@ -1590,7 +1631,7 @@ class ACE_Medical_Treatment_Actions
 		{
 			"ACE_tourniquet"
 		};
-		condition= QUOTE(!([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedTo)));
+		condition= "!([_patient, _bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo)";
 		callbackSuccess="ace_medical_treatment_fnc_tourniquet";
 		treatmentTime=3;
 		consumeItem=0;
@@ -1602,8 +1643,8 @@ class ACE_Medical_Treatment_Actions
 		displayName="[73] Deconstrict Suit";
 		displayNameProgress="Loosening suit constriction...";
 		items[]={};
-		condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedTo));
-		callbackSuccess="ace_medical_treatment_fnc_tourniquetRemove";
+		condition = "([_patient, _bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo)";
+		callbackSuccess="ACE_MEDICAL_TREATMENT_fnc_tourniquetRemove";
 	};
 	class 73_MedKit: OPTRE_Medigel
 	{
