@@ -10,6 +10,15 @@ class 73_M875:VES_M875_SPH
     scope=2;
     side=1;
     crew = "73_Crewman";
+     class ace_cargo {
+            class cargo {
+                class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Tracks";
+					
+                    amount = 4;
+                };
+            };
+        };
     hiddenSelectionsTextures[]=
     {
         "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa",
@@ -54,6 +63,15 @@ class 73_M808BM_MBT:VES_M808BM_MBT
     crew = "73_Crewman";
     armor=575;
     armorStructural=5;
+     class ace_cargo {
+            class cargo {
+                class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Tracks";
+					
+                    amount = 4;
+                };
+            };
+        };
     hiddenSelectionsTextures[]=
     {
         "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa",
@@ -170,6 +188,15 @@ class 73_M808B2_MBT:VES_M808B2_MBT
     crew = "73_Crewman";
     armor=575;
     armorStructural=5;
+     class ace_cargo {
+            class cargo {
+                class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Tracks";
+					
+                    amount = 4;
+                };
+            };
+        };
     hiddenSelectionsTextures[]=
     {
         "V_FZ_Ground_Vehicles\data\Scorpion\V_M808S_CLS_CO.paa",
@@ -210,6 +237,15 @@ class 73_M808BMk2:DMNS_M808B
     crew = "73_Crewman";
     armor=575;
     armorStructural=5;
+     class ace_cargo {
+            class cargo {
+                class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Tracks";
+					
+                    amount = 4;
+                };
+            };
+        };
     hiddenSelectionsTextures[]=
     {
         "DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Hull_co.paa",
@@ -292,6 +328,15 @@ class 73_Merkava : B_MBT_01_TUSK_F
         "73_Marine_Rifleman"
     };
     transportSoldier=7;
+     class ace_cargo {
+            class cargo {
+                class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Tracks";
+					
+                    amount = 4;
+                };
+            };
+        };
     hiddenSelectionsTextures[] =
     {
         "A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa",
