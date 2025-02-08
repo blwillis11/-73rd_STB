@@ -10,6 +10,15 @@ class 73_HDV134_Resupply:VES_HDV134_Resupply
     scopeCurator=2;
     scope=2;
     side=1;
+     class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     crew = "73_Crewman";
     hiddenSelectionsTextures[]=
     {
@@ -49,6 +58,15 @@ class 73_HDV134_TT:VES_HDV134_TT
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[]=
     {
         "\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
@@ -127,6 +145,15 @@ class 73_M12 : VES_M12
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -167,6 +194,15 @@ class 73_M12_LRV : VES_M12_LRV
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -206,6 +242,15 @@ class 73_M12G1_LRV : VES_M12G1_LRV
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -244,6 +289,15 @@ class 73_M12A1_LRV : VES_M12A1_LRV
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -283,6 +337,15 @@ class 73_M12R_AA : VES_M12R_AA
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -320,6 +383,15 @@ class 73_M12_APC : VES_M12_APC
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -360,6 +432,15 @@ class 73_M813_TT : VES_M813_TT
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
@@ -400,6 +481,15 @@ class 73_M914_TD : OPTRE_M12_TD_ins
     scope=2;
     side=1;
     crew = "73_Crewman";
+ class ace_cargo {
+            class cargo {
+                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                    type = "ACE_Wheel";
+					
+                    amount = 8;
+                };
+            };
+        };
     hiddenSelections[]=
     {
         "Camo1",
