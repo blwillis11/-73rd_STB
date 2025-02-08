@@ -40,6 +40,41 @@ class CfgFunctions
             class PelicanUnLoadValidate
             {
             };
+            class PelicanLoadSupplyPodsMenuUnload
+            {
+            };
+            class PelicanLoadSupplyPodsMenuOpened
+            {
+            };
+            class PelicanLoadSupplyPodsMenuLoad
+            {
+            };
+            class PelicanLoadSupplyPodsMenuDetachMenu
+            {
+            };
+            class PelicanLoad_UnloadAllSupplyPods
+            {
+            };
+        };
+        class Jumpack
+        {
+            file="73_functions\Functions";
+			class PreInit
+			{
+			    preInit = 1;
+			};
+			class JumpPack
+			{
+			};
+			class EventHandlers
+			{
+			};
+			class JumpPackRefuel
+			{
+			};
+			class RoofStuckCheck
+			{
+			};
         };
         class Init
         {

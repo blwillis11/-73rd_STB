@@ -186,6 +186,12 @@ class cfgMagazineWells{
             "73_95x40_36Rnd_T_IR"
 		};
 	};
+	class 73_BR55HB{
+		73_Magazines[] = {
+            "73_36Rnd_95x40_HPSAP_Mag",
+            "73_36Rnd_95x40_HPSAP_Mag_Tracer"
+		};
+	};
 	class 73_M6D{
 		73_Magazines[] = {
 			"73_40Rnd_127x40_Drum_Black_Tracer",

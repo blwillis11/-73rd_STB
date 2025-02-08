@@ -41,17 +41,6 @@ class CfgVehicles
         displayName="[73] JumpPack";
         maximumLoad=350;
     };
-    class JJP_JumpPack_LR: OPTRE_S12_SOLA_Jetpack
-    {
-        displayName="[73] JumpPack";
-        maximumLoad=350;
-    };
-
-    class JJP_JumpPack_on_LR: OPTRE_S12_SOLA_Jetpack_ON
-    {
-        displayName="[73] JumpPack";
-        maximumLoad=350;
-    };
 };
 
 class CfgFunctions

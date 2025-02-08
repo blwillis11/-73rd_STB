@@ -126,4 +126,5 @@ class CfgVehicles {
     #include "vehicles\Helicopter.hpp"
     #include "vehicles\Planes.hpp"
     #include "vehicles\Drone.hpp"
+    #include "vehicles\Aquatic.hpp"
 };

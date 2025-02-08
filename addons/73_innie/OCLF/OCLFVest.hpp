@@ -68,7 +68,7 @@ class 73_M52B_Armor_Lancer: OPTRE_FC_M52B_Armor_TeamLeader_URB
     displayName="[OCLF] Lancer Armour";
     hiddenSelectionsTextures[]=
     {
-        "\73_innie\OCLF\data\OCLF_vest_co.paa"
+        "\73_innie\OCLF\data\OCLF_vest_lancer_co.paa"
     };
     class HitpointsProtectionInfo
     {

@@ -22,7 +22,7 @@ class 73_OCLF_Uniform_Blk:OPTRE_FC_Marines_Uniform_BLK
     class ItemInfo: UniformItem
     {
         uniformModel="-";
-        uniformClass="73_OCLFBase";
+        uniformClass="73_OCLFSpecOpsBase";
         containerClass="Supply40";
         mass=35;
         modelSides[]={6};

@@ -1,82 +1,69 @@
-_vehicles = ((_this select 0) getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
+private _varName = format["%1_Pelican_AttachedToVehiclesEffect", "Splits"];
+private _pelican = (_this select 0);
+private _vehicles = _pelican getVariable [_varName, []];
+private _chuteAttachMinimumAlt = 100;
+private _chuteDeployMaximumAlt = 200;
 
-if (
-		(
-			{
-				(_x isKindOf "OPTRE_M808B_base") OR
-                (_x isKindOf "OPTRE_M808B2") OR
-                (_x isKindOf "OPTRE_M808S") OR
-                (_x isKindOf "OPTRE_M12A1_LRV") OR
-                (_x isKindOf "OPTRE_M12_LRV") OR
-                (_x isKindOf "OPTRE_M12G1_LRV") OR
-                (_x isKindOf "OPTRE_M12R_AA") OR
-                (_x isKindOf "OPTRE_M12_FAV_APC") OR
-                (_x isKindOf "OPTRE_M12_FAV") OR
-                (_x isKindOf "OPTRE_M12_TD_ins") OR
-                (_x isKindOf "OPTRE_M813_TT") OR
-                (_x isKindOf "OPTRE_M413_base") OR
-                (_x isKindOf "73_M494_Oryx") OR
-                (_x isKindOf "OPTRE_M914_RV") OR
-                (_x isKindOf "73_M808BM_MBT") OR
-                (_x isKindOf "73_M875") OR
-                (_x isKindOf "73_IFV76_A") OR
-                (_x isKindOf "73_IFV76") OR
-                (_x isKindOf "73_M412_IFV") OR
-                (_x isKindOf "73_M413_MGS") OR
-                (_x isKindOf "73_M511_Springbok_APC") OR
-                (_x isKindOf "73_M511_Springbok_IFV") OR
-                (_x isKindOf "73_M511_Springbok_MGS") OR
-                (_x isKindOf "73_M511_Springbok_AA") OR
-                (_x isKindOf "73_M914_TD") OR
-                (_x isKindOf "73_Iguana_Medical_APC") OR
-                (_x isKindOf "73_Iguana_APC") OR
-                (_x isKindOf "B_AFV_Wheeled_01_cannon_F") OR
-                (_x isKindOf "B_AFV_Wheeled_01_up_cannon_F") OR
-                (_x isKindOf "B_T_AFV_Wheeled_01_cannon_F") OR
-                (_x isKindOf "B_T_AFV_Wheeled_01_up_cannon_F") OR
-                (_x isKindOf "B_MBT_01_TUSK_F") OR
-                (_x isKindOf "B_APC_Tracked_01_CRV_F") OR
-                (_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
-                (_x isKindOf "73_M808BMk2") OR
-                (_x isKindOf "73_Merkava") OR
-                (_x isKindOf "73_Komodo") OR
-                (_x isKindOf "73_POGV_RCWS") OR
-                (_x isKindOf "73_COGV_RCWS")
+//Abort empty.
+if ((count _vehicles) isEqualTo 0) exitWith { Nil; };
 
-			} count _vehicles > 0
-		)
-) then {
-
-	if (((getPosATL (_this select 0)) select 2) < 2) then {
-
-		titleText ["-------------------------------------------<br/><t color='#ff0000' size='1.5'>UNLOADING FAILED!</t><br/>-------------------------------------------<br/>Your landing gears must be raised to unload larger vehicles! Your landing gears will automatically raise when unloading large vehicles if you're flying above 2m.", "PLAIN DOWN", -1, true, true];
-		playSound "FD_CP_Not_Clear_F";
-
-	} else {
-
-		(_this select 0) allowDamage false;
-		player action ["LandGearUp", (_this select 0)];
-
-		sleep 2;
-		titleText ["-------------------------------------------<br/><t color='#ff0000' size='1.5'>VEHICLE UNLOADED!</t><br/>-------------------------------------------", "PLAIN DOWN", -1, true, true];
-		playSound "FD_Finish_F";
-
-		{
-			detach _x;
-			_x setVelocity [0,0,-1];
-			_x allowDamage false;
-		} forEach _vehicles;
-
-		sleep 0.5;
-
-		{_x allowDamage true;} forEach _vehicles;
-		(_this select 0) allowDamage true;
-		(_this select 0) setVariable ["STB73_Pelican_AttachedToVehiclesEffect", [], true];
-
-		};
-
-} else {
-
-	0 = (_this select 0) spawn OPTRE_fnc_PelicanLoad_UnloadAllSupplyPods;
-
+//Abort and run the supply pods if no non-pod vehicles are present.
+private _hasSupplyPod = false;
+private _vicCount = {
+	!(["SupplyPod", (typeOf _x)] call BIS_fnc_inString);
+} count _vehicles;
+if (_vicCount isEqualTo 0) exitWith {
+	_pelican spawn Splits_fnc_PelicanLoad_UnloadAllSupplyPods;
 };
+
+//Abort nonclears.
+if (((getPos _pelican) select 2) < 2) exitWith {
+	titleText ["Cannot drop below 2 meters! PULL UP!", "PLAIN DOWN", -1, true, true];
+	playSound "FD_CP_Not_Clear_F";
+};
+
+//_pelican allowDamage false;
+player action ["LandGearUp", _pelican];
+sleep 3.4;
+
+//Drop the damn thing(s).
+{
+	//Detach the thing and begin a check for the 'chute system.
+	detach _x;
+	playSound "FD_Finish_F";
+	private _Altitude = getPos _pelican select 2;
+	if (_Altitude > _chuteAttachMinimumAlt ) then {
+		titleText ["Dropping the payload with a parachute!", "PLAIN DOWN", -1, true, true];
+		
+		//Schedule the chute script on the dropped payload so that we can drop the next sucker.
+		[_x, _chuteAttachMinimumAlt, _chuteDeployMaximumAlt] spawn {
+			params [
+				"_payload",
+				"_chuteAttachMinimumAlt",
+				"_chuteDeployMaximumAlt"
+			];
+			
+			//Wait until we hit max deploy altitude.
+			waitUntil {(getPos _payload) select 2 < _chuteDeployMaximumAlt;};
+			
+			//Make and attach the chute.
+			_chute = createVehicle ["O_Parachute_02_F", _payload modelToWorld [0,0,0], [], 0, "CAN_COLLIDE"];
+			_chute setVelocity velocity _payload;
+			_chute setDir getDir _payload;
+			_payload attachTo [_chute,[0,0,0]];
+			
+			//Wait until we hit cut altitude and detach.
+			waitUntil {(getPos _payload) select 2 < 2};
+			detach _payload;
+		}
+	} else {
+		titleText ["Dropping the payload!", "PLAIN DOWN", -1, true, true];
+	};
+	sleep 0.34;
+} forEach _vehicles;
+
+//Void the array.
+_pelican setVariable [_varName, [], true];
+
+//Return nothing.
+Nil;

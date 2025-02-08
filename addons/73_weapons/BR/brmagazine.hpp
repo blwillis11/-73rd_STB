@@ -30,3 +30,20 @@ class 73_95x40_36Rnd_T_IR:73_95x40_36Rnd
     tracersEvery = 1;
     lastRoundsTracer = 15;
 };
+
+class MA_36Rnd_95x40_HPSAP_Mag;
+class MA_36Rnd_95x40_HPSAP_Mag_Tracer;
+
+class 73_36Rnd_95x40_HPSAP_Mag:MA_36Rnd_95x40_HPSAP_Mag
+{
+    displayName="36Rnd 9.5x40mm Magazine";
+    author= "73rd S-4 Team";
+    ammo="73_95x40_HPSAP";
+};
+class 73_36Rnd_95x40_HPSAP_Mag_Tracer:MA_36Rnd_95x40_HPSAP_Mag_Tracer
+{
+    displayName="36Rnd 9.5x40mm Magazine";
+    author= "73rd S-4 Team";
+    ammo="73_95x40_HPSAP";
+    tracersEvery=1;
+};

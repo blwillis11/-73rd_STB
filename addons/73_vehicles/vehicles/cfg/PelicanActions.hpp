@@ -28,7 +28,7 @@ class Afterburners900Disengage
     priority=10;
     radius=100000;
     showWindow=0;
-    statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+    statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn STB73_fnc_ThrusterAnimate";
     textToolTip="<t color='#FCE205'>Disengage Afterburners";
     userActionID=55;
 };
@@ -43,7 +43,7 @@ class PelLift_LoadVehicle
     radius = 15;
     priority = 2;
     onlyForPlayer = 0;
-    condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""STB73_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+    condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
     statement = "0 = [this,vehicle player] spawn STB73_fnc_PelicanLoadValidate;";
 };
 class PelLift_LoadPodMenu
@@ -72,7 +72,7 @@ class PelLift_UnLoadVehicle
     radius = 5;
     priority = 3;
     onlyForPlayer = 0;
-    condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""STB73_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+    condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
     statement = "0 = [this] spawn STB73_fnc_PelicanUnLoadValidate;";
 };
 class PelLift_OpenDetachPodMenu
@@ -86,7 +86,7 @@ class PelLift_OpenDetachPodMenu
     radius = 5;
     priority = 3;
     onlyForPlayer = 0;
-    condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""STB73_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+    condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
     statement = "0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
 };
 class RampOpen

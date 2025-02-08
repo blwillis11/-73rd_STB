@@ -1,4 +1,4 @@
-_podArray = (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["OPTRE_Pelican_AttachedToVehiclesEffect",[]]);
+_podArray = (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
 
 if (
 	(
@@ -15,8 +15,8 @@ if (
 // Clear Current Pods Attached
 {
 	deleteVehicle _x;
-} forEach (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["OPTRE_Pelican_AttachedToVehiclesEffect",[]]);
-OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["OPTRE_Pelican_AttachedToVehiclesEffect",[],true];
+} forEach (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
+OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["STB73_Pelican_AttachedToVehiclesEffect",[],true];
 
 // Add New pods / Create Array Containing Pods
 _podArray = [];
@@ -55,6 +55,6 @@ for "_i" from 10 to 15 do {
 };
 
 // Add New Pods to Global Variable
-OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["OPTRE_Pelican_AttachedToVehiclesEffect",_podArray,true];
+OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["STB73_Pelican_AttachedToVehiclesEffect",_podArray,true];
 
 true
