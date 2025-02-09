@@ -28,7 +28,7 @@ class Afterburners900Disengage
     priority=10;
     radius=100000;
     showWindow=0;
-    statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn STB73_fnc_ThrusterAnimate";
+    statement="0 = this spawn STB73_fnc_AfterburnersDisengage; 0 = this spawn STB73_fnc_ThrusterDeAnimate";
     textToolTip="<t color='#FCE205'>Disengage Afterburners";
     userActionID=55;
 };

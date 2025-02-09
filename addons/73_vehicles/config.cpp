@@ -65,7 +65,7 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
             "73_units",
-            "DMNS_Armour",
+            "DMNS_Armour"
 
         };
     };
@@ -87,6 +87,12 @@ class CfgFunctions
             class RegisterThrusters{};
             class ThrusterAnimate{};
             class ThrusterDeAnimate{};
+            class ThrusterDisengage{};
+            class AfterburnersDisengage{};
+            class Init
+            {
+                postInit = 1;
+            };
         };
     };
 };

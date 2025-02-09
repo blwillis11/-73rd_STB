@@ -1,4 +1,4 @@
-_podArray = (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
+_podArray = (Splits_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["Splits_Pelican_AttachedToVehiclesEffect",[]]);
 
 if (
 	(
@@ -15,8 +15,8 @@ if (
 // Clear Current Pods Attached
 {
 	deleteVehicle _x;
-} forEach (OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["STB73_Pelican_AttachedToVehiclesEffect",[]]);
-OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["STB73_Pelican_AttachedToVehiclesEffect",[],true];
+} forEach (Splits_PelicanLoadSupplyPods_Menu_PelicanObject getVariable ["Splits_Pelican_AttachedToVehiclesEffect",[]]);
+Splits_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["Splits_Pelican_AttachedToVehiclesEffect",[],true];
 
 // Add New pods / Create Array Containing Pods
 _podArray = [];
@@ -30,20 +30,20 @@ for "_i" from 10 to 15 do {
 	if (_podClassname != "none") then {
 
 		_pod = _podClassname createVehicle [0,0,0];
-		_pod disableCollisionWith OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject;
-		OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject disableCollisionWith _pod;
+		_pod disableCollisionWith Splits_PelicanLoadSupplyPods_Menu_PelicanObject;
+		Splits_PelicanLoadSupplyPods_Menu_PelicanObject disableCollisionWith _pod;
 
 		_pod attachTo [
 
-			OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject,
+			Splits_PelicanLoadSupplyPods_Menu_PelicanObject,
 			(
 				switch _i do {
-					case 10: { [-0.85,-5.7,-.4] };
-					case 11: { [ 0.85,-5.7,-.4] };
-					case 12: { [-0.85,-4.7,-.4] };
-					case 13: { [ 0.85,-4.7,-.4] };
-					case 14: { [-0.85,-3.7,-.4] };
-					case 15: { [ 0.85,-3.7,-.4] };
+					case 10: { [-0.7,-7.5,-1.25] };
+					case 11: { [ 0.7,-7.5,-1.25] };
+					case 12: { [-0.7,-6.5,-1.25] };
+					case 13: { [ 0.7,-6.5,-1.25] };
+					case 14: { [-0.7,-5.5,-1.25] };
+					case 15: { [ 0.7,-5.5,-1.25] };
 				}
 			)
 		];
@@ -55,6 +55,6 @@ for "_i" from 10 to 15 do {
 };
 
 // Add New Pods to Global Variable
-OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["STB73_Pelican_AttachedToVehiclesEffect",_podArray,true];
+Splits_PelicanLoadSupplyPods_Menu_PelicanObject setVariable ["Splits_Pelican_AttachedToVehiclesEffect",_podArray,true];
 
 true

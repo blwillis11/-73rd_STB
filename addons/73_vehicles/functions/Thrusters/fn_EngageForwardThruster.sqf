@@ -49,6 +49,6 @@ STB73_ThrustersEH = addMissionEventHandler ["EachFrame", {
 	};
 	if (speed _vehicle <= 350) then {
 		private _speed = (STB73_ThrusterMultiplier/diag_fps);
-		[_vehicle, _speed] call STB73_fnc_changeSpeed;
+		[_vehicle, _speed] call STB73_fnc_ChangeSpeed;
 	};
 }, [_vehicle]];

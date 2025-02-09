@@ -63,6 +63,10 @@ class CfgFunctions
 			{
 			    preInit = 1;
 			};
+			class Init
+            {
+                postInit = 1;
+            };
 			class JumpPack
 			{
 			};
@@ -173,6 +177,16 @@ class CfgFunctions
             };
         };
 
+    };
+    class Splits
+    {
+        class PelicanMagLiftSystem
+        {
+            file="73_functions\Functions\PelicanMagLiftSystem";
+            class PelicanLoadSupplyPodsMenuLoad
+            {
+            };
+        };
     };
     class OPTRE
     {

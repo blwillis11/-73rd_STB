@@ -43,7 +43,7 @@ class Thruster400Disengage
 	priority=10;
 	radius=100000;
 	showWindow=0;
-	statement="0 = this spawn V_FZ_fnc_Thruster400Disengage;";
+	statement="0 = this spawn STB73_fnc_ThrusterDisengage;";
 	textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 
 	userActionID=53;

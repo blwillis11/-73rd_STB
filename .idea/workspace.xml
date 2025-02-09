@@ -8,32 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="new stuff">
-      <change afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Aquatic.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_Supplypod/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodMenuDetachMenu.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodMenuDetachMenu.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuLoad.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuLoad.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuOpened.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuOpened.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuUnload.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadSupplyPodsMenuUnload.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoad_UnloadAllSupplyPods.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanLoad_UnloadAllSupplyPods.sqf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/Init/fn_init.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/Init/fn_init.sqf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/PelicanMagLiftSystem/fn_PelicanUnLoadValidate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUniform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUniform.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFVest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFVest.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_jetpacks/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/cfg/PelicanActions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/cfg/PelicanActions.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/brmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/brmagazine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smg.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smg.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Shotgun/shotgunmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Shotgun/shotgunmagazine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/XtdGear/XtdGearModels.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/cfg/ThrusterActions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/cfg/ThrusterActions.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -460,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738854775792</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="new stuff">
+      <option name="closed" value="true" />
+      <created>1739043683741</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1739043683741</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

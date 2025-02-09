@@ -465,12 +465,17 @@ class CfgVehicles
 				count=2;
 			};
 		};
-		 class ace_cargo {
+        class ace_cargo {
             class cargo {
                 class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
                     type = "ACE_Wheel";
                     amount = 8;
+
                 };
+                class ACE_Tracks{
+                     type = "ACE_Track";
+                     amount= 4;
+};
             };
         };
 	};
@@ -478,7 +483,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeCurator = 2;
-
+		ace_refuel_fuelCargo = 600;
 		displayName="73rd Supply Pod [Vehicle Refuel]";
 		hiddenselections[]=
 		{

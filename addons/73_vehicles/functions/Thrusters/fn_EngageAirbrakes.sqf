@@ -1,6 +1,6 @@
 params ["_vehicle"];
 
-if (speed _vehicle <= 150) exitWith {};
+if (speed _vehicle <= 50) exitWith {};
 
 hint "ACTIVATING AIR BRAKES";
 
