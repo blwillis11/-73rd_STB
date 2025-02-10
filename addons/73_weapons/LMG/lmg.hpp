@@ -6,6 +6,7 @@ class 73_H4_SAW:MA_H4_SAW
     baseWeapon="73_H4_SAW";
     descriptionShort="UNSC LMG";
 
+    ace_overheating_allowSwapBarrel = 1;
     ace_overheating_barrelMass = 15;
     ace_overheating_dispersion = 0.9;
     ace_overheating_mrbs = 3000;
