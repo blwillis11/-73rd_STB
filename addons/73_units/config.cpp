@@ -45,7 +45,8 @@ class CfgPatches
         requiredAddons[] = 
         {		
 			"OPTRE_UNSC_Units",
-			"MA_Armor"
+			"MA_Armor",
+			"OPTRE_FC_Units"
         };
     }; 
 }; 
@@ -187,6 +188,7 @@ class CfgWeapons
 	class CH252D_Helmet;
     class CH252D_Helmet_dp;
     class VES_CH252_WDL_Crew;
+    class OPTRE_FC_VX19_Helmet;
 
 //ODST Uniform
 	#include "data\ODST\ODSTUniforms.hpp"
@@ -219,6 +221,8 @@ class CfgWeapons
 	#include "data\ODST\ODSTCH252DReconHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"
+//Aviation Helmets
+    #include "data\Aviation\AviationHelmets.hpp"
 };
 class CfgVehicles
 {

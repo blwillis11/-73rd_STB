@@ -121,6 +121,27 @@ class XtdGearModels
 				};
 			};
 		};
+		class 73_ACE_VX19_Helmet
+		{
+		    label="[73] VX19 Flight Helmet"
+		    author="73rd s-4 team"
+		    options[]=
+		    {
+		        "Roles"
+		    }
+		    class Roles
+		    {
+		        alwaysSelectable=1;
+		        changeingame=0;
+		        changedelay=0;
+		        label= "Roles";
+		        values[]=
+		        {
+		            "Aviator",
+		            "Sr Aviator"
+		        };
+		    };
+		};
 		class 73_ACE_cus_CH252C_Helmet
 		{
 			label= "[73] CH252C Custom Helmet";
