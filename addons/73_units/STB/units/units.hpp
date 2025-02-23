@@ -199,7 +199,7 @@ class 73_STB_ODST_AT: 73_UnitBase
     canDeactivateMines = 0;
 
     uniformClass = "73_BDU_ODST_Urban_NC";
-    backpack = "73_73_ODST_AT_backpack";
+    backpack = "73_ODST_AT_backpack";
 
     weapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};
     respawnWeapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};

@@ -1,0 +1,39 @@
+<changelist name="Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1" date="1740325172315" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2/23/2025 10:38 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/warthog/apc_lopo_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/warthog/apc_lopo_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/apc_lopo_co.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/Pelican/weaponry_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/Pelican/weaponry_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/weaponry_co.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/Pelican/body_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/Pelican/body_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/body_co.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/warthog/M12HogMaav_interior_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/M12HogMaav_interior_co.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/Pelican/wings_and_gear_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/Pelican/wings_and_gear_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/wings_and_gear_co.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" />
+    <option name="AFTER_PATH" value="addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/73_Salmon_Helmet.paa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" />
+    <option name="AFTER_PATH" value="addons/73_vehicles/data/warthog/M12HogMaav_extupper_co.paa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/M12HogMaav_extupper_co.paa" />
+  </binary>
+</changelist>

@@ -39,6 +39,19 @@ class 73_ODST_BDU_Urban: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
     };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
+    };
 };
 class 73_ODST_BDU_Woodland: MA_Marine_ODST_BDU_HJ
 {
@@ -78,6 +91,19 @@ class 73_ODST_BDU_Woodland: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
     };
 };
 class 73_ODST_BDU_Arid: MA_Marine_ODST_BDU_HJ
@@ -119,6 +145,19 @@ class 73_ODST_BDU_Arid: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
     };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
+    };
 };
 class 73_ODST_BDU_Winter: MA_Marine_ODST_BDU_HJ
 {
@@ -158,6 +197,19 @@ class 73_ODST_BDU_Winter: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
     };
 };
 class 73_ODST_BDU_Urban_NC: MA_Marine_ODST_BDU_HJ
@@ -199,6 +251,19 @@ class 73_ODST_BDU_Urban_NC: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
     };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
+    };
 };
 class 73_ODST_BDU_Woodland_NC: MA_Marine_ODST_BDU_HJ
 {
@@ -238,6 +303,19 @@ class 73_ODST_BDU_Woodland_NC: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
     };
 };
 class 73_ODST_BDU_Arid_NC: MA_Marine_ODST_BDU_HJ
@@ -279,6 +357,19 @@ class 73_ODST_BDU_Arid_NC: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
     };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
+    };
 };
 class 73_ODST_BDU_Winter_NC: MA_Marine_ODST_BDU_HJ
 {
@@ -318,5 +409,18 @@ class 73_ODST_BDU_Winter_NC: MA_Marine_ODST_BDU_HJ
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa",
         "MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
+    };
+    hiddenSelectionsMaterials[]=
+    {
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Upper.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_BDU_Lower.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Collar.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Softpad.rvmat",
+        "MA_Armor\data\Uniforms\Marine\data\Marine_Armor_Straps.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Upper_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Lower_Armor.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat",
+        "73_units\data\ODST\Uniforms\Marine_Shoulders.rvmat"
     };
 };

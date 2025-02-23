@@ -105,6 +105,38 @@ class 73_M52_ODST_Vest_Base: M52_ODST_Vest_Base
         "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //LegPouchL
         "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
     };
+    hiddenSelectionsMaterials[]=
+    {
+        "73_units\data\ODST\M52Vest\CQB_Shoulders.rvmat", //CQB Left
+        "73_units\data\ODST\M52Vest\CQB_Shoulders.rvmat", //CQB Right
+        "73_units\data\ODST\M52Vest\Marksman_Shoulders.rvmat", //Marksman_Left
+        "73_units\data\ODST\M52Vest\Marksman_Shoulders.rvmat", //Marksman_Right
+        "73_units\data\ODST\M52Vest\ODST_Armor.rvmat", //ODST_Bracer_Left
+        "73_units\data\ODST\M52Vest\ODST_Armor.rvmat", //ODST_Bracer_Right
+        "73_units\data\ODST\M52Vest\ODST_Armor.rvmat", //ODST_Chest
+        "73_units\data\ODST\M52Vest\ODST_Shoulders.rvmat", //ODST_Left
+        "73_units\data\ODST\M52Vest\ODST_Shoulders.rvmat", //ODST_Right
+        "", //ChestPMLeft
+        "", //ChestPMRight
+        "", //ChestPouch
+        "", //LShoulderRadio
+        "", //RShoulderRadio
+        "", //StomachPouch
+        "", //TorsoPMLeft
+        "", //TorsoPMRight
+        "", //TorsoPouch
+        "", //WaistBack
+        "", //WaistGLeft
+        "", //WaistGRight
+        "", //WaistPLeft
+        "", //WaistPRight
+        "", //WaistRLeft
+        "", //WaistRRight
+        "", //WaistSLeft
+        "", //WaistSRight
+        "", //LegPouchL
+        ""  //LegPouchR
+    };
     class ItemInfo: VestItem
     {
         vestType="Rebreather";

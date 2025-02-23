@@ -51,7 +51,8 @@ class CfgPatches
             "73_Iguana_APC",//Load/unload
             "73_Iguana_Medical_APC",//Load/unload
             "73_Komodo",//Load/unload
-            "73_Merkava"//Load/unload
+            "73_Merkava",//Load/unload
+            "73_cart"
         }; 
         weapons[] = 
         {
@@ -133,4 +134,5 @@ class CfgVehicles {
     #include "vehicles\Planes.hpp"
     #include "vehicles\Drone.hpp"
     #include "vehicles\Aquatic.hpp"
+    #include "vehicles\Utility.hpp"
 };
