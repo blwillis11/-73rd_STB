@@ -1,5 +1,5 @@
-class VES_M494_ORYX;
-class 73_M494_Oryx: VES_M494_ORYX
+class OPTRE_M494;
+class 73_M494_Oryx: OPTRE_M494
 {
     displayName="[73] M494 Oryx";
     author="73rd S-4 Team"

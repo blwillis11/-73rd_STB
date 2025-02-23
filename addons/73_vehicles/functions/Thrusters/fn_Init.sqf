@@ -14,6 +14,14 @@ STB73_ThrusterMultiplier = 20;
 	[_vic] call STB73_fnc_increaseThrusterLevel;
 }, {}, [0xF4, [false, false, false]]] call CBA_fnc_addKeybind;
 
+["73rd Vehicles", "STB73_Vehicles_Unload", ["Unload Vehicle/Pods", "Unloads whatever cargo is maglocked"], {
+	private _unit = [player, remoteControlled player] select (isRemoteControlling player);
+	private _vic = (vehicle _unit);
+	if (_vic == _unit) exitWith {};
+	if ((_unit != driver _vic) or !(alive _vic) or !(isEngineOn _vic) or (((getPosATL _vic) select 2) < 1) && ((count (_vic getVariable ["Splits_Pelican_AttachedToVehiclesEffect",[]])) < 1)) exitWith {};
+	[_vic] call STB73_fnc_PelicanUnLoadValidate;
+}, {}, [0xF4, [false, false, false]]] call CBA_fnc_addKeybind;
+
 ["73rd Vehicles", "STB73_Vehicles_ThrustersDown", ["Thrusters Down", "Thrusters go down a tier (afterburners > forward > none)"], {
 	private _unit = [player, remoteControlled player] select (isRemoteControlling player);
 	private _vic = (vehicle _unit);

@@ -5,15 +5,17 @@ class OPTRE_8Gauge_HEDP;
 class 73_8Gauge_Pellets: OPTRE_8Gauge_Pellets
 {
     cartridge = "FxCartridge_slug";
-    submunitionConeType[] = {
-      "poissondisc",
-      24
-};
+//    submunitionConeType[] = {
+//      "poissondisc",
+//      24
+//};
     caliber = 3;
     hit = 30;
     thrustTime = 4.5;
     thrust = 510;
     timeToLive = 20;
+    submunitionConeType[]={"random", 12};
+    submunitionConeAngle=1;
 };
 
 class 73_8Gauge_Slugs: OPTRE_8Gauge_Slugs
@@ -21,6 +23,10 @@ class 73_8Gauge_Slugs: OPTRE_8Gauge_Slugs
     cartridge = "FxCartridge_slug";
     caliber = 8;
     hit = 40;
+    ACE_caliber=20;
+    ACE_bulletLength=60;
+    ACE_bulletMass=85.4;
+    ACE_ballisticCoefficients[]={0.23};
 };
 
 class 73_8Gauge_HEDP: OPTRE_8Gauge_HEDP
@@ -52,6 +58,10 @@ class 73_12Gauge_Slugs: OPTRE_8Gauge_Slugs
     cartridge = "FxCartridge_slug";
     caliber = 8;
     hit = 50;
+    ACE_caliber=20;
+    ACE_bulletLength=60;
+    ACE_bulletMass=85.4;
+    ACE_ballisticCoefficients[]={0.23};
 };
 class OPTRE_12Gauge_Pellets_Deploy;
 class 73_12Gauge_Pellets_Deploy: OPTRE_12Gauge_Pellets_Deploy

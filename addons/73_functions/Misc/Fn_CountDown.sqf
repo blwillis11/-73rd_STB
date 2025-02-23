@@ -33,7 +33,7 @@ Author:
 if (!hasInterface) exitWith {};
 
 params [
-	["_timeTotal",30,[123]],
+	["_timeTotal",15,[123]],
 	["_text","Launch In",[""]],
 	["_listOfPlayers",[],[[]]],
 	["_countDownDoneEventString","",[""]]
