@@ -30,4 +30,5 @@ class 73_B_127x40_Tracer_NARQ:73_B_127x40_Tracer
     hit=1;
     caliber=0.1;
     dosage=0.4;
+    model="\A3\Weapons_f\Data\bullettracer\tracer_green";
 }

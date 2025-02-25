@@ -1,125 +1,143 @@
-/*
-	OPTRE_Fnc_SpawnHEVsFrigate
+/* ----------------------------------------------------------------------------
+Function: OPTRE_Fnc_SpawnHEVsFrigate
 
-	Description: -
+Description:
+	Creates pods and moves the units in to the pods with a corresponding ship.
 
-	Author: Big_Wilk
+	Modifications: Adapted for use on dedicated servers, improved performance/readability
 
-	Return:
-	0: Array: HEVs created
-	1: Array: HEVs Created For Players
-	2: Array: HEVs Created For AIs
-	3: Array: All Players
-	4: Array: All Units
+Parameters:
+	0: _ship <OBJECT> - The ship to attach the pods to
+	1: _units <ARRAY> - The units to teleport into the pods
 
-	Prams:
-	0: Object: Frigate units will be attached toArray
-	1: Array: Array of units to be attached to frigates.
-*/
+Returns:
+	_allHEVs <ARRAY> - contains information pertinent to OPTRE_Fnc_HEV
+		- _hevArray <ARRAY> - All created HEVs (both AI & players)
+		- _hevArrayPlayer <ARRAY> - All HEVs created for players
+		- _hevArrayAi <ARRAY> - All HEVs created for AI
+		- _listOfPlayers <ARRAY> - All players in the drop sequence
+		- _listOfAI <ARRAY> - All AI in the drop sequence
 
-_frigate = _this select 0;
-_units = _this select 1;
+Examples:
+    (begin example)
 
-// Create HEVs for all units and determine who's a player and whos and ai.
-_totalUnits = count _units;
-_totalUnitsDividedBy2 = (_totalUnits / 2) - 1;
+		[corvette1,[player1,player2]] call OPTRE_Fnc_SpawnHEVsFrigate;
 
-_hevArray = [];			// All HEVs created
-_hevArrayPlayer = [];	// All HEVs created	for players
-_hevArrayAi = [];		// All HEVs created for ai
-_listOfPlayers = [];	// All players units
-_listOfAi = []; 		// All ai units
-_hevDropArms = [];
+    (end)
 
-_countHEVposRight = 0; 	// used to calc arm pos
-_countHEVposLeft = 0; 	// used to calc arm pos
+Author:
+	Big_Wilk,
+	Modified by: Ansible2 // Cipher
+---------------------------------------------------------------------------- */
 
-for "_i" from 0 to (_totalUnits - 1) do {
+params [
+	["_ship",objNull,[objNull]],
+	["_units",[],[[]]]
+];
 
-	private ["_number"];
+// prepare return information
+private _hevArray = [];
+private _hevArrayPlayer = [];
+private _hevArrayAi = [];
+private _listOfPlayers = [];
+private _listOfAI = [];
 
-	_number = _i;
+// these are the possible vectorDir (relative to the ship's model) for the pods
+/// they are (anatomically) left and right side of the ship respectively;
+private _shipRelativeDirVectors = [[1,-4.37114e-008,0],[-1,1.19249e-008,0]];
+private _shipRelativeUpVector = _ship vectorModelToWorld [0,0,1];
+private _countHEVsRight = 0;
+private _countHEVsLeft = 0;
 
-	if (_i > _totalUnitsDividedBy2) then {
+// for comparison to copy cargo
+private _standardPodCargo = [[["OPTRE_Biofoam"],[2]],[["OPTRE_ELB47_Strobe",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M2_Smoke_Purple",1],["OPTRE_M2_Smoke_Purple",1]],[],[]];
 
-		_unit = (_units select _number);
-
-		if (vehicle _unit == _unit AND alive _unit) then {
-
-			_countHEVposRight = _countHEVposRight + 1;
-			_podDir = (_DirOfShip - 270);
-
-			_hev = "DMNS_SOEIV" createVehicle [0,0,0];
-			_hev attachTo [_frigate,[-12.12, (85.15 + (_countHEVposRight * 3.61)), -33.625]];
-			_hev setDir _podDir;
-			_hev lock true;
-
-			_hevDropArm = "DMNS_Destroyer_LiftArm" createVehicle [0,0,0];
-			_hevDropArm attachTo [_hev,[0,0,20.5]];
-			detach _hevDropArm;
-			_hevDropArm setDir _podDir;
-			_hevDropArms pushBack _hevDropArm;
-
-			//_hev disableCollisionWith _hevDropArm;
-
-			_hevArray pushBack _hev;
-
-			[_unit,_hev] remoteExec ["moveInGunner", _unit, false];
-			[_unit,false] remoteExec ["allowDamage", _unit, false];
-
-			if (isPlayer _unit) then {
-				[_unit,"INTERNAL"] remoteExec ["switchCamera", _unit, false];
-				_listOfPlayers pushBack _unit;
-				_hevArrayPlayer pushBack _hev;
-				_hev setVariable ["DMNS_PlayerControled",true,true];
-			} else {
-				_listOfAi pushBack _unit;
-				_hevArrayAi pushBack _hev;
-			};
-
-		};
-
+{
+	if (_forEachIndex > 48) then {
+		["Too many units, you will have to wait for the next drop"] remoteExec ["hint", _unit];
 	} else {
+		if (alive _x) then {
+			private _unit = _x;
 
-		_unit = (_units select _number);
+			private _hev = "DMNS_SOEIV" createVehicle [0,0,0];
 
-		if (vehicle _unit == _unit AND alive _unit) then {
+			//Copy animation state over to the pod
+			_proxyNames = [
+				"proxy_si_1",
+				"proxy_sa_1",
+				"proxy_sb_1",
+				"proxy_sc_1",
+				"proxy_sd_1",
+				"proxy_se_1",
+				"proxy_sf_1",
+				"proxy_sg_1",
+				"proxy_sh_1",
+				"proxy_sj_1",
+				"proxy_sk_1",
+				"proxy_sl_1",
+				"proxy_sm_1",
+				"proxy_sn_1",
+				"proxy_sp_1",
+				"proxy_sr_1",
+				"proxy_st_1",
+				"proxy_su_1",
+				"proxy_sv_1"
+			];
+			private _animState = _unit getVariable ["DMNS_animState", []];
+			{
+				//Animate the phase.
+				_hev animate [_x, _animState select _forEachIndex];
+			} forEach _proxyNames;
 
-			_countHEVposLeft = _countHEVposLeft + 1;
-			_podDir = (_DirOfShip + 270);
+			// copy cargo over from pod on ground
+			private _copyCargo = _unit getVariable ["DMNS_podCargo",[]];
+			if (!(_copyCargo isEqualTo []) AND {!(_copyCargo isEqualTo _standardPodCargo)}) then {
+				clearWeaponCargoGlobal _hev;
+				clearMagazineCargoGlobal _hev;
+				clearItemCargoGlobal _hev;
+				clearBackpackCargoGlobal _hev;
 
-			_hev = "DMNS_SOEIV" createVehicle [0,0,0];
-			_hev attachTo [_frigate,[12.12,(85.15 + (_countHEVposLeft * 3.61)), -33.625]];		//This controls where you are positioned in the ship X (Y - FORWARD + BACKWARD) (Z - Down + UP)
-			_hev setDir _podDir;
-			_hev lock true;
-
-			_hevDropArm = "DMNS_Destroyer_LiftArm" createVehicle [0,0,0];
-			_hevDropArm attachTo [_hev,[0,0,20.5]];
-			detach _hevDropArm;
-			_hevDropArm setDir _podDir;
-			_hevDropArms pushBack _hevDropArm;
-
-			//_hev disableCollisionWith _hevDropArm;
-
-			_hevArray pushBack _hev;
-
-			[_unit,_hev] remoteExec ["moveInGunner", _unit, false];
-			[_unit,false] remoteExec ["allowDamage", _unit, false];
-
-			if (isPlayer _unit) then {
-				[_unit,"INTERNAL"] remoteExec ["switchCamera", _unit, false];
-				_listOfPlayers pushBack _unit;
-				_hevArrayPlayer pushBack _hev;
-				_hev setVariable ["DMNS_PlayerControled",true,false];
-			} else {
-				_listOfAi pushBack _unit;
-				_hevArrayAi pushBack _hev;
+				[_hev,_copyCargo] call DMNS_fnc_addContainerCargo;
 			};
 
+			// getting which side of the frigate to spawn on based upon even and odd number in drop order
+			// used a reverse operator "!" to keep things left/right when being selected from arrays
+			private _leftOrRightOfShip = !((_forEachIndex mod 2) isEqualTo 0);
+			private _shipSideOffset = [-30, 30] select _leftOrRightOfShip;
+			private _countOfSide = [_countHEVsLeft,_countHEVsRight] select _leftOrRightOfShip;
+
+			_hev attachTo [_ship, [_shipSideOffset, -50 + (_countOfSide * 6), -14]];
+
+			if (_leftOrRightOfShip) then {
+				_countHEVsRight = _countHEVsRight + 1;
+			} else {
+				_countHEVsLeft = _countHEVsLeft + 1;
+			};
+
+
+			// reTranslating the left or right relative vectors back to world based upon the current model
+			private _vectorDirRelative = _ship vectorModelToWorld (_shipRelativeDirVectors select _leftOrRightOfShip);
+			_hev setVectorDirAndUp [_vectorDirRelative,_shipRelativeUpVector];
+
+			_hev lock true;
+			_hevArray pushBack _hev;
+
+			// move the unit into their pod and make them invincible
+			[_unit,_hev] remoteExecCall ["moveIngunner", _unit];
+			[_unit,false] remoteExecCall ["allowDamage", _unit];
+
+			// sort players and AI
+			if (_unit in (call CBA_fnc_players)) then {
+				[_unit,"INTERNAL"] remoteExec ["switchCamera", _unit];
+				_listOfPlayers pushBack _unit;
+				_hevArrayPlayer pushBack _hev;
+				_hev setVariable ["DMNS_PlayerControlled",true/*,[0,2] select isMultiplayer*/]; //May be uneccesary, need to test
+			} else {
+				_listOfAI pushBack _unit;
+				_hevArrayAi pushBack _hev;
+			};
 		};
-
 	};
+} forEach _units;
 
-};
-
-[_hevArray,_hevArrayPlayer,_hevArrayAi,_listOfPlayers,_listOfAi,_hevDropArms]
+[_hevArray,_hevArrayPlayer,_hevArrayAi,_listOfPlayers,_listOfAI]

@@ -1,59 +1,119 @@
-/*
-	-
+/* ----------------------------------------------------------------------------
+Function: OPTRE_Fnc_SpawnHEVsNoFrigate
 
-	Description:
+Description:
+	Creates pods and moves the units into the pods above their position.
 
-	Author: Big_Wilk
+	Modifications: Adapted for use on dedicated servers, improved performance/readability
 
-	Return: none
+Parameters:
+	0: _units <ARRAY> - The units to teleport into the pods
+	1: _startHeight <NUMBER> - Height ATL to start drop at
+	2: _ship <OBJECT> - A dummy object to attach the HEVs to before they drop
+	3: _dropAtShipPosition <BOOL> - To preserve the same behaviour from the drop module
+	 that puts units directly above their position, this parameter allows you to instead
+	 drop over the designated drop zone
 
-	Prams:
-	0:
-	1:
+Returns:
+	_allHEVs <ARRAY> - contains information pertinent to OPTRE_Fnc_HEV
+		- _hevArray <ARRAY> - All created HEVs (both AI & players)
+		- _hevArrayPlayer <ARRAY> - All HEVs created for players
+		- _hevArrayAi <ARRAY> - All HEVs created for AI
+		- _listOfPlayers <ARRAY> - All players in the drop sequence
+		- _listOfAI <ARRAY> - All AI in the drop sequence
 
-*/
+Examples:
+    (begin example)
+		// drop directly over the units position
+		[[player1,player2],[],myDummyShip,false] call OPTRE_Fnc_SpawnHEVsNoFrigate;
 
-private ["_units","_startHeight"];
+    (end)
 
-_units = _this select 0;
-_startHeight = _this select 1;
+Author:
+	Big_Wilk,
+	Modified by: Ansible2 // Cipher
+---------------------------------------------------------------------------- */
+params [
+	["_units",[],[[]]],
+	["_startHeight",5500,[123]],
+	["_ship",objNull,[objNull]],
+	["_dropAtShipPosition",false,[true]]
+];
 
-_hevArray = [];			// All HEVs created
-_hevArrayPlayer = [];	// All HEVs created	for players
-_hevArrayAi = [];		// All HEVs created for ai
-_listOfPlayers = [];	// All players units
-_listOfAi = []; 		// All ai units
+// prepare return information
+private _hevArray = [];
+private _hevArrayPlayer = [];
+private _hevArrayAi = [];
+private _listOfPlayers = [];
+private _listOfAI = [];
 
-{
-	if (vehicle _x == _x AND alive _x) then {
+// for comparison to copy cargo
+private _standardPodCargo = [[["OPTRE_Biofoam"],[2]],[["OPTRE_ELB47_Strobe",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M8_Flare",1],["OPTRE_M2_Smoke_Purple",1],["OPTRE_M2_Smoke_Purple",1]],[],[]];
 
-		//[999,["OPTRE_LoadScreen", "PLAIN"]] remoteExec ["cutRsc", _x, false];
-		//[_x,"INTERNAL"] remoteExec ["switchCamera", _unit, false];
+private _fn_DMNSSpawnHEVs = {
+	params [
+		["_unit",objNull,[objNull]],
+		["_hevArray",[],[[]]],
+		["_hevArrayPlayer",[],[[]]],
+		["_hevArrayAi",[],[[]]],
+		["_listOfPlayers",[],[[]]],
+		["_listOfAi",[],[[]]]
+	];
 
-		_unitPos = getPos _x;
-		_unitDir = getDir _x;
-		_spawnPos = [(_unitPos select 0),(_unitPos select 1),_startHeight];
+	if (alive _unit) then {
 
-		_hev = createVehicle ["DMNS_SOEIV", _spawnPos, [], 0, "FLY"];
+		private "_spawnPos";
+		if (_dropAtShipPosition) then {
+			private _randomPosition = [_ship,75] call CBA_fnc_randPos;
+			_spawnPos = [(_randomPosition select 0),(_randomPosition select 1),_startHeight];
+		} else {
+			private _unitPos = getPosATL _unit;
+			_spawnPos = [(_unitPos select 0),(_unitPos select 1),_startHeight];
+		};
+
+		// create HEV
+		private _hev = createVehicle ["DMNS_SOEIV", [0,0,0], [], 0, "NONE"];
+		_hev setPosATL _spawnPos;
+
+		// copy cargo over
+		private _copyCargo = _unit getVariable ["DMNS_podCargo",[]];
+
+		if (!(_copyCargo isEqualTo []) AND {!(_copyCargo isEqualTo _standardPodCargo)}) then {
+			clearWeaponCargoGlobal _hev;
+			clearMagazineCargoGlobal _hev;
+			clearItemCargoGlobal _hev;
+			clearBackpackCargoGlobal _hev;
+
+			[_hev,_copyCargo] call DMNS_fnc_addContainerCargo;
+		};
+
+		private _unitDir = getDir _unit;
 		_hev setDir _unitDir;
+
+		[_hev,_ship,true] call BIS_fnc_attachToRelative;
+
 		_hev lock true;
 		_hevArray pushBack _hev;
 
-		[_x,_hev] remoteExec ["moveInGunner", _x, false];
-		[_x,false] remoteExec ["allowDamage", _x, false];
+		// move the unit into their pod and make them invincible
+		[_unit,_hev] remoteExecCall ["moveIngunner", _unit, false];
+		[_unit,false] remoteExecCall ["allowDamage", _unit, false];
 
-		if (isPlayer _x) then {
-			[_x,"INTERNAL"] remoteExec ["switchCamera", _x, false];
-			_listOfPlayers pushBack _x;
+		// sort players and AI
+		if (_unit in (call CBA_fnc_players)) then {
+			[_unit,"INTERNAL"] remoteExecCall ["switchCamera", _unit, false];
+			_listOfPlayers pushBack _unit;
 			_hevArrayPlayer pushBack _hev;
-			_hev setVariable ["DMNS_PlayerControled",true,true];
+			_hev setVariable ["DMNS_PlayerControled",true];
 		} else {
-			_listOfAi pushBack _x;
+			_listOfAI pushBack _unit;
 			_hevArrayAi pushBack _hev;
 		};
-
 	};
+};
 
-} forEach _units;
+_units apply {
+	[_x,_hevArray,_hevArrayPlayer,_hevArrayAi,_listOfPlayers,_listOfAI] call _fn_DMNSSpawnHEVs;
+};
 
-[_hevArray,_hevArrayPlayer,_hevArrayAi,_listOfPlayers,_listOfAi]
+[_hevArray,_hevArrayPlayer,_hevArrayAi,_listOfPlayers,_listOfAI]

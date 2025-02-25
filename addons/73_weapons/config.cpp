@@ -50,7 +50,8 @@ class CfgPatches
 			"OPTRE_Weapons",
 			"ACE_Javelin",
 			"ace_missileguidance",
-            "NSWep_Weapons"
+            "NSWep_Weapons",
+            "CBA_Main"
 			
         };
     };
@@ -59,7 +60,18 @@ class CfgPatches
 #include "XtdGear\XtdGearModels.hpp"
 
 class CfgFunctions {
+    class STB73_Weapons
+    {
+        class Functions
+        {
 
+            class Init
+            {
+                postInit=1;
+                file="73_weapons\functions\fn_init.sqf";
+            };
+        };
+    };
     
 };
 

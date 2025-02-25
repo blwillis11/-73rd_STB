@@ -124,11 +124,11 @@ class XtdGearModels
 		class 73_ACE_VX19_Helmet
 		{
 		    label="[73] VX19 Flight Helmet"
-		    author="73rd s-4 team"
+		    author="73rd S-4 team"
 		    options[]=
 		    {
 		        "Roles"
-		    }
+		    };
 		    class Roles
 		    {
 		        alwaysSelectable=1;
@@ -215,6 +215,7 @@ class XtdGearModels
                 values[]= 
 				{
 					"Recruit",
+					"Standard",
 					"Command"
 				};
 			};
@@ -277,7 +278,7 @@ class XtdGearModels
 					"Standard",
 					"SORC",
 					"CmdSORC",
-					"ACoCmd",
+					"ACoCmd"
 				};
 			};
 			class MOS
@@ -317,8 +318,6 @@ class XtdGearModels
 				{
 					"Standard",
 					"SORC",
-					"Lead",
-					"PltSORC",
 					"PltCmd",
 				};
 			};
@@ -359,8 +358,46 @@ class XtdGearModels
 				{
 					"Standard",
 					"SORC",
-					"Lead",
-					"PltSORC",
+					"PltCmd",
+				};
+			};
+			class MOS
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "MOS";
+				values[]=
+				{
+					"Basic",
+					"SORC",
+					"Autorifleman",
+					"Marksman",
+					"Demolitions",
+					"Scout",
+					"Sniper",
+				};
+			};
+		};
+		class 73_ACE_M52_Armor_ACo3Plt
+		{
+			label= "[73] M52 Vest [ACo3Plt]";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Billet",
+				"MOS"
+			};
+			class Billet
+            {
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Billet";
+                values[]=
+				{
+					"Standard",
+					"SORC",
 					"PltCmd",
 				};
 			};
@@ -441,7 +478,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Standard",
-                    "PltCmd",
+                    "SORC",
                     "ReconCmd"
                 };
             };

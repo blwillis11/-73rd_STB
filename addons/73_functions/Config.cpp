@@ -23,7 +23,8 @@ class CfgPatches
             "73_units",
             "OPTRE_modules",
             "73_vehicles",
-            "Splits_Vehicles"
+            "Splits_Vehicles",
+            "DMNS_Cipher_HEVPatch"
         };
     };
 };
@@ -88,66 +89,6 @@ class CfgFunctions
                 postInit=1;
             };
         };
-        class HEV
-            {
-                file="73_functions\Functions\HEV73";
-                class HEV
-                {
-                };
-                class SpawnHEVsFrigate
-                {
-                };
-                class SpawnHEVsNoFrigate
-                {
-                };
-                class SpawnFakeHEVRoom
-                {
-                };
-                class HEVCleanUp
-                {
-                };
-                class HEVControls
-                {
-                };
-                class HEVDoor
-                {
-                };
-                class HEVHandleLanding
-                {
-                };
-                class PlayerHEVEffectsUpdate_BoasterDown
-                {
-                };
-                class PlayerHEVEffectsUpdate_Chute
-                {
-                };
-                class PlayerHEVEffectsUpdate_Light
-                {
-                };
-                class PlayerHEVEffectsUpdate_ReEntrySounds
-                {
-                };
-                class HEVRoomDynamicSetupGrabUnits;
-                class HEVRoomFrigateSetupGrabUnits;
-        };
-        class MenuSystem
-        {
-            file="73_functions\Functions\MenuSystem";
-            class Menu
-            {
-            };
-        };
-        class MenuFunctions
-        {
-            file="73_functions\Functions\MenuFunctions73";
-            class HEVRoom
-            {
-            };
-            class UNSCdatabase
-            {
-            };
-
-        };
         class Misc
         {
             file="73_functions\Functions\Misc73";
@@ -185,6 +126,98 @@ class CfgFunctions
             file="73_functions\Functions\PelicanMagLiftSystem";
             class PelicanLoadSupplyPodsMenuLoad
             {
+            };
+        };
+    };
+    class DMNS
+    {
+        class HEV
+        {
+            class HEV
+            {
+                file="73_functions\Functions\HEV73\Fn_HEV.sqf";
+            };
+            class HEVAtmoEffects
+            {
+                file = "73_functions\Functions\HEV73\Fn_HEVAtmoEffects.sqf";
+            };
+            class HEVBoosterDown
+            {
+                file = "73_functions\Functions\HEV73\Fn_HEVBoosterDown.sqf";
+            };
+            class HEVChuteDeploy
+            {
+                file = "73_functions\Functions\HEV73\Fn_HEVChuteDeploy.sqf";
+            };
+            class HEVCleanUp
+            {
+                file = "73_functions\Functions\HEV73\Fn_HEVCleanUp.sqf";
+            };
+            class SpawnFakeHEVRoom
+            {
+                file = "73_functions\Functions\HEV73\Fn_SpawnFakeHEVRoom.sqf";
+            };
+            class SpawnHEVsFrigate
+            {
+                file="73_functions\Functions\HEV73\Fn_SpawnHEVsFrigate.sqf";
+            };
+            class SpawnHEVsNoFrigate
+            {
+                file="73_functions\Functions\HEV73\Fn_SpawnHEVsNoFrigate.sqf";
+            };
+            class PlayerHEVEffectsUpdate_BoasterDown
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_BoasterDown.sqf";
+            };
+            class PlayerHEVEffectsUpdate_Chute
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_Chute.sqf";
+            };
+            class PlayerHEVEffectsUpdate_GroundAlarm
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_GroundAlarm.sqf";
+            };
+            class PlayerHEVEffectsUpdate_Light
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_Light.sqf";
+            };
+            class PlayerHEVEffectsUpdate_ReEntrySounds
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_ReEntrySounds.sqf";
+            };
+            class PlayerHEVEffectsUpdate_PlayTones
+            {
+                file="73_functions\Functions\HEV73\Fn_PlayerHEVEffectsUpdate_PlayTones.sqf";
+            };
+            class HEVRoomDynamicSetupGrabUnits
+            {
+                file="73_functions\Functions\HEV73\Fn_HEVRoomDynamicSetupGrabUnits.sqf";
+            };
+            class HEVDoor
+            {
+                file="73_functions\Functions\HEV73\Fn_HEVDoor.sqf";
+            };
+            class HEVHandleLanding
+            {
+                file="73_functions\Functions\HEV73\Fn_HEVHandleLanding.sqf";
+            };
+        };
+        class MenuFunctions
+        {
+            class HEVRoom
+            {
+                file="73_functions\functions\MenuFunctions73\Fn_HEVRoom.sqf";
+            };
+        };
+        class Misc
+        {
+            class CountDown
+            {
+                file="73_functions\functions\Misc73\Fn_CountDown.sqf";
+            };
+            class CleanUp
+            {
+                file="73_functions\functions\Misc73\Fn_CleanUp.sqf";
             };
         };
     };

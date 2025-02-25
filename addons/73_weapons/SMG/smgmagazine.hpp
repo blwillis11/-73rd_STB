@@ -31,6 +31,7 @@ class 73_48Rnd_5x23Caseless_NARQ_Mag_Tracer: MA_48Rnd_5x23Caseless_FMJ_Mag{
     author= "73rd S-4 Team";
     ammo="73_5x23_Caseless_NARQ";
     mass=5;
+    tracersEvery = 1;
 };
 class 73_60Rnd_5x23Caseless_FMJ_Mag: MA_60Rnd_5x23Caseless_FMJ_Mag{
     displayName="[73] 60Rnd M7S FMJ Magazine";

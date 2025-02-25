@@ -1,5 +1,3 @@
-
-
 class 73_CH252_Mech_Crew_Base:VES_CH252_WDL_Crew{
     displayName="[73] CH252C Mechanized Helmet [Base]";
     scope=2;

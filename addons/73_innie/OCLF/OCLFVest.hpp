@@ -3,7 +3,7 @@ class 73_M52B_Armor_Vest: OPTRE_FC_M52B_Armor_Rifleman
 {
     author="73rd S-4 Team";
     scope=2;
-    displayName="[73] OCLF Armour";
+    displayName="[OCLF] OCLF Armour";
     hiddenSelectionsTextures[]=
     {
         "\73_innie\OCLF\data\OCLF_vest_co.paa"

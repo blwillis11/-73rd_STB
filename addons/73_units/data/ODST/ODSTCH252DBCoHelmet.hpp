@@ -37,7 +37,7 @@ class 73_CH252D_Helmet_BCo_SORC: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\73_Helmet_Base_BCo.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Orange.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -66,7 +66,7 @@ class 73_CH252D_Helmet_BCo_Lead: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\73_Helmet_Base_BCo.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"     
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -95,7 +95,7 @@ class 73_CH252D_Helmet_BCo_Officer: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\73_Helmet_Base_BCo.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"     
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {

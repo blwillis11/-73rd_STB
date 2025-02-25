@@ -203,6 +203,7 @@ class CfgWeapons
 	#include "data\ODST\ODSTM52VestACo.hpp"
 	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
 	#include "data\ODST\ODSTM52VestACo2Plt.hpp"
+	#include "data\ODST\ODSTM52VestACo3Plt.hpp"
     #include "data\ODST\ODSTM52VestBCo.hpp"
     #include "data\ODST\ODSTM52VestRecon.hpp"
 

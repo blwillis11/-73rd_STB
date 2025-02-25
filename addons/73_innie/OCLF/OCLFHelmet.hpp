@@ -32,7 +32,7 @@ class 73_CH255_Helmet_Visor: OPTRE_FC_CH255_Helmet_Visor
             class Head
             {
                 hitpointName="HitHead";
-                armor=10;
+                armor=6;
                 passThrough=0.1;
             };
         };
@@ -85,7 +85,7 @@ class 73_CH255_Helmet_Lancer: OPTRE_CH255_Security_Advanced_Type_2_Helmet_Black
             class Head
             {
                 hitpointName="HitHead";
-                armor=16;
+                armor=10;
                 passThrough=0.1;
             };
         };

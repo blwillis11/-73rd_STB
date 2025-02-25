@@ -92,7 +92,6 @@ class cfgFactionClasses
         icon = ""; //Custom Icon
     };
 };
-
 class CfgEditorCategories
 {
 	class 73_OCLF // Category class, you point to it in editorCategory property

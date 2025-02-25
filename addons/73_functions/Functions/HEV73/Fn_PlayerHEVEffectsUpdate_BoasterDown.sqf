@@ -1,83 +1,95 @@
-/*
-	OPTRE_fnc_PlayerHEVEffectsUpdate_BoasterDown
-	
-	Description: Function is designed to be executed only from inside of the HEV scripts, do not execute it directly.
-	
-	Author: Big_Wilk
-	
-	Return: none
-	
-	type: spawn
-*/
+/* ----------------------------------------------------------------------------
+Function: OPTRE_fnc_PlayerHEVEffectsUpdate_BoasterDown
 
-if (isDedicated OR (typeOf vehicle player != "DMNS_SOEIV")) exitWith {};
+Description:
+	Handles the playing of drop sounds to the player, adds camera shake.
+	This is local to a player and only should be executed on players not AI HEVs
 
-private ["_hev"];
+	Modifications: Optimized function, moved into unscheduled environment, reworked eventHandlers, fixed bugs
 
-_hev = vehicle player;
-_arm = attachedTo _hev;
-_arm enableSimulation false;
-_arm disableCollisionWith _hev;
-deleteVehicle _arm;
+Parameters:
+	0: _randomXVelocity <NUMBER> - The maximum X deviation of velocity.
+    1: _randomYVelocity <NUMBER> - The maximum Y deviation of velocity.
+	2: _launchSpeed <NUMBER> - The downward starting velocity of the HEV (negative numbers only).
+	3: _hev <OBJECT> - The HEV to affect the changes on.
+    4: _hevDropArmtmosphereStartHeight <NUMBER> - The height at which the HEV will play its enter atmo effects (ATL).
+
+Returns:
+	NOTHING
+
+Examples:
+    (begin example)
+
+		[1,1,-1,myHEV,3000] call OPTRE_fnc_PlayerHEVEffectsUpdate_BoasterDown;
+
+    (end)
+
+Author:
+	Big_Wilk,
+	Modified by: Ansible2 // Cipher
+---------------------------------------------------------------------------- */
+if !(hasInterface) exitWith {};
+
+params [
+	["_randomXVelocity",1,[1]],
+	["_randomYVelocity",1,[1]],
+	["_launchSpeed",-1,[1]],
+	["_hev",objNull,[objNull]],
+	["_hevDropArmtmosphereStartHeight",3000,[1]]
+];
+
+if (typeOf _hev != "DMNS_SOEIV") exitWith {};
+
 detach _hev;
 
-_hev setVelocity [(_this select 0), (_this select 1), (_this select 2)];
+[_hev,[_randomXVelocity,_randomYVelocity,_launchSpeed]] remoteExecCall ["setVelocity",_hev];
 
-// playSound "DMNS_Sounds_Detach";
-playSound "DMNS_Sounds_DetachOLD";
+playSound "OPTRE_Sounds_DetachOLD";
 
 resetCamShake;
 addCamShake [21, 6, 31];
 addCamShake [11, 16, 32];
 
-playSound ["DMNS_Sounds_Engine", true];
-sleep 20;
+playSound ["OPTRE_Sounds_Engine",true];
 
-addCamShake [1, 999, 11];
+// atmo entry camera shake (needs to be migrated to a better spot in main script)
+[
+	{(getPosATLVisual (_this select 0)) select 2 < (_this select 1)},
+	{
+		addCamShake [1, 999, 11];
+	},
+	[_hev,_hevDropArmtmosphereStartHeight],
+	300
+] call CBA_fnc_waitUntilAndExecute;
 
-_manualControlState = (_this select 3);
-if (_manualControlState > 0) then {
-	0 = [_manualControlState] call STB73_fnc_HEVControls;
-};
+// this logic is used to play the wind sound using say2D so that the logic can be deleted at anytime, stopping the sound
+private _logicCenter = createCenter sideLogic;
+private _logicGroup = createGroup _logicCenter;
+private _logic = _logicGroup createUnit ["Logic", [0,0,0], [], 0, "NONE"];
+_logic attachTo [_hev,[0,0,0]];
 
-_count = 0;
-playSound "DMNS_Sounds_WindLoopNewLong";
-while { !(isTouchingGround _hev) and (getPosASLW _hev select 2) > 1 and alive player } do {
-	sleep 0.5;
-	playSound "DMNS_Sounds_WindLoopNewLong";
-	_count = _count + 1;
-};
+[
+	{	((_this getVariable "params") select 2) say2D "OPTRE_Sounds_WindLoopNewLong";	},
 
-if (!alive player) exitWith {
-	resetCamShake;
-};
+	1,
 
-if (surfaceIsWater getPos _hev) then {
-	_hev removeAllEventHandlers "GetOut";
-	_hev removeAllEventHandlers "HandleDamage";
-	_hev = vehicle player;
-	_gunner = gunner _hev;
-	_hev removeAllEventHandlers "HandleDamage";
-	playSound3d ["A3\Missions_F_EPA\data\sounds\fall_into_water.wss", _hev, false, getPos _hev, 0.5, 1, 2000];
-	if !(isPlayer _gunner) then {
-		_hev lock false;
-		0 = [_hev, round (random 1), true] spawn STB73_fnc_HEVDoor;
-	} else {
-		resetCamShake;
-		addCamShake [40, 1.2, 50];
-		vehicle player addAction ["Eject Door", {
-			_HEV = _this select 0;
-			0 = [_hev, 0, true] spawn STB73_fnc_HEVDoor; removeAllActions _hev;
-		}];
-		if (!isNil "DMNS_HEV_CONTROL_KDEH") then {
-			(findDisplay 46) displayRemoveEventHandler ["KeyDown", STB73_HEV_CONTROL_KDEH];
-			player removeEventHandler ["killed", DMNS_HEV_CONTROL_KEH];
-		};
-	};
-};
+	[_hev,_hevDropArmtmosphereStartHeight,_logic],
 
-_time = time + 7;
-while { (_time > time) } do {
-	_sound = ASLToAGL [0, 0, 0] nearestObject "#soundonvehicle";
-	deleteVehicle _sound;
-};
+	{	((_this getVariable "params") select 2) say2D "OPTRE_Sounds_WindLoopNewLong";	},
+
+	{	deleteVehicle ((_this getVariable "params") select 2);	},
+
+	{
+		_hev = (_this getVariable "params") select 0;
+		_hevDropArmtmosphereStartHeight = (_this getVariable "params") select 1;
+
+		(	(getPosATLVisual _hev) select 2 < _hevDropArmtmosphereStartHeight	)
+	},
+
+	{
+		_hev = (_this getVariable "params") select 0;
+
+		(	!alive (gunner _hev) OR {(getPosATL _hev) select 2 < 20} OR {(velocity _hev) select 2 isEqualTo 0}	)
+	}
+
+] call CBA_fnc_createPerFrameHandlerObject;

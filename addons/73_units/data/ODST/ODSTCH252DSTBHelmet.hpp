@@ -7,8 +7,6 @@ class 73_CH252D_Helmet_STB_Standard: CH252D_Helmet
     displayName="[73] CH252D Helmet [STB] [Standard]";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     picture="";
-    ace_hearing_protection = 0;
-    ace_hearing_hasEHP = 1;
     hiddenSelections[]=
     {
         "Camo1", 

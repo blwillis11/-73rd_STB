@@ -1,18 +1,40 @@
-/*
-	OPTRE_fnc_PlayerHEVEffectsUpdate_Chute
+/* ----------------------------------------------------------------------------
+Function: OPTRE_fnc_PlayerHEVEffectsUpdate_Chute
 
-	Description: Function is designed to be executed only from inside of the HEV scripts, do not execute it directly.
+Description:
+	Adds detach sound and camera shake for players. Does not need to be exec'd on AI.
 
-	Author: Big_Wilk
+	Modifications: Adapted for use on dedicated servers, patched several bugs, improved performance/readability
 
-	Return: none
+Parameters:
+	0: _hev <OBJECT> - The HEV to update.
+    1: _chute <OBJECT> - The Chute attached to the HEV.
 
-	Type: call
-*/
+Returns:
+	NOTHING
 
-if (isDedicated OR (typeOf vehicle player != "DMNS_SOEIV")) exitWith {};
+Examples:
+    (begin example)
 
-(vehicle player) disableCollisionWith (_this select 0);
+		[myHEV,myHEVsChute] call OPTRE_fnc_PlayerHEVEffectsUpdate_Chute;
+
+    (end)
+
+Author:
+	Big_Wilk,
+	Modified by: Ansible2 // Cipher
+---------------------------------------------------------------------------- */
+
+if (!hasInterface) exitWith {};
+
+params [
+	["_chute",objNull,[objNull]],
+	["_hev",objNull,[objNull]]
+];
+
+if (typeOf _hev != "DMNS_SOEIV") exitWith {};
+
+_hev disableCollisionWith _chute;
 
 playSound "DMNS_Sounds_HEV_Chute";
 addCamShake [20, 3, 20];

@@ -21,6 +21,14 @@ class 73_M494_Oryx: OPTRE_M494
         "\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_MG_CO.paa",
         "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
     };
+    class ace_cargo {
+        class cargo {
+            class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+                type = "ACE_Tracks";
+                amount = 2;
+            };
+        };
+    };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
         {
@@ -56,6 +64,17 @@ class 73_IFV76_A:VES_IFV76_A
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_T_CO.paa",
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CN_CO.paa",
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_C_CO.paa"
+    };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
     };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
@@ -93,6 +112,17 @@ class 73_IFV76:VES_IFV76
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_T_CO.paa",
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CN_CO.paa",
         "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_C_CO.paa"
+    };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
     };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
@@ -133,6 +163,17 @@ class 73_M412_IFV:VES_M412_IFV
         "OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
         "V_FZ_Ground_Vehicles\data\Bison\V_BISON_CLS_9_CO.paa"
     };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
+    };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
         {
@@ -171,6 +212,17 @@ class 73_M413_MGS:VES_M413_MGS
         "OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
         "V_FZ_Ground_Vehicles\data\Bison\V_BISON_CLS_9_CO.paa"
     };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
+    };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
         {
@@ -207,6 +259,17 @@ class 73_M511_Springbok_APC : DMNS_M511_Springbok_APC
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_Details_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\m511_m247h_co.paa"
+    };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
     };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
@@ -245,6 +308,17 @@ class 73_M511_Springbok_IFV : DMNS_M511_Springbok_IFV
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_ifv_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_aa_co.paa"
     };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
+    };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
         {
@@ -280,6 +354,17 @@ class 73_M511_Springbok_MGS : DMNS_M511_Springbok_MGS
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_Details_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_mgs_co.paa"
     };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
+    };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
         {
@@ -314,6 +399,17 @@ class 73_M511_Springbok_AA : DMNS_M511_Springbok_AA
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_Details_co.paa",
         "DMNS\DMNS_Armour\M511_Springbok\Data\M511_aa_co.paa"
+    };
+    class ACE_Cargo
+    {
+        class Cargo
+        {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=6;
+            };
+        };
     };
     class VehicleSpawnerInfo {
         class 73_GroundSpawner
@@ -757,6 +853,15 @@ class 73_Hammerhead_Repair: B_APC_Tracked_01_CRV_F
     {
         class Cargo
         {
+            class ACE_wheel
+            {
+                type="ACE_wheel";
+                amount=4;
+            };
+            class ACE_Tracks { // Doesn't have to have the same name as the item you're adding
+            type = "ACE_Tracks";
+            amount = 6;
+        };
         };
     };
 };
@@ -972,7 +1077,7 @@ class 73_Iguana_APC: 73_Iguana
             class ACE_wheel
             {
                 type="ACE_wheel";
-                amount=2;
+                amount=4;
             };
         };
     };
@@ -1129,7 +1234,7 @@ class 73_Iguana_Medical_APC: 73_Iguana
             class ACE_wheel
             {
                 type="ACE_wheel";
-                amount=2;
+                amount=4;
             };
         };
     };
@@ -1190,5 +1295,16 @@ class 73_Komodo: B_AFV_Wheeled_01_up_cannon_F
     {};
     class TextureSources
     {};
+    class ACE_Cargo
+        {
+            class Cargo
+            {
+                class ACE_wheel
+                {
+                    type="ACE_wheel";
+                    amount=6;
+                };
+            };
+        };
 };
 

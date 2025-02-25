@@ -9,6 +9,7 @@ class 73_M875:VES_M875_SPH
     scopeCurator=2;
     scope=2;
     side=1;
+    armor=450;
     crew = "73_Crewman";
      class ace_cargo {
             class cargo {
@@ -322,6 +323,7 @@ class 73_Merkava : B_MBT_01_TUSK_F
     scopeCurator=2;
     scope=2;
     side=1;
+    armor=450;
     crew = "73_Crewman";
     typicalCargo[]=
     {
@@ -508,7 +510,6 @@ class 73_Merkava : B_MBT_01_TUSK_F
             };
             magazines[]=
             {
-                "24Rnd_120mm_APFSDS_shells_Tracer_Red",
                 "12Rnd_120mm_HE_shells_Tracer_Red",
                 "12Rnd_120mm_HE_shells_Tracer_Red",
                 "12Rnd_120mm_HEAT_MP_T_Red",
@@ -524,17 +525,6 @@ class 73_Merkava : B_MBT_01_TUSK_F
     };
     ace_cargo_space=4;
     ace_cargo_hasCargo=1;
-    class ACE_Cargo
-    {
-        class Cargo
-        {
-            class ACE_track
-            {
-                type="ACE_track";
-                amount=2;
-            };
-        };
-    };
     irScanGround=0;
     irScanRangeMax=10000;
     irScanRangeMin=2000;

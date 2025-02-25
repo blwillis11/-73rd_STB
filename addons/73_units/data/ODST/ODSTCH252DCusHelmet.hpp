@@ -7,7 +7,7 @@ class 73_CH252D_Helmet_Cus_Smith: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Smith_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -36,7 +36,7 @@ class 73_CH252D_Helmet_Cus_Price: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Price_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -65,7 +65,7 @@ class 73_CH252D_Helmet_Cus_Winters: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Winters_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -94,7 +94,7 @@ class 73_CH252D_Helmet_Cus_Salmon: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Salmon_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -123,7 +123,7 @@ class 73_CH252D_Helmet_Cus_Metal: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Metal_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -152,7 +152,7 @@ class 73_CH252D_Helmet_Cus_Solaman: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Solaman_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -181,7 +181,7 @@ class 73_CH252D_Helmet_Cus_Vargas: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Vargas_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -210,7 +210,7 @@ class 73_CH252D_Helmet_Cus_Mendez: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Mendez_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -239,7 +239,7 @@ class 73_CH252D_Helmet_Cus_Mac: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Mac_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -268,7 +268,7 @@ class 73_CH252D_Helmet_Cus_Bear: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Bear_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -297,7 +297,7 @@ class 73_CH252D_Helmet_Cus_Dawn: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Dawn_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Red.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {
@@ -326,7 +326,7 @@ class 73_CH252D_Helmet_Cus_Grayson: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Grayson_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Gold.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
     };
     class XtdGearInfo
     {

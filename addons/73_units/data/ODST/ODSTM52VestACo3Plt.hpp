@@ -1,26 +1,26 @@
-////////////////////////////////////// M52 Vest ACo2Plt Standard //////////////////////////////////////
+////////////////////////////////////// M52 Vest ACo3Plt Standard //////////////////////////////////////
 // Standard Basic
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-B]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-B]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Basic";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -44,27 +44,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Basic: 73_M52_ODST_Vest_Batt_Standard_Ba
 	};
 };
 // Standard SORC
-class 73_M52_ODST_Vest_ACo2Plt_Standard_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
+class 73_M52_ODST_Vest_ACo3Plt_Standard_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-Med]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="SORC";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -88,27 +88,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_SORC: 73_M52_ODST_Vest_Batt_Standard_SOR
 	};
 };
 // Standard Autorifleman
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-A]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-A]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Autorifleman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -132,27 +132,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Autorifleman: 73_M52_ODST_Vest_Batt_Stan
 	};
 };
 // Standard Marksman
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-Ma]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-Ma]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Marksman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -176,27 +176,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Marksman: 73_M52_ODST_Vest_Batt_Standard
 	};
 };
 // Standard Demo
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-D]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-D]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Demolitions";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -220,27 +220,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Demo: 73_M52_ODST_Vest_Batt_Standard_Dem
 	};
 };
 // Standard Scout
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-Sc]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-Sc]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Scout";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -264,27 +264,27 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Scout: 73_M52_ODST_Vest_Batt_Standard_Sc
 	};
 };
 // Standard Sniper
-class 73_M52_ODST_Vest_ACo2Plt_Standard_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
+class 73_M52_ODST_Vest_ACo3Plt_Standard_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [S-Sn]";
+	displayName="[73] M52 Vest [ACo3Plt] [S-Sn]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="Standard";
 		MOS="Sniper";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -307,29 +307,29 @@ class 73_M52_ODST_Vest_ACo2Plt_Standard_Sniper: 73_M52_ODST_Vest_Batt_Standard_S
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
 	};
 };
-////////////////////////////////////// M52 Vest ACo2Plt SORC //////////////////////////////////////
+////////////////////////////////////// M52 Vest ACo3Plt SORC //////////////////////////////////////
 // SORC Basic
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
 {
 
-	displayName="[73] M52 Vest [ACo2Plt] [So-B]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-B]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Basic";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -353,27 +353,27 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
 	};
 };
 // SORC SORC
-class 73_M52_ODST_Vest_ACo2Plt_SORC_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
+class 73_M52_ODST_Vest_ACo3Plt_SORC_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 {
 	
-	displayName="[73] M52 Vest [ACo2Plt] [So-Med]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="SORC";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -397,27 +397,27 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 	};
 };
 // SORC Autorifleman
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
 {
 
-	displayName="[73] M52 Vest [ACo2Plt] [So-A]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-A]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Autorifleman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -441,26 +441,26 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Autorifleman: 73_M52_ODST_Vest_Batt_Standard
 	};
  };
 // SORC Marksman
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
 {
-	displayName="[73] M52 Vest [ACo2Plt] [So-Ma]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-Ma]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Marksman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -484,26 +484,26 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Marksman: 73_M52_ODST_Vest_Batt_Standard_Mar
 	};
 };
 // SORC Demo
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 {
-	displayName="[73] M52 Vest [ACo2Plt] [So-D]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-D]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Demolitions";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -527,26 +527,26 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 	};
 };
 // SORC Scout
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
 {
-	displayName="[73] M52 Vest [ACo2Plt] [So-Sc]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-Sc]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Scout";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -570,26 +570,26 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
 	};
 };
 // SORC Sniper
-class 73_M52_ODST_Vest_ACo2Plt_SORC_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
+class 73_M52_ODST_Vest_ACo3Plt_SORC_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
 {
-	displayName="[73] M52 Vest [ACo2Plt] [So-Sn]";
+	displayName="[73] M52 Vest [ACo3Plt] [So-Sn]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="SORC";
 		MOS="Sniper";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\Aco\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\Aco\3PLT\73rd_ODST_Vast_3PLT_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -612,28 +612,28 @@ class 73_M52_ODST_Vest_ACo2Plt_SORC_Sniper: 73_M52_ODST_Vest_Batt_Standard_Snipe
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
 	};
 };
-////////////////////////////////////// M52 Vest ACo2Plt PltCmd //////////////////////////////////////
+////////////////////////////////////// M52 Vest ACo3Plt PltCmd //////////////////////////////////////
 // PltCmd Basic
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-B]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-B]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Basic";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -657,26 +657,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_Basic: 73_M52_ODST_Vest_Batt_Standard_Basi
 	};
 };
 // PltCmd SORC
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-Med]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="SORC";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -700,26 +700,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 	};
 };
 // PltCmd Autorifleman
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Autorifleman: 73_M52_ODST_Vest_Batt_Standard_Autorifleman
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-A]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-A]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Autorifleman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -743,26 +743,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_Autorifleman: 73_M52_ODST_Vest_Batt_Standa
 	};
 };
 // PltCmd Marksman
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Marksman: 73_M52_ODST_Vest_Batt_Standard_Marksman
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-Ma]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-Ma]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Marksman";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -786,26 +786,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_Marksman: 73_M52_ODST_Vest_Batt_Standard_M
 	};
 };
 // PltCmd Demo
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-D]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-D]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Demolitions";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -829,26 +829,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 	};
 };
 // PltCmd Scout
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-Sc]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-Sc]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Scout";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
@@ -872,26 +872,26 @@ class 73_M52_ODST_Vest_ACo2Plt_PltCom_Scout: 73_M52_ODST_Vest_Batt_Standard_Scou
 	};
 };
 // PltCmd Sniper
-class 73_M52_ODST_Vest_ACo2Plt_PltCom_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
+class 73_M52_ODST_Vest_ACo3Plt_PltCom_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sniper
 {
-	displayName="[73] M52 Vest [ACo2Plt] [PC-Sn]";
+	displayName="[73] M52 Vest [ACo3Plt] [PC-Sn]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo2Plt";
+		Model="73_ACE_M52_Armor_ACo3Plt";
 		Billet="PltCmd";
 		MOS="Sniper";
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa", //CQB Right
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa", //Marksman_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Left
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Bracer_Right
-		"73_units\data\ODST\M52Vest\ACo\2Plt\73rd_ODST_Vast_2PLT_Base.paa", //ODST_Chest
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Left
-		"73_units\data\ODST\M52Vest\Aco\2Plt\73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa", //ODST_Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\ACo\3Plt\73rd_ODST_Vast_3Plt_Base.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\Aco\3Plt\73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa", //ODST_Right
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
 		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch

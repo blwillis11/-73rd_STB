@@ -5,7 +5,7 @@ class 73_Plane_Swallow_ins:I_Plane_Fighter_03_dynamicLoadout_F{
     faction = "73_OCLF";
     side = EAST;
     editorCategory = "73_OCLF";
-    editorSubcategory = "EdSubcat_Helicopters";
+    editorSubcategory = "EdSubcat_Planes";
     crew = "73_OCLF_Soldier_Rifleman";
     hiddenSelectionsTextures[] = {
         "A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_INDP_co.paa",
@@ -20,7 +20,7 @@ class 73_Plane_Starling_ins:I_Plane_Fighter_04_F{
     faction = "73_OCLF";
     side = EAST;
     editorCategory = "73_OCLF";
-    editorSubcategory = "EdSubcat_Helicopters";
+    editorSubcategory = "EdSubcat_Planes";
     crew = "73_OCLF_Soldier_Rifleman";
     hiddenSelectionsTextures[] = {
         "a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_green_co.paa",
@@ -39,7 +39,7 @@ class 73_Plane_Shrike_ins:O_Plane_Fighter_02_F{
     faction = "73_OCLF";
     side = EAST;
     editorCategory = "73_OCLF";
-    editorSubcategory = "EdSubcat_Helicopters";
+    editorSubcategory = "EdSubcat_Planes";
     crew = "73_OCLF_Soldier_Rifleman";
     hiddenSelectionsTextures[] = {
         "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_co.paa",
