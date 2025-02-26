@@ -5,7 +5,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Basic: 73_M52_ODST_Vest_Batt_Standard_Ba
 	displayName="[73] M52 Vest [ACo1Plt] [S-B]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Basic";
 	};
@@ -49,7 +50,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_SORC: 73_M52_ODST_Vest_Batt_Standard_SOR
 	displayName="[73] M52 Vest [ACo1Plt] [S-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="SORC";
 	};
@@ -93,7 +95,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Autorifleman: 73_M52_ODST_Vest_Batt_Stan
 	displayName="[73] M52 Vest [ACo1Plt] [S-A]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Autorifleman";
 	};
@@ -137,7 +140,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Marksman: 73_M52_ODST_Vest_Batt_Standard
 	displayName="[73] M52 Vest [ACo1Plt] [S-Ma]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Marksman";
 	};
@@ -181,7 +185,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Demo: 73_M52_ODST_Vest_Batt_Standard_Dem
 	displayName="[73] M52 Vest [ACo1Plt] [S-D]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Demolitions";
 	};
@@ -225,7 +230,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Scout: 73_M52_ODST_Vest_Batt_Standard_Sc
 	displayName="[73] M52 Vest [ACo1Plt] [S-Sc]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Scout";
 	};
@@ -269,7 +275,8 @@ class 73_M52_ODST_Vest_ACo1Plt_Standard_Sniper: 73_M52_ODST_Vest_Batt_Standard_S
 	displayName="[73] M52 Vest [ACo1Plt] [S-Sn]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="Standard";
 		MOS="Sniper";
 	};
@@ -314,7 +321,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Basic: 73_M52_ODST_Vest_Batt_Standard_Basic
     displayName="[73] M52 Vest [ACo1Plt] [So-B]";
     class XtdGearInfo
     {
-        Model="73_ACE_M52_Armor_ACo1Plt";
+        Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
         Billet="SORC";
         MOS="Basic";
     };
@@ -358,7 +366,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 	displayName="[73] M52 Vest [ACo1Plt] [So-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="SORC";
 		MOS="SORC";
 	};
@@ -402,7 +411,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Autorifleman: 73_M52_ODST_Vest_Batt_Standard
     displayName="[73] M52 Vest [ACo1Plt] [So-A]";
     class XtdGearInfo
     {
-        Model="73_ACE_M52_Armor_ACo1Plt";
+        Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
         Billet="SORC";
         MOS="Autorifleman";
     };
@@ -446,7 +456,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Marksman: 73_M52_ODST_Vest_Batt_Standard_Mar
     displayName="[73] M52 Vest [ACo1Plt] [So-Ma]";
     class XtdGearInfo
     {
-        Model="73_ACE_M52_Armor_ACo1Plt";
+        Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
         Billet="SORC";
         MOS="Marksman";
     };
@@ -490,7 +501,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
     displayName="[73] M52 Vest [ACo1Plt] [So-D]";
     class XtdGearInfo
     {
-    Model="73_ACE_M52_Armor_ACo1Plt";
+    Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
     Billet="SORC";
     MOS="Demolitions";
     };
@@ -534,7 +546,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Scout: 73_M52_ODST_Vest_Batt_Standard_Scout
     displayName="[73] M52 Vest [ACo1Plt] [So-Sc]";
     class XtdGearInfo
     {
-    Model="73_ACE_M52_Armor_ACo1Plt";
+    Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
     Billet="SORC";
     MOS="Scout";
     };
@@ -579,7 +592,8 @@ class 73_M52_ODST_Vest_ACo1Plt_SORC_Sniper: 73_M52_ODST_Vest_Batt_Standard_Snipe
     displayName="[73] M52 Vest [ACo1Plt] [So-Sn]";
     class XtdGearInfo
     {
-    Model="73_ACE_M52_Armor_ACo1Plt";
+    Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
     Billet="SORC";
     MOS="Sniper";
     };
@@ -624,7 +638,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Basic: 73_M52_ODST_Vest_Batt_Standard_Basi
 	displayName="[73] M52 Vest [ACo1Plt] [PC-B]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Basic";
 	};
@@ -668,7 +683,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_SORC: 73_M52_ODST_Vest_Batt_Standard_SORC
 	displayName="[73] M52 Vest [ACo1Plt] [PC-Med]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="SORC";
 	};
@@ -712,7 +728,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Autorifleman: 73_M52_ODST_Vest_Batt_Standa
 	displayName="[73] M52 Vest [ACo1Plt] [PC-A]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Autorifleman";
 	};
@@ -756,7 +773,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Marksman: 73_M52_ODST_Vest_Batt_Standard_M
 	displayName="[73] M52 Vest [ACo1Plt] [PC-Ma]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Marksman";
 	};
@@ -800,7 +818,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Demo: 73_M52_ODST_Vest_Batt_Standard_Demo
 	displayName="[73] M52 Vest [ACo1Plt] [PC-D]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Demolitions";
 	};
@@ -844,7 +863,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Scout: 73_M52_ODST_Vest_Batt_Standard_Scou
 	displayName="[73] M52 Vest [ACo1Plt] [PC-Sc]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Scout";
 	};
@@ -888,7 +908,8 @@ class 73_M52_ODST_Vest_ACo1Plt_PltCom_Sniper: 73_M52_ODST_Vest_Batt_Standard_Sni
 	displayName="[73] M52 Vest [ACo1Plt] [PC-Sn]";
 	class XtdGearInfo
 	{
-		Model="73_ACE_M52_Armor_ACo1Plt";
+		Model="73_ACE_M52_Armor_ACo";
+Platoon="1st Platoon";
 		Billet="PltCmd";
 		MOS="Sniper";
 	};

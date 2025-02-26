@@ -8,77 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="new stuff">
-      <change afterPath="$PROJECT_DIR$/addons/73_weapons/functions/fn_init.sqf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEV.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEV.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVCleanUp.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVCleanUp.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVDoor.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVDoor.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVHandleLanding.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVHandleLanding.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVRoomDynamicSetupGrabUnits.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_HEVRoomDynamicSetupGrabUnits.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_BoasterDown.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_BoasterDown.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_Chute.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_Chute.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_Light.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_Light.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_ReEntrySounds.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_PlayerHEVEffectsUpdate_ReEntrySounds.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnFakeHEVRoom.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnFakeHEVRoom.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnHEVsFrigate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnHEVsFrigate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnHEVsNoFrigate.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/HEV73/Fn_SpawnHEVsNoFrigate.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/Init/fn_init.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/Init/fn_init.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/MenuFunctions73/Fn_HEVRoom.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/MenuFunctions73/Fn_HEVRoom.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_functions/Functions/Misc73/Fn_CleanUp.sqf" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Functions/Misc73/Fn_CleanUp.sqf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFGroups.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFGroups.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFVest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFVest.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/Vehicles/OCLFPlanes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/Vehicles/OCLFPlanes.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/Aviation/AviationHelmets.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Aviation/AviationHelmets.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Mechanized/MechHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Mechanized/MechHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_ACo.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_ACo.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_BCo.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_BCo.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_Batt.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_Batt.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_Recon.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Helmet_Base_Recon.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Silver.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/73_Visor_Silver.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_Base.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_Base.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_SORC.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_Base.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_Base.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_SORC.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_Base.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_Base.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_SORC.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Vest_Base.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Vest_Base.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Vest_CmdSORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Vest_SORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_BASE_ACoCmd_Cmd.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_BASE_ACoCmd_Cmd.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_BASE_ACoCmd_SORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_CQB_ACoCmd_Cmd.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_CQB_ACoCmd_Cmd.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_CQB_ACoCmd_SORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_Mksm_ACoCmd_Cmd.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_Mksm_ACoCmd_Cmd.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_Mksm_ACoCmd_SORC.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Armor_Shoulders_BASE_Batt.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Armor_Shoulders_CQB_Batt.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Armor_Shoulders_Mksm_Batt.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Armor_Vest_Batt.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DBCoHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DBCoHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestBCo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestBCo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestCus.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestCus.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo3Plt.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo3Plt.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestRecon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestRecon.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/APC.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Tanks.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgmagazine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniperammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -515,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739043683741</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="new stuff">
+      <option name="closed" value="true" />
+      <created>1740502793954</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1740502793954</updated>
+    </task>
+    <task id="LOCAL-00043" summary="new stuff">
+      <option name="closed" value="true" />
+      <created>1740502842064</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1740502842064</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

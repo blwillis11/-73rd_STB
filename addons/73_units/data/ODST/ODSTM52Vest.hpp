@@ -111,9 +111,9 @@ class 73_M52_ODST_Vest_Base: M52_ODST_Vest_Base
         "73_units\data\ODST\M52Vest\CQB_Shoulders.rvmat", //CQB Right
         "73_units\data\ODST\M52Vest\Marksman_Shoulders.rvmat", //Marksman_Left
         "73_units\data\ODST\M52Vest\Marksman_Shoulders.rvmat", //Marksman_Right
-        "73_units\data\ODST\M52Vest\ODST.rvmat", //ODST_Bracer_Left
-        "73_units\data\ODST\M52Vest\ODST.rvmat", //ODST_Bracer_Right
-        "73_units\data\ODST\M52Vest\ODST.rvmat", //ODST_Chest
+        "73_units\data\ODST\M52Vest\ODST_armor.rvmat", //ODST_Bracer_Left
+        "73_units\data\ODST\M52Vest\ODST_armor.rvmat", //ODST_Bracer_Right
+        "73_units\data\ODST\M52Vest\ODST_armor.rvmat", //ODST_Chest
         "73_units\data\ODST\M52Vest\ODST_Shoulders.rvmat", //ODST_Left
         "73_units\data\ODST\M52Vest\ODST_Shoulders.rvmat", //ODST_Right
         "", //ChestPMLeft

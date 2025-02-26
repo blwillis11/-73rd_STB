@@ -123,18 +123,18 @@ class XtdGearModels
 		};
 		class 73_ACE_VX19_Helmet
 		{
-		    label="[73] VX19 Flight Helmet"
-		    author="73rd S-4 team"
-		    options[]=
-		    {
-		        "Roles"
-		    };
-		    class Roles
-		    {
-		        alwaysSelectable=1;
-		        changeingame=0;
-		        changedelay=0;
-		        label= "Roles";
+		    label="[73] VX19 Flight Helmet";
+			author="73rd S-4 Team";
+			options[] =
+			{
+				"Roles"
+			};
+			class Roles
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Roles";
 		        values[]=
 		        {
 		            "Aviator",
@@ -264,8 +264,23 @@ class XtdGearModels
 			author="73rd S-4 Team";
 			options[] = 
 			{
+				"Platoon",
 				"Billet",
 				"MOS"
+			};
+			class Platoon
+            {
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+                label= "Platoon";
+                values[]= 
+				{
+					"Company",
+					"1st Platoon",
+					"2nd Platoon",
+					"3rd Platoon"
+				};
 			};
 			class Billet
             {
@@ -273,10 +288,11 @@ class XtdGearModels
 				changeingame=0;
 				changedelay=0;
                 label= "Billet";
-                values[]= 
+                values[]=
 				{
 					"Standard",
 					"SORC",
+					"PltCmd",
 					"CmdSORC",
 					"ACoCmd"
 				};

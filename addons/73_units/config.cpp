@@ -17,6 +17,17 @@ class CfgPatches
 			"73_ACo_ODST_AT",
 			"73_ACo_ODST_Team_Lead",
 			"73_ACo_ODST_Squad_Lead",
+			"73_BCo_ODST_Rifleman",
+			"73_BCo_ODST_Autorifleman",
+			"73_BCo_ODST_Grenadier",
+			"73_BCo_ODST_Demo",
+			"73_BCo_ODST_Medic",
+			"73_BCo_ODST_Sniper",
+			"73_BCo_ODST_Marksman",
+			"73_BCo_ODST_Officer",
+			"73_BCo_ODST_AT",
+			"73_BCo_ODST_Team_Lead",
+			"73_BCo_ODST_Squad_Lead",
 			"73_STB_ODST_Rifleman",
 			"73_STB_ODST_Autorifleman",
 			"73_STB_ODST_Grenadier",
@@ -61,17 +72,17 @@ class cfgFactionClasses
 { 
     class 73_STB
     { 
-        displayName = "[73] Shock Trooper Battalion";
+        displayName = "[73] Shock Trooper Battalion Assets";
         priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = "73_units\UI\73odstSTB.paa"; //Custom Icon
     };
-    class 73_ACo
+    class 73_odst
     {
-        displayName = "[73] Alpha Company";
+        displayName = "[73] Shock Trooper Battalion ODST";
         priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
-        icon = "73_units\UI\73odst512ACO.paa"; //Custom Icon
+        icon = "73_units\UI\73odstSTB.paa"; //Custom Icon
     };
     class 73_10MEB
     {
@@ -85,13 +96,13 @@ class CfgEditorCategories
 {
 	class 73_STB // Category class, you point to it in editorCategory property
 	{
-		displayName = "[73] Shock Trooper Battalion"; // Name visible in the list
+		displayName = "[73] Shock Trooper Battalion Assets"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
-	class 73_ACo // Category class, you point to it in editorCategory property
+	class 73_odst // Category class, you point to it in editorCategory property
 	{
-		displayName = "[73] Alpha Company"; // Name visible in the list
+		displayName = "[73] Shock Trooper Battalion ODST"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
@@ -138,9 +149,17 @@ class CfgEditorSubcategories
     {
         displayName = "Mechanized";
     };
-    class 73_ODST_EdSubCat
+    class 73_STB_EdSubCat
     {
-        displayName = "ODST";
+        displayName = "Battalion Troopers";
+    };
+    class 73_ACo_EdSubCat
+    {
+        displayName = "Alpha Company Troopers";
+    };
+    class 73_BCo_EdSubCat
+    {
+        displayName = "Bravo Company Troopers";
     };
     class 73_Infantry_EdSubCat
     {
