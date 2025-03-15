@@ -130,7 +130,7 @@ class 73_CH252D_Helmet_STB_Officer: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\73_Helmet_Base_Batt.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {

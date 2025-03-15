@@ -43,7 +43,7 @@ class CfgPatches
 			"73_Crewman",
 			"73_Crewman_Officer",
 			"73_Aviator",
-			"73_Aviator_Officer",
+			"73_Aviator_Officer"
         }; 
         weapons[] = 
         {
@@ -151,15 +151,15 @@ class CfgEditorSubcategories
     };
     class 73_STB_EdSubCat
     {
-        displayName = "Battalion Troopers";
+        displayName = "Troopers [Batt]";
     };
     class 73_ACo_EdSubCat
     {
-        displayName = "Alpha Company Troopers";
+        displayName = "Troopers [ACo]";
     };
     class 73_BCo_EdSubCat
     {
-        displayName = "Bravo Company Troopers";
+        displayName = "Troopers [BCo]";
     };
     class 73_Infantry_EdSubCat
     {
@@ -248,7 +248,7 @@ class CfgVehicles
 {
 	class MA_M56S_BDU_Base;
 	class MA_M56S_Rucksack;
-	class MA_M52D_Rucksack_Strapless;
+	class MA_M52D_Rucksack;
 	class MA_M56S_Rucksack_Medic;
 	class MA_M56S_Rucksack_ODST_Radio;
 	class weapons_f;
@@ -270,10 +270,17 @@ class CfgVehicles
 
     #include "STB\units\units.hpp"
     #include "ACo\units\units.hpp"
+    #include "BCo\units\units.hpp"
 };
 
 class CfgGroups
 {
-    #include "ACo\groups\groups.hpp"
+    class WEST
+    {
+        #include "STB\groups\groups.hpp"
+        #include "ACo\groups\groups.hpp"
+        #include "BCo\groups\groups.hpp"
+    }
+
 };
 

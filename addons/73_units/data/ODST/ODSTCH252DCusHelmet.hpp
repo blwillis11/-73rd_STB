@@ -7,7 +7,7 @@ class 73_CH252D_Helmet_Cus_Smith: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Smith_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -36,7 +36,7 @@ class 73_CH252D_Helmet_Cus_Price: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Price_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -65,7 +65,7 @@ class 73_CH252D_Helmet_Cus_Winters: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Winters_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -94,7 +94,7 @@ class 73_CH252D_Helmet_Cus_Salmon: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Salmon_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -210,7 +210,7 @@ class 73_CH252D_Helmet_Cus_Mendez: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Mendez_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -268,7 +268,7 @@ class 73_CH252D_Helmet_Cus_Bear: 73_CH252D_Helmet_STB_Standard
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Bear_Helmet.paa",
-        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Black.paa"
     };
     class XtdGearInfo
     {
@@ -430,6 +430,93 @@ class 73_CH252D_Helmet_Cus_Brooks_dp: 73_CH252D_Helmet_STB_Standard_dp
     hiddenSelectionsTextures[]=
     {
         "73_units\data\ODST\CH252DHelmets\cus\73_Brooks_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Norwood: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Norwood]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Norwood_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Norwood";
+    };
+};
+class 73_CH252D_Helmet_Cus_Norwood_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Norwood]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Norwood_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Riverwood: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Riverwood]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Riverwood_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Riverwood";
+    };
+};
+class 73_CH252D_Helmet_Cus_Riverwood_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Riverwood]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Riverwood_Helmet.paa",
+        "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+    };
+};
+class 73_CH252D_Helmet_Cus_Wolf: 73_CH252D_Helmet_STB_Standard
+{
+    scope=2;
+    scopeArsenal=2;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Wolf]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Wolf_Helmet.paa",
+        "73_units\data\ODST\CH252DHelmets\73_Visor_Silver.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252D_Helmet";
+        Variant="Wolf";
+    };
+};
+class 73_CH252D_Helmet_Cus_Wolf_dp: 73_CH252D_Helmet_STB_Standard_dp
+{
+    scope=1;
+    scopeArsenal=1;
+    author="73rd S-4 Team";
+    displayName="[73] CH252D Helmet [Wolf]";
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\ODST\CH252DHelmets\cus\73_Wolf_Helmet.paa",
         "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
     };
 };

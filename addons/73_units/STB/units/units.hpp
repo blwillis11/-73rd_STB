@@ -94,17 +94,17 @@ class 73_Aviator_Officer: 73_UnitBase
     uniformClass = "73_air_Dress_Uniform";
     backpack = "73_Rucksack_invis";
 
-    weapons[] = {"OPTRE_MA5C","OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5C","OPTRE_M6G_SF", "Throw", "Put"};
+    weapons[] = {"MA_MK50_Sidekick","OPTRE_Smartfinder", "Throw", "Put"};
+    respawnWeapons[] = {"MA_MK50_Sidekick","OPTRE_Smartfinder", "Throw", "Put"};
 
-    linkedItems[] = {"73_beret","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnLinkedItems[] = {"73_beret","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"73_beret","ItemMap","ItemcTab","ItemRadio","ItemCompass","ItemWatch"};
+    respawnLinkedItems[] = {"73_beret","ItemMap","ItemcTab","ItemRadio","ItemCompass","ItemWatch"};
 
-    magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag"};
-    respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag"};
+    magazines[] = {"MA_12Rnd_10x31_SAP_Mag_Tracer"};
+    respawnMagazines[] = {"MA_12Rnd_10x31_SAP_Mag_Tracer"};
 
-    items[] = {"ACE_EarPlugs","FirstAidKit"};
-    respawnItems[] = {"ACE_EarPlugs","FirstAidKit"};
+    items[] = {""};
+    respawnItems[] = {""};
 };
 
 class 73_Aviator: 73_UnitBase
@@ -124,17 +124,17 @@ class 73_Aviator: 73_UnitBase
     uniformClass = "73_H2A_g";
     backpack = "73_Rucksack_invis";
 
-    weapons[] = {"OPTRE_MA5C","OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5C","OPTRE_M6G_SF", "Throw", "Put"};
+    weapons[] = {"MA_MK50_Sidekick","OPTRE_Smartfinder", "Throw", "Put"};
+    respawnWeapons[] = {"MA_MK50_Sidekick","OPTRE_Smartfinder", "Throw", "Put"};
 
-    linkedItems[] = {"19th_invisible_Vest","OPTRE_FC_VX19_Helmet_Urban","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnLinkedItems[] = {"19th_invisible_Vest","OPTRE_FC_VX19_Helmet_Urban","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"73_beret","ItemMap","ItemcTab","ItemRadio","ItemCompass","ItemWatch"};
+    respawnLinkedItems[] = {"73_beret","ItemMap","ItemcTab","ItemRadio","ItemCompass","ItemWatch"};
 
-    magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag"};
-    respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag"};
+    magazines[] = {"MA_12Rnd_10x31_SAP_Mag_Tracer"};
+    respawnMagazines[] = {"MA_12Rnd_10x31_SAP_Mag_Tracer"};
 
-    items[] = {"ACE_EarPlugs","FirstAidKit"};
-    respawnItems[] = {"ACE_EarPlugs","FirstAidKit"};
+    items[] = {""};
+    respawnItems[] = {""};
 };
 class 73_STB_ODST_Grenadier: 73_UnitBase
 {

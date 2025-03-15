@@ -193,7 +193,10 @@ class XtdGearModels
 					"Grayson",
 					"Pug",
 					"Pinky",
-					"Brooks"
+					"Brooks",
+					"Norwood",
+					"Riverwood",
+					"Wolf"
 				};
 			};
 		};

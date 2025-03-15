@@ -2,7 +2,7 @@ class 73_ACoBase: 73_UnitBase
 {
     faction = "73_odst";
     editorCategory = "73_odst";
-    editorSubcategory = "73_BCo_EdSubCat";
+    editorSubcategory = "73_ACo_EdSubCat";
 };
 class 73_ACo_ODST_Grenadier: 73_ACoBase
 {

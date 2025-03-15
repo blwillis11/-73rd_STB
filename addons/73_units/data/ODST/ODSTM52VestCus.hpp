@@ -297,10 +297,10 @@ class 73_M52_ODST_Vest_Salmon: 73_M52_ODST_Vest_Base
         "Camo27", //WaistSRight
         "Camo28", //LegPouchL
         "Camo29", //LegPouchR
-        "CQB_Left",
-        //"CQB_Right",
-        //"Marksman_Left",
-        "Marksman_Right",
+        //"CQB_Left",
+        "CQB_Right",
+        "Marksman_Left",
+        //"Marksman_Right",
         //"ODST_Bracer_Left",
         //"ODST_Bracer_Right",
         //"ODST_Chest",
@@ -327,38 +327,38 @@ class 73_M52_ODST_Vest_Salmon: 73_M52_ODST_Vest_Base
         "LegPouchL",
         "LegPouchR"
     };
-    hiddenSelectionsTextures[]=
-    {
-        "73_units\data\ODST\M52Vest\Custom\73_CQB_BSalmon.paa", //CQB Left
-        "73_units\data\ODST\M52Vest\Custom\73_CQB_BSalmon.paa", //CQB Right
-        "73_units\data\ODST\M52Vest\Custom\73_Mksm_BSalmon.paa", //Marksman_Left
-        "73_units\data\ODST\M52Vest\Custom\73_Mksm_BSalmon.paa", //Marksman_Right
-        "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Bracer_Left
-        "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Bracer_Right
-        "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Chest
-        "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Left
-        "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Right
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //LShoulderRadio
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //RShoulderRadio
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //StomachPouch
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //TorsoPMLeft
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //TorsoPMRight
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //TorsoPouch
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistBack
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistGLeft
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistGRight
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistPLeft
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistPRight
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //WaistRLeft
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //WaistRRight
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistSLeft
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistSRight
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //LegPouchL
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
-    };
+	hiddenSelectionsTextures[]=
+	{
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_CQB_BCoCmd_Cmd.paa", //CQB Left
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_CQB_BCoCmd_Cmd.paa", //CQB Right
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_Mksm_BCoCmd_Cmd.paa", //Marksman_Left
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_Mksm_BCoCmd_Cmd.paa", //Marksman_Right
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Bracer_Left
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Bracer_Right
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Chest
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Left
+		"73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Right
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMRight
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //ChestPouch
+		"MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //LShoulderRadio
+		"MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //RShoulderRadio
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //StomachPouch
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //TorsoPMLeft
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //TorsoPMRight
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //TorsoPouch
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistBack
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistGLeft
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistGRight
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistPLeft
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //WaistPRight
+		"MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //WaistRLeft
+		"MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", //WaistRRight
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistSLeft
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //WaistSRight
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa", //LegPouchL
+		"MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"  //LegPouchR
+	};
     class ItemInfo: VestItem
     {
         vestType="Rebreather";
@@ -393,10 +393,10 @@ class 73_M52_ODST_Vest_Salmon: 73_M52_ODST_Vest_Base
             "Camo27", //WaistSRight
             "Camo28", //LegPouchL
             "Camo29", //LegPouchR
-            "CQB_Left",
-            //"CQB_Right",
-            //"Marksman_Left",
-            "Marksman_Right",
+        //"CQB_Left",
+        "CQB_Right",
+        "Marksman_Left",
+        //"Marksman_Right",
             //"ODST_Bracer_Left",
             //"ODST_Bracer_Right",
             //"ODST_Chest",
@@ -425,13 +425,13 @@ class 73_M52_ODST_Vest_Salmon: 73_M52_ODST_Vest_Base
        };
         hiddenSelectionsTextures[]=
         {
-            "73_units\data\ODST\M52Vest\Custom\73_CQB_BSalmon.paa", //CQB Left
-            "73_units\data\ODST\M52Vest\Custom\73_CQB_BSalmon.paa", //CQB Right
-            "73_units\data\ODST\M52Vest\Custom\73_Mksm_BSalmon.paa", //Marksman_Left
-            "73_units\data\ODST\M52Vest\Custom\73_Mksm_BSalmon.paa", //Marksman_Right
-            "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Bracer_Left
-            "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Bracer_Right
-            "73_units\data\ODST\M52Vest\Custom\73_M52Vest_BSalmon.paa", //ODST_Chest
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_CQB_BCoCmd_Cmd.paa", //CQB Left
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_CQB_BCoCmd_Cmd.paa", //CQB Right
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_Mksm_BCoCmd_Cmd.paa", //Marksman_Left
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_Mksm_BCoCmd_Cmd.paa", //Marksman_Right
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Bracer_Left
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Bracer_Right
+            "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Vest_Cmd.paa", //ODST_Chest
             "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Left
             "73_units\data\ODST\M52Vest\BCo\Cmd\73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa", //ODST_Right
             "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa", //ChestPMLeft

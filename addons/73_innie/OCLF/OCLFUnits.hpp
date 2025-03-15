@@ -678,24 +678,24 @@ class 73_OCLF_SpecOps_Rifleman: 73_OCLFSpecOpsBase
     displayName="Lancer Rifleman";
     weapons[]=
     {
-        "MA_M7_SMG",
+        "73_M7_SMG",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
-        "MA_M7_SMG",
+        "73_M7_SMG",
         "Throw",
         "Put"
     };
     magazines[]=
     {
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -703,12 +703,12 @@ class 73_OCLF_SpecOps_Rifleman: 73_OCLFSpecOpsBase
     };
     respawnMagazines[]=
     {
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
-        "MA_60Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",

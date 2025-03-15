@@ -1,4 +1,4 @@
-class 73_Rucksack: MA_M52D_Rucksack_Strapless
+class 73_Rucksack: MA_M52D_Rucksack
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack";
@@ -16,7 +16,7 @@ class 73_Rucksack: MA_M52D_Rucksack_Strapless
 	};
 	maximumLoad = 250;
 };
-class 73_Rucksack_med: MA_M52D_Rucksack_Strapless
+class 73_Rucksack_med: MA_M52D_Rucksack
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack [Medic]";
@@ -34,7 +34,7 @@ class 73_Rucksack_med: MA_M52D_Rucksack_Strapless
 	};
 	maximumLoad = 300;
 };
-class 73_Rucksack_hev: MA_M52D_Rucksack_Strapless
+class 73_Rucksack_hev: MA_M52D_Rucksack
 {
 	author="73rd S-4 Team";
 	displayName = "[73] ODST Rucksack [Heavy]";
@@ -74,7 +74,7 @@ class 73_ANPRC_rto: 19thANPRC419
 	};
 };
 
-class 73_Rucksack_rto: MA_M52D_Rucksack_Strapless
+class 73_Rucksack_rto: MA_M52D_Rucksack
 {
 	displayName = "[73] ODST Rucksack [RTO]";
 	author="73rd S-4 Team";
@@ -98,7 +98,7 @@ class 73_Rucksack_rto: MA_M52D_Rucksack_Strapless
 		Role = "RTO";
 	};
 };
-class 73_Rucksack_heavy_rto: MA_M52D_Rucksack_Strapless
+class 73_Rucksack_heavy_rto: MA_M52D_Rucksack
 {
 	displayName = "[73] ODST Rucksack [Heavy RTO]";
 	author="73rd S-4 Team";
@@ -123,7 +123,7 @@ class 73_Rucksack_heavy_rto: MA_M52D_Rucksack_Strapless
 	};
 };
 //*****************************************************************************************************************************\\	
-class 73_Rucksack_invis: MA_M52D_Rucksack_Strapless
+class 73_Rucksack_invis: MA_M52D_Rucksack
 {
 	displayName = "[73] No Backpack";
 	model = "\A3\weapons_f\empty";
