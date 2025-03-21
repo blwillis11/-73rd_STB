@@ -21,6 +21,7 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
             "73_units",
+            "73_SupplyPods",
             "OPTRE_modules",
             "73_vehicles",
             "Splits_Vehicles",

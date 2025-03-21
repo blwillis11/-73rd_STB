@@ -73,30 +73,6 @@ class XtdGearModels
 				};
 			};
 		};
-		class 73_ACE_CH252D_Helmet_BCo
-		{
-			label= "[73] CH252D Helmet [BCo]";
-			author="73rd S-4 Team";
-			options[] =
-			{
-				"Roles"
-			};
-			class Roles
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Roles";
-                values[]=
-				{
-					"Recruit",
-					"Standard",
-					"SORC",
-					"Leadership",
-					"Officer"
-				};
-			};
-		};
 		class 73_ACE_CH252C_Helmet
 		{
 			label= "[73] CH252C Helmet";
@@ -159,7 +135,8 @@ class XtdGearModels
                 values[]=
 				{
 					"Morgan",
-					"Mitchell"
+					"Mitchell",
+					"Joelson"
 				};
 			};
 		};
@@ -438,47 +415,6 @@ class XtdGearModels
 				};
 			};
 		};
-		class 73_ACE_M52_Armor_BCo
-        {
-            label= "[73] M52 Vest [BCo]";
-            author="73rd S-4 Team";
-            options[] =
-            {
-                "Billet",
-                "MOS"
-            };
-            class Billet
-            {
-                alwaysSelectable=1;
-                changeingame=0;
-                changedelay=0;
-                label= "Billet";
-                values[]=
-                {
-                    "Standard",
-                    "SORC",
-                    "CmdSORC",
-                    "BCoCmd",
-                };
-            };
-            class MOS
-            {
-                alwaysSelectable=1;
-                changeingame=0;
-                changedelay=0;
-                label= "MOS";
-                values[]=
-                {
-                    "Basic",
-                    "SORC",
-                    "Autorifleman",
-                    "Marksman",
-                    "Demolitions",
-                    "Scout",
-                    "Sniper",
-                };
-            };
-        };
         class 73_ACE_M52_Armor_Recon
         {
             label= "[73] M52 Vest [Recon]";

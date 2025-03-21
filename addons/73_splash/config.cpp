@@ -81,7 +81,7 @@ class RscDisplayMain: RscStandardDisplay
 			idc=-1;
 			text="Join 73rd Main";
 			style=2;
-			onbuttonclick="connectToServer ['136.35.175.213', 2302, 'Trident']";
+			onbuttonclick="connectToServer ['136.34.95.120', 2302, 'Trident']";
 			colorBackground[]={0,0,0,0.69999999};
 			colorBackgroundActive[]={.5,0,0,0,.5};
 			colorFocused[]={.5,0,0,0,.5};

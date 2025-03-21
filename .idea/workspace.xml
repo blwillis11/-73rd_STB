@@ -9,50 +9,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Hotfixes and stuff">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/73_Salmon_Helmet.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/M12HogMaav_extupper_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/M12HogMaav_interior_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/apc_lopo_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/body_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/weaponry_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM_[Changes]1/wings_and_gear_co.paa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_23_2025_10_38_AM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mission Titles.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/groups/groups.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/groups/groups.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/ACo/units/units.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/BCo/groups/groups.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/BCo/groups/groups.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_functions/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_functions/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_splash/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_splash/config.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/STB/units/units.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Bear_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Bear_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Dawn_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Dawn_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Grayson_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Grayson_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Mac_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Mac_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Mendez_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Mendez_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Pinky_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Pinky_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Price_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Price_Helmet.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/Mechanized/MechHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/Mechanized/MechHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Salmon_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Solaman_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Solaman_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Vargas_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Vargas_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Winters_Helmet.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/CH252DHelmets/cus/73_Winters_Helmet.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTBackpack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTBackpack.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DBCoHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DBCoHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DCusHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DSTBHelmet.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestCus.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestCus.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/body_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/body_co.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/weaponry_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/weaponry_co.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/wings_and_gear_co.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/data/Pelican/wings_and_gear_co.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/medrefODST.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/data/warthog/medrefcqb.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Utility.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Utility.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/Sniper/sniper.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/M7/m7_smg_body_cus_salmon_CO.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/data/M7/m7_smg_body_cus_salmon_CO.paa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bowl51.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/superbowl51.psd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -513,7 +481,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740587994812</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Hotfixes and stuff">
+      <option name="closed" value="true" />
+      <created>1742011855291</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1742011855291</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Hotfixes and stuff">
+      <option name="closed" value="true" />
+      <created>1742011861397</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1742011861397</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

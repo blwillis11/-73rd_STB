@@ -64,8 +64,8 @@ class 73_Crewman_Officer: 73_UnitBase
     uniformClass = "73_Mech_BDU_Light_Woodland";
     backpack = "";
 
-    weapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"73_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
+    weapons[] = {"73_M7_SMG", "Throw", "Put"};
+    respawnWeapons[] = {"73_M7_SMG", "Throw", "Put"};
 
     linkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_Mech_Pouches_Engineer_Medium_B","73_CH252_Mech_Crew_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -149,8 +149,8 @@ class 73_STB_ODST_Grenadier: 73_UnitBase
 
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
-    weapons[] = {"OPTRE_MA37BGL","OPTRE_M6G","OPTRE_Smartfinder", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37BGL","OPTRE_M6G","OPTRE_Smartfinder", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37BGL","OPTRE_Smartfinder", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37BGL","OPTRE_Smartfinder", "Throw", "Put"};
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Demo","73_CH252D_Helmet_STB_Standard","ItemMap","ItemAndroid","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Demo","73_CH252D_Helmet_STB_Standard","ItemMap","ItemAndroid","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     magazines[] = {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","MA_M8_Smoke_White","MA_M8_Smoke_White","MA_M9_Frag_Mag","MA_M9_Frag_Mag","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_AP_Mag"};
@@ -174,8 +174,8 @@ class 73_STB_ODST_Rifleman: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -201,8 +201,8 @@ class 73_STB_ODST_AT: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_ODST_AT_backpack";
 
-    weapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","73_M41_SSR","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B","73_M41_SSR", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B","73_M41_SSR", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -229,8 +229,8 @@ class 73_STB_ODST_Autorifleman: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_M247","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_M247","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_M247", "Throw", "Put"};
+    respawnWeapons[] = {"73_M247", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Autorifleman","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Autorifleman","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -257,8 +257,8 @@ class 73_STB_ODST_Sniper: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_SRS99AM","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_SRS99AM","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_SRS99AM", "Throw", "Put"};
+    respawnWeapons[] = {"73_SRS99AM", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Sniper","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Sniper","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -284,8 +284,8 @@ class 73_STB_ODST_Marksman: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_M392_DMR", "Throw", "Put"};
+    respawnWeapons[] = {"73_M392_DMR", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Marksman","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Marksman","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -311,8 +311,8 @@ class 73_STB_ODST_Scout: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"73_M392_DMR","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"73_M392_DMR", "Throw", "Put"};
+    respawnWeapons[] = {"73_M392_DMR", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Scout","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Scout","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -365,8 +365,8 @@ class 73_STB_ODST_Demo: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"MA_M7_SMG","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"MA_M7_SMG","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"MA_M7_SMG", "Throw", "Put"};
+    respawnWeapons[] = {"MA_M7_SMG", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Demo","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Demo","73_CH252D_Helmet_STB_Standard","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -392,8 +392,8 @@ class 73_STB_ODST_Medic: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_SORC_SORC","73_CH252D_Helmet_STB_SORC","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_SORC_SORC","73_CH252D_Helmet_STB_SORC","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -419,8 +419,8 @@ class 73_STB_ODST_Team_Lead: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_Rucksack";
 
-    weapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
@@ -446,8 +446,8 @@ class 73_STB_ODST_Squad_Lead: 73_UnitBase
     uniformClass = "73_BDU_ODST_Urban_NC";
     backpack = "73_rucksack";
 
-    weapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA37B","OPTRE_M6G", "Throw", "Put"};
+    weapons[] = {"OPTRE_MA37B", "Throw", "Put"};
+    respawnWeapons[] = {"OPTRE_MA37B", "Throw", "Put"};
 
     linkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
     respawnLinkedItems[] = {"73_M52_ODST_Vest_Batt_Standard_Basic","73_CH252D_Helmet_STB_Lead","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};

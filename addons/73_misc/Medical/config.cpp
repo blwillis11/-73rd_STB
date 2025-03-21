@@ -189,7 +189,6 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="[73] Optican Medigel";
-		picture="\1st_meu_ace\_textures\misc\icons\medigel_icon.paa";
 		model="\OPTRE_Weapons\items\Medigel.p3d";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
@@ -211,7 +210,6 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="[73] Light Optican Medigel";
-		picture="\1st_meu_ace\_textures\misc\icons\medigel_icon.paa";
 		model="\OPTRE_Weapons\items\Medigel.p3d";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{

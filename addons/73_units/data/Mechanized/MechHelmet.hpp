@@ -124,3 +124,21 @@ class 73_CH252_Mech_Crew_Mitchell:73_CH252_Mech_Crew_Base{
         Variant="Mitchell";
     };
 };
+class 73_CH252_Mech_Crew_Joelson:73_CH252_Mech_Crew_Base{
+    displayName="[73] CH252C Mechanized Helmet [Joelson]";
+    hiddenSelections[]=
+    {
+        "camo"
+    };
+        scope=2;
+        scopeArsenal=2;
+    hiddenSelectionsTextures[]=
+    {
+        "73_units\data\Mechanized\Helmets\73_Joelson_Helmet.paa"
+    };
+    class XtdGearInfo
+    {
+        Model="73_ACE_cus_CH252C_Helmet";
+        Variant="Joelson";
+    };
+};

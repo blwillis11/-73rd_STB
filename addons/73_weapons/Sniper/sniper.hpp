@@ -7,14 +7,12 @@ class 73_SRS99AM:NSWep_SRS99AM
     baseWeapon = "73_SRS99AM";
     author= "73rd S-4 Team";
     initSpeed = 1400;
-    class LinkedItems
-    {
-        class LinkedItemsOptic
-        {
-            slot="CowsSlot";
-            item="NSWep_ORACLE_N_ARD_Optic_S"
-        };
-    };
+    minRange=1;
+    minRangeProbab=0.30000001;
+    midRange=1200;
+    midRangeProbab=0.57999998;
+    maxRange=1400;
+    maxRangeProbab=0.039999999;
     magazines[]=
     {
         "73_M232_145x114x4_APFSDS",
@@ -36,8 +34,7 @@ class 73_SRS99AM:NSWep_SRS99AM
         "73_M233_145x114x8_APFSDS_TG",
         "73_M233_145x114x8_APFSDS_TR",
         "73_M233_145x114x8_APFSDS_TC",
-        "73_M233_145x114x8_APFSDS_TIR",
-        "73_M232_145x114x4_APFSDS_Stun"
+        "73_M233_145x114x8_APFSDS_TIR"
     };
 };
 class 73_SRS99AM_Stealth:NSWep_SRS99AM_Stealth
@@ -46,14 +43,12 @@ class 73_SRS99AM_Stealth:NSWep_SRS99AM_Stealth
     baseWeapon = "73_SRS99AM_Stealth"
     author= "73rd S-4 Team";
     initSpeed = 1400;
-    class LinkedItems
-    {
-        class LinkedItemsOptic
-        {
-            slot="CowsSlot";
-            item="NSWep_ORACLE_N_ARD_Optic_S"
-        };
-    };
+    minRange=1;
+    minRangeProbab=0.30000001;
+    midRange=1200;
+    midRangeProbab=0.57999998;
+    maxRange=1400;
+    maxRangeProbab=0.039999999;
     magazines[]=
     {
         "73_M232_145x114x4_APFSDS",
@@ -75,7 +70,6 @@ class 73_SRS99AM_Stealth:NSWep_SRS99AM_Stealth
         "73_M233_145x114x8_APFSDS_TG",
         "73_M233_145x114x8_APFSDS_TR",
         "73_M233_145x114x8_APFSDS_TC",
-        "73_M233_145x114x8_APFSDS_TIR",
-        "73_M232_145x114x8_APFSDS_Stun"
+        "73_M233_145x114x8_APFSDS_TIR"
     };
 };
