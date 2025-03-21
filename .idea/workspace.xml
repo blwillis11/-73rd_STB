@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="Medigel display in inventory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics">
       <change beforePath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrmagazine.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731610444550</updated>
-    </task>
-    <task id="LOCAL-00001" summary="New armors!&#10;Upddated to MA new armors. Added Mechanized, Aviation armors.&#10;New M247 weapon and faction stuff.">
-      <option name="closed" value="true" />
-      <created>1731942308877</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1731942308877</updated>
     </task>
     <task id="LOCAL-00002" summary="Lots of changes. &#10;&#10;- Removed old ODST gear&#10;- Added custom helmets for ODST&#10;- Added Mech helmets">
       <option name="closed" value="true" />
@@ -510,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742592517299</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics">
+      <option name="closed" value="true" />
+      <created>1742593470195</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1742593470195</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,6 +553,7 @@
     <MESSAGE value="new stuff" />
     <MESSAGE value="Hotfixes and stuff" />
     <MESSAGE value="Medigel display in inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Medigel display in inventory" />
+    <MESSAGE value="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics" />
   </component>
 </project>

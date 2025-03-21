@@ -187,7 +187,10 @@ class cfgMagazineWells{
 		73_Magazines[] = {
 			"73_15Rnd_10x40_Mag",
 			"73_15Rnd_10x40_Mag_Tracer",
-			"73_15Rnd_10x40_Mag_Tracer_Yellow"
+			"73_15Rnd_10x40_Mag_Tracer_Yellow",
+			"73_15Rnd_10x40_HVAP_Mag",
+			"73_15Rnd_10x40_HVAP_Mag_Tracer",
+			"73_15Rnd_10x40_HVAP_Mag_Tracer_Yellow"
 		};
 	};
 	class 73_BR55{
