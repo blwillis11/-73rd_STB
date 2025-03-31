@@ -8,8 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics">
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrammo.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrmagazine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/DMR/dmrmagazine.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/brammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/LMG/lmg.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/LMG/lmg.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
