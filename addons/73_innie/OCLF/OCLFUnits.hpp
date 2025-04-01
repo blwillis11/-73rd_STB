@@ -124,6 +124,8 @@ class 73_OCLF_Soldier_Rifleman: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -131,6 +133,8 @@ class 73_OCLF_Soldier_Rifleman: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
@@ -165,12 +169,16 @@ class 73_OCLF_Soldier_Medic: 73_OCLFBase
         "73_26Rnd_127x40_Mag_Black_Tracer",
         "73_26Rnd_127x40_Mag_Black_Tracer",
         "73_26Rnd_127x40_Mag_Black_Tracer",
+        "73_26Rnd_127x40_Mag_Black_Tracer",
+        "73_26Rnd_127x40_Mag_Black_Tracer",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke"
     };
     respawnMagazines[]=
     {
+        "73_26Rnd_127x40_Mag_Black_Tracer",
+        "73_26Rnd_127x40_Mag_Black_Tracer",
         "73_26Rnd_127x40_Mag_Black_Tracer",
         "73_26Rnd_127x40_Mag_Black_Tracer",
         "73_26Rnd_127x40_Mag_Black_Tracer",
@@ -197,14 +205,14 @@ class 73_OCLF_Soldier_Rifleman_AA: 73_OCLFBase
     weapons[]=
     {
         "73_MA37B",
-        "73_M41_SSR",
+        "optre_M41_SSR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
         "73_MA37B",
-        "73_M41_SSR",
+        "optre_M41_SSR",
         "Throw",
         "Put"
     };
@@ -214,8 +222,10 @@ class 73_OCLF_Soldier_Rifleman_AA: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
-        "73_HEAA",
-        "73_HEAA",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "optre_m41_twin_heat_g_aa",
+        "optre_m41_twin_heat_g_aa",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -227,8 +237,10 @@ class 73_OCLF_Soldier_Rifleman_AA: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
-        "73_HEAA",
-        "73_HEAA",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "optre_m41_twin_heat_g_aa",
+        "optre_m41_twin_heat_g_aa",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -244,14 +256,14 @@ class 73_OCLF_Soldier_Rifleman_AT: 73_OCLFBase
     weapons[]=
     {
         "73_MA37B",
-        "73_M41_SSR",
+        "optre_M41_SSR",
         "Throw",
         "Put"
     };
     respawnWeapons[]=
     {
         "73_MA37B",
-        "73_M41_SSR",
+        "optre_M41_SSR",
         "Throw",
         "Put"
     };
@@ -261,8 +273,10 @@ class 73_OCLF_Soldier_Rifleman_AT: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
-        "73_HEAT",
-        "73_HEAT",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "optre_m41_twin_heat",
+        "optre_m41_twin_heat",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -274,8 +288,10 @@ class 73_OCLF_Soldier_Rifleman_AT: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
-        "73_HEAT",
-        "73_HEAT",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "optre_m41_twin_heat",
+        "optre_m41_twin_heat",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -305,6 +321,8 @@ class 73_OCLF_Soldier_AutoRifleman: 73_OCLFBase
         "73_100Rnd_M247_Mag_Tracer_Yellow",
         "73_100Rnd_M247_Mag_Tracer_Yellow",
         "73_100Rnd_M247_Mag_Tracer_Yellow",
+        "73_100Rnd_M247_Mag_Tracer_Yellow",
+        "73_100Rnd_M247_Mag_Tracer_Yellow",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -312,6 +330,8 @@ class 73_OCLF_Soldier_AutoRifleman: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_100Rnd_M247_Mag_Tracer_Yellow",
+        "73_100Rnd_M247_Mag_Tracer_Yellow",
         "73_100Rnd_M247_Mag_Tracer_Yellow",
         "73_100Rnd_M247_Mag_Tracer_Yellow",
         "73_100Rnd_M247_Mag_Tracer_Yellow",
@@ -344,7 +364,7 @@ class 73_OCLF_Soldier_Breacher: 73_OCLFBase
         "73_6Rnd_8Gauge_Slugs",
         "73_6Rnd_8Gauge_Slugs",
         "73_6Rnd_8Gauge_Slugs",
-        "73_6Rnd_8Gauge_HEDP",
+        "73_6Rnd_8Gauge_Slugs",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -355,7 +375,7 @@ class 73_OCLF_Soldier_Breacher: 73_OCLFBase
         "73_6Rnd_8Gauge_Slugs",
         "73_6Rnd_8Gauge_Slugs",
         "73_6Rnd_8Gauge_Slugs",
-        "73_6Rnd_8Gauge_HEDP",
+        "73_6Rnd_8Gauge_Slugs",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -385,6 +405,8 @@ class 73_OCLF_Soldier_Grenadier: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "3Rnd_HE_Grenade_shell",
         "3Rnd_HE_Grenade_shell",
         "OPTRE_M2_Smoke",
@@ -394,6 +416,8 @@ class 73_OCLF_Soldier_Grenadier: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
@@ -430,6 +454,8 @@ class 73_OCLF_Soldier_Radioman: 73_OCLFBase
         "73_95x40_36Rnd_T_R",
         "73_95x40_36Rnd_T_R",
         "73_95x40_36Rnd_T_R",
+        "73_95x40_36Rnd_T_R",
+        "73_95x40_36Rnd_T_R",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -437,6 +463,8 @@ class 73_OCLF_Soldier_Radioman: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_95x40_36Rnd_T_R",
+        "73_95x40_36Rnd_T_R",
         "73_95x40_36Rnd_T_R",
         "73_95x40_36Rnd_T_R",
         "73_95x40_36Rnd_T_R",
@@ -470,6 +498,8 @@ class 73_OCLF_Soldier_Sniper: 73_OCLFBase
         "73_M232_145x114x4_APFSDS",
         "73_M232_145x114x4_APFSDS",
         "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -477,6 +507,8 @@ class 73_OCLF_Soldier_Sniper: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_M232_145x114x4_APFSDS",
+        "73_M232_145x114x4_APFSDS",
         "73_M232_145x114x4_APFSDS",
         "73_M232_145x114x4_APFSDS",
         "73_M232_145x114x4_APFSDS",
@@ -510,6 +542,8 @@ class 73_OCLF_Soldier_SquadLead: 73_OCLFBase
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -517,6 +551,8 @@ class 73_OCLF_Soldier_SquadLead: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
+        "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
         "73_32Rnd_762x51_Mag_Tracer_Yellow",
@@ -550,6 +586,8 @@ class 73_OCLF_Soldier_Scout: 73_OCLFBase
         "73_15Rnd_10x40_Mag",
         "73_15Rnd_10x40_Mag",
         "73_15Rnd_10x40_Mag",
+        "73_15Rnd_10x40_Mag",
+        "73_15Rnd_10x40_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -557,6 +595,8 @@ class 73_OCLF_Soldier_Scout: 73_OCLFBase
     };
     respawnMagazines[]=
     {
+        "73_15Rnd_10x40_Mag",
+        "73_15Rnd_10x40_Mag",
         "73_15Rnd_10x40_Mag",
         "73_15Rnd_10x40_Mag",
         "73_15Rnd_10x40_Mag",
@@ -696,6 +736,8 @@ class 73_OCLF_SpecOps_Rifleman: 73_OCLFSpecOpsBase
         "73_48Rnd_5x23Caseless_FMJ_Mag",
         "73_48Rnd_5x23Caseless_FMJ_Mag",
         "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
         "OPTRE_M2_Smoke",
@@ -703,6 +745,8 @@ class 73_OCLF_SpecOps_Rifleman: 73_OCLFSpecOpsBase
     };
     respawnMagazines[]=
     {
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
+        "73_48Rnd_5x23Caseless_FMJ_Mag",
         "73_48Rnd_5x23Caseless_FMJ_Mag",
         "73_48Rnd_5x23Caseless_FMJ_Mag",
         "73_48Rnd_5x23Caseless_FMJ_Mag",
