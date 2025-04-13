@@ -1,4 +1,5 @@
 class Land_optre_milcrate_reachgreencrate; // Base class declaration
+class Land_optre_milcrate_h2smallcrate_medic;
 
 class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
     scope = 2;
@@ -559,4 +560,82 @@ class 73_Radio_Crate: Land_optre_milcrate_reachgreencrate {
             };
         };
     };
+class CfgEditorCategories {
+    class 73_Objects {
+        displayName = "73rd Objects";
+    };
+};
+
+class CfgEditorSubcategories {
+    class 73_Crates {
+        displayName = "Crates";
+    };
+};
+
+class CfgVehicles {
+    class Land_optre_milcrate_h2smallcrate_medic;
+    class 73_perm_crate : Land_optre_milcrate_h2smallcrate_medic {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[73] Perms Crate";
+        editorCategory = "73_Objects";
+        editorSubcategory = "73_Crates";
+
+        class ACE_Actions {
+            class ACE_MainActions {
+                displayName = "Interact";
+                condition = "true";
+                distance = 4;
+
+                class GrantDoctor {
+                    displayName = "Grant ACE Doctor Permissions";
+                    condition = "!(player getVariable ['ace_medical_medicClass', 0] == 2)";
+                    statement = "player setVariable ['ace_medical_medicClass', 2, true]; hint 'You now have ACE Doctor Permissions!';";
+                    showDisabled = 0;
+                    priority = 1;
+                };
+
+                class RemoveDoctor {
+                    displayName = "Remove ACE Doctor Permissions";
+                    condition = "player getVariable ['ace_medical_medicClass', 0] == 2";
+                    statement = "player setVariable ['ace_medical_medicClass', 0, true]; hint 'ACE Doctor Permissions Removed.';";
+                    showDisabled = 0;
+                    priority = 0.9;
+                };
+
+                class GrantEngineer {
+                    displayName = "Grant Advanced Engineer Permissions";
+                    condition = "!(player getVariable ['ace_isEngineer', 0] == 2)";
+                    statement = "player setVariable ['ace_isEngineer', 2, true]; hint 'You are now an Advanced Engineer!';";
+                    showDisabled = 0;
+                    priority = 0.8;
+                };
+
+                class RemoveEngineer {
+                    displayName = "Remove Advanced Engineer Permissions";
+                    condition = "player getVariable ['ace_isEngineer', 0] == 2";
+                    statement = "player setVariable ['ace_isEngineer', 0, true]; hint 'Advanced Engineer Permissions Removed.';";
+                    showDisabled = 0;
+                    priority = 0.7;
+                };
+
+                class GrantUAVHacker {
+                    displayName = "Grant UAV Hacking Permissions";
+                    condition = "!([player] call BIS_fnc_isUnitUAVHacker)";
+                    statement = "player setUnitTrait ['UAVHacker', true]; hint 'You now have UAV Hacking Permissions!';";
+                    showDisabled = 0;
+                    priority = 0.6;
+                };
+
+                class RemoveUAVHacker {
+                    displayName = "Remove UAV Hacking Permissions";
+                    condition = "[player] call BIS_fnc_isUnitUAVHacker";
+                    statement = "player setUnitTrait ['UAVHacker', false]; hint 'UAV Hacking Permissions Removed.';";
+                    showDisabled = 0;
+                    priority = 0.5;
+                };
+            };
+        };
+    };
+};
 };
