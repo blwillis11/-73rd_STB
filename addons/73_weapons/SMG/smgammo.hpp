@@ -3,9 +3,9 @@ class OPTRE_B_127x40_Tracer;
 
 class 73_5x23_Caseless:MA_5x23_Caseless
 {
-    hit=12;
+    hit=14;
     cartridge="";
-    caliber=1.7;
+    caliber=2.8;
     typicalSpeed=450;
     model="\A3\Weapons_f\Data\bullettracer\tracer_green";
     supersoniccracknear[]={};
@@ -20,7 +20,7 @@ class 73_5x23_Caseless_NARQ:73_5x23_Caseless
 }
 class 73_B_127x40_Tracer:OPTRE_B_127x40_Tracer
 {
-    hit=11;
+    hit=13;
     caliber=2.1;
     typicalSpeed=450;
     model="\A3\Weapons_f\Data\bullettracer\tracer_green";
