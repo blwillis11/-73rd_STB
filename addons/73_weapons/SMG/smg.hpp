@@ -51,7 +51,7 @@ class 73_M7_SMG_Vargas: MA_M7_SMG {
 }
 class 73_M7_SMG_solaman: MA_M7_SMG {
     author= "73rd S-4 Team";
-    displayName = "[73] M7S SMG [Salmon]"
+    displayName = "[73] M7S SMG [Solaman]"
     baseWeapon="73_M7_SMG_solaman"
     magazineWell[]={
     "73_M7_SMG"
