@@ -43,7 +43,8 @@ class XtdGearModels
 				{
 					"Standard",
 					"Salmon",
-					"Vargas"
+					"Vargas",
+					"Solaman"
 				};
 			};
 		};
