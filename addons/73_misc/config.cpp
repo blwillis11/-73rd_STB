@@ -14,7 +14,7 @@ class CfgPatches
             "73_Marine_Grenadier",
             "73_Marine_Autorifleman",
             "73_Marine_Sniper",
-            "73_Radio_Crate"
+            "73_perm_crate"
         }; 
         weapons[] = 
         {
