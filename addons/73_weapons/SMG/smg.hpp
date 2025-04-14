@@ -68,8 +68,8 @@ class 73_M7_SMG_solaman: MA_M7_SMG {
     };
     hiddenSelectionsTextures[]=
     {
-        "73_weapons\data\M7\m7_smg_addons_cus_solaman.paa",
-        "73_weapons\data\M7\m7_smg_body_cus_solaman.paa",
+        "73_weapons\data\M7\m7_smg_addons_cus_Solaman.paa",
+        "73_weapons\data\M7\m7_smg_body_cus_Solaman.paa",
         "73_weapons\data\M7\m7_smg_optic_cus_salmon.paa"
     };
 }
