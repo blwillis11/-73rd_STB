@@ -7,10 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="12">
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="oclf rebalance">
+      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearm.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearmammo.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearmmagazine.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_innie/OCLF/OCLFUnits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731610444550</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fixes">
-      <option name="closed" value="true" />
-      <created>1733710209293</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1733710209293</updated>
     </task>
     <task id="LOCAL-00006" summary="Fixes">
       <option name="closed" value="true" />
@@ -511,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743461363887</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="oclf rebalance">
+      <option name="closed" value="true" />
+      <created>1743470885995</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1743470885995</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -556,6 +560,7 @@
     <MESSAGE value="Medigel display in inventory" />
     <MESSAGE value="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics" />
     <MESSAGE value="12" />
-    <option name="LAST_COMMIT_MESSAGE" value="12" />
+    <MESSAGE value="oclf rebalance" />
+    <option name="LAST_COMMIT_MESSAGE" value="oclf rebalance" />
   </component>
 </project>

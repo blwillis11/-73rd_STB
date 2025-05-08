@@ -219,11 +219,6 @@ class CfgWeapons
 //ODST Vest
 	#include "data\ODST\ODSTM52Vest.hpp"
 	#include "data\ODST\ODSTM52VestCus.hpp"
-	#include "data\ODST\ODSTM52VestACo.hpp"
-	#include "data\ODST\ODSTM52VestACo1Plt.hpp"
-	#include "data\ODST\ODSTM52VestACo2Plt.hpp"
-	#include "data\ODST\ODSTM52VestACo3Plt.hpp"
-    #include "data\ODST\ODSTM52VestRecon.hpp"
 
 //Aviation Vest
     #include "data\Aviation\AviationVest.hpp"
@@ -234,9 +229,7 @@ class CfgWeapons
 
 //Infantry helmets
 	#include "data\ODST\ODSTCH252DSTBHelmet.hpp"
-	#include "data\ODST\ODSTCH252DACoHelmet.hpp"
 	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
-	#include "data\ODST\ODSTCH252DReconHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"
 //Aviation Helmets
@@ -267,7 +260,6 @@ class CfgVehicles
 	#include "data\ODST\ODSTBackpack.hpp"
 
     #include "STB\units\units.hpp"
-    #include "ACo\units\units.hpp"
 };
 
 class CfgGroups

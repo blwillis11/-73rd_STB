@@ -34,9 +34,10 @@ class CfgPatches
             "73_AV22C_Sparrowhawk",
             "73_M413_MGS",//Load/unload
             "73_M412_IFV",//Load/unload
-            "73_F35B_Standard",
-            "73_F22_Standard",
-            "73_EA18G_Standard",
+            "73_F29_Nandao_VTOL",
+            "73_YSS_1000_A_VTOL_Single",
+            "73_Shortsword_01_F",
+            "73_JT_RM2_Longsword_dynamicLoadout_F",
             "73_M511_Springbok_APC",//Load/unload
             "73_M511_Springbok_IFV",//Load/unload
             "73_M511_Springbok_MGS",//Load/unload

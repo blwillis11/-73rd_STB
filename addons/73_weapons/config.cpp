@@ -129,6 +129,7 @@ class cfgAmmo {
     #include "BR\brammo.hpp"
     #include "Shotgun\shotgunammo.hpp"
     #include "AR\arammo.hpp"
+    #include "sidearm\sidearmammo.hpp"
 
 };
 
@@ -142,6 +143,7 @@ class cfgMagazines
     #include "BR\brmagazine.hpp"
     #include "Shotgun\shotgunmagazine.hpp"
     #include "AR\armagazine.hpp"
+    #include "sidearm\sidearmmagazine.hpp"
 
 };
 
@@ -244,6 +246,14 @@ class cfgMagazineWells{
 
 		};
 	};
+	class 73_sidearm{
+		73_Magazines[] = {
+			"73_12Rnd_10x31_SAP_Mag",
+			"73_12Rnd_10x31_SAP_Mag_Tracer",
+			"73_12Rnd_10x31_NARQ_Mag",
+			"73_12Rnd_10x31_NARQ_Mag_Tracer"
+		};
+	};
 };
 class Mode_SemiAuto;	// External class reference
 class Mode_Burst;	// External class reference
@@ -275,6 +285,7 @@ class CfgWeapons {
     #include "BR\br.hpp"
     #include "Shotgun\shotgun.hpp"
     #include "AR\ar.hpp"
+    #include "Sidearm\sidearm.hpp"
 
     class OPTRE_102R_Turret;
     	class 73_COGV_Support_Rocket: OPTRE_102R_Turret
