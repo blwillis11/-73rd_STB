@@ -25,30 +25,30 @@ class 73_M7_SMG_salmon: MA_M7_SMG {
         "73_weapons\data\M7\m7_smg_optic_cus_salmon.paa"
     };
 }
-class 73_M7_SMG_Vargas: MA_M7_SMG {
-    author= "73rd S-4 Team";
-    displayName = "[73] M7S SMG [Vargas]"
-    baseWeapon="73_M7_SMG_Vargas"
-    magazineWell[]={
-    "73_M7_SMG"
-    };
-    hiddenSelections[]={
-    "M7_Addons",
-    "M7_Body",
-    "M7_Scope_Glass"
-    };
-    class XtdGearInfo
-    {
-        Model="73_ACE_M7";
-        Variant="Vargas";
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "73_weapons\data\M7\m7_smg_addons_cus_Vargas_CO.paa",
-        "73_weapons\data\M7\m7_smg_body_cus_Vargas_CO.paa",
-        "73_weapons\data\M7\m7_smg_optic_cus_salmon.paa"
-    };
-}
+//class 73_M7_SMG_Vargas: MA_M7_SMG {
+//    author= "73rd S-4 Team";
+//    displayName = "[73] M7S SMG [Vargas]"
+//    baseWeapon="73_M7_SMG_Vargas"
+//    magazineWell[]={
+//    "73_M7_SMG"
+//    };
+//    hiddenSelections[]={
+//    "M7_Addons",
+//    "M7_Body",
+//    "M7_Scope_Glass"
+//    };
+//    class XtdGearInfo
+//    {
+//        Model="73_ACE_M7";
+//        Variant="Vargas";
+//    };
+//    hiddenSelectionsTextures[]=
+//    {
+//        "73_weapons\data\M7\m7_smg_addons_cus_Vargas_CO.paa",
+//        "73_weapons\data\M7\m7_smg_body_cus_Vargas_CO.paa",
+//        "73_weapons\data\M7\m7_smg_optic_cus_salmon.paa"
+//    };
+//}
 class 73_M7_SMG_solaman: MA_M7_SMG {
     author= "73rd S-4 Team";
     displayName = "[73] M7S SMG [Solaman]"

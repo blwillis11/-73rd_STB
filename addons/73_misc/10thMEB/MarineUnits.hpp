@@ -17,14 +17,14 @@ class 73_Marine_Rifleman_AT: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"NSWep_MA5B","73_MPRL", "Throw", "Put"};
     respawnWeapons[] = {"NSWep_MA5B","73_MPRL", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmourPouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
-    respawnLinkedItems[] = {"73_CEArmourPouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
+    linkedItems[] = {"73_CEArmourPouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
+    respawnLinkedItems[] = {"73_CEArmourPouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
 
     magazines[] = {"NSWep_762x51_NATO","OPTRE_M41_Twin_HEAT"};
     respawnMagazines[] = {"NSWep_762x51_NATO","OPTRE_M41_Twin_HEAT"};
@@ -44,8 +44,8 @@ class 73_Marine_Marksman: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"73_M392_DMR","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"73_M392_DMR","OPTRE_M6G_SF", "Throw", "Put"};
@@ -71,14 +71,14 @@ class 73_Marine_RTO_Operator: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack_radio";
 
     weapons[] = {"OPTRE_M7","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-    respawnLinkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+    linkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+    respawnLinkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
 
     magazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
     respawnMagazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -98,14 +98,14 @@ class 73_Marine_Medic: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"OPTRE_M7","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmourNSPouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMM"};
-    respawnLinkedItems[] = {"73_CEArmourNSPouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMM"};
+    linkedItems[] = {"73_CEArmourNSPouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMM"};
+    respawnLinkedItems[] = {"73_CEArmourNSPouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMM"};
 
     magazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
     respawnMagazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -125,14 +125,14 @@ class 73_Marine_Grenadier: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"NSWep_MA5BGL","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
     respawnWeapons[] = {"NSWep_MA5BGL","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-    respawnLinkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    linkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
     magazines[] = {"1Rnd_HE_Grenade_shell","NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
     respawnMagazines[] = {"1Rnd_HE_Grenade_shell","NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
@@ -152,14 +152,14 @@ class 73_Marine_Rifleman: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"NSWep_MA5B","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
     respawnWeapons[] = {"NSWep_MA5B","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-    respawnLinkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    linkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
     magazines[] = {"NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
     respawnMagazines[] = {"NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
@@ -179,14 +179,14 @@ class 73_Marine_Team_Lead: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"NSWep_MA5B","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
     respawnWeapons[] = {"NSWep_MA5B","OPTRE_M6B","OPTRE_Binoculars", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-    respawnLinkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    linkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
+    respawnLinkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
 
     magazines[] = {"NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
     respawnMagazines[] = {"NSWep_762x51_NATO","OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
@@ -206,14 +206,14 @@ class 73_Marine_Autorifleman: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"73_M247","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"73_M247","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmourV2Pouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMUA"};
-    respawnLinkedItems[] = {"73_CEArmourV2Pouch","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMUA"};
+    linkedItems[] = {"73_CEArmourV2Pouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMUA"};
+    respawnLinkedItems[] = {"73_CEArmourV2Pouch","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMUA"};
 
     magazines[] = {"73_200rnd_M247_Mag","OPTRE_8Rnd_127x40_Mag"};
     respawnMagazines[] = {"73_200rnd_M247_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -233,14 +233,14 @@ class 73_Marine_Sniper: 73_10MEBBase
     engineer = 0;
     canDeactivateMines = 0;
 
-    uniformClass = "Rogue_CEUniform_U_B";
-    backpack = "Rogue_CEBackpack";
+    uniformClass = "73_CEUniform_U_B";
+    backpack = "MA_MArine_Rucksack";
 
     weapons[] = {"73_SRS99AM","OPTRE_M6G_SF", "Throw", "Put"};
     respawnWeapons[] = {"73_SRS99AM","OPTRE_M6G_SF", "Throw", "Put"};
 
-    linkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-    respawnLinkedItems[] = {"73_CEArmour","Rogue_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+    linkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+    respawnLinkedItems[] = {"73_CEArmour","73_CEHelmetV2","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
 
     magazines[] = {"73_M232_145x114x4_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
     respawnMagazines[] = {"73_M232_145x114x4_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};

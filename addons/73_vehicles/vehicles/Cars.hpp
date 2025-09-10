@@ -432,15 +432,15 @@ class 73_M813_TT : VES_M813_TT
     scope=2;
     side=1;
     crew = "73_Crewman";
- class ace_cargo {
-            class cargo {
-                class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
-                    type = "ACE_Wheel";
-					
-                    amount = 8;
-                };
+    class ace_cargo {
+        class cargo {
+            class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
+                type = "ACE_Wheel";
+
+                amount = 8;
             };
         };
+    };
     hiddenSelectionsTextures[] = {
         "\73_Vehicles\data\Warthog\M12HogMaav_extupper_co.paa",
         "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",

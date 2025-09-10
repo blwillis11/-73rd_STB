@@ -7,14 +7,100 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="oclf rebalance">
-      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearm.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearmammo.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/73_weapons/Sidearm/sidearmmagazine.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="6232aed6-dc47-4053-a472-b3a7b18ab9d2" name="Changes" comment="remove co">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Planes.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/73_weapons/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineHelmet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineHelmet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUniforms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUniforms.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUniformsVeh.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUniformsVeh.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUnits.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineUnits.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineVest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/10thMEB/MarineVest.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_misc/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_misc/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_splash/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_splash/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_BASE_1stPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_BASE_1stPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_BASE_1stPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_CQB_1stPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_CQB_1stPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_CQB_1stPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_Mksm_1stPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_Mksm_1stPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Armor_Shoulders_Mksm_1stPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/1Plt/73rd_ODST_Vest_1PLT_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_BASE_2ndPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_BASE_2ndPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_CQB_2ndPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_CQB_2ndPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Armor_Shoulders_Mksm_2ndPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/2Plt/73rd_ODST_Vast_2PLT_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_BASE_3rdPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_BASE_3rdPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_CQB_3rdPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_CQB_3rdPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Armor_Shoulders_Mksm_3rdPlt_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/3Plt/73rd_ODST_Vast_3PLT_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_BASE_ACo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_CQB_ACo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Shoulders_Mksm_ACo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/73rd_ODST_Armor_Vest_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_BASE_ACoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_CQB_ACoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Shoulders_Mksm_ACoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/ACo/Cmd/73rd_ODST_Armor_Vest_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_BASE_BCo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_BASE_BCo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_CQB_BCo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_CQB_BCo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_Mksm_BCo_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Shoulders_Mksm_BCo_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/73rd_ODST_Armor_Vest_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/Cmd/73rd_ODST_Armor_Shoulders_BASE_BCoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/Cmd/73rd_ODST_Armor_Shoulders_CQB_BCoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/Cmd/73rd_ODST_Armor_Shoulders_Mksm_BCoCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/BCo/Cmd/73rd_ODST_Armor_Vest_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_BASE_Recon_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_BASE_Recon_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_CQB_Recon_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_CQB_Recon_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_Mksm_Recon_Base.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Shoulders_Mksm_Recon_SORC.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/73rd_ODST_Armor_Vest_Recon.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/cmd/73rd_ODST_Armor_Shoulders_BASE_ReconCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/cmd/73rd_ODST_Armor_Shoulders_CQB_ReconCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/cmd/73rd_ODST_Armor_Shoulders_Mksm_ReconCmd_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/Recon/cmd/73rd_ODST_Armor_Vest_Recon_Cmd.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_Base_Batt_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_Base_Batt_SORC.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_CQB_Batt_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_CQB_Batt_SORC.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_Mksm_Batt_SORC.paa" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/M52Vest/STB/73rd_ODST_Shoulders_Mksm_Batt_SORC.paa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DACoHelmet.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DBCoHelmet.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTCH252DReconHelmet.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52Vest.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo1Plt.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo2Plt.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestACo3Plt.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/ODST/ODSTM52VestBCo.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_units/data/XtdGear/XtdGearModels.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_vehicles/vehicles/Cars.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/BR/br.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smg.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smg.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/addons/73_weapons/SMG/smgammo.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/BR55/BR55HB_Recon_Back_CO.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/BR55/BR55HB_Recon_Barrel_CO.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/BR55/BR55HB_Recon_Front_CO.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/BR55/BR55HB_Recon_Mag_CO.paa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/73_weapons/data/BR55/BR55HB_Recon_Top_CO.paa" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +208,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731610444550</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fixes">
-      <option name="closed" value="true" />
-      <created>1733710761725</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1733710761725</updated>
     </task>
     <task id="LOCAL-00007" summary="Fixes">
       <option name="closed" value="true" />
@@ -515,7 +593,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743470885995</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="remove co">
+      <option name="closed" value="true" />
+      <created>1746737694342</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1746737694343</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,6 +647,7 @@
     <MESSAGE value="DMR Ammo buff:&#10;- Caliber 3 to 6&#10;- Better ACE Ballistics" />
     <MESSAGE value="12" />
     <MESSAGE value="oclf rebalance" />
-    <option name="LAST_COMMIT_MESSAGE" value="oclf rebalance" />
+    <MESSAGE value="remove co" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove co" />
   </component>
 </project>

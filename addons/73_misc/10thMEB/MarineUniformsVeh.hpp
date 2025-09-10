@@ -1,6 +1,6 @@
-class Rogue_CEUniform_inf_B;
+class MA_Marine_Medium_BDU_Brown;
 
-class 73_CEUniform_inf_B: Rogue_CEUniform_inf_B
+class 73_CEUniform_inf_B: MA_Marine_Medium_BDU_Brown
 {
     scope=2;
     scopecurator=2;
@@ -12,16 +12,6 @@ class 73_CEUniform_inf_B: Rogue_CEUniform_inf_B
         "ItemCompass",
         "ItemWatch",
         "ItemRadio"
-    };
-    hiddenSelections[]=
-    {
-        "camo",
-        "camo1"
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "\Rogue_CEMarine\data\Rogue_CEUniformP_co.paa",
-        "\Rogue_CEMarine\data\Rogue_CEUniformT_co.paa"
     };
     side=1;
     displayName="[73] Marine Uniform";

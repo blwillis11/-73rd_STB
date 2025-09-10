@@ -20,7 +20,7 @@ class 73_5x23_Caseless_NARQ:73_5x23_Caseless
 }
 class 73_B_127x40_Tracer:OPTRE_B_127x40_Tracer
 {
-    hit=13;
+    hit=15;
     caliber=2.1;
     typicalSpeed=450;
     model="\A3\Weapons_f\Data\bullettracer\tracer_green";

@@ -196,6 +196,7 @@ class XtdGearModels
 				{
 					"Recruit",
 					"Standard",
+					"SORC",
 					"Command"
 				};
 			};

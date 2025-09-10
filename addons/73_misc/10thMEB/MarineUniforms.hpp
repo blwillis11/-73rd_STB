@@ -1,16 +1,13 @@
-class Rogue_CEUniform_U_B;
+class MA_Marine_BDU_Medium_Brown;
 
-class 73_CEUniform_U_B: Rogue_CEUniform_U_B
+class 73_CEUniform_U_B: MA_Marine_BDU_Medium_Brown
 {
-    author="Rogue771";
     scope=2;
     allowedSlots[]=
     {
         "BACKPACK_SLOT"
     };
     displayName="[73] Marine Uniform";
-    picture="\Rogue_CEMarine\ui\RogueCE.paa";
-    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
     class ItemInfo: UniformItem
     {
         uniformModel="-";

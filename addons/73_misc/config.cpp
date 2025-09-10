@@ -29,7 +29,6 @@ class CfgPatches
         requiredVersion = 0.1; 
         requiredAddons[] = 
         {
-			"Rogue_CEMarine",
 			"73_Units"
         };
     };

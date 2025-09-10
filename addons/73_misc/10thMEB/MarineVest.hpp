@@ -1,11 +1,11 @@
-class Rogue_CEArmour;
-class Rogue_CEArmourPouch;
-class Rogue_CEArmourNSV2;
-class Rogue_CEArmourNSPouch;
-class Rogue_CEArmourV2Pouch;
+class Marine_Pouches_Var0;
+class Marine_Pouches_Var1;
+class Marine_Pouches_Var2;
+class Marine_Pouches_Var3;
+class Marine_Pouches_Var4;
 
 
-class 73_CEArmour: Rogue_CEArmour
+class 73_CEArmour: Marine_Pouches_Var0
 {
     author="73rd S-4 Team";
     scope=2;
@@ -16,7 +16,7 @@ class 73_CEArmour: Rogue_CEArmour
         "\73_misc\10thMEB\data\CEArmour_co.paa"
     };
 };
-class 73_CEArmourPouch: Rogue_CEArmourPouch
+class 73_CEArmourPouch: Marine_Pouches_Var1
 {
     author="73rd S-4 Team";
     scope=2;
@@ -28,7 +28,7 @@ class 73_CEArmourPouch: Rogue_CEArmourPouch
         "\Rogue_CEMarine\data\Rogue_CEPouches_co.paa"
     };
 };
-class 73_CEArmourNSV2: Rogue_CEArmourNSV2
+class 73_CEArmourNSV2: Marine_Pouches_Var2
 {
     author="73rd S-4 Team";
     scope=2;
@@ -40,7 +40,7 @@ class 73_CEArmourNSV2: Rogue_CEArmourNSV2
         "\73_misc\10thMEB\data\CEArmour_co.paa"
     };
 };
-class 73_CEArmourNSPouch: Rogue_CEArmourNSPouch
+class 73_CEArmourNSPouch: Marine_Pouches_Var3
 {
     author="73rd S-4 Team";
     scope=2;
@@ -52,7 +52,7 @@ class 73_CEArmourNSPouch: Rogue_CEArmourNSPouch
         "\Rogue_CEMarine\data\Rogue_CEPouches_co.paa"
     };
 };
-class 73_CEArmourV2Pouch: Rogue_CEArmourV2Pouch
+class 73_CEArmourV2Pouch: Marine_Pouches_Var4
 {
     author="73rd S-4 Team";
     scope=2;

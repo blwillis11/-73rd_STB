@@ -6,28 +6,6 @@ class CfgPatches
 		name = "73rd STB Aux";
 		units[] = 
         {
-			"73_ACo_ODST_Rifleman",
-			"73_ACo_ODST_Autorifleman",
-			"73_ACo_ODST_Grenadier",
-			"73_ACo_ODST_Demo",
-			"73_ACo_ODST_Medic",
-			"73_ACo_ODST_Sniper",
-			"73_ACo_ODST_Marksman",
-			"73_ACo_ODST_Officer",
-			"73_ACo_ODST_AT",
-			"73_ACo_ODST_Team_Lead",
-			"73_ACo_ODST_Squad_Lead",
-			"73_BCo_ODST_Rifleman",
-			"73_BCo_ODST_Autorifleman",
-			"73_BCo_ODST_Grenadier",
-			"73_BCo_ODST_Demo",
-			"73_BCo_ODST_Medic",
-			"73_BCo_ODST_Sniper",
-			"73_BCo_ODST_Marksman",
-			"73_BCo_ODST_Officer",
-			"73_BCo_ODST_AT",
-			"73_BCo_ODST_Team_Lead",
-			"73_BCo_ODST_Squad_Lead",
 			"73_STB_ODST_Rifleman",
 			"73_STB_ODST_Autorifleman",
 			"73_STB_ODST_Grenadier",
@@ -44,10 +22,10 @@ class CfgPatches
 			"73_Crewman_Officer",
 			"73_Aviator",
 			"73_Aviator_Officer"
-        }; 
+        };
         weapons[] = 
         {
-        }; 
+        };
 		vehicles[] =
 		{
 
@@ -59,8 +37,8 @@ class CfgPatches
 			"MA_Armor",
 			"OPTRE_FC_Units"
         };
-    }; 
-}; 
+    };
+};
 
 //Ace Extended
 #include "data\XtdGear\XtdGearModels.hpp"
@@ -192,7 +170,7 @@ class UniformSlotInfo
 { 
     slotType = 0; 
     linkProxy = "-"; 
-}; 
+};
 class ItemInfo;
 class UniformItem;
 class VestItem;
@@ -218,7 +196,7 @@ class CfgWeapons
 
 //ODST Vest
 	#include "data\ODST\ODSTM52Vest.hpp"
-	#include "data\ODST\ODSTM52VestCus.hpp"
+//	#include "data\ODST\ODSTM52VestCus.hpp"
 
 //Aviation Vest
     #include "data\Aviation\AviationVest.hpp"
@@ -229,7 +207,7 @@ class CfgWeapons
 
 //Infantry helmets
 	#include "data\ODST\ODSTCH252DSTBHelmet.hpp"
-	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
+//	#include "data\ODST\ODSTCH252DCusHelmet.hpp"
 //Mechanized Helmets
 	#include "data\Mechanized\MechHelmet.hpp"
 //Aviation Helmets
@@ -248,7 +226,7 @@ class CfgVehicles
 	class UniformItem;
 
 //Dress Uniform
-	#include "data\Dress Gear\DressUniformsVeh.hpp"
+	#include "data\DressGear\DressUniformsVeh.hpp"
 //ODST Uniform
 	#include "data\ODST\ODSTUniformsVeh.hpp"
 //Aviation Uniform
@@ -267,8 +245,6 @@ class CfgGroups
     class WEST
     {
         #include "STB\groups\groups.hpp"
-        #include "ACo\groups\groups.hpp"
     }
 
 };
-
