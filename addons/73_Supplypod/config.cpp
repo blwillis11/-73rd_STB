@@ -1,32 +1,35 @@
 class CfgPatches
 {
-	class 73_supplypods
+	class 73_SupplyPods
 	{
 		author="73rd S-4 Team";
 		addonRootClass="73_supplypod";
+		    
 		requiredAddons[]=
 		{
 			"73_units",
-			"OPTRE_Misc"
+			"OPTRE_Misc",
+			"NSWep_Core",
+			"DMNS_Core",
+			"73_weapons"
+		
+
 		};
+
 		requiredVersion=0.1;
 		units[]=
 		{
-			"73_supply_NEWACE_Medical",
-			"73_supply_Mortar_Ammo",
-			"73_supply_Mortar",
-			"OPTRE_SupplyPod_StaticHMG",
-			"OPTRE_SupplyPod_StaticHMGAmmo",
-			"OPTRE_SupplyPod_StaticGMG",
-			"OPTRE_SupplyPod_StaticGMGAmmo",
-			"OPTRE_SupplyPod_StaticAT",
-			"OPTRE_SupplyPod_StaticATAmmo",
-			"OPTRE_SupplyPod_StaticAA",
-			"OPTRE_SupplyPod_StaticAAAmmo",
-			"OPTRE_SupplyPod_VehicleAmmo",
-			"OPTRE_SupplyPod_VehicleRepair",
-			"OPTRE_SupplyPod_VehicleRefuel",
-			"73_supply_ARBRGL",
+			"73_SupplyPod_NEWACE_Medical",
+			"73_SupplyPod_Mortar_Ammo",
+			"73_SupplyPod_Mortar",
+			"73_SupplyPod_StaticHMG",
+			"73_SupplyPod_StaticHMGAmmo",
+			"73_SupplyPod_StaticGMG",
+			"73_SupplyPod_StaticGMGAmmo",
+			"73_SupplyPod_VehicleAmmo",
+			"73_SupplyPod_VehicleRepair",
+			"73_SupplyPod_VehicleRefuel",
+			"73_supply_ARGL",
 			"73_supply_Breacher",
 			"73_supply_Marksman",
 			"73_supply_Sniper",
@@ -34,8 +37,8 @@ class CfgPatches
 			"73_supply_ATLauncher",
 			"73_supply_ExplosivesPack",
 			"73_supply_TACResupply",
-			"73_supply_BananaResupply",
-			"Module_OPTRE_PelicanSupplyDrop",
+			"73_supply_Squad",
+			"73_supply_Emptypod",
 			"73_supply_Light"
 		};
 		weapons[]={};
@@ -44,15 +47,17 @@ class CfgPatches
 };
 
 class CfgVehicles
-{ 
+{
 	class OPTRE_Ammo_SupplyPod_Empty;
 	class OPTRE_Ammo_SupplyPod_Launcher;
 	class Module_F;
-	class 73_supplypod: OPTRE_Ammo_SupplyPod_Empty
+	class 73_SupplyPod: OPTRE_Ammo_SupplyPod_Empty
 	{
+		scope = 1;
+		editorCategory ="73_Objects"; // This places it under "Empty" in the Eden Editor
+        editorSubcategory = "73_Crates";
+		faction = "73_STB";
 		maximumLoad=1000000;
-		editorCategory = "73_STB";
-		editorSubcategory = "supply_pods";
 		hiddenselections[]=
 		{
 			"camo"
@@ -62,10 +67,10 @@ class CfgVehicles
 			"73_Supplypod\73_Pod_co.paa"
 		};
 	};
-	class 73_supply_NEWACE_Medical: 73_supplypod
+	class 73_SupplyPod_NEWACE_Medical: 73_SupplyPod
 	{
-		scope=2;
-		scopeCurator=2
+   	scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [New ACE Medical]";
 		hiddenselections[]=
 		{
@@ -77,62 +82,76 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
-			class _xx_ACE_elasticBandage
+			class _xx_kat_aatKit
 			{
-				name="ACE_elasticBandage";
-				count=100;
+				name="kat_aatKit";
+				count=10;
 			};
-			class _xx_ACE_packingBandage
+			class _xx_kat_ncdKit
 			{
-				name="ACE_packingBandage";
-				count=80;
+				name="kat_ncdKit";
+				count=10;
 			};
-			class _xx_DMNS_BiofoamItem
+			class _xx_kat_stethoscope
 			{
-				name="DMNS_BiofoamItem";
+				name="kat_stethoscope";
+				count=10;
+			};
+
+			class _xx_73_Medigel_Light
+			{
+				name="73_Medigel_Light";
 				count=50;
 			};
-			class _xx_OPTRE_MediGelItem
+			class _xx_73_Biofoam_Light
 			{
-				name="OPTRE_MediGelItem";
-				count=1;
+				name="73_Biofoam_Light";
+				count=50;
 			};
-			class _xx_ACE_plasmaIV_500
+			class _xx_73_Biofoam
 			{
-				name="ACE_plasmaIV_500";
-				count=40;
-			};
-
-			class _xx_ACE_PlasmaIVItem
-			{
-				name="ACE_PlasmaIVItem";
+				name="73_Biofoam";
 				count=20;
 			};
-			class _xx_kat_Painkiller
+			class _xx_73_Medigel
 			{
-				name="kat_Painkiller";
-				count=40;
+				name="73_Medigel";
+				count=20;
 			};
-
+			class _xx_73_PolyHemoglobinIV_250
+			{
+				name="73_PolyHemoglobinIV_250";
+				count=30;
+			};
+			class _xx_73_PolyHemoglobinIV_500
+			{
+				name="73_PolyHemoglobinIV_500";
+				count=20;
+			};
+			class _xx_73_PolyHemoglobinIV_1000
+			{
+				name="73_PolyHemoglobinIV_1000";
+				count=10;
+			};
+			class _xx_73_PolyHemoglobinIV_2000
+			{
+				name="73_PolyHemoglobinIV_2000";
+				count=5;
+			};
+			class _xx_73_MedKit
+			{
+				name="73_MedKit";
+				count=5;
+			};
 			class _xx_ACE_surgicalKit
 			{
 				name="ACE_surgicalKit";
 				count=5;
 			};
-			class _xx_ACE_personalAidKit
-			{
-				name="ACE_personalAidKit";
-				count=5;
-			};
-			class _xx_ACE_salineIV_500
-			{
-				name="ACE_salineIV_500";
-				count=40;
-			};
 			class _xx_kat_TXA
 			{
 				name="kat_TXA";
-				count=80;
+				count=10;
 			};
 			class _xx_kat_Pulseoximeter
 			{
@@ -142,94 +161,49 @@ class CfgVehicles
 			class _xx_kat_X_AED
 			{
 				name="kat_X_AED";
-				count=5;
-			};
-			class _xx_kat_Amiodarone
-			{
-				name="kat_Amiodarone";
-				count=10;
-			};
-			class _xx_kat_CarbonateItem
-			{
-				name="kat_CarbonateItem";
-				count=20;
+				count=3;
 			};
 			class _xx_kat_EACA
 			{
 				name="kat_EACA";
-				count=20;
-			};
-			class _xx_kat_Fentanyl
-			{
-				name="kat_Fentanyl";
-				count=20;
-			};
-			class _xx_kat_Ketamine
-			{
-				name="kat_Ketamine";
-				count=20;
-			};
-			class _xx_kat_Naloxone
-			{
-				name="kat_Naloxone";
-				count=20;
+				count=10;
 			};
 			class _xx_kat_ChestSeal
 			{
 				name="kat_ChestSeal";
 				count=20;
 			};
-			class _xx_kat_NPA
+			class _xx_73_epinephrine
 			{
-				name="kat_NPA";
+				name="73_epinephrine";
 				count=20;
-			};
-			class _xx_ACE_epinephrine
-			{
-				name="ACE_epinephrine";
-				count=80;
 			};
 			class _xx_ACE_tourniquet
 			{
 				name="ACE_tourniquet";
-				count=80;
+				count=10;
 			};
-			class _xx_ACE_quikclot
+			class _xx_73_Morphine
 			{
-				name="ACE_quikclot";
-				count=80;
-			};
-			class _xx_ACE_morphine
-			{
-				name="ACE_morphine";
-				count=80;
-			};
-			class _xx_ACE_plasmaIV
-			{
-				name="ACE_plasmaIV";
-				count=40;
-			};
-			class _xx_ACE_Banana
-			{
-				name="ACE_Banana";
-				count=5;
+				name="73_Morphine";
+				count=20;
 			};
 			class _xx_ACE_splint
 			{
 				name="ACE_splint";
-				count=40;
+				count=20;
 			};
-			
-			class _xx_kat_Bubble_Wrap_Item
+			class _xx_73_adenosine
 			{
-				name="kat_Bubble_Wrap_Item";
-				count=5;
+				name="73_adenosine";
+				count=20;
 			};
 		};
 	};
-	class 73_supply_Mortar_Ammo: 73_supplypod
+	class 73_SupplyPod_Mortar_Ammo: 73_SupplyPod
 	{
-		scope=2;
+    scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Mortar Ammo]";
 		hiddenselections[]=
 		{
@@ -258,9 +232,10 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_supply_Mortar: 73_supplypod
+	class 73_SupplyPod_Mortar: 73_SupplyPod
 	{
-		scope=2;
+ 	 	scope = 2; // Visible in Zeus and Eden
+    scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Mortar Tube]";
 		hiddenselections[]=
 		{
@@ -292,9 +267,10 @@ class CfgVehicles
 			};
 		};
 	};
-	class OPTRE_SupplyPod_StaticHMG: 73_supplypod
-	{
-		scope=2;
+	class 73_SupplyPod_StaticHMG: 73_SupplyPod
+  {
+   		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
 		displayName="73rd Supply Pod [Static HMG]";
 		hiddenselections[]=
 		{
@@ -306,15 +282,20 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_OPTRE_csw_100Rnd_762x51
+			class _xx_OPTRE_csw_400Rnd_762x51
 			{
-				magazine="OPTRE_csw_100Rnd_762x51";
-				count=3;
+				magazine="OPTRE_csw_400Rnd_762x51";
+				count=15;
 			};
-			class _xx_OPTRE_csw_200Rnd_127x99
+			class _xx_ace_csw_100Rnd_127x99_mag_red
 			{
-				magazine="OPTRE_csw_200Rnd_127x99";
-				count=3;
+				magazine="ace_csw_100Rnd_127x99_mag_red";
+				count=15;
+			};
+			class _xx_ace_csw_100Rnd_127x99_mag
+			{
+				magazine="ace_csw_100Rnd_127x99_mag";
+				count=15;
 			};
 		};
 		class TransportWeapons
@@ -331,19 +312,26 @@ class CfgVehicles
 			};
 			class _xx_OPTRE_CSW_M247H_Weapon
 			{
-				weapon="OPTRE_CSW_M247H_Weapon";
+				weapon="ace_csw_staticM2ShieldCarry";
 				count=1;
 			};
-			class _xx_OPTRE_CSW_M247H_Carry_Tripod
+			class _xx_ace_csw_m3CarryTripod
 			{
-				weapon="OPTRE_CSW_M247H_Carry_Tripod";
+				weapon="ace_csw_m3CarryTripod";
+				count=1;
+			};
+			class _xx_ace_csw_m3CarryTripodLow
+			{
+				weapon="ace_csw_m3CarryTripodLow";
 				count=1;
 			};
 		};
 	};
-	class OPTRE_SupplyPod_StaticHMGAmmo: 73_supplypod
-	{
-		scope=2;
+	class 73_SupplyPod_StaticHMGAmmo: 73_SupplyPod
+  {
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static HMG Ammo]";
 		hiddenselections[]=
 		{
@@ -355,21 +343,28 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_OPTRE_csw_100Rnd_762x51
+			class _xx_OPTRE_csw_400Rnd_762x51
 			{
-				magazine="OPTRE_csw_100Rnd_762x51";
-				count=6;
+				magazine="OPTRE_csw_400Rnd_762x51";
+				count=15;
 			};
-			class _xx_OPTRE_csw_200Rnd_127x99
+			class _xx_ace_csw_100Rnd_127x99_mag_red
 			{
-				magazine="OPTRE_csw_200Rnd_127x99";
-				count=6;
+				magazine="ace_csw_100Rnd_127x99_mag_red";
+				count=15;
+			};
+			class _xx_ace_csw_100Rnd_127x99_mag
+			{
+				magazine="ace_csw_100Rnd_127x99_mag";
+				count=15;
 			};
 		};
 	};
-	class OPTRE_SupplyPod_StaticGMG: 73_supplypod
+	class 73_SupplyPod_StaticGMG: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static GMG]";
 		hiddenselections[]=
 		{
@@ -384,7 +379,7 @@ class CfgVehicles
 			class _xx_ace_csw_20Rnd_20mm_G_belt
 			{
 				magazine="ace_csw_20Rnd_20mm_G_belt";
-				count=3;
+				count=5;
 			};
 		};
 		class TransportWeapons
@@ -399,11 +394,18 @@ class CfgVehicles
 				weapon="ace_csw_m3CarryTripod";
 				count=1;
 			};
+						class _xx_ace_csw_m3CarryTripodLow
+			{
+				weapon="ace_csw_m3CarryTripodLow";
+				count=1;
+			};
 		};
 	};
-	class OPTRE_SupplyPod_StaticGMGAmmo: 73_supplypod
+	class 73_SupplyPod_StaticGMGAmmo: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Static GMG Ammo]";
 		hiddenselections[]=
 		{
@@ -418,128 +420,15 @@ class CfgVehicles
 			class _xx_ace_csw_20Rnd_20mm_G_belt
 			{
 				magazine="ace_csw_20Rnd_20mm_G_belt";
-				count=20;
+				count=40;
 			};
 		};
 	};
-	class OPTRE_SupplyPod_StaticAT: 73_supplypod
+	class 73_SupplyPod_VehicleAmmo: 73_SupplyPod
 	{
-		scope=2;
-		displayName="73rd Supply Pod [Static AT]";
-		hiddenselections[]=
-		{
-			"camo"
-		};
-		hiddenselectionstextures[]=
-		{
-			"73_Supplypod\73_Pod_co.paa"
-		};
-		class TransportMagazines
-		{
-			class _xx_Titan_AT
-			{
-				magazine="Titan_AT";
-				count=3;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_ace_csw_staticATCarry
-			{
-				weapon="ace_csw_staticATCarry";
-				count=1;
-			};
-			class _xx_ace_csw_m3CarryTripod
-			{
-				weapon="ace_csw_m3CarryTripod";
-				count=1;
-			};
-		};
-	};
-	class OPTRE_SupplyPod_StaticATAmmo: 73_supplypod
-	{
-		scope=2;
-		displayName="73rd Supply Pod [Static AT Ammo]";
-		hiddenselections[]=
-		{
-			"camo"
-		};
-		hiddenselectionstextures[]=
-		{
-			"73_Supplypod\73_Pod_co.paa"
-		};
-		class TransportMagazines
-		{
-			class _xx_Titan_AT
-			{
-				magazine="Titan_AT";
-				count=9;
-			};
-			class _xx_Titan_AP
-			{
-				magazine="Titan_AP";
-				count=5;
-			};
-		};
-	};
-	class OPTRE_SupplyPod_StaticAA: 73_supplypod
-	{
-		scope=2;
-		displayName="73rd Supply Pod [Static AA]";
-		hiddenselections[]=
-		{
-			"camo"
-		};
-		hiddenselectionstextures[]=
-		{
-			"73_Supplypod\73_Pod_co.paa"
-		};
-		class TransportMagazines
-		{
-			class _xx_Titan_AA
-			{
-				magazine="Titan_AA";
-				count=4;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_ace_csw_staticAACarry
-			{
-				weapon="ace_csw_staticAACarry";
-				count=1;
-			};
-			class _xx_ace_csw_m3CarryTripod
-			{
-				weapon="ace_csw_m3CarryTripod";
-				count=1;
-			};
-		};
-	};
-	class OPTRE_SupplyPod_StaticAAAmmo: 73_supplypod
-	{
-		scope=2;
-		displayName="73rd Supply Pod [Static AA Ammo]";
-		hiddenselections[]=
-		{
-			"camo"
-		};
-		hiddenselectionstextures[]=
-		{
-			"73_Supplypod\73_Pod_co.paa"
-		};
-		class TransportMagazines
-		{
-			class _xx_Titan_AA
-			{
-				magazine="Titan_AA";
-				count=12;
-			};
-		};
-	};
-	class OPTRE_SupplyPod_VehicleAmmo: 73_supplypod
-	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Vehicle Ammo]";
 		hiddenselections[]=
 		{
@@ -549,11 +438,13 @@ class CfgVehicles
 		{
 			"73_Supplypod\73_Pod_co.paa"
 		};
-		ace_rearm_defaultSupply=800;
+		ace_rearm_defaultSupply=1000;
 	};
-	class OPTRE_SupplyPod_VehicleRepair: 73_supplypod
+	class 73_SupplyPod_VehicleRepair: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Vehicle Repair]";
 		hiddenselections[]=
 		{
@@ -574,18 +465,25 @@ class CfgVehicles
 				count=2;
 			};
 		};
-		 class ace_cargo {
+        class ace_cargo {
             class cargo {
                 class ACE_Tyres { // Doesn't have to have the same name as the item you're adding
                     type = "ACE_Wheel";
                     amount = 8;
+
                 };
+                class ACE_Tracks{
+                     type = "ACE_Track";
+                     amount= 4;
+};
             };
         };
 	};
-	class OPTRE_SupplyPod_VehicleRefuel: 73_supplypod
+	class 73_SupplyPod_VehicleRefuel: 73_SupplyPod
 	{
 		scope=2;
+		scopeCurator = 2;
+		ace_refuel_fuelCargo = 600;
 		displayName="73rd Supply Pod [Vehicle Refuel]";
 		hiddenselections[]=
 		{
@@ -596,10 +494,11 @@ class CfgVehicles
 			"73_Supplypod\73_Pod_co.paa"
 		};
 	};
-	class 73_supply_ARBRGL: 73_supplypod
+	class 73_supply_ARGL: 73_SupplyPod
 	{
 		scope=2;
-		displayName="73rd Supply Pod [Assault/Battle Rifles w/Grenadier]";
+		scopeCurator = 2;
+		displayName="73rd Grenadier Supply Pod";
 		hiddenselections[]=
 		{
 			"camo"
@@ -610,26 +509,35 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			
-			class _xx_OPTRE_60Rnd_762x51_Mag_APT
+			class _xx_73_32Rnd_762x51_Mag
 			{
-				magazine="TCF_60Rnd_762x51_Mag_APT";
-				count=100;
+				magazine="73_32Rnd_762x51_Mag";
+				count=30;
 			};
-			class _xx_NSWep_95x40x60_KURTZ_T_C
+			class _xx_73_32Rnd_762x51_Mag_Tracer
 			{
-				magazine="NSWep_95x40x60_KURTZ_T_C";
-				count=100;
+				magazine="73_32Rnd_762x51_Mag_Tracer";
+				count=30;
 			};
-			class _xx_NSWep_95x40x60_KURTZ
+			class _xx_73_60Rnd_762x51_Mag
 			{
-				magazine="NSWep_95x40x60_KURTZ";
-				count=100;
+				magazine="73_60Rnd_762x51_Mag";
+				count=30;
 			};
-			class _xx_NSWep_95x40x60_KURTZ_T_R
+			class _xx_73_60Rnd_762x51_Mag_Tracer
 			{
-				magazine="NSWep_95x40_KURTZ_T_R";
-				count=100;
+				magazine="73_60Rnd_762x51_Mag_Tracer";
+				count=30;
+			};
+			class _xx_73_60Rnd_762x51_Mag_Tracer_Yellow
+			{
+				magazine="73_60Rnd_762x51_Mag_Tracer_Yellow";
+				count=30;
+			};
+			class _xx_73_32Rnd_762x51_Mag_Tracer_Yellow
+			{
+				magazine="73_32Rnd_762x51_Mag_Tracer_Yellow";
+				count=30;
 			};
 			
 			class _xx_1Rnd_HE_Grenade_shell
@@ -655,147 +563,89 @@ class CfgVehicles
 			class _xx_OPTRE_36Rnd_95x40_Mag
 			{
 				magazine="OPTRE_36Rnd_95x40_Mag";
-				count=100;
+				count=30;
 			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=100;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHP
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHP";
-				count=100;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=100;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_AP
-			{
-				magazine="TCF_20Rnd_86x70_Mag_AP";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag
-			{
-				magazine="TCF_10Rnd_86x70_Mag";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_Tracer
-			{
-				magazine="TCF_10Rnd_86x70_Mag_Tracer";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_AP
-			{
-				magazine="TCF_10Rnd_86x70_Mag_AP";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_SS
-			{
-				magazine="TCF_10Rnd_86x70_Mag_SS";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_SST
-			{
-				magazine="TCF_10Rnd_86x70_Mag_SST";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_FS
-			{
-				magazine="TCF_10Rnd_86x70_Mag_FS";
-				count=100;
-			};
-			class _xx_TCF_10Rnd_86x70_Mag_FST
-			{
-				magazine="TCF_10Rnd_86x70_Mag_FST";
-				count=100;
-			};
-
 			class _xx_OPTRE_42Rnd_95x40_Mag
 			{
 				magazine="OPTRE_42Rnd_95x40_Mag";
-				count=100;
+				count=30;
 			};
 			class _xx_OPTRE_42Rnd_95x40_Mag_Tracer
 			{
 				magazine="OPTRE_42Rnd_95x40_Mag_Tracer";
-				count=100;
+				count=20;
 			};
 			class _xx_OPTRE_32Rnd_762x51_Mag
 			{
 				magazine="OPTRE_32Rnd_762x51_Mag";
-				count=100;
+				count=20;
 			};
 			class _xx_OPTRE_32Rnd_762x51_Mag_Tracer
 			{
 				magazine="OPTRE_32Rnd_762x51_Mag_Tracer";
-				count=100;
+				count=30;
 			};
 			class _xx_OPTRE_3Rnd_Smoke_Grenade_shell
 			{
 				magazine="OPTRE_3Rnd_Smoke_Grenade_shell";
-				count=10;
+				count=20;
 			};
+
 			class _xx_OPTRE_3Rnd_SmokeOrange_Grenade_shell
 			{
 				magazine="OPTRE_3Rnd_SmokeOrange_Grenade_shell";
-				count=10;
+				count=20;
 			};
-
+			class _xx_OPTRE_3Rnd_SmokeRed_Grenade_shell
+			{
+				magazine="OPTRE_3Rnd_SmokeRed_Grenade_shell";
+				count=20;
+			};
+			class _xx_OPTRE_3Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine="OPTRE_3Rnd_SmokeBlue_Grenade_shell";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeB
+			{
+				magazine="OPTRE_signalSmokeB";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeP
+			{
+				magazine="OPTRE_signalSmokeP";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeY
+			{
+				magazine="OPTRE_signalSmokeY";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeG
+			{
+				magazine="OPTRE_signalSmokeG";
+				count=20;
+			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_M58S
+			class _xx_73_MA37BGL
 			{
-				weapon="OPTRE_M58S";
-				count=2;
+				weapon="73_MA37BGL";
+				count=3;
 			};
-			class _xx_OPTRE_Commando_Black
+			class _xx_73_MA5BGL
 			{
-				weapon="OPTRE_Commando_Black";
-				count=2;
-			};
-			class _xx_OPTRE_MA5BGL
-			{
-				weapon="OPTRE_MA5BGL";
-				count=2;
-			};
-			class _xx_OPTRE_BR55
-			{
-				weapon="OPTRE_BR55";
-				count=2;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_optre_br55hb_scope
-			{
-				name="optre_br55hb_scope";
-				count=2;
-			};
-			class _xx_optre_m7_sight
-			{
-				name="optre_m7_sight";
-				count=2;
-			};
-			class _xx_optic_ico_01_black_f
-			{
-				name="optic_ico_01_black_f";
-				count=2;
-			};
-			class _xx_optic_erco_blk_f
-			{
-				name="optic_erco_blk_f";
+				weapon="73_MA5BGL";
 				count=2;
 			};
 		};
 	};
-	class 73_supply_Breacher: 73_supplypod
+	class 73_supply_Squad: 73_SupplyPod
 	{
 		scope=2;
-		displayName="73rd Supply Pod [Breaching Kit]";
+		scopeCurator = 2;
+		displayName="73rd Squad Supply Pod";
 		hiddenselections[]=
 		{
 			"camo"
@@ -806,99 +656,220 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_OPTRE_12Rnd_8Gauge_Pellets
+			class _xx_73_32Rnd_762x51_Mag
 			{
-				magazine="OPTRE_12Rnd_8Gauge_Pellets";
-				count=10;
+				magazine="73_32Rnd_762x51_Mag";
+				count=30;
 			};
-			class _xx_OPTRE_12Rnd_8Gauge_Slugs
+			class _xx_73_32Rnd_762x51_Mag_Tracer
 			{
-				magazine="OPTRE_12Rnd_8Gauge_Slugs";
-				count=10;
+				magazine="73_32Rnd_762x51_Mag_Tracer";
+				count=30;
 			};
-			class _xx_OPTRE_12Rnd_8Gauge_HEDP
+			class _xx_73_60Rnd_762x51_Mag
 			{
-				magazine="OPTRE_12Rnd_8Gauge_HEDP";
-				count=10;
+				magazine="73_60Rnd_762x51_Mag";
+				count=30;
 			};
-			class _xx_TCF_12Rnd_8Gauge_Beanbag
+			class _xx_73_60Rnd_762x51_Mag_Tracer
 			{
-				magazine="TCF_12Rnd_8Gauge_Beanbag";
-				count=10;
+				magazine="73_60Rnd_762x51_Mag_Tracer";
+				count=30;
 			};
-			class _xx_TCF_12Rnd_8Gauge_Incendiary
+			class _xx_73_60Rnd_762x51_Mag_Tracer_Yellow
 			{
-				magazine="TCF_12Rnd_8Gauge_Incendiary";
-				count=10;
+				magazine="73_60Rnd_762x51_Mag_Tracer_Yellow";
+				count=30;
 			};
-			class _xx_OPTRE_6Rnd_8Gauge_Pellets
+			class _xx_73_32Rnd_762x51_Mag_Tracer_Yellow
 			{
-				magazine="OPTRE_6Rnd_8Gauge_Pellets";
-				count=10;
+				magazine="73_32Rnd_762x51_Mag_Tracer_Yellow";
+				count=30;
 			};
-			class _xx_OPTRE_6Rnd_8Gauge_Slugs
+			class _xx_73_95x40_36Rnd
 			{
-				magazine="OPTRE_6Rnd_8Gauge_Slugs";
-				count=10;
+				magazine="73_95x40_36Rnd";
+				count=30;
 			};
-			class _xx_OPTRE_6Rnd_8Gauge_HEDP
+			class _xx_73_95x40_36Rnd_T_R
 			{
-				magazine="OPTRE_6Rnd_8Gauge_HEDP";
-				count=10;
+				magazine="73_95x40_36Rnd_T_R";
+				count=30;
 			};
-			class _xx_TCF_6Rnd_8Gauge_Beanbag
+			class _xx_73_36Rnd_95x40_HPSAP_Mag
 			{
-				magazine="TCF_6Rnd_8Gauge_Beanbag";
-				count=10;
+				magazine="73_36Rnd_95x40_HPSAP_Mag";
+				count=30;
 			};
-			class _xx_TCF_6Rnd_8Gauge_Incendiary
+			class _xx_73_36Rnd_95x40_HPSAP_Mag_Tracer
 			{
-				magazine="TCF_6Rnd_8Gauge_Incendiary";
-				count=10;
+				magazine="73_36Rnd_95x40_HPSAP_Mag_Tracer";
+				count=30;
+			};
+			class _xx_73_48Rnd_5x23Caseless_FMJ_Mag
+			{
+				magazine="73_48Rnd_5x23Caseless_FMJ_Mag";
+				count=20;
+			};
+			class _xx_73_48Rnd_5x23Caseless_FMJ_Mag_Tracer
+			{
+				magazine="73_48Rnd_5x23Caseless_FMJ_Mag_Tracer";
+				count=30;
+			};
+			class _xx_73_48Rnd_5x23Caseless_NARQ_Mag
+			{
+				magazine="73_48Rnd_5x23Caseless_NARQ_Mag";
+				count=20;
 			};
 
-			class _xx_TCF_60rnd_5x23mm_Mag_JHPT
+			class _xx_73_60Rnd_5x23Caseless_FMJ_Mag
 			{
-				magazine="TCF_60rnd_5x23mm_Mag_JHPT";
-				count=100;
+				magazine="73_60Rnd_5x23Caseless_FMJ_Mag";
+				count=30;
 			};
+			class _xx_73_60Rnd_5x23Caseless_FMJ_Mag_Tracer
+			{
+				magazine="73_60Rnd_5x23Caseless_FMJ_Mag_Tracer";
+				count=30;
+			};
+			class _xx_73_26Rnd_127x40_Mag_Black_Tracer
+			{
+				magazine="73_26Rnd_127x40_Mag_Black_Tracer";
+				count=30;
+			};
+			class _xx_73_40Rnd_127x40_Drum_Black_Tracer
+			{
+				magazine="73_40Rnd_127x40_Drum_Black_Tracer";
+				count=30;
+			};
+			class _xx_OPTRE_signalSmokeB
+			{
+				magazine="OPTRE_signalSmokeB";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeP
+			{
+				magazine="OPTRE_signalSmokeP";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeY
+			{
+				magazine="OPTRE_signalSmokeY";
+				count=20;
+			};
+			class _xx_OPTRE_signalSmokeG
+			{
+				magazine="OPTRE_signalSmokeG";
+				count=20;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_73_M7_SMG
+			{
+				weapon="73_M7_SMG";
+				count=3;
+			};
+			class _xx_73_M6DS_Carbine_Foregrip
+			{
+				weapon="73_M6DS_Carbine_Foregrip";
+				count=3;
+			};
+			class _xx_73_MA37B
+			{
+				weapon="73_MA37B";
+				count=3;
+			};
+			class _xx_73_MA37K
+			{
+				weapon="73_MA37K";
+				count=3;
+			};
+			class _xx_73_MA5B
+			{
+				weapon="73_MA5B";
+				count=3;
+			};
+			class _xx_73_MA5K
+			{
+				weapon="73_MA5K";
+				count=3;
+			};
+			class _xx_73_BR55HBM1_DMR
+			{
+				weapon="73_BR55HBM1_DMR";
+				count=3;
+			};
+			class _xx_73_BR55_HB
+			{
+				weapon="73_BR55_HB";
+				count=3;
+			};
+		};
+	};
+	class 73_supply_Breacher: 73_SupplyPod
+	{
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
 
-			class _xx_TCF_48Rnd_5x23mm_JHP_Mag
+		displayName="73rd Supply Pod [Shotgun Kit]";
+		hiddenselections[]=
+		{
+			"camo"
+		};
+		hiddenselectionstextures[]=
+		{
+			"73_Supplypod\73_Pod_co.paa"
+		};
+		class TransportMagazines
+		{
+			class _xx_73_6Rnd_8Gauge_Pellets
 			{
-				magazine="TCF_48Rnd_5x23mm_JHP_Mag";
+				magazine="73_6Rnd_8Gauge_Pellets";
 				count=10;
 			};
-			class _xx_OPTRE_8Rnd_127x40_Mag
+			class _xx_73_6Rnd_8Gauge_Slugs
 			{
-				magazine="OPTRE_8Rnd_127x40_Mag";
+				magazine="73_6Rnd_8Gauge_Slugs";
 				count=10;
 			};
-			class _xx_OPTRE_16Rnd_127x40_Mag_Tracer
+			class _xx_73_12Rnd_8Gauge_Pellets
 			{
-				magazine="OPTRE_16Rnd_127x40_Mag_Tracer";
+				magazine="73_12Rnd_8Gauge_Pellets";
 				count=10;
 			};
-			class _xx_OPTRE_12Rnd_12Gauge_Pellets
+			class _xx_73_12Rnd_8Gauge_Slugs
 			{
-				magazine="OPTRE_12Rnd_12Gauge_Pellets";
+				magazine="73_12Rnd_8Gauge_Slugs";
 				count=10;
 			};
-			class _xx_OPTRE_12Rnd_12Gauge_Smoke
+			class _xx_73_6Rnd_8Gauge_HEDP
 			{
-				magazine="OPTRE_12Rnd_12Gauge_Smoke";
+				magazine="73_6Rnd_8Gauge_HEDP";
+				count=10;
+			};
+			class _xx_73_12Rnd_8Gauge_HEDP
+			{
+				magazine="73_12Rnd_8Gauge_HEDP";
 				count=10;
 			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_M45A
+			class _xx_73_M90A
 			{
-				weapon="OPTRE_M45A";
+				weapon="73_M90A";
 				count=3;
 			};
-			class _xx_OPTRE_M7
+			class _xx_73_M45
 			{
-				weapon="OPTRE_M7";
+				weapon="73_M45";
+				count=2;
+			};
+
+			class _xx_OPTRE_CQS48_Bulldog_Automatic
+			{
+				weapon="OPTRE_CQS48_Bulldog_Automatic";
 				count=2;
 			};
 		};
@@ -921,9 +892,11 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_supply_Marksman: 73_supplypod
+	class 73_supply_Marksman: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Marksman Rifles]";
 		hiddenselections[]=
 		{
@@ -935,99 +908,43 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_15Rnd_DMR_762x51_Mag_APT
-			{
-				magazine="TCF_15Rnd_DMR_762x51_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_15Rnd_DMR_762x51_Mag_JHPT
-			{
-				magazine="TCF_15Rnd_DMR_762x51_Mag_JHPT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=30;
-			};
-			class _xx_OPTRE_10RND_338_AP
-			{
-				magazine="OPTRE_10RND_338_AP";
-				count=30;
-			};
-			class _xx_OPTRE_10RND_338_SP
-			{
-				magazine="OPTRE_10RND_338_SP";
-				count=30;
-			};
-			class _xx_OPTRE_10RND_338_VLD
-			{
-				magazine="OPTRE_10RND_338_VLD";
-				count=30;
-			};
-			class _xx_TCF_32Rnd_762x51_Mag_APT
-			{
-				magazine="TCF_32Rnd_762x51_Mag_APT";
-				count=30;
-			};
-			class _xx_NSWep_M233_145x114x8_APFSDS
-			{
-				magazine="NSWep_M233_145x114x8_APFSDS";
-				count=20;
-			};
-			class _xx_NSWep_M233_145x114x8_APFSDS_TC
-			{
-				magazine="NSWep_M233_145x114x8_APFSDS_TC";
-				count=20;
-			};
-
-			class _xx_TCF_4Rnd_145x114_Mag_APFSDST
-			{
-				magazine="TCF_4Rnd_145x114_Mag_APFSDST";
-				count=20;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_HEDPT
-			{
-				magazine="TCF_4Rnd_145x114_Mag_HEDPT";
-				count=10;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_NARQ
-			{
-				magazine="TCF_4Rnd_145x114_Mag_NARQ";
-				count=10;
-			};
-			class _xx_TCF_4Rnd_145x114_Mag_HVAPT
-			{
-				magazine="TCF_4Rnd_145x114_Mag_HVAPT";
-				count=10;
-			};
 			
+			class _xx_73_15Rnd_10x40_Mag
+			{
+				magazine="73_15Rnd_10x40_Mag";
+				count=30;
+			};
+			class _xx_73_15Rnd_10x40_Mag_Tracer
+			{
+				magazine="73_15Rnd_10x40_Mag_Tracer";
+				count=30;
+			};
+			class _xx_73_15Rnd_10x40_Mag_Tracer_Yellow
+			{
+				magazine="73_15Rnd_10x40_Mag_Tracer_Yellow";
+				count=30;
+			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_M392_DMR
+			class _xx_73_M395S_DMR
 			{
-				weapon="OPTRE_M392_DMR";
+				weapon="73_M395S_DMR";
 				count=2;
 			};
-			class _xx_OPTRE_M295_BMR
+			class _xx_73_M395_DMR
 			{
-				weapon="OPTRE_M295_BMR";
+				weapon="73_M395_DMR";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99D
+			class _xx_73_M392_DMR
 			{
-				weapon="OPTRE_SRS99D";
+				weapon="73_M392_DMR";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99C
+			class _xx_73_M295_BMR
 			{
-				weapon="OPTRE_SRS99C";
+				weapon="73_M295_BMR";
 				count=2;
 			};
 		};
@@ -1043,26 +960,23 @@ class CfgVehicles
 				name="optic_ams";
 				count=2;
 			};
-			class _xx_optre_srs99_scope
-			{
-				name="optre_srs99_scope";
-				count=2;
-			};
-			class _xx_optre_srs99d_suppressor
-			{
-				name="optre_srs99d_suppressor";
-				count=2;
-			};
 			class _xx_optre_m7_silencer
 			{
 				name="optre_m7_silencer";
 				count=2;
 			};
+			class _xx_NSWep_SRS99C_MuzzleBrake
+			{
+				name="NSWep_SRS99C_MuzzleBrake";
+				count=2;
+			};
 		};
 	};
-	class 73_supply_Sniper: 73_supplypod
+	class 73_supply_Sniper: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [SR99DX Sniper]";
 		hiddenselections[]=
 		{
@@ -1074,52 +988,38 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_4Rnd_145x114_Mag_APFSDST
+			
+			class _xx_73_M232_145x114x4_APFSDS
 			{
-				magazine="TCF_4Rnd_145x114_Mag_APFSDST";
+				magazine="73_M232_145x114x4_APFSDS";
 				count=20;
 			};
-			class _xx_TCF_4Rnd_145x114_Mag_HEDPT
+			class _xx_73_M232_145x114x4_APFSDS_TC
 			{
-				magazine="TCF_4Rnd_145x114_Mag_HEDPT";
-				count=10;
+				magazine="73_M232_145x114x4_APFSDS_TC";
+				count=20;
 			};
-			class _xx_TCF_4Rnd_145x114_Mag_NARQ
+			class _xx_73_M232_145x114x8_APFSDS
 			{
-				magazine="TCF_4Rnd_145x114_Mag_NARQ";
-				count=10;
+				magazine="73_M232_145x114x8_APFSDS";
+				count=5;
 			};
-			class _xx_TCF_4Rnd_145x114_Mag_HVAPT
+			class _xx_73_M232_145x114x8_APFSDS_TC
 			{
-				magazine="TCF_4Rnd_145x114_Mag_HVAPT";
-				count=10;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_APT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_APT";
-				count=10;
-			};
-			class _xx_TCF_20Rnd_86x70_Mag_JHPT
-			{
-				magazine="TCF_20Rnd_86x70_Mag_JHPT";
-				count=10;
-			};
-			class _xx_10Rnd_50BW_Mag_F
-			{
-				magazine="10Rnd_50BW_Mag_F";
+				magazine="73_M232_145x114x8_APFSDS_TC";
 				count=5;
 			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_SRS99D
+			class _xx_73_SRS99AM
 			{
-				weapon="OPTRE_SRS99D";
+				weapon="73_SRS99AM";
 				count=2;
 			};
-			class _xx_OPTRE_SRS99C
+			class _xx_73_SRS99AM_Stealth
 			{
-				weapon="OPTRE_SRS99C";
+				weapon="73_SRS99AM_Stealth";
 				count=2;
 			};
 		};
@@ -1142,9 +1042,11 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_supply_Autorifles: 73_supplypod
+	class 73_supply_Autorifles: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayname="73rd Supply Pod [Machine Guns]";
 		hiddenselections[]=
 		{
@@ -1157,58 +1059,57 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			
-			class _xx_OPTRE_200Rnd_95x40_Box_HPSAPT
+			class _xx_73_200rnd_M247_Mag
 			{
-				magazine="OPTRE_100Rnd_95x60_Box_HPSAPT";
+				magazine="73_200rnd_M247_Mag";
 				count=10;
 			};
-			class _xx_TCF_Gamma_762_mag_Tracer
+			class _xx_73_200rnd_M247_Mag_Tracer
 			{
-				magazine="TCF_Gamma_762_mag_Tracer";
+				magazine="73_200rnd_M247_Mag_Tracer";
 				count=15;
 			};
-			class _xx_MA_200Rnd_762x51_FMJAP_Mag_Tracer
+			class _xx_73_100rnd_M247_Mag
 			{
-				magazine="MA_200Rnd_762x51_FMJAP_Mag_Tracer";
-				count=15;
-			};
-
-			class _xx_TCF_200Rnd_95x40_Box_JHPT
-			{
-				magazine="TCF_200Rnd_95x40_Box_JHPT";
+				magazine="73_100rnd_M247_Mag";
 				count=10;
 			};
-			class _xx_OPTRE_100Rnd_95x40_Box_JHPT
+			class _xx_73_100rnd_M247_Mag_Tracer
 			{
-				magazine="TCF_100Rnd_95x40_Box_JHPT";
+				magazine="73_100rnd_M247_Mag_Tracer";
 				count=10;
 			};
-			class _xx_OPTRE_200Rnd_95x40_Box_Tracer
+			class _xx_MA_200Rnd_762x51_Shredder_Mag
 			{
-				magazine="OPTRE_200Rnd_95x40_Box_Tracer";
+				magazine="MA_200Rnd_762x51_Shredder_Mag";
 				count=10;
 			};
-			class _xx_TCF_200Rnd_762x51_Box_APT
+			class _xx_MA_200Rnd_762x51_Shredder_Mag_Tracer
 			{
-				magazine="TCF_200Rnd_762x51_Box_APT";
+				magazine="MA_200Rnd_762x51_Shredder_Mag_Tracer";
 				count=10;
 			};
-			class _xx_OPTRE_400Rnd_762x51_Box_Tracer
+			class _xx_MA_100Rnd_762x51_Shredder_Mag
 			{
-				magazine="OPTRE_400Rnd_762x51_Box_Tracer";
+				magazine="MA_100Rnd_762x51_Shredder_Mag";
+				count=10;
+			};
+			class _xx_MA_100Rnd_762x51_Shredder_Mag_Tracer
+			{
+				magazine="MA_100Rnd_762x51_Shredder_Mag_Tracer";
 				count=10;
 			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTREM247
+			class _xx_73_M247
 			{
-				weapon="OPTRE_M247";
+				weapon="73_M247";
 				count=2;
 			};
-			class _xx_OPTRE_M73
+			class _xx_73_H4_SAW
 			{
-				weapon="OPTRE_M73";
+				weapon="73_H4_SAW";
 				count=2;
 			};
 		};
@@ -1241,9 +1142,11 @@ class CfgVehicles
 			};
 		};
 	};
-	class 73_supply_ATLauncher: 73_supplypod
+	class 73_supply_ATLauncher: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [AT Launchers]";
 		hiddenselections[]=
 		{
@@ -1255,57 +1158,68 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_TCF_1Rnd_50x137_HE
+			
+			
+			class _xx_73_1Rnd_50x137_HE
 			{
-				magazine="TCF_2Rnd_50x137_HE";
-				count=4;
+				magazine="73_1Rnd_50x137_HE";
+				count=10;
 			};
-			class _xx_OPTRE_1Rnd_50x137_HEAT
+			class _xx_73_1Rnd_50x137_HEAT
 			{
-				magazine="TCF_2Rnd_50x137_HEAT";
-				count=4;
+				magazine="73_1Rnd_50x137_HEAT";
+				count=10;
 			};
-			class _xx_OPTRE_1Rnd_50x137_PEN
+			class _xx_73_1Rnd_50x137_PEN
 			{
-				magazine="TCF_2Rnd_50x137_PEN";
-				count=4;
+				magazine="73_1Rnd_50x137_PEN";
+				count=10;
 			};
-			class _xx_OPTRE_M41_Twin_HEAT_SACLOS
+			class _xx_73_HEAT
 			{
-				magazine="OPTRE_M41_Twin_HEAT_SACLOS";
-				count=8;
+				magazine="73_HEAT";
+				count=10;
 			};
-			class _xx_OPTRE_M41_Twin_HEAT_SALH
+			class _xx_73_HEAP
 			{
-				magazine="OPTRE_M41_Twin_HEAT_SALH";
-				count=8;
+				magazine="73_HEAP";
+				count=10;
 			};
-			class _xx_OPTRE_M41_Twin_HEAT_Thermal
+			class _xx_73_HEAA
 			{
-				magazine="OPTRE_M41_Twin_HEAT_Thermal";
-				count=8;
+				magazine="73_HEAA";
+				count=10;
 			};
 		};
 		class TransportWeapons
 		{
-			class _xx_OPTRE_M41_SSR
+			class _xx_73_M96_LAW
 			{
-				weapon="OPTRE_M41_SSR";
+				weapon="73_M96_LAW";
 				count=3;
 			};
-			class _xx_TCF_M57_Pilum_b
+			class _xx_73_Fang2
 			{
-				weapon="TCF_M57_Pilum_b";
+				weapon="73_Fang2";
 				count=3;
 			};
-		};
-		class TransportItems
-		{
+			class _xx_73_Fang
+			{
+				weapon="73_Fang";
+				count=3;
+			};
+			class _xx_73_M41_SSR
+			{
+				weapon="73_M41_SSR";
+				count=3;
+			};
 		};
 	};
-	class 73_supply_ExplosivesPack: 73_supplypod
+	class 73_supply_ExplosivesPack: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName="73rd Supply Pod [Explosives]";
 		hiddenselections[]=
 		{
@@ -1330,12 +1244,12 @@ class CfgVehicles
 			class _xx_C7_Remote_Mag
 			{
 				magazine="C7_Remote_Mag";
-				count=5;
+				count=25;
 			};
 			class _xx_C12_Remote_Mag
 			{
 				magazine="C12_Remote_Mag";
-				count=4;
+				count=8;
 			};
 			class _xx_M168_Remote_Mag
 			{
@@ -1345,7 +1259,7 @@ class CfgVehicles
 			class _xx_APERSMineDispenser_Mag
 			{
 				magazine="APERSMineDispenser_Mag";
-				count=5;
+				count=15;
 			};
 		};
 		class TransportWeapons
@@ -1355,9 +1269,11 @@ class CfgVehicles
 		{
 		};
 	};
-	class 73_supply_TACResupply: 73_supplypod
+	class 73_supply_TACResupply: 73_SupplyPod
 	{
-		scope=2;
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
 		displayName=" 73rd Supply Pod [Utility/Sidearm]";
 		hiddenselections[]=
 		{
@@ -1405,33 +1321,7 @@ class CfgVehicles
 			{
 				magazine="16rnd_10mm_AP";
 				count=30;
-			};
-			
-			class _xx_TCF_60rnd_5x23mm_Mag_JHPT
-			{
-				magazine="TCF_60rnd_5x23mm_Mag_JHPT";
-				count=30;
-			};
-			class _xx_TCF_8Rnd_127x40_Mag_NARQ
-			{
-				magazine="TCF_8Rnd_127x40_Mag_NARQ";
-				count=15;
-			};
-			class _xx_TCF_8Rnd_127x40_Mag_APT
-			{
-				magazine="TCF_8Rnd_127x40_Mag_APT";
-				count=30;
-			};
-			class _xx_TCF_12Rnd_127x40_Mag_NARQ
-			{
-				magazine="TCF_12Rnd_127x40_Mag_NARQ";
-				count=15;
-			};
-			class _xx_TCF_12Rnd_127x40_Mag_APT
-			{
-				magazine="TCF_12Rnd_127x40_Mag_APT";
-				count=30;
-			};
+			}; 
 			class _xx_OPTRE_M9_Frag
 			{
 				magazine="OPTRE_M9_Frag";
@@ -1487,27 +1377,53 @@ class CfgVehicles
 				magazine="Laserbatteries";
 				count=25;
 			};
-			class _xx_TCF_12Rnd_8Gauge_Beanbag
-			{
-				magazine="TCF_12Rnd_8Gauge_Beanbag";
-				count=15;
-			};
+			
 		};
 	};
-	class 73_supply_BananaResupply: 73_supplypod
+	class 73_supply_Emptypod: 73_SupplyPod
 	{
-		scope=2;
-		displayName="73rd Supply Pod [Centurion Happy Meal]";
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
+		displayName="73rd Empty pod";
 		hiddenselectionstextures[]=
 		{
 			"73_Supplypod\73_Pod_co.paa"
 		};
 		class TransportItems
 		{
-			class _xx_ACE_banana
+
+		};
+	};
+		class 73_supply_Light: 73_supplypod
+	{
+		scope = 2; // Visible in Zeus and Eden
+    	scopeCurator = 2; // Allow spawning in Zeus
+
+		displayname="73rd Supply Pod Light";
+		class TransportMagazines
+		{
+			class _xx_73_60Rnd_762x51_Mag_Tracer
 			{
-				name="ACE_banana";
-				count=100;
+				magazine="73_60Rnd_762x51_Mag_Tracer";
+				count=10;
+			};
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportItems
+		{
+
+			class _xx_73_PolyHemoglobinIV_500
+			{
+				name="73_PolyHemoglobinIV_500";
+				count=3;
+			};
+			class _xx_B_UavTerminal
+			{
+				name="B_UavTerminal";
+				count=2;
 			};
 		};
 	};
@@ -1517,7 +1433,7 @@ class CfgVehicles
 		{
 			class box1
 			{
-				defaultValue="73_supply_NEWACE_Medical";
+				defaultValue="none";
 				class values
 				{
 					class n1
@@ -1531,124 +1447,110 @@ class CfgVehicles
 					};
 					class n3
 					{
-						name="Autorifle Supply Pod";
+						name="73rd Autorifle Supply Pod";
 						value="73_supply_Autorifles";
 					};
 					class n4
 					{
-						name="AT Launcher Supply Pod";
+						name="73rd AT Launcher Supply Pod";
 						value="73_supply_ATLauncher";
 					};
 					class n5
 					{
-						name="Explosives Supply Pod";
+						name="73rd Explosives Supply Pod";
 						value="73_supply_ExplosivesPack";
 					};
 					class n6
 					{
-						name="AR/BR w/ Grenadier Supply Pod";
-						value="73_supply_ARBRGL";
+						name="73rd Grenadier Supply Pod";
+						value="73_supply_ARGL";
 					};
 					class n7
 					{
-						name="Breacher Supply Pod";
+						name="73rd Shotgun Supply Pod";
 						value="73_supply_Breacher";
 					};
 					class n8
 					{
-						name="Marksman Supply Pod";
+						name="73rd Marksman Supply Pod";
 						value="73_supply_Marksman";
 					};
 					class n9
 					{
-						name="Sniper Supply Pod";
+						name="73rd Sniper Supply Pod";
 						value="73_supply_Sniper";
 					};
 					class n10
 					{
-						name="ACE Medical Supply Pod";
-						value="73_supply_NEWACE_Medical";
+						name="73rd Medical Supply Pod";
+						value="73_SupplyPod_NEWACE_Medical";
 					};
 					class n11
 					{
-						name="Mortar Ammo Supply Pod";
-						value="73_supply_Mortar_Ammo";
+						name="73rd Mortar Ammo Supply Pod";
+						value="73_SupplyPod_Mortar_Ammo";
 					};
 					class n12
 					{
-						name="Mortar Supply Pod";
-						value="73_supply_Mortar";
+						name="73rd Mortar Supply Pod";
+						value="73_SupplyPod_Mortar";
 					};
 					class n13
 					{
-						name="Vulcan Static HMG";
-						value="OPTRE_SupplyPod_StaticHMG";
+						name="73rd Static HMG";
+						value="73_SupplyPod_StaticHMG";
 					};
 					class n14
 					{
-						name="Vulcan Static HMG Ammo";
-						value="OPTRE_SupplyPod_StaticHMGAmmo";
+						name="73rd Static HMG Ammo";
+						value="73_SupplyPod_StaticHMGAmmo";
 					};
 					class n15
 					{
-						name="Vulcan Static GMG";
-						value="OPTRE_SupplyPod_StaticGMG";
+						name="73rd Static GMG";
+						value="73_SupplyPod_StaticGMG";
 					};
 					class n16
 					{
-						name="Vulcan Static GMG Ammo";
-						value="OPTRE_SupplyPod_StaticGMGAmmo";
+						name="73rd Static GMG Ammo";
+						value="73_SupplyPod_StaticGMGAmmo";
 					};
+					
 					class n17
 					{
-						name="Vulcan Static AT";
-						value="OPTRE_SupplyPod_StaticAT";
+						name="73rd Vehicle Ammo";
+						value="73_SupplyPod_VehicleAmmo";
 					};
 					class n18
 					{
-						name="Vulcan Static AT Ammo";
-						value="OPTRE_SupplyPod_StaticATAmmo";
+						name="73rd Vehicle Repair";
+						value="73_SupplyPod_VehicleRepair";
 					};
 					class n19
 					{
-						name="Vulcan Static AA";
-						value="OPTRE_SupplyPod_StaticAA";
+						name="73rd Vehicle Refuel";
+						value="73_SupplyPod_VehicleRefuel";
 					};
 					class n20
 					{
-						name="Vulcan Static AA Ammo";
-						value="OPTRE_SupplyPod_StaticAAAmmo";
+						name="73rd Tactical/Misc Supply Pod";
+						value="73_supply_TACResupply";
 					};
 					class n21
 					{
-						name="Vulcan Vehicle Ammo";
-						value="OPTRE_SupplyPod_VehicleAmmo";
+						name="73rd Squad Supply Pod";
+						value="73_supply_Squad";
 					};
 					class n22
 					{
-						name="Vulcan Vehicle Repair";
-						value="OPTRE_SupplyPod_VehicleRepair";
-					};
-					class n23
-					{
-						name="Vulcan Vehicle Refuel";
-						value="OPTRE_SupplyPod_VehicleRefuel";
-					};
-					class n24
-					{
-						name="Tactical/Sidearm Supply Pod";
-						value="73_supply_TACResupply";
-					};
-					class n25
-					{
-						name="Centurion Happy Meal";
-						value="73_supply_BananaResupply";
+						name="73rd Empty Supply pod";
+						value="73_supply_Emptypod";
 					};
 				};
 			};
 		};
 	};
-	class 73_supply_Light: 73_supplypod
+	class 73_SupplyPod_Light: 73_SupplyPod
 	{
 		scope=2;
 		displayname="73rd Supply Pod Light";
@@ -1665,17 +1567,17 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
-
-			class _xx_ACE_plasmaIV_500
-			{
-				name="ACE_plasmaIV_500";
-				count=3;
-			};
-			class _xx_B_UavTerminal
-			{
-				name="B_UavTerminal";
-				count=2;
-			};
-		};
-	};
+            class _xx_ACE_plasmaIV_500
+            {
+                name="ACE_plasmaIV_500";
+                count=3;
+            };
+            class _xx_B_UavTerminal
+            {
+                name="B_UavTerminal";
+                count=2;
+            };
+        };
+    };
 };
+	

@@ -6,244 +6,134 @@ class CfgPatches
 		name = "73rd STB Aux"
 		units[] = 
         {
-            "73_Oryx",
-            "73_IFV76",
-            "73_APC76",
-            "73_M875",
-            "73_HDV134_Resupply",
-            "73_HDV134_TT",
-            "73_HDV134_TT_C",
-            "73_M19_GMG",
-            "73_M19_HMG",
-            "73_M808BM_MBT",
+            "73_M494_Oryx",//Load/unload
+            "73_IFV76",//Load/unload
+            "73_IFV76_A",//Load/unload
+            "73_M875",//Load/unload
+            "73_HDV134_Resupply",//Load/unload
+            "73_HDV134_TT",//Load/unload
+            "73_HDV134_TT_C",//Load/unload
+            "73_M19_GMG",//Load/unload
+            "73_M19_HMG",//Load/unload
+            "73_M808BM_MBT",//Load/unload
+            "73_D77_TC_Pelican",
+            "73_M12",//Load/unload
+            "73_M12_LRV",//Load/unload
+            "73_M12G1_LRV",//Load/unload
+            "73_M12A1_LRV",//Load/unload
+            "73_M12R_AA",//Load/unload
+            "73_M12_APC",//Load/unload
+            "73_M813_TT",//Load/unload
+            "73_UNSC_falcon_S",
+            "73_UNSC_falcon",
+            "73_UNSC_MH_144_Falcon",
+            "73_UNSC_MH_144S_Falcon",
+            "73_AV22_Sparrowhawk",
+            "73_AV22A_Sparrowhawk",
+            "73_AV22B_Sparrowhawk",
+            "73_AV22C_Sparrowhawk",
+            "73_M413_MGS",//Load/unload
+            "73_M412_IFV",//Load/unload
+            "73_F29_Nandao_VTOL",
+            "73_YSS_1000_A_VTOL_Single",
+            "73_Shortsword_01_F",
+            "73_JT_RM2_Longsword_dynamicLoadout_F",
+            "73_M511_Springbok_APC",//Load/unload
+            "73_M511_Springbok_IFV",//Load/unload
+            "73_M511_Springbok_MGS",//Load/unload
+            "73_M511_Springbok_AA",//Load/unload
+            "73_AV14_Hornet_CAS",
+            "73_AV14_Hornet_CAP",
+            "73_M808BMk2",//Load/unload
+            "73_M914_TD",//Load/unload
+            "73_Hammerhead_Repair",//Load/unload
+            "73_POGV_RCWS",
+            "73_COGV_RCWS",
+            "73_Iguana_APC",//Load/unload
+            "73_Iguana_Medical_APC",//Load/unload
+            "73_Komodo",//Load/unload
+            "73_Merkava",//Load/unload
+            "73_cart"
         }; 
         weapons[] = 
         {
         }; 
 		vehicles[] =
 		{
-
-
 		};
         requiredVersion = 0.1; 
         requiredAddons[] = 
         { 
 			"OPTRE_UNSC_Units_Army",
             "OPTRE_FunctionsLibrary",
-            "73_units"
-			
+            "73_units",
+            "DMNS_Armour"
+
         };
     };
 };
-
-
-class CfgFunctions {
-
-    
+class CfgFunctions
+{
+    class STB73
+    {
+        class Thrusters
+        {
+            file="73_vehicles\functions\Thrusters";
+            class ChangeSpeed{};
+            class DecreaseThrusterLevel{};
+            class EngageAfterburners{};
+            class EngageAirbrakes{};
+            class EngageForwardThruster{};
+            class GetFlightTime{};
+            class IncreaseThrusterLevel{};
+            class RegisterThrusters{};
+            class ThrusterAnimate{};
+            class ThrusterDeAnimate{};
+            class ThrusterDisengage{};
+            class AfterburnersDisengage{};
+            class Init
+            {
+                postInit = 1;
+            };
+        };
+    };
 };
-
+class EventHandlers;
 class CfgVehicles {
+    class ViewCargo;
+    class ViewOptics;
+    class VehicleSystemsTemplateLeftCommander;
+    class VehicleSystemsTemplateRightCommander;
+    class VehicleSystemsTemplateLeftPilot;
+    class VehicleSystemsTemplateRightPilot;
+    class Turrets;
+    class MainTurret;
+    class CommanderOptics;
+    class Components;
+    class SensorTemplateIR;
+    class SensorTemplateVisual;
+    class SensorTemplateActiveRadar;
+    class SensorTemplatePassiveRadar;
+    class SensorTemplateLaser;
+    class SensorTemplateNV;
+    class CargoTurret_01;
+    class animationSources;
+    class HitPoints;
+    class HitLFWheel;
+    class HitLBWheel;
+    class HitLMWheel;
+    class HitLF2Wheel;
+    class HitRFWheel;
+    class HitRBWheel;
+    class HitRMWheel;
+    class HitRF2Wheel;
 
-    class VES_M494_ORYX;
-
-    class 73_Oryx: VES_M494_ORYX 
-    {
-        displayName="[73] M494 Oryx";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-        {
-            "\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_A_CO",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_N_CA.paa",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_N_CA.paa",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_N_CA.paa",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_T_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_MG_CO.paa",
-			"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
-        };
-    };
-    
-    class VES_IFV76_A;
-
-    class 73_IFV76:VES_IFV76_A
-    {
-        displayName="[73] IFV-76 Honeybadger";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-        {
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_A_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_T_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CN_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_C_CO.paa"
-        };
-    };
-
-    class VES_IFV76;
-
-    class 73_APC76:VES_IFV76
-    {
-        displayName="[73] APC-76 Honeybadger";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scope=2;
-        scopeCurator=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-        {
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_A_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_T_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_CN_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_OD3_C_CO.paa"
-        };
-    };
-
-    class VES_M875_SPH;
-
-    class 73_M875:VES_M875_SPH
-    {
-        displayName="[73] M875 Scorpion [SPH]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_ART_CO.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_art_camo_ca.paa",
-			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
-			"V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_MG_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_DET1_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa"
-		};
-    };
-
-    class VES_HDV134_Resupply;
-
-    class 73_HDV134_Resupply:VES_HDV134_Resupply
-    {
-        displayName="[73] HDV-134 Buffalo [Resupply]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_S_CO.paa",
-			"\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
-		};
-    };
-
-    class VES_HDV134_TT;
-
-    class 73_HDV134_TT:VES_HDV134_TT
-    {
-        displayName="[73] HDV-134 Buffalo [TT]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_S_CO.paa",
-			"\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
-		};
-    };
-    class VES_HDV134_TT_C;
-
-    class 73_HDV134_TT_C:VES_HDV134_TT_C
-    {
-        displayName="[73] HDV-134 Buffalo [TT-C]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_S_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_OD3_C_CO.paa"
-		};
-    };
-
-    class VES_M19_GMG;
-
-    class 73_M19_GMG:VES_M19_GMG
-    {
-        displayName="[73] M19 Hyena [GMG]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_OD3_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_OD3_A_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_BLK_T_CO.paa"
-		};
-    };
-
-    class VES_M19_HMG;
-
-    class 73_M19_HMG:VES_M19_HMG
-    {
-        displayName="[73] M19 Hyena [HMG]";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_OD3_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_OD3_A_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Mattock\V_M19_BLK_T_CO.paa"
-		};
-    }
-
-    class VES_M808BM_MBT;
-
-    class 73_M808BM_MBT:VES_M808BM_MBT
-    {
-        displayName="[73] M808B/M Scorpion";
-        author="73rd S-4 Team"
-        faction = "73_STB";
-        scopeCurator=2;
-        scope=2;
-        crew = "73_ODST_Rifleman";
-        armor=575;
-        armorStructural=5;
-        hiddenSelectionsTextures[]=
-        {
-            "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_T_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa",
-            "OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
-            "OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-            "OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
-            "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_MR_CO.paa",
-            "V_FZ_Ground_Vehicles\data\Oryx\V_M494_OD3_MG_CO.paa"
-        };
-    };
+    #include "vehicles\APC.hpp"
+    #include "vehicles\Tanks.hpp"
+    #include "vehicles\Cars.hpp"
+    #include "vehicles\Helicopter.hpp"
+    #include "vehicles\Planes.hpp"
+    #include "vehicles\Drone.hpp"
+    #include "vehicles\Aquatic.hpp"
+    #include "vehicles\Utility.hpp"
 };

@@ -18,6 +18,7 @@ class CfgPatches
         { 
 			"OPTRE_Weapons",
 			"OPTRE_Weapons_Backpacks",
+			"73_units"
 			
         };
     };
@@ -29,59 +30,35 @@ class CfgVehicles
 	class OPTRE_S12_SOLA_Jetpack;
 	class OPTRE_S12_SOLA_Jetpack_ON;
 
-    class JJP_JumpPack: OPTRE_S12_SOLA_Jetpack
+    class STB73_JumpPack: OPTRE_S12_SOLA_Jetpack
     {
-        displayName="[73] JetPack";
-        maximumLoad=350;
+        displayName="[73] JumpPack";
+        author="73rd S-4 Team";
+        maximumLoad=250;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="rt1523g_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=60000;
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
     };
 
-    class JJP_JumpPack_on: OPTRE_S12_SOLA_Jetpack_ON
+    class STB73_JumpPack_on: OPTRE_S12_SOLA_Jetpack_ON
     {
-        displayName="[73] JetPack";
-        maximumLoad=350;
-    };
-    class JJP_JumpPack_LR: OPTRE_S12_SOLA_Jetpack
-    {
-        displayName="[73] JetPack";
-        maximumLoad=350;
-    };
-
-    class JJP_JumpPack_on_LR: OPTRE_S12_SOLA_Jetpack_ON
-    {
-        displayName="[73] JetPack";
-        maximumLoad=350;
+        displayName="[73] JumpPack";
+        author="73rd S-4 Team";
+        maximumLoad=250;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="rt1523g_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=60000;
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
     };
 };
 
 class CfgFunctions
 {
-	class JJP_JumpPack
-	{
-		class Functions
-		{
-			file = "73_jetpacks\functions";
-			class PreInit
-			{
-			    preInit = 1;
-			};
-			class Init
-			{
-			    postInit = 1;
-			};
-			class JumpPack
-			{
-			};
-			class EventHandlers
-			{
-			};
-			class JumpPackRefuel
-			{
-			};
-			class RoofStuckCheck
-			{
-			};
-		};
-	};
 };
 
 class RscTitles

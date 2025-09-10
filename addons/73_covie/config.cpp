@@ -36,7 +36,7 @@ class cfgFactionClasses
 { 
     class 73_Cov
     { 
-        displayName = "73rd Covenant"; 
+        displayName = "[73] Covenant";
         priority = 3; // Position in list. 
         side = 0; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = "73_covie\UI\73odst.paa"; //Custom Icon 
@@ -47,7 +47,7 @@ class CfgEditorCategories
 {
 	class 73_Cov // Category class, you point to it in editorCategory property
 	{
-		displayName = "73rd Covenant"; // Name visible in the list
+		displayName = "[73] Covenant"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};

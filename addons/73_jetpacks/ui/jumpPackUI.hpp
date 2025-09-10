@@ -36,7 +36,7 @@ class JumpPackUI
 	idd = 49200;
 	duration = 99999999999;
 	movingEnable = 0;
-	onLoad = "uiNamespace setVariable ['JJP_JumpPack_UI',_this select 0];";
+	onLoad = "uiNamespace setVariable ['STB73_JumpPack_UI',_this select 0];";
 	class Controls
 	{
 		class background_heat: ProgressBaseTextHUD
